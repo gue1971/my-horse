@@ -114,7 +114,7 @@
     "farm": "コスモヴューファーム",
     "image": "images/ウインアルカンナ24.jpg",
     "page": "horses/ウインアルカンナ24.html",
-    "clubPage": "",
+    "clubPage": "20240002",
     "netkeiba_horse_id": "2024103053",
     "jra_id": "",
     "jbis_id": ""
@@ -354,7 +354,7 @@
     "farm": "フジワラファーム",
     "image": "images/ダイワデッセー23.jpg",
     "page": "horses/ダイワデッセー23.html",
-    "clubPage": "",
+    "clubPage": "20230033",
     "netkeiba_horse_id": "",
     "jra_id": "",
     "jbis_id": ""
@@ -374,7 +374,7 @@
     "farm": "ハシモトファーム",
     "image": "images/ルヴェソンヴェール23.jpg",
     "page": "horses/ルヴェソンヴェール23.html",
-    "clubPage": "",
+    "clubPage": "20230037",
     "netkeiba_horse_id": "",
     "jra_id": "",
     "jbis_id": ""
@@ -914,7 +914,7 @@
     "farm": "ノーザンファーム",
     "image": "images/マラコスタムブラダ17.jpg",
     "page": "horses/マラコスタムブラダ17.html",
-    "clubPage": "https://carrotclub.net/horse/horse.asp?id=1867&tab=3",
+    "clubPage": "1867",
     "netkeiba_horse_id": "2017105563",
     "jra_id": "pw01dud002017105563/80",
     "jbis_id": "0001237289"
