@@ -14,10 +14,10 @@
     "farm": "ノーザンファーム",
     "image": "images/レシステンシア24.jpg",
     "page": "horses/レシステンシア24.html",
-    "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "clubPage": "https://carrotclub.net/horse/horse.asp?id=24062&tab=1",
+    "netkeiba_horse_id": "2024106723",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "プロミストリープ24",
@@ -34,10 +34,10 @@
     "farm": "ノーザンファーム",
     "image": "images/プロミストリープ24.jpg",
     "page": "horses/プロミストリープ24.html",
-    "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "clubPage": "https://www.silkhorseclub.jp/horse_info/shozoku/detail/2024058/view",
+    "netkeiba_horse_id": "2024106579",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "レッドレグナント24",
@@ -54,10 +54,10 @@
     "farm": "ノーザンファーム",
     "image": "images/レッドレグナント24.jpg",
     "page": "horses/レッドレグナント24.html",
-    "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "clubPage": "2024106734",
+    "netkeiba_horse_id": "",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "ファシネートゼット24",
@@ -74,10 +74,10 @@
     "farm": "ノーザンファーム",
     "image": "images/ファシネートゼット24.jpg",
     "page": "horses/ファシネートゼット24.html",
-    "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "clubPage": "https://carrotclub.net/horse/horse.asp?id=24040&tab=1",
+    "netkeiba_horse_id": "2024106532",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "デサフィアンテ24",
@@ -95,9 +95,9 @@
     "image": "images/デサフィアンテ24.jpg",
     "page": "horses/デサフィアンテ24.html",
     "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "netkeiba_horse_id": "2024106473",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "ウインアルカンナ24",
@@ -115,9 +115,9 @@
     "image": "images/ウインアルカンナ24.jpg",
     "page": "horses/ウインアルカンナ24.html",
     "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "netkeiba_horse_id": "2024103053",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "コンパルティシオン24",
@@ -135,9 +135,9 @@
     "image": "images/コンパルティシオン24.jpg",
     "page": "horses/コンパルティシオン24.html",
     "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "netkeiba_horse_id": "2024106892",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "クラシックリディア24",
@@ -154,10 +154,10 @@
     "farm": "ノーザンファーム",
     "image": "images/クラシックリディア24.jpg",
     "page": "horses/クラシックリディア24.html",
-    "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "clubPage": "https://carrotclub.net/horse/horse.asp?id=24072&tab=1",
+    "netkeiba_horse_id": "2024106283",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "ジルファ24",
@@ -174,10 +174,10 @@
     "farm": "フランス",
     "image": "images/ジルファ24.jpg",
     "page": "horses/ジルファ24.html",
-    "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "clubPage": "https://www.silkhorseclub.jp/horse_info/shozoku/detail/2021086/view",
+    "netkeiba_horse_id": "2024110014",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "グラットラッシー24",
@@ -195,9 +195,9 @@
     "image": "images/グラットラッシー24.jpg",
     "page": "horses/グラットラッシー24.html",
     "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "netkeiba_horse_id": "2024106891",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "エリティエール23",
@@ -214,10 +214,10 @@
     "farm": "ノーザンファーム",
     "image": "images/エリティエール23.jpg",
     "page": "horses/エリティエール23.html",
-    "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "clubPage": "https://carrotclub.net/horse/horse.asp?id=23039&tab=1",
+    "netkeiba_horse_id": "2023106926",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "シャーラレイ23",
@@ -235,9 +235,9 @@
     "image": "images/シャーラレイ23.jpg",
     "page": "horses/シャーラレイ23.html",
     "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "netkeiba_horse_id": "2023103427",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "メリート23",
@@ -254,10 +254,10 @@
     "farm": "ノーザンファーム",
     "image": "images/メリート23.jpg",
     "page": "horses/メリート23.html",
-    "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "clubPage": "https://carrotclub.net/horse/horse.asp?id=23039&tab=1",
+    "netkeiba_horse_id": "",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "レッドリヴェール23",
@@ -275,9 +275,9 @@
     "image": "images/レッドリヴェール23.jpg",
     "page": "horses/レッドリヴェール23.html",
     "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "netkeiba_horse_id": "2023103605",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "レッドクラウディア23",
@@ -295,9 +295,9 @@
     "image": "images/レッドクラウディア23.jpg",
     "page": "horses/レッドクラウディア23.html",
     "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "netkeiba_horse_id": "2023107337",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "レッドシェリール23",
@@ -315,9 +315,9 @@
     "image": "images/レッドシェリール23.jpg",
     "page": "horses/レッドシェリール23.html",
     "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "netkeiba_horse_id": "2023106617",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "ヴェニュセマース23",
@@ -335,9 +335,9 @@
     "image": "images/ヴェニュセマース23.jpg",
     "page": "horses/ヴェニュセマース23.html",
     "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "netkeiba_horse_id": "",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "ダイワデッセー23",
@@ -355,9 +355,9 @@
     "image": "images/ダイワデッセー23.jpg",
     "page": "horses/ダイワデッセー23.html",
     "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "netkeiba_horse_id": "",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "ルヴェソンヴェール23",
@@ -375,9 +375,9 @@
     "image": "images/ルヴェソンヴェール23.jpg",
     "page": "horses/ルヴェソンヴェール23.html",
     "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "netkeiba_horse_id": "",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "ダンシングラグズ22",
@@ -395,9 +395,9 @@
     "image": "images/ダンシングラグズ22.jpg",
     "page": "horses/ダンシングラグズ22.html",
     "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "netkeiba_horse_id": "",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "ユキチャン22",
@@ -414,10 +414,10 @@
     "farm": "ノーザンファーム",
     "image": "images/ユキチャン22.jpg",
     "page": "horses/ユキチャン22.html",
-    "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "clubPage": "https://www.silkhorseclub.jp/horse_info/shozoku/detail/2022016/view",
+    "netkeiba_horse_id": "2022105100",
+    "jra_id": "pw01dud102022105100/99",
+    "jbis_id": "0001352577"
   },
   {
     "slug": "カーサデルシエロ22",
@@ -435,9 +435,9 @@
     "image": "images/カーサデルシエロ22.jpg",
     "page": "horses/カーサデルシエロ22.html",
     "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "netkeiba_horse_id": "",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "レゼトワール21",
@@ -454,10 +454,10 @@
     "farm": "新冠橋本牧場",
     "image": "images/レゼトワール21.jpg",
     "page": "horses/レゼトワール21.html",
-    "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "clubPage": "https://www.silkhorseclub.jp/horse_info/shozoku/detail/2021086/view",
+    "netkeiba_horse_id": "",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "チアズメッセージ21",
@@ -474,10 +474,10 @@
     "farm": "ノーザンファーム",
     "image": "images/チアズメッセージ21.jpg",
     "page": "horses/チアズメッセージ21.html",
-    "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "clubPage": "pw01dud102015104161/B6",
+    "netkeiba_horse_id": "",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "プチノワール21",
@@ -494,10 +494,10 @@
     "farm": "ノーザンファーム",
     "image": "images/プチノワール21.jpg",
     "page": "horses/プチノワール21.html",
-    "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "clubPage": "https://www.silkhorseclub.jp/horse_info/shozoku/detail/2021003/view",
+    "netkeiba_horse_id": "",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "コスモプラチナ20",
@@ -515,9 +515,9 @@
     "image": "images/コスモプラチナ20.jpg",
     "page": "horses/コスモプラチナ20.html",
     "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "netkeiba_horse_id": "",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "ライラヌール22",
@@ -535,9 +535,9 @@
     "image": "images/ライラヌール22.jpg",
     "page": "horses/ライラヌール22.html",
     "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "netkeiba_horse_id": "",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "ダイワプロパー22",
@@ -555,9 +555,9 @@
     "image": "images/ダイワプロパー22.jpg",
     "page": "horses/ダイワプロパー22.html",
     "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "netkeiba_horse_id": "",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "リュズキナ22",
@@ -575,9 +575,9 @@
     "image": "images/リュズキナ22.jpg",
     "page": "horses/リュズキナ22.html",
     "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "netkeiba_horse_id": "",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "メリート22",
@@ -595,9 +595,9 @@
     "image": "images/メリート22.jpg",
     "page": "horses/メリート22.html",
     "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "netkeiba_horse_id": "",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "ヴィヴェンシャル22",
@@ -615,9 +615,9 @@
     "image": "images/ヴィヴェンシャル22.jpg",
     "page": "horses/ヴィヴェンシャル22.html",
     "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "netkeiba_horse_id": "",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "エクセレントデザイン21",
@@ -635,9 +635,9 @@
     "image": "images/エクセレントデザイン21.jpg",
     "page": "horses/エクセレントデザイン21.html",
     "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "netkeiba_horse_id": "",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "フラニーフロイド21",
@@ -655,9 +655,9 @@
     "image": "images/フラニーフロイド21.jpg",
     "page": "horses/フラニーフロイド21.html",
     "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "netkeiba_horse_id": "",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "フレジェール21",
@@ -675,9 +675,9 @@
     "image": "images/フレジェール21.jpg",
     "page": "horses/フレジェール21.html",
     "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "netkeiba_horse_id": "",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "ディオジェーヌ20",
@@ -695,9 +695,9 @@
     "image": "images/ディオジェーヌ20.jpg",
     "page": "horses/ディオジェーヌ20.html",
     "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "netkeiba_horse_id": "",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "ビウイッチアス20",
@@ -715,9 +715,9 @@
     "image": "images/ビウイッチアス20.jpg",
     "page": "horses/ビウイッチアス20.html",
     "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "netkeiba_horse_id": "",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "シスタリーラヴ19",
@@ -735,9 +735,9 @@
     "image": "images/シスタリーラヴ19.jpg",
     "page": "horses/シスタリーラヴ19.html",
     "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "netkeiba_horse_id": "",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "シェイクラブハート19",
@@ -755,9 +755,9 @@
     "image": "images/シェイクラブハート19.jpg",
     "page": "horses/シェイクラブハート19.html",
     "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "netkeiba_horse_id": "",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "スイープトウショウ19",
@@ -774,10 +774,10 @@
     "farm": "ノーザンファーム",
     "image": "images/スイープトウショウ19.jpg",
     "page": "horses/スイープトウショウ19.html",
-    "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "clubPage": "https://www.silkhorseclub.jp/horse_info/shozoku/detail/2018067/view",
+    "netkeiba_horse_id": "",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "カラベルラティーナ19",
@@ -795,9 +795,9 @@
     "image": "images/カラベルラティーナ19.jpg",
     "page": "horses/カラベルラティーナ19.html",
     "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "netkeiba_horse_id": "",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "デイトユアドリーム18",
@@ -814,10 +814,10 @@
     "farm": "ノーザンファーム",
     "image": "images/デイトユアドリーム18.jpg",
     "page": "horses/デイトユアドリーム18.html",
-    "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "clubPage": "https://www.silkhorseclub.jp/horse_info/shozoku/detail/2018067/view",
+    "netkeiba_horse_id": "",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "タニノジャドール18",
@@ -835,9 +835,9 @@
     "image": "images/タニノジャドール18.jpg",
     "page": "horses/タニノジャドール18.html",
     "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "netkeiba_horse_id": "",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "ユメザンマイ18",
@@ -855,9 +855,9 @@
     "image": "images/ユメザンマイ18.jpg",
     "page": "horses/ユメザンマイ18.html",
     "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "netkeiba_horse_id": "",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "マスターエクレール18",
@@ -875,9 +875,9 @@
     "image": "images/マスターエクレール18.jpg",
     "page": "horses/マスターエクレール18.html",
     "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "netkeiba_horse_id": "",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "フェルミオン18",
@@ -895,9 +895,9 @@
     "image": "images/フェルミオン18.jpg",
     "page": "horses/フェルミオン18.html",
     "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "netkeiba_horse_id": "",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "マラコスタムブラダ17",
@@ -914,10 +914,10 @@
     "farm": "ノーザンファーム",
     "image": "images/マラコスタムブラダ17.jpg",
     "page": "horses/マラコスタムブラダ17.html",
-    "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "clubPage": "https://carrotclub.net/horse/horse.asp?id=1867&tab=3",
+    "netkeiba_horse_id": "2017105563",
+    "jra_id": "pw01dud002017105563/80",
+    "jbis_id": "0001237289"
   },
   {
     "slug": "アンティフォナ17",
@@ -934,10 +934,10 @@
     "farm": "白老ファーム",
     "image": "images/アンティフォナ17.jpg",
     "page": "horses/アンティフォナ17.html",
-    "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "clubPage": "https://www.silkhorseclub.jp/horse_info/shozoku/detail/2017062/view",
+    "netkeiba_horse_id": "2017105072",
+    "jra_id": "pw01dud102017105072/0F",
+    "jbis_id": "0001235600"
   },
   {
     "slug": "カニョット16",
@@ -955,9 +955,9 @@
     "image": "images/カニョット16.jpg",
     "page": "horses/カニョット16.html",
     "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "netkeiba_horse_id": "",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "バイラオーラ16",
@@ -975,9 +975,9 @@
     "image": "images/バイラオーラ16.jpg",
     "page": "horses/バイラオーラ16.html",
     "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "netkeiba_horse_id": "",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "ロフティーエイム15",
@@ -994,10 +994,10 @@
     "farm": "追分ファーム",
     "image": "images/ロフティーエイム15.jpg",
     "page": "horses/ロフティーエイム15.html",
-    "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "clubPage": "https://carrotclub.net/horse/horse.asp?id=1619&tab=3",
+    "netkeiba_horse_id": "",
+    "jra_id": "pw01dud102015104161/B6",
+    "jbis_id": ""
   },
   {
     "slug": "カニョット15",
@@ -1015,9 +1015,9 @@
     "image": "images/カニョット15.jpg",
     "page": "horses/カニョット15.html",
     "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "netkeiba_horse_id": "",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "ジューンアナガリス13",
@@ -1035,9 +1035,9 @@
     "image": "images/ジューンアナガリス13.jpg",
     "page": "horses/ジューンアナガリス13.html",
     "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "netkeiba_horse_id": "",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "イサドラ13",
@@ -1055,9 +1055,9 @@
     "image": "images/イサドラ13.jpg",
     "page": "horses/イサドラ13.html",
     "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "netkeiba_horse_id": "",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "フェルミオン12",
@@ -1074,10 +1074,10 @@
     "farm": "ノーザンファーム",
     "image": "images/フェルミオン12.jpg",
     "page": "horses/フェルミオン12.html",
-    "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "clubPage": "https://carrotclub.net/horse/horse.asp?id=1867&tab=3",
+    "netkeiba_horse_id": "",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "ハナランマン10",
@@ -1095,9 +1095,9 @@
     "image": "images/ハナランマン10.jpg",
     "page": "horses/ハナランマン10.html",
     "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "netkeiba_horse_id": "",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "プレラット10",
@@ -1115,9 +1115,9 @@
     "image": "images/プレラット10.jpg",
     "page": "horses/プレラット10.html",
     "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "netkeiba_horse_id": "",
+    "jra_id": "",
+    "jbis_id": ""
   },
   {
     "slug": "シンプルザベスト10",
@@ -1135,8 +1135,8 @@
     "image": "images/シンプルザベスト10.jpg",
     "page": "horses/シンプルザベスト10.html",
     "clubPage": "",
-    "jra": "https://www.jra.go.jp/",
-    "jbis": "https://www.jbis.or.jp/",
-    "netkeiba_horse_id": ""
+    "netkeiba_horse_id": "",
+    "jra_id": "",
+    "jbis_id": ""
   }
 ]
