@@ -54,7 +54,7 @@
     "farm": "ノーザンファーム",
     "image": "images/レッドレグナント24.jpg",
     "page": "horses/レッドレグナント24.html",
-    "clubPage": "2919",
+    "clubPage": "next/2919",
     "netkeiba_horse_id": "2024106734",
     "jra_id": "",
     "jbis_id": "0001392131"
@@ -94,7 +94,7 @@
     "farm": "ノーザンファーム",
     "image": "images/デサフィアンテ24.jpg",
     "page": "horses/デサフィアンテ24.html",
-    "clubPage": "2947",
+    "clubPage": "next/2947",
     "netkeiba_horse_id": "2024106473",
     "jra_id": "",
     "jbis_id": "0001392433"
@@ -117,7 +117,7 @@
     "clubPage": "20240002",
     "netkeiba_horse_id": "2024103053",
     "jra_id": "",
-    "jbis_id": ""
+    "jbis_id": "0001396509"
   },
   {
     "slug": "コンパルティシオン24",
@@ -134,10 +134,10 @@
     "farm": "追分ファーム",
     "image": "images/コンパルティシオン24.jpg",
     "page": "horses/コンパルティシオン24.html",
-    "clubPage": "2946",
+    "clubPage": "next/2946",
     "netkeiba_horse_id": "2024106892",
     "jra_id": "",
-    "jbis_id": ""
+    "jbis_id": "0001395807"
   },
   {
     "slug": "クラシックリディア24",
@@ -157,7 +157,7 @@
     "clubPage": "24072",
     "netkeiba_horse_id": "2024106283",
     "jra_id": "",
-    "jbis_id": ""
+    "jbis_id": "0001390467"
   },
   {
     "slug": "ジルファ24",
@@ -194,7 +194,7 @@
     "farm": "追分ファーム",
     "image": "images/グラットラッシー24.jpg",
     "page": "horses/グラットラッシー24.html",
-    "clubPage": "2936",
+    "clubPage": "next/2936",
     "netkeiba_horse_id": "2024106891",
     "jra_id": "",
     "jbis_id": "0001396423"
@@ -234,7 +234,7 @@
     "farm": "社台ファーム",
     "image": "images/シャーラレイ23.jpg",
     "page": "horses/シャーラレイ23.html",
-    "clubPage": "2803",
+    "clubPage": "runners/2803",
     "netkeiba_horse_id": "2023103427",
     "jra_id": "pw01dud102023103427/1F",
     "jbis_id": "0001375140"
@@ -274,7 +274,7 @@
     "farm": "社台ファーム",
     "image": "images/レッドリヴェール23.jpg",
     "page": "horses/レッドリヴェール23.html",
-    "clubPage": "2835",
+    "clubPage": "runners/2835",
     "netkeiba_horse_id": "2023103605",
     "jra_id": "",
     "jbis_id": "0001370107"
@@ -294,7 +294,7 @@
     "farm": "ノーザンファーム",
     "image": "images/レッドクラウディア23.jpg",
     "page": "horses/レッドクラウディア23.html",
-    "clubPage": "2852",
+    "clubPage": "runners/2852",
     "netkeiba_horse_id": "2023107337",
     "jra_id": "",
     "jbis_id": "0001369150"
@@ -314,7 +314,7 @@
     "farm": "富田牧場",
     "image": "images/レッドシェリール23.jpg",
     "page": "horses/レッドシェリール23.html",
-    "clubPage": "2828",
+    "clubPage": "runners/2828",
     "netkeiba_horse_id": "2023106617",
     "jra_id": "",
     "jbis_id": "0001370550"
@@ -334,7 +334,7 @@
     "farm": "坂東牧場",
     "image": "images/ヴェニュセマース23.jpg",
     "page": "horses/ヴェニュセマース23.html",
-    "clubPage": "2837",
+    "clubPage": "runners/2837",
     "netkeiba_horse_id": "2023106622",
     "jra_id": "",
     "jbis_id": "0001375182"
@@ -355,9 +355,9 @@
     "image": "images/ダイワデッセー23.jpg",
     "page": "horses/ダイワデッセー23.html",
     "clubPage": "20230033",
-    "netkeiba_horse_id": "",
+    "netkeiba_horse_id": "2023103164",
     "jra_id": "",
-    "jbis_id": ""
+    "jbis_id": "0001369045"
   },
   {
     "slug": "ルヴェソンヴェール23",
@@ -375,9 +375,9 @@
     "image": "images/ルヴェソンヴェール23.jpg",
     "page": "horses/ルヴェソンヴェール23.html",
     "clubPage": "20230037",
-    "netkeiba_horse_id": "",
+    "netkeiba_horse_id": "2023104451",
     "jra_id": "",
-    "jbis_id": ""
+    "jbis_id": "0001370177"
   },
   {
     "slug": "ダンシングラグズ22",
@@ -394,7 +394,7 @@
     "farm": "ノーザンファーム",
     "image": "images/ダンシングラグズ22.jpg",
     "page": "horses/ダンシングラグズ22.html",
-    "clubPage": "2710",
+    "clubPage": "runners/2710",
     "netkeiba_horse_id": "2022104897",
     "jra_id": "pw01dud102022104897/B6",
     "jbis_id": "0001360268"
@@ -414,7 +414,7 @@
     "farm": "ノーザンファーム",
     "image": "images/ユキチャン22.jpg",
     "page": "horses/ユキチャン22.html",
-    "clubPage": "https://www.silkhorseclub.jp/horse_info/shozoku/detail/2022016/view",
+    "clubPage": "2022016",
     "netkeiba_horse_id": "2022105100",
     "jra_id": "pw01dud102022105100/99",
     "jbis_id": "0001352577"
@@ -434,10 +434,10 @@
     "farm": "下河辺牧場",
     "image": "images/カーサデルシエロ22.jpg",
     "page": "horses/カーサデルシエロ22.html",
-    "clubPage": "",
-    "netkeiba_horse_id": "",
-    "jra_id": "",
-    "jbis_id": ""
+    "clubPage": "runners/2740",
+    "netkeiba_horse_id": "2022101399",
+    "jra_id": "pw01dud102022101399/DA",
+    "jbis_id": "0001361920"
   },
   {
     "slug": "レゼトワール21",
@@ -454,10 +454,10 @@
     "farm": "新冠橋本牧場",
     "image": "images/レゼトワール21.jpg",
     "page": "horses/レゼトワール21.html",
-    "clubPage": "https://www.silkhorseclub.jp/horse_info/shozoku/detail/2021086/view",
-    "netkeiba_horse_id": "",
-    "jra_id": "",
-    "jbis_id": ""
+    "clubPage": "2021086",
+    "netkeiba_horse_id": "2021106587",
+    "jra_id": "pw01dud102021106587/65",
+    "jbis_id": "0001335433"
   },
   {
     "slug": "チアズメッセージ21",
@@ -474,10 +474,10 @@
     "farm": "ノーザンファーム",
     "image": "images/チアズメッセージ21.jpg",
     "page": "horses/チアズメッセージ21.html",
-    "clubPage": "",
-    "netkeiba_horse_id": "",
+    "clubPage": "2220",
+    "netkeiba_horse_id": "2021105642",
     "jra_id": "pw01dud102015104161/B6",
-    "jbis_id": ""
+    "jbis_id": "0001331771"
   },
   {
     "slug": "プチノワール21",
@@ -494,10 +494,10 @@
     "farm": "ノーザンファーム",
     "image": "images/プチノワール21.jpg",
     "page": "horses/プチノワール21.html",
-    "clubPage": "https://www.silkhorseclub.jp/horse_info/shozoku/detail/2021003/view",
-    "netkeiba_horse_id": "",
-    "jra_id": "",
-    "jbis_id": ""
+    "clubPage": "2021003",
+    "netkeiba_horse_id": "2021105747",
+    "jra_id": "pw01dud102021105747/98",
+    "jbis_id": "0001332993"
   },
   {
     "slug": "コスモプラチナ20",
@@ -514,10 +514,10 @@
     "farm": "コスモヴューファーム",
     "image": "images/コスモプラチナ20.jpg",
     "page": "horses/コスモプラチナ20.html",
-    "clubPage": "",
-    "netkeiba_horse_id": "",
-    "jra_id": "",
-    "jbis_id": ""
+    "clubPage": "2020020",
+    "netkeiba_horse_id": "2020107030",
+    "jra_id": "pw01dud102020107030/5E",
+    "jbis_id": "0001318737"
   },
   {
     "slug": "ライラヌール22",
@@ -534,10 +534,10 @@
     "farm": "社台ファーム",
     "image": "images/ライラヌール22.jpg",
     "page": "horses/ライラヌール22.html",
-    "clubPage": "",
-    "netkeiba_horse_id": "",
-    "jra_id": "",
-    "jbis_id": ""
+    "clubPage": "runners/2725",
+    "netkeiba_horse_id": "2022105541",
+    "jra_id": "pw01dud102022105541/10",
+    "jbis_id": "0001365962"
   },
   {
     "slug": "ダイワプロパー22",
@@ -554,10 +554,10 @@
     "farm": "静内フジカワ牧場",
     "image": "images/ダイワプロパー22.jpg",
     "page": "horses/ダイワプロパー22.html",
-    "clubPage": "",
-    "netkeiba_horse_id": "",
-    "jra_id": "",
-    "jbis_id": ""
+    "clubPage": "22058",
+    "netkeiba_horse_id": "2022103928",
+    "jra_id": "pw01dud102022103928/FB",
+    "jbis_id": "0001356550"
   },
   {
     "slug": "リュズキナ22",
@@ -575,9 +575,9 @@
     "image": "images/リュズキナ22.jpg",
     "page": "horses/リュズキナ22.html",
     "clubPage": "",
-    "netkeiba_horse_id": "",
-    "jra_id": "",
-    "jbis_id": ""
+    "netkeiba_horse_id": "2022105136",
+    "jra_id": "pw01dud102022105136/7B",
+    "jbis_id": "0001360019"
   },
   {
     "slug": "メリート22",
@@ -594,9 +594,9 @@
     "farm": "ノーザンファーム",
     "image": "images/メリート22.jpg",
     "page": "horses/メリート22.html",
-    "clubPage": "",
-    "netkeiba_horse_id": "",
-    "jra_id": "",
+    "clubPage": "22012",
+    "netkeiba_horse_id": "2022105088",
+    "jra_id": "pw01dud102022105088/80",
     "jbis_id": "0001358811"
   },
   {

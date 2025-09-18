@@ -82,12 +82,12 @@ function getBbsUrl(id){
     : `https://db.netkeiba.com/?pid=horse_board&id=${id}`;
 }
 
-// クラブページのリンク
+// クラブページのリンク（東京はnext/**** や runners/**** をそのまま受け取る）
 function getClubUrl(club, id){
   if(!id) return "#";
   switch(club){
     case "silk": return `https://www.silkhorseclub.jp/horse_info/shozoku/detail/${id}/view`;
-    case "tokyo": return `https://www.tokyo-tc.com/runners/${id}/info`;
+    case "tokyo": return `https://www.tokyo-tc.com/${id}/info`;
     case "win": return `https://www.win-rc.co.jp/site/belonging/list/belong_list_detail.php?hcd=${id}`;
     case "carrot":
       const ua=navigator.userAgent;
@@ -133,7 +133,7 @@ function buildCard(row){
   iconA.href=row.clubPage ? getClubUrl(club, row.clubPage) : "#";
   const iconImg=document.createElement('img'); iconImg.src=clubIcon[club]||clubIcon['carrot']; iconImg.alt=club||'club';
   const b=document.createElement('b'); b.textContent=row.name||"";
-  iconA.appendChild(iconImg); header.appendChild(iconA); header.appendChild(b); top.appendChild(header);
+  iconA.appendChild(iconImg); header.appendChild(b); top.appendChild(header);
 
   function addP(t){if(!t)return; const p=document.createElement('p'); p.textContent=t; top.appendChild(p);}
   addP(row.sire?`父 ${row.sire}`:"");
