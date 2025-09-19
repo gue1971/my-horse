@@ -134,7 +134,7 @@ function buildCard(row){
   const iconImg=document.createElement('img'); iconImg.src=clubIcon[club]||clubIcon['carrot']; iconImg.alt=club||'club';
   const b=document.createElement('b'); b.textContent=row.name||"";
   iconA.appendChild(iconImg);
-  header.appendChild(iconA);   // ← 追加
+  header.appendChild(iconA);
   header.appendChild(b);
    top.appendChild(header);
 
@@ -171,14 +171,81 @@ async function loadHorses(){
   });
 }
 
-function showTab(tab){
-  document.querySelectorAll('.tab-content').forEach(el=>el.style.display='none');
-  document.getElementById(tab).style.display='grid';
-  document.querySelectorAll('.tab').forEach(b=>b.classList.remove('active'));
-  document.querySelector(`.tab[onclick="showTab('${tab}')"]`).classList.add('active');
+/* ===== スクロール保存/復元：main がスクロール対象 ===== */
+
+// スクロール対象の要素（ページ全体ではなく main）
+const SCROLLER = document.querySelector('main');
+
+function throttle(fn, wait=200){
+  let t=0, timer=null, last=null;
+  return (...args)=>{
+    const now=Date.now();
+    if(now - t >= wait){
+      t = now; fn(...args);
+    }else{
+      last = args;
+      clearTimeout(timer);
+      timer = setTimeout(()=>{ t = Date.now(); fn(...last); }, wait - (now - t));
+    }
+  };
 }
 
-loadHorses();
+function currentTab(){ return localStorage.getItem('lastTab') || 'active'; }
+
+function saveScroll(){
+  const tab = currentTab();
+  sessionStorage.setItem(`scroll:${tab}`, String(SCROLLER?.scrollTop ?? 0));
+}
+
+function restoreScrollFor(tab){
+  const y = Number(sessionStorage.getItem(`scroll:${tab}`) ?? 0);
+  // レイアウト確定後に復元（画像読み込み待ちも兼ねて2段階）
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{
+    if (SCROLLER) SCROLLER.scrollTo(0, y);
+  }));
+}
+// 画像ロード待ち（現在表示中タブの画像だけ待つ）
+function waitForVisibleImages() {
+  const visible = document.querySelector('.tab-content[style*="display: grid"], .tab-content:not([style])');
+  if (!visible) return Promise.resolve();
+  const imgs = Array.from(visible.querySelectorAll('img')).filter(img => !img.complete);
+  return new Promise(resolve => {
+    if (imgs.length === 0) return resolve();
+    let left = imgs.length;
+    const done = () => { if (--left === 0) resolve(); };
+    imgs.forEach(img => { img.addEventListener('load', done, {once:true}); img.addEventListener('error', done, {once:true}); });
+    // 念のためのタイムアウト（画像が来なくても復帰）
+    setTimeout(resolve, 800);
+  });
+}
+
+function showTab(tab, {skipSave = false} = {}) {
+  // 現タブの位置を保存（初回はスキップ）
+  if (!skipSave) saveScroll();
+
+  document.querySelectorAll('.tab-content').forEach(el => el.style.display = 'none');
+  document.getElementById(tab).style.display = 'grid';
+  document.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
+  document.querySelector(`.tab[onclick="showTab('${tab}')"]`).classList.add('active');
+
+  localStorage.setItem('lastTab', tab);
+
+  // 画像が出揃ってから復元
+  waitForVisibleImages().then(() => restoreScrollFor(tab));
+}
+
+/* イベントでこまめに保存（iOS/Safari対策含む） */
+if (SCROLLER) SCROLLER.addEventListener('scroll', throttle(saveScroll, 250), {passive:true});
+window.addEventListener('pagehide', saveScroll);
+document.addEventListener('visibilitychange', ()=>{ if(document.visibilityState==='hidden') saveScroll(); });
+
+/* 初期ロード：描画完了→タブ復元→スクロール復元 */
+(async ()=>{
+  try { await loadHorses?.(); } catch(e) {}
+  const savedTab = currentTab();          // 'active' | 'notable' | 'retired'
+  showTab(savedTab, { skipSave: true });  // ← 初回は保存しない（上書き防止）
+})();
+
 </script>
 </body>
 </html>

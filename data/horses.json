@@ -615,9 +615,9 @@
     "image": "images/ヴィヴェンシャル22.jpg",
     "page": "horses/ヴィヴェンシャル22.html",
     "clubPage": "",
-    "netkeiba_horse_id": "",
+    "netkeiba_horse_id": "2022105872",
     "jra_id": "",
-    "jbis_id": ""
+    "jbis_id": "0001359603"
   },
   {
     "slug": "エクセレントデザイン21",
@@ -635,9 +635,9 @@
     "image": "images/エクセレントデザイン21.jpg",
     "page": "horses/エクセレントデザイン21.html",
     "clubPage": "",
-    "netkeiba_horse_id": "",
-    "jra_id": "",
-    "jbis_id": ""
+    "netkeiba_horse_id": "2021105308",
+    "jra_id": "pw01dud102021105308/07",
+    "jbis_id": "0001340212"
   },
   {
     "slug": "フラニーフロイド21",
@@ -654,10 +654,10 @@
     "farm": "コスモヴューファーム",
     "image": "images/フラニーフロイド21.jpg",
     "page": "horses/フラニーフロイド21.html",
-    "clubPage": "",
-    "netkeiba_horse_id": "",
-    "jra_id": "",
-    "jbis_id": ""
+    "clubPage": "20210024",
+    "netkeiba_horse_id": "2021106221",
+    "jra_id": "pw01dud102021106221/C0",
+    "jbis_id": "0001336951"
   },
   {
     "slug": "フレジェール21",
@@ -674,10 +674,10 @@
     "farm": "社台ファーム",
     "image": "images/フレジェール21.jpg",
     "page": "horses/フレジェール21.html",
-    "clubPage": "",
-    "netkeiba_horse_id": "",
-    "jra_id": "",
-    "jbis_id": ""
+    "clubPage": "2225",
+    "netkeiba_horse_id": "2021105196",
+    "jra_id": "pw01dud102021105196/4F",
+    "jbis_id": "0001332392"
   },
   {
     "slug": "ディオジェーヌ20",
@@ -694,10 +694,10 @@
     "farm": "ノーザンファーム",
     "image": "images/ディオジェーヌ20.jpg",
     "page": "horses/ディオジェーヌ20.html",
-    "clubPage": "",
-    "netkeiba_horse_id": "",
-    "jra_id": "",
-    "jbis_id": ""
+    "clubPage": "2157",
+    "netkeiba_horse_id": "2020103491",
+    "jra_id": "pw01dud102020103491/39",
+    "jbis_id": "0001323010"
   },
   {
     "slug": "ビウイッチアス20",
@@ -714,10 +714,10 @@
     "farm": "いとう牧場",
     "image": "images/ビウイッチアス20.jpg",
     "page": "horses/ビウイッチアス20.html",
-    "clubPage": "",
-    "netkeiba_horse_id": "",
-    "jra_id": "",
-    "jbis_id": ""
+    "clubPage": "20200028",
+    "netkeiba_horse_id": "2020101289",
+    "jra_id": "pw01dud102020101289/81",
+    "jbis_id": "0001321649"
   },
   {
     "slug": "シスタリーラヴ19",
@@ -735,9 +735,9 @@
     "image": "images/シスタリーラヴ19.jpg",
     "page": "horses/シスタリーラヴ19.html",
     "clubPage": "",
-    "netkeiba_horse_id": "",
-    "jra_id": "",
-    "jbis_id": ""
+    "netkeiba_horse_id": "2019106737",
+    "jra_id": "pw01dud102019106737/6C",
+    "jbis_id": "0001312088"
   },
   {
     "slug": "シェイクラブハート19",
@@ -754,10 +754,10 @@
     "farm": "コスモヴューファーム",
     "image": "images/シェイクラブハート19.jpg",
     "page": "horses/シェイクラブハート19.html",
-    "clubPage": "",
-    "netkeiba_horse_id": "",
-    "jra_id": "",
-    "jbis_id": ""
+    "clubPage": "20190017",
+    "netkeiba_horse_id": "2019100216",
+    "jra_id": "pw01dud102019100216/4A",
+    "jbis_id": "0001307615"
   },
   {
     "slug": "スイープトウショウ19",
@@ -775,9 +775,9 @@
     "image": "images/スイープトウショウ19.jpg",
     "page": "horses/スイープトウショウ19.html",
     "clubPage": "2018067",
-    "netkeiba_horse_id": "",
-    "jra_id": "",
-    "jbis_id": ""
+    "netkeiba_horse_id": "2019105257",
+    "jra_id": "pw01dud102019105257/A8",
+    "jbis_id": "0001304139"
   },
   {
     "slug": "カラベルラティーナ19",
@@ -794,10 +794,10 @@
     "farm": "ノーザンファーム",
     "image": "images/カラベルラティーナ19.jpg",
     "page": "horses/カラベルラティーナ19.html",
-    "clubPage": "",
-    "netkeiba_horse_id": "",
+    "clubPage": "2030",
+    "netkeiba_horse_id": "2019105135",
     "jra_id": "",
-    "jbis_id": ""
+    "jbis_id": "0001305229"
   },
   {
     "slug": "デイトユアドリーム18",
@@ -815,9 +815,9 @@
     "image": "images/デイトユアドリーム18.jpg",
     "page": "horses/デイトユアドリーム18.html",
     "clubPage": "2018067",
-    "netkeiba_horse_id": "",
-    "jra_id": "",
-    "jbis_id": ""
+    "netkeiba_horse_id": "2018105151",
+    "jra_id": "pw01dud102018105151/39",
+    "jbis_id": "0001264919"
   },
   {
     "slug": "タニノジャドール18",
@@ -894,7 +894,7 @@
     "farm": "ノーザンファーム",
     "image": "images/フェルミオン18.jpg",
     "page": "horses/フェルミオン18.html",
-    "clubPage": "",
+    "clubPage": "1952",
     "netkeiba_horse_id": "",
     "jra_id": "",
     "jbis_id": ""
@@ -954,7 +954,7 @@
     "farm": "白老ファーム",
     "image": "images/カニョット16.jpg",
     "page": "horses/カニョット16.html",
-    "clubPage": "",
+    "clubPage": "1774",
     "netkeiba_horse_id": "",
     "jra_id": "",
     "jbis_id": ""
@@ -974,7 +974,7 @@
     "farm": "白老ファーム",
     "image": "images/バイラオーラ16.jpg",
     "page": "horses/バイラオーラ16.html",
-    "clubPage": "",
+    "clubPage": "1773",
     "netkeiba_horse_id": "",
     "jra_id": "",
     "jbis_id": ""
@@ -995,9 +995,9 @@
     "image": "images/ロフティーエイム15.jpg",
     "page": "horses/ロフティーエイム15.html",
     "clubPage": "1619",
-    "netkeiba_horse_id": "",
+    "netkeiba_horse_id": "2015104161",
     "jra_id": "pw01dud102015104161/B6",
-    "jbis_id": ""
+    "jbis_id": "0001202765"
   },
   {
     "slug": "カニョット15",
@@ -1014,7 +1014,7 @@
     "farm": "白老ファーム",
     "image": "images/カニョット15.jpg",
     "page": "horses/カニョット15.html",
-    "clubPage": "",
+    "clubPage": "1611",
     "netkeiba_horse_id": "",
     "jra_id": "",
     "jbis_id": ""
@@ -1034,7 +1034,7 @@
     "farm": "ノーザンファーム",
     "image": "images/ジューンアナガリス13.jpg",
     "page": "horses/ジューンアナガリス13.html",
-    "clubPage": "",
+    "clubPage": "1473",
     "netkeiba_horse_id": "",
     "jra_id": "",
     "jbis_id": ""
@@ -1054,7 +1054,7 @@
     "farm": "ノーザンファーム",
     "image": "images/イサドラ13.jpg",
     "page": "horses/イサドラ13.html",
-    "clubPage": "",
+    "clubPage": "1477",
     "netkeiba_horse_id": "",
     "jra_id": "",
     "jbis_id": ""
@@ -1094,10 +1094,10 @@
     "farm": "白老ファーム",
     "image": "images/ハナランマン10.jpg",
     "page": "horses/ハナランマン10.html",
-    "clubPage": "",
-    "netkeiba_horse_id": "",
-    "jra_id": "",
-    "jbis_id": ""
+    "clubPage": "1118",
+    "netkeiba_horse_id": "2010104455",
+    "jra_id": "pw01dud101990101898/A2",
+    "jbis_id": "0000230393"
   },
   {
     "slug": "プレラット10",
@@ -1114,7 +1114,7 @@
     "farm": "白老ファーム",
     "image": "images/プレラット10.jpg",
     "page": "horses/プレラット10.html",
-    "clubPage": "",
+    "clubPage": "1120",
     "netkeiba_horse_id": "",
     "jra_id": "",
     "jbis_id": ""
@@ -1134,7 +1134,7 @@
     "farm": "坂東牧場",
     "image": "images/シンプルザベスト10.jpg",
     "page": "horses/シンプルザベスト10.html",
-    "clubPage": "",
+    "clubPage": "1125",
     "netkeiba_horse_id": "",
     "jra_id": "",
     "jbis_id": ""
