@@ -133,7 +133,10 @@ function buildCard(row){
   iconA.href=row.clubPage ? getClubUrl(club, row.clubPage) : "#";
   const iconImg=document.createElement('img'); iconImg.src=clubIcon[club]||clubIcon['carrot']; iconImg.alt=club||'club';
   const b=document.createElement('b'); b.textContent=row.name||"";
-  iconA.appendChild(iconImg); header.appendChild(b); top.appendChild(header);
+  iconA.appendChild(iconImg);
+  header.appendChild(iconA);   // ← 追加
+  header.appendChild(b);
+   top.appendChild(header);
 
   function addP(t){if(!t)return; const p=document.createElement('p'); p.textContent=t; top.appendChild(p);}
   addP(row.sire?`父 ${row.sire}`:"");
