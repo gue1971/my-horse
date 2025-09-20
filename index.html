@@ -5,17 +5,12 @@
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>My Stable</title>
 
-<!-- Favicon -->
 <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
 
-<!-- iPhone / iPad 用 -->
+<link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
-
-<!-- Android / PWA 用 -->
 <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
 <link rel="icon" type="image/png" sizes="512x512" href="icons/icon-512.png">
-
-<!-- PWA としてアプリっぽくする設定 -->
 <meta name="theme-color" content="#000000">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -264,6 +259,11 @@ document.addEventListener('visibilitychange', ()=>{ if(document.visibilityState=
   showTab(savedTab, { skipSave: true });  // ← 初回は保存しない（上書き防止）
 })();
 
+</script>
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js');
+}
 </script>
 </body>
 </html>
