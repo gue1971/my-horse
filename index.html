@@ -291,6 +291,49 @@ function showTab(tab, {skipSave=false} = {}){
   waitForVisibleImages().then(()=>restoreScrollFor(tab));
 }
 
+/* ===== スワイプでタブ移動（ループ＋縦スクロール誤判定ガード） ===== */
+
+const TAB_IDS = ['tab1','tab2','tab3','tab4','tab5']; // ← IDと一致させる
+
+let startX = 0, startY = 0, dragging = false;
+
+SCROLLER.addEventListener('touchstart', e => {
+  const t = e.touches[0];
+  startX = t.clientX;
+  startY = t.clientY;
+  dragging = true;
+}, {passive:true});
+
+SCROLLER.addEventListener('touchmove', e => {
+  // ここでは何もしない（縦スクロールを阻害しないため）
+}, {passive:true});
+
+SCROLLER.addEventListener('touchend', e => {
+  if (!dragging) return;
+  dragging = false;
+
+  const t = e.changedTouches[0];
+  const dx = t.clientX - startX;
+  const dy = t.clientY - startY;
+
+  // スワイプ閾値：横に十分＆縦より横が優勢
+  if (Math.abs(dx) < 50 || Math.abs(dx) < Math.abs(dy) * 1.2) return;
+
+  const current = localStorage.getItem('lastTab') || 'tab1';
+  const i = TAB_IDS.indexOf(current);
+  if (i === -1) return;
+
+  if (dx < 0) {
+    // 左へスワイプ → 次のタブ（端なら先頭へ）
+    const next = TAB_IDS[(i + 1) % TAB_IDS.length];
+    showTab(next);
+  } else {
+    // 右へスワイプ → 前のタブ（端なら末尾へ）
+    const prev = TAB_IDS[(i - 1 + TAB_IDS.length) % TAB_IDS.length];
+    showTab(prev);
+  }
+}, {passive:true});
+
 if (SCROLLER) SCROLLER.addEventListener('scroll', throttle(saveScroll, 250), {passive:true});
 window.addEventListener('pagehide', saveScroll);
 document.addEventListener('visibilitychange', ()=>{ if(document.visibilityState==='hidden') saveScroll(); });
