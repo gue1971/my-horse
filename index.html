@@ -6,7 +6,6 @@
 <title>My Stable</title>
 
 <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
-
 <link rel="manifest" href="manifest.json">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
@@ -28,18 +27,29 @@
   body{margin:0; background:#000; color:#fff;
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
     font-size: var(--fs-body); display:flex; flex-direction:column;}
+
+    
+  /* ヘッダー/タブ */
   header, footer{background:#222; padding:10px; flex-shrink:0}
   header{display:flex; align-items:center; justify-content:space-between}
   header h1{margin:0; font-size:1.2em; color:#fff; letter-spacing:0.02em}
-  nav{display:flex; gap:10px}
-  nav button{background:#444; border:0; color:#fff; padding:6px 12px; cursor:pointer;
-    font-size: clamp(12px, 2.4vw, 14px);}
+  nav{
+      display:grid; grid-template-columns:repeat(5,1fr); gap:6px; /* 5タブ均等幅 */
+      width:100%;
+  }
+  nav button{
+    background:#444; border:0; color:#fff; padding:6px 0px; cursor:pointer;
+  font-size: clamp(12px, 2.4vw, 14px);}
   nav button.active{background:#666}
+
+  /* 本文 */
   main{flex:1; overflow-y:auto; padding:8px 1px}
   .grid{display:grid; gap:var(--gap);
     grid-template-columns: repeat(auto-fit, minmax(clamp(340px, 95vw, 560px), 1fr));}
   @media (min-width: 720px){.grid{grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));}}
   @media (min-width: 1080px){.grid{grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));}}
+
+  /* カード */
   .card{background:#333; display:flex; gap:10px; align-items:center;
     box-shadow:0 2px 6px rgba(0,0,0,.6);}
   .card .photo-link{display:flex; align-items:center; justify-content:center;
@@ -54,8 +64,13 @@
   .links{display:flex; gap:10px; margin-top:6px; flex-wrap:wrap}
   .links a{display:flex; align-items:center; gap:4px; color:#ccc; text-decoration:none; font-size:var(--fs-meta)}
   .links img{width:14px; height:14px}
+
+  /* フッター（幅そろえ、umaDB表記） */
   footer{display:flex; justify-content:center; gap:12px; color:#ccc; font-size:var(--fs-meta)}
-  footer a{display:flex; align-items:center; gap:4px; color:#ccc; text-decoration:none}
+  footer a.footer-link{
+    display:flex; align-items:center; gap:4px; color:#ccc; text-decoration:none;
+    min-width:80px; justify-content:center; /* netkeiba基準で均一見え */
+  }
   footer img{width:14px; height:14px}
   a, a:visited, a:hover, a:active{color:inherit; text-decoration:none}
 </style>
@@ -64,23 +79,27 @@
   <header>
     <h1>出資馬</h1>
     <nav>
-      <button class="tab active" onclick="showTab('active')">現役馬</button>
-      <button class="tab" onclick="showTab('notable')">活躍馬</button>
-      <button class="tab" onclick="showTab('retired')">引退馬</button>
+      <button class="tab active" onclick="showTab('tab1')">1</button>
+      <button class="tab" onclick="showTab('tab2')">2</button>
+      <button class="tab" onclick="showTab('tab3')">3</button>
+      <button class="tab" onclick="showTab('tab4')">引退馬</button>
+      <button class="tab" onclick="showTab('tab5')">活躍馬</button>
     </nav>
   </header>
 
   <main>
-    <div id="active" class="grid tab-content"></div>
-    <div id="notable" class="grid tab-content" style="display:none;"></div>
-    <div id="retired" class="grid tab-content" style="display:none;"></div>
+    <div id="tab1" class="grid tab-content"></div>
+    <div id="tab2" class="grid tab-content" style="display:none;"></div>
+    <div id="tab3" class="grid tab-content" style="display:none;"></div>
+    <div id="tab4" class="grid tab-content" style="display:none;"></div>
+    <div id="tab5" class="grid tab-content" style="display:none;"></div>
   </main>
 
   <footer>
     <a href="https://www.jra.go.jp/"><img src="icons/jra.png" alt="JRA">JRA</a>
     <a href="https://www.jbis.or.jp/"><img src="icons/jbis.png" alt="JBIS">JBIS</a>
     <a href="https://race.netkeiba.com/bookmark/bookmark.html?rf=navi"><img src="icons/netkeiba.png" alt="netkeiba">netkeiba</a>
-    <a href="https://www.umadb.com/member/"><img src="icons/db.png" alt="一口DB">一口馬主DB</a>
+    <a href="https://www.umadb.com/member/"><img src="icons/db.png" alt="umaDB">umaDB</a>
   </footer>
 
 <script>
@@ -94,7 +113,6 @@ function getBbsUrl(id){
     ? `https://db.sp.netkeiba.com/horse/horse_bbs.html?id=${id}`
     : `https://db.netkeiba.com/?pid=horse_board&id=${id}`;
 }
-
 // クラブページのリンク（東京はnext/**** や runners/**** をそのまま受け取る）
 function getClubUrl(club, id){
   if(!id) return "#";
@@ -102,24 +120,22 @@ function getClubUrl(club, id){
     case "silk": return `https://www.silkhorseclub.jp/horse_info/shozoku/detail/${id}/view`;
     case "tokyo": return `https://www.tokyo-tc.com/${id}/info`;
     case "win": return `https://www.win-rc.co.jp/site/belonging/list/belong_list_detail.php?hcd=${id}`;
-    case "carrot":
-      const ua=navigator.userAgent;
-      const isMobile=/iPhone|Android.+Mobile/.test(ua);
+    case "carrot":{
+      const isMobile=/iPhone|Android.+Mobile/.test(navigator.userAgent);
       return isMobile
         ? `https://carrotclub.net/sp/horse/lfx-horse-id-${id}.htm`
         : `https://carrotclub.net/horse/horse.asp?id=${id}`;
+    }
     default: return "#";
   }
 }
 
+/* ===== 共通小物 ===== */
 const PLACEHOLDER_IMG = 'images/placeholder.jpg';
 const clubIcon = {
   carrot:'icons/carrot.gif', silk:'icons/silk.gif', tokyo:'icons/tokyo.gif',
   win:'icons/win.gif', union:'icons/union.gif', normandy:'icons/normandy.gif',
 };
-
-function isRetired(row){return row.status==="retired";}
-function isNotable(row){return row.notable===true;}
 function photoSrc(row){return (row.image&&row.image.trim())||PLACEHOLDER_IMG;}
 function birthPriceLine(row){
   const b=(row.birth||"").trim(), p=(row.price||"").replace(/,/g,"").trim();
@@ -130,28 +146,31 @@ function birthPriceLine(row){
 }
 function safe(h){return(h&&h.trim())?h.trim():"#";}
 
+/* ===== カード生成 ===== */
 function buildCard(row){
   const club=(row.club||"").trim();
   const card=document.createElement('div'); card.className='card';
 
+  // 左：写真
   const aPhoto=document.createElement('a'); aPhoto.className='photo-link'; aPhoto.href=safe(row.page);
   const img=document.createElement('img'); img.src=photoSrc(row); img.alt=row.name||"";
   aPhoto.appendChild(img);
 
+  // 右：情報
   const info=document.createElement('div'); info.className='info';
   const top=document.createElement('div');
 
+  // 見出し（クラブアイコン＋馬名）
   const header=document.createElement('div'); header.className='info-header';
   const iconA=document.createElement('a'); iconA.className='icon';
   iconA.href=row.clubPage ? getClubUrl(club, row.clubPage) : "#";
   const iconImg=document.createElement('img'); iconImg.src=clubIcon[club]||clubIcon['carrot']; iconImg.alt=club||'club';
   const b=document.createElement('b'); b.textContent=row.name||"";
-  iconA.appendChild(iconImg);
-  header.appendChild(iconA);
-  header.appendChild(b);
-   top.appendChild(header);
+  iconA.appendChild(iconImg); header.appendChild(iconA); header.appendChild(b);
+  top.appendChild(header);
 
-  function addP(t){if(!t)return; const p=document.createElement('p'); p.textContent=t; top.appendChild(p);}
+  // 明細
+  const addP=t=>{ if(!t) return; const p=document.createElement('p'); p.textContent=t; top.appendChild(p); };
   addP(row.sire?`父 ${row.sire}`:"");
   addP(row.dam?`母 ${row.dam}`:"");
   addP(row.damsire?`母父 ${row.damsire}`:"");
@@ -159,65 +178,66 @@ function buildCard(row){
   addP(row.stable?`厩舎 ${row.stable}`:"");
   const bp=birthPriceLine(row); addP(bp);
 
+  // 下リンク
   const links=document.createElement('div'); links.className='links';
-  if(row.jra_id){const a1=document.createElement('a'); a1.href=getJraUrl(row.jra_id); a1.innerHTML='<img src="icons/jra.png">JRA'; links.appendChild(a1);}
-  if(row.jbis_id){const a2=document.createElement('a'); a2.href=getJbisUrl(row.jbis_id); a2.innerHTML='<img src="icons/jbis.png">JBIS'; links.appendChild(a2);}
-  if(row.netkeiba_horse_id){const a3=document.createElement('a'); a3.href=getBbsUrl(row.netkeiba_horse_id); a3.innerHTML='<img src="icons/netkeiba.png">BBS'; links.appendChild(a3);}
+  if(row.jra_id){
+    const a1=document.createElement('a'); a1.href=getJraUrl(row.jra_id); a1.innerHTML='<img src="icons/jra.png">JRA'; links.appendChild(a1);}
+  if(row.jbis_id){
+    const a2=document.createElement('a'); a2.href=getJbisUrl(row.jbis_id); a2.innerHTML='<img src="icons/jbis.png">JBIS'; links.appendChild(a2);}
+  if(row.netkeiba_horse_id){
+    const a3=document.createElement('a'); a3.href=getBbsUrl(row.netkeiba_horse_id); a3.innerHTML='<img src="icons/netkeiba.png">BBS'; links.appendChild(a3);}
 
   info.appendChild(top); info.appendChild(links);
   card.appendChild(aPhoto); card.appendChild(info);
   return card;
 }
 
+/* ===== 5タブ描画（tab: 1〜5 を読み分け）===== */
 async function loadHorses(){
-  const res=await fetch('data/horses.json');
+  const res=await fetch('data/horses.json', {cache:'no-store'});
   const horses=await res.json();
-  const active=document.getElementById('active');
-  const notable=document.getElementById('notable');
-  const retired=document.getElementById('retired');
-  active.innerHTML=''; notable.innerHTML=''; retired.innerHTML='';
+
+  const areas = {
+    tab1: document.getElementById('tab1'),
+    tab2: document.getElementById('tab2'),
+    tab3: document.getElementById('tab3'),
+    tab4: document.getElementById('tab4'),
+    tab5: document.getElementById('tab5'),
+  };
+  Object.values(areas).forEach(el=>el.innerHTML='');
+
   horses.forEach(h=>{
-    const card=buildCard(h);
-    if(isNotable(h)){notable.appendChild(card);}
-    else if(isRetired(h)){retired.appendChild(card);}
-    else{active.appendChild(card);}
+    const key = 'tab' + String(h.tab || '1');      // 未指定は1へ
+    const card = buildCard(h);
+    areas[key]?.appendChild(card);
   });
 }
 
 /* ===== スクロール保存/復元：main がスクロール対象 ===== */
-
-// スクロール対象の要素（ページ全体ではなく main）
 const SCROLLER = document.querySelector('main');
-
 function throttle(fn, wait=200){
   let t=0, timer=null, last=null;
   return (...args)=>{
     const now=Date.now();
-    if(now - t >= wait){
-      t = now; fn(...args);
-    }else{
-      last = args;
-      clearTimeout(timer);
+    if(now - t >= wait){ t = now; fn(...args); }
+    else{
+      last = args; clearTimeout(timer);
       timer = setTimeout(()=>{ t = Date.now(); fn(...last); }, wait - (now - t));
     }
   };
 }
-
-function currentTab(){ return localStorage.getItem('lastTab') || 'active'; }
-
+function currentTab(){ return localStorage.getItem('lastTab') || 'tab1'; }
 function saveScroll(){
   const tab = currentTab();
   sessionStorage.setItem(`scroll:${tab}`, String(SCROLLER?.scrollTop ?? 0));
 }
-
 function restoreScrollFor(tab){
   const y = Number(sessionStorage.getItem(`scroll:${tab}`) ?? 0);
-  // レイアウト確定後に復元（画像読み込み待ちも兼ねて2段階）
   requestAnimationFrame(()=>requestAnimationFrame(()=>{
     if (SCROLLER) SCROLLER.scrollTo(0, y);
   }));
 }
-// 画像ロード待ち（現在表示中タブの画像だけ待つ）
+// 今見えてるタブの画像ロード待ち
 function waitForVisibleImages() {
   const visible = document.querySelector('.tab-content[style*="display: grid"], .tab-content:not([style])');
   if (!visible) return Promise.resolve();
@@ -227,68 +247,54 @@ function waitForVisibleImages() {
     let left = imgs.length;
     const done = () => { if (--left === 0) resolve(); };
     imgs.forEach(img => { img.addEventListener('load', done, {once:true}); img.addEventListener('error', done, {once:true}); });
-    // 念のためのタイムアウト（画像が来なくても復帰）
     setTimeout(resolve, 800);
   });
 }
 
-function showTab(tab, {skipSave = false} = {}) {
-  // 現タブの位置を保存（初回はスキップ）
+function showTab(tab, {skipSave=false} = {}){
   if (!skipSave) saveScroll();
-
-  document.querySelectorAll('.tab-content').forEach(el => el.style.display = 'none');
-  document.getElementById(tab).style.display = 'grid';
-  document.querySelectorAll('.tab').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.tab-content').forEach(el=>el.style.display='none');
+  document.getElementById(tab).style.display='grid';
+  document.querySelectorAll('.tab').forEach(b=>b.classList.remove('active'));
   document.querySelector(`.tab[onclick="showTab('${tab}')"]`).classList.add('active');
-
   localStorage.setItem('lastTab', tab);
-
-  // 画像が出揃ってから復元
-  waitForVisibleImages().then(() => restoreScrollFor(tab));
+  waitForVisibleImages().then(()=>restoreScrollFor(tab));
 }
 
-/* イベントでこまめに保存（iOS/Safari対策含む） */
 if (SCROLLER) SCROLLER.addEventListener('scroll', throttle(saveScroll, 250), {passive:true});
 window.addEventListener('pagehide', saveScroll);
 document.addEventListener('visibilitychange', ()=>{ if(document.visibilityState==='hidden') saveScroll(); });
 
-/* 初期ロード：描画完了→タブ復元→スクロール復元 */
+/* 初期ロード */
 (async ()=>{
   try { await loadHorses?.(); } catch(e) {}
-  const savedTab = currentTab();          // 'active' | 'notable' | 'retired'
-  showTab(savedTab, { skipSave: true });  // ← 初回は保存しない（上書き防止）
+  const saved = currentTab();         // 'tab1'〜'tab5'
+  showTab(saved, {skipSave:true});
 })();
-
 </script>
+
+<!-- Service Worker 登録（現状踏襲） -->
 <script>
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', async () => {
-    const reg = await navigator.serviceWorker.register('./sw.js', { scope: './' });
-
-    // すでに待機中の新SWがいたら即適用
-    if (reg.waiting) reg.waiting.postMessage({ type: 'SKIP_WAITING' });
-
-    // 新しいSWが見つかったら、インストール完了後に即適用
-    reg.addEventListener('updatefound', () => {
-      const nw = reg.installing;
-      nw.addEventListener('statechange', () => {
-        if (nw.state === 'installed' && navigator.serviceWorker.controller) {
-          reg.waiting?.postMessage({ type: 'SKIP_WAITING' });
-        }
+    try{
+      const reg = await navigator.serviceWorker.register('./sw.js', { scope: './' });
+      if (reg.waiting) reg.waiting.postMessage({ type: 'SKIP_WAITING' });
+      reg.addEventListener('updatefound', () => {
+        const nw = reg.installing;
+        nw.addEventListener('statechange', () => {
+          if (nw.state === 'installed' && navigator.serviceWorker.controller) {
+            reg.waiting?.postMessage({ type: 'SKIP_WAITING' });
+          }
+        });
       });
-    });
-
-    // コントローラが切り替わったら自動でリロード（1回だけ）
-    let reloaded = false;
-    navigator.serviceWorker.addEventListener('controllerchange', () => {
-      if (!reloaded) { reloaded = true; location.reload(); }
-    });
+      let reloaded = false;
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        if (!reloaded) { reloaded = true; location.reload(); }
+      });
+    }catch(e){ console.warn(e); }
   });
 }
 </script>
-self.addEventListener('message', e => {
-  if (e.data && e.data.type === 'SKIP_WAITING') self.skipWaiting();
-});
-
 </body>
 </html>

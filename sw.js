@@ -47,6 +47,7 @@ self.addEventListener('fetch', e => {
   );
 });
 
+self.addEventListener('message', e => { if (e.data?.type === 'SKIP_WAITING') self.skipWaiting(); });
 
 // const CACHE = 'mystable-v1';
 // const ASSETS = [
