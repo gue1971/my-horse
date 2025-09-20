@@ -3,8 +3,6 @@
     "slug": "レシステンシア24",
     "name": "レシステンシア24",
     "club": "carrot",
-    "status": "active",
-    "notable": false,
     "sire": "モーリス",
     "dam": "レシステンシア",
     "damsire": "ダイワメジャー",
@@ -17,14 +15,13 @@
     "clubPage": "24062",
     "netkeiba_horse_id": "2024106723",
     "jra_id": "",
-    "jbis_id": "0001395766"
+    "jbis_id": "0001395766",
+    "tab": 1
   },
   {
     "slug": "プロミストリープ24",
     "name": "プロミストリープ24",
     "club": "silk",
-    "status": "active",
-    "notable": false,
     "sire": "クリソベリル",
     "dam": "プロミストリープ",
     "damsire": "ヘニーヒューズ",
@@ -37,14 +34,13 @@
     "clubPage": "2024058",
     "netkeiba_horse_id": "2024106579",
     "jra_id": "",
-    "jbis_id": "0001391917"
+    "jbis_id": "0001391917",
+    "tab": 1
   },
   {
     "slug": "レッドレグナント24",
     "name": "レッドレグナント24",
     "club": "tokyo",
-    "status": "active",
-    "notable": false,
     "sire": "オルフェーヴル",
     "dam": "レッドレグナント",
     "damsire": "ロードカナロア",
@@ -57,14 +53,13 @@
     "clubPage": "next/2919",
     "netkeiba_horse_id": "2024106734",
     "jra_id": "",
-    "jbis_id": "0001392131"
+    "jbis_id": "0001392131",
+    "tab": 1
   },
   {
     "slug": "ファシネートゼット24",
     "name": "ファシネートゼット24",
     "club": "carrot",
-    "status": "active",
-    "notable": false,
     "sire": "ニューイヤーズデイ",
     "dam": "ファシネートゼット",
     "damsire": "ヘニーヒューズ",
@@ -77,14 +72,13 @@
     "clubPage": "24040",
     "netkeiba_horse_id": "2024106532",
     "jra_id": "",
-    "jbis_id": "0001396200"
+    "jbis_id": "0001396200",
+    "tab": 1
   },
   {
     "slug": "デサフィアンテ24",
     "name": "デサフィアンテ24",
     "club": "tokyo",
-    "status": "active",
-    "notable": false,
     "sire": "アルアイン",
     "dam": "デサフィアンテ",
     "damsire": "キングカメハメハ",
@@ -97,14 +91,13 @@
     "clubPage": "next/2947",
     "netkeiba_horse_id": "2024106473",
     "jra_id": "",
-    "jbis_id": "0001392433"
+    "jbis_id": "0001392433",
+    "tab": 1
   },
   {
     "slug": "ウインアルカンナ24",
     "name": "ウインアルカンナ24",
     "club": "win",
-    "status": "active",
-    "notable": false,
     "sire": "フィエールマン",
     "dam": "ウインアルカンナ",
     "damsire": "アイルハヴアナザー",
@@ -117,14 +110,13 @@
     "clubPage": "20240002",
     "netkeiba_horse_id": "2024103053",
     "jra_id": "",
-    "jbis_id": "0001396509"
+    "jbis_id": "0001396509",
+    "tab": 1
   },
   {
     "slug": "コンパルティシオン24",
     "name": "コンパルティシオン24",
     "club": "tokyo",
-    "status": "active",
-    "notable": false,
     "sire": "ミッキーアイル",
     "dam": "コンパルティシオン",
     "damsire": "マスタリー",
@@ -137,14 +129,13 @@
     "clubPage": "next/2946",
     "netkeiba_horse_id": "2024106892",
     "jra_id": "",
-    "jbis_id": "0001395807"
+    "jbis_id": "0001395807",
+    "tab": 1
   },
   {
     "slug": "クラシックリディア24",
     "name": "クラシックリディア24",
     "club": "carrot",
-    "status": "active",
-    "notable": false,
     "sire": "アドマイヤマーズ",
     "dam": "クラシックリディア",
     "damsire": "ハービンジャー",
@@ -157,14 +148,13 @@
     "clubPage": "24072",
     "netkeiba_horse_id": "2024106283",
     "jra_id": "",
-    "jbis_id": "0001390467"
+    "jbis_id": "0001390467",
+    "tab": 1
   },
   {
     "slug": "ジルファ24",
     "name": "ジルファ24",
     "club": "silk",
-    "status": "active",
-    "notable": false,
     "sire": "Pinatubo",
     "dam": "ジルファ",
     "damsire": "Elusive City",
@@ -177,14 +167,13 @@
     "clubPage": "2024043",
     "netkeiba_horse_id": "2024110014",
     "jra_id": "",
-    "jbis_id": "0001419621"
+    "jbis_id": "0001419621",
+    "tab": 1
   },
   {
     "slug": "グラットラッシー24",
     "name": "グラットラッシー24",
     "club": "tokyo",
-    "status": "active",
-    "notable": false,
     "sire": "スワーヴリチャード",
     "dam": "グラットラッシー",
     "damsire": "American Pharoah",
@@ -197,14 +186,13 @@
     "clubPage": "next/2936",
     "netkeiba_horse_id": "2024106891",
     "jra_id": "",
-    "jbis_id": "0001396423"
+    "jbis_id": "0001396423",
+    "tab": 1
   },
   {
     "slug": "エリティエール23",
     "name": "ガルディエンヌ",
     "club": "carrot",
-    "status": "active",
-    "notable": false,
     "sire": "ドレフォン",
     "dam": "エリティエール",
     "damsire": "ディープインパクト",
@@ -217,14 +205,13 @@
     "clubPage": "23065",
     "netkeiba_horse_id": "2023106926",
     "jra_id": "pw01dud002023106926/87",
-    "jbis_id": "0001372811"
+    "jbis_id": "0001372811",
+    "tab": 2
   },
   {
     "slug": "シャーラレイ23",
     "name": "ルージュアリスタ",
     "club": "tokyo",
-    "status": "active",
-    "notable": false,
     "sire": "コントレイル",
     "dam": "シャーラレイ",
     "damsire": "Afleet Alex",
@@ -237,14 +224,13 @@
     "clubPage": "runners/2803",
     "netkeiba_horse_id": "2023103427",
     "jra_id": "pw01dud102023103427/1F",
-    "jbis_id": "0001375140"
+    "jbis_id": "0001375140",
+    "tab": 2
   },
   {
     "slug": "メリート23",
     "name": "パッセージピーク",
     "club": "carrot",
-    "status": "active",
-    "notable": false,
     "sire": "アドマイヤマーズ",
     "dam": "メリート",
     "damsire": "Redoute's Choice",
@@ -257,14 +243,13 @@
     "clubPage": "23039",
     "netkeiba_horse_id": "2023107275",
     "jra_id": "pw01dud102023107275/E3",
-    "jbis_id": "0001373109"
+    "jbis_id": "0001373109",
+    "tab": 2
   },
   {
     "slug": "レッドリヴェール23",
     "name": "ルージュソムニウム",
     "club": "tokyo",
-    "status": "active",
-    "notable": false,
     "sire": "ロードカナロア",
     "dam": "レッドリヴェール",
     "damsire": "ステイゴールド",
@@ -277,14 +262,13 @@
     "clubPage": "runners/2835",
     "netkeiba_horse_id": "2023103605",
     "jra_id": "",
-    "jbis_id": "0001370107"
+    "jbis_id": "0001370107",
+    "tab": 2
   },
   {
     "slug": "レッドクラウディア23",
     "name": "ルージュビバーチェ",
     "club": "tokyo",
-    "status": "active",
-    "notable": false,
     "sire": "ミスターメロディ",
     "dam": "レッドクラウディア",
     "damsire": "アグネスタキオン",
@@ -297,14 +281,13 @@
     "clubPage": "runners/2852",
     "netkeiba_horse_id": "2023107337",
     "jra_id": "",
-    "jbis_id": "0001369150"
+    "jbis_id": "0001369150",
+    "tab": 2
   },
   {
     "slug": "レッドシェリール23",
     "name": "レッドレグルス",
     "club": "tokyo",
-    "status": "active",
-    "notable": false,
     "sire": "コントレイル",
     "dam": "レッドシェリール",
     "damsire": "ゼンノロブロイ",
@@ -317,14 +300,13 @@
     "clubPage": "runners/2828",
     "netkeiba_horse_id": "2023106617",
     "jra_id": "",
-    "jbis_id": "0001370550"
+    "jbis_id": "0001370550",
+    "tab": 2
   },
   {
     "slug": "ヴェニュセマース23",
     "name": "ルージュウラヌス",
     "club": "tokyo",
-    "status": "active",
-    "notable": false,
     "sire": "サートゥルナーリア",
     "dam": "ヴェニュセマース",
     "damsire": "Siyouni",
@@ -337,14 +319,13 @@
     "clubPage": "runners/2837",
     "netkeiba_horse_id": "2023106622",
     "jra_id": "",
-    "jbis_id": "0001375182"
+    "jbis_id": "0001375182",
+    "tab": 2
   },
   {
     "slug": "ダイワデッセー23",
     "name": "ウイングリフィス",
     "club": "win",
-    "status": "active",
-    "notable": false,
     "sire": "カリフォルニアクローム",
     "dam": "ダイワデッセー",
     "damsire": "スペシャルウィーク",
@@ -357,14 +338,13 @@
     "clubPage": "20230033",
     "netkeiba_horse_id": "2023103164",
     "jra_id": "",
-    "jbis_id": "0001369045"
+    "jbis_id": "0001369045",
+    "tab": 2
   },
   {
     "slug": "ルヴェソンヴェール23",
     "name": "ウインサルーテ",
     "club": "win",
-    "status": "active",
-    "notable": false,
     "sire": "ウインブライト",
     "dam": "ルヴェソンヴェール",
     "damsire": "クロフネ",
@@ -377,14 +357,13 @@
     "clubPage": "20230037",
     "netkeiba_horse_id": "2023104451",
     "jra_id": "",
-    "jbis_id": "0001370177"
+    "jbis_id": "0001370177",
+    "tab": 2
   },
   {
     "slug": "ダンシングラグズ22",
     "name": "レッドベルダンス",
     "club": "tokyo",
-    "status": "active",
-    "notable": false,
     "sire": "レイデオロ",
     "dam": "ダンシングラグズ",
     "damsire": "Union Rags",
@@ -397,14 +376,13 @@
     "clubPage": "runners/2710",
     "netkeiba_horse_id": "2022104897",
     "jra_id": "pw01dud102022104897/B6",
-    "jbis_id": "0001360268"
+    "jbis_id": "0001360268",
+    "tab": 3
   },
   {
     "slug": "ユキチャン22",
     "name": "フォンデネージュ",
     "club": "silk",
-    "status": "active",
-    "notable": false,
     "sire": "ドレフォン",
     "dam": "ユキチャン",
     "damsire": "クロフネ",
@@ -417,14 +395,13 @@
     "clubPage": "2022016",
     "netkeiba_horse_id": "2022105100",
     "jra_id": "pw01dud102022105100/99",
-    "jbis_id": "0001352577"
+    "jbis_id": "0001352577",
+    "tab": 3
   },
   {
     "slug": "カーサデルシエロ22",
     "name": "ルージュミステリオ",
     "club": "tokyo",
-    "status": "active",
-    "notable": false,
     "sire": "ナダル",
     "dam": "カーサデルシエロ",
     "damsire": "ロードカナロア",
@@ -437,14 +414,13 @@
     "clubPage": "runners/2740",
     "netkeiba_horse_id": "2022101399",
     "jra_id": "pw01dud102022101399/DA",
-    "jbis_id": "0001361920"
+    "jbis_id": "0001361920",
+    "tab": 3
   },
   {
     "slug": "レゼトワール21",
     "name": "エストレヤデベレン",
     "club": "silk",
-    "status": "active",
-    "notable": false,
     "sire": "エピファネイア",
     "dam": "レゼトワール",
     "damsire": "ファスリエフ",
@@ -457,14 +433,13 @@
     "clubPage": "2021086",
     "netkeiba_horse_id": "2021106587",
     "jra_id": "pw01dud102021106587/65",
-    "jbis_id": "0001335433"
+    "jbis_id": "0001335433",
+    "tab": 3
   },
   {
     "slug": "チアズメッセージ21",
     "name": "ブレスワード",
     "club": "carrot",
-    "status": "active",
-    "notable": false,
     "sire": "ニューイヤーズデイ",
     "dam": "チアズメッセージ",
     "damsire": "サンデーサイレンス",
@@ -477,14 +452,13 @@
     "clubPage": "2220",
     "netkeiba_horse_id": "2021105642",
     "jra_id": "pw01dud102021105642/28",
-    "jbis_id": "0001331771"
+    "jbis_id": "0001331771",
+    "tab": 3
   },
   {
     "slug": "プチノワール21",
     "name": "プリュノワール",
     "club": "silk",
-    "status": "active",
-    "notable": false,
     "sire": "ロードカナロア",
     "dam": "プチノワール",
     "damsire": "Singspiel",
@@ -497,14 +471,13 @@
     "clubPage": "2021003",
     "netkeiba_horse_id": "2021105747",
     "jra_id": "pw01dud102021105747/98",
-    "jbis_id": "0001332993"
+    "jbis_id": "0001332993",
+    "tab": 3
   },
   {
     "slug": "コスモプラチナ20",
     "name": "ウインエーデル",
     "club": "win",
-    "status": "active",
-    "notable": false,
     "sire": "リオンディーズ",
     "dam": "コスモプラチナ",
     "damsire": "ステイゴールド",
@@ -517,14 +490,13 @@
     "clubPage": "20200020",
     "netkeiba_horse_id": "2020107030",
     "jra_id": "pw01dud102020107030/5E",
-    "jbis_id": "0001318737"
+    "jbis_id": "0001318737",
+    "tab": 3
   },
   {
     "slug": "ライラヌール22",
     "name": "ルージュメアート",
     "club": "tokyo",
-    "status": "retired",
-    "notable": false,
     "sire": "American Pharoah",
     "dam": "ライラヌール",
     "damsire": "Midnight Lute",
@@ -537,14 +509,13 @@
     "clubPage": "runners/2725",
     "netkeiba_horse_id": "2022105541",
     "jra_id": "pw01dud102022105541/10",
-    "jbis_id": "0001365962"
+    "jbis_id": "0001365962",
+    "tab": 4
   },
   {
     "slug": "ダイワプロパー22",
     "name": "ストラーダレアーレ",
     "club": "carrot",
-    "status": "retired",
-    "notable": false,
     "sire": "サートゥルナーリア",
     "dam": "ダイワプロパー",
     "damsire": "ダイワメジャー",
@@ -557,14 +528,13 @@
     "clubPage": "22058",
     "netkeiba_horse_id": "2022103928",
     "jra_id": "pw01dud102022103928/FB",
-    "jbis_id": "0001356550"
+    "jbis_id": "0001356550",
+    "tab": 4
   },
   {
     "slug": "リュズキナ22",
     "name": "レッドギフテッド",
     "club": "tokyo",
-    "status": "retired",
-    "notable": false,
     "sire": "エピファネイア",
     "dam": "リュズキナ",
     "damsire": "Storm Cat",
@@ -577,14 +547,13 @@
     "clubPage": "",
     "netkeiba_horse_id": "2022105136",
     "jra_id": "pw01dud102022105136/7B",
-    "jbis_id": "0001360019"
+    "jbis_id": "0001360019",
+    "tab": 4
   },
   {
     "slug": "メリート22",
     "name": "サザリーバスター",
     "club": "carrot",
-    "status": "retired",
-    "notable": false,
     "sire": "ドゥラメンテ",
     "dam": "メリート",
     "damsire": "Redoute's Choice",
@@ -597,14 +566,13 @@
     "clubPage": "22012",
     "netkeiba_horse_id": "2022105088",
     "jra_id": "pw01dud102022105088/80",
-    "jbis_id": "0001358811"
+    "jbis_id": "0001358811",
+    "tab": 4
   },
   {
     "slug": "ヴィヴェンシャル22",
     "name": "レッドヴィヴァン",
     "club": "tokyo",
-    "status": "retired",
-    "notable": false,
     "sire": "ドゥラメンテ",
     "dam": "ヴィヴェンシャル",
     "damsire": "Mutakddim",
@@ -617,14 +585,13 @@
     "clubPage": "",
     "netkeiba_horse_id": "2022105872",
     "jra_id": "",
-    "jbis_id": "0001359603"
+    "jbis_id": "0001359603",
+    "tab": 4
   },
   {
     "slug": "エクセレントデザイン21",
     "name": "レッドスフェーン",
     "club": "tokyo",
-    "status": "retired",
-    "notable": false,
     "sire": "リアルスティール",
     "dam": "エクセレントデザイン",
     "damsire": "Exceed And Excel",
@@ -637,14 +604,13 @@
     "clubPage": "",
     "netkeiba_horse_id": "2021105308",
     "jra_id": "pw01dud102021105308/07",
-    "jbis_id": "0001340212"
+    "jbis_id": "0001340212",
+    "tab": 4
   },
   {
     "slug": "フラニーフロイド21",
     "name": "ウインブリエ",
     "club": "win",
-    "status": "retired",
-    "notable": false,
     "sire": "マインドユアビスケッツ",
     "dam": "フラニーフロイド",
     "damsire": "Freud",
@@ -657,14 +623,13 @@
     "clubPage": "20210024",
     "netkeiba_horse_id": "2021106221",
     "jra_id": "pw01dud102021106221/C0",
-    "jbis_id": "0001336951"
+    "jbis_id": "0001336951",
+    "tab": 4
   },
   {
     "slug": "フレジェール21",
     "name": "モンタンヴェール",
     "club": "carrot",
-    "status": "retired",
-    "notable": false,
     "sire": "ブリックスアンドモルタル",
     "dam": "フレジェール",
     "damsire": "アグネスタキオン",
@@ -677,14 +642,13 @@
     "clubPage": "2225",
     "netkeiba_horse_id": "2021105196",
     "jra_id": "pw01dud102021105196/4F",
-    "jbis_id": "0001332392"
+    "jbis_id": "0001332392",
+    "tab": 4
   },
   {
     "slug": "ディオジェーヌ20",
     "name": "ディオファントス",
     "club": "carrot",
-    "status": "retired",
-    "notable": false,
     "sire": "モーリス",
     "dam": "ディオジェーヌ",
     "damsire": "ディープインパクト",
@@ -697,14 +661,13 @@
     "clubPage": "2157",
     "netkeiba_horse_id": "2020103491",
     "jra_id": "pw01dud102020103491/39",
-    "jbis_id": "0001323010"
+    "jbis_id": "0001323010",
+    "tab": 4
   },
   {
     "slug": "ビウイッチアス20",
     "name": "ウインシャルマン",
     "club": "win",
-    "status": "retired",
-    "notable": false,
     "sire": "モーリス",
     "dam": "ビウイッチアス",
     "damsire": "ダイワメジャー",
@@ -717,14 +680,13 @@
     "clubPage": "20200028",
     "netkeiba_horse_id": "2020101289",
     "jra_id": "pw01dud102020101289/81",
-    "jbis_id": "0001321649"
+    "jbis_id": "0001321649",
+    "tab": 4
   },
   {
     "slug": "シスタリーラヴ19",
     "name": "カンパニュール",
     "club": "union",
-    "status": "retired",
-    "notable": false,
     "sire": "ハーツクライ",
     "dam": "シスタリーラヴ",
     "damsire": "Bellamy Road",
@@ -737,14 +699,13 @@
     "clubPage": "",
     "netkeiba_horse_id": "2019106737",
     "jra_id": "pw01dud102019106737/6C",
-    "jbis_id": "0001312088"
+    "jbis_id": "0001312088",
+    "tab": 4
   },
   {
     "slug": "シェイクラブハート19",
     "name": "ウインリナリア",
     "club": "win",
-    "status": "retired",
-    "notable": false,
     "sire": "スクリーンヒーロー",
     "dam": "シェイクラブハート",
     "damsire": "アグネスデジタル",
@@ -757,14 +718,13 @@
     "clubPage": "20190017",
     "netkeiba_horse_id": "2019100216",
     "jra_id": "pw01dud102019100216/4A",
-    "jbis_id": "0001307615"
+    "jbis_id": "0001307615",
+    "tab": 4
   },
   {
     "slug": "スイープトウショウ19",
     "name": "ピエドラデルーナ",
     "club": "silk",
-    "status": "retired",
-    "notable": false,
     "sire": "キタサンブラック",
     "dam": "スイープトウショウ",
     "damsire": "エンドスウィープ",
@@ -777,14 +737,13 @@
     "clubPage": "2018067",
     "netkeiba_horse_id": "2019105257",
     "jra_id": "pw01dud102019105257/A8",
-    "jbis_id": "0001304139"
+    "jbis_id": "0001304139",
+    "tab": 4
   },
   {
     "slug": "カラベルラティーナ19",
     "name": "トライセイル",
     "club": "carrot",
-    "status": "retired",
-    "notable": false,
     "sire": "ディープブリランテ",
     "dam": "カラベルラティーナ",
     "damsire": "クロフネ",
@@ -797,14 +756,13 @@
     "clubPage": "2030",
     "netkeiba_horse_id": "2019105135",
     "jra_id": "",
-    "jbis_id": "0001305229"
+    "jbis_id": "0001305229",
+    "tab": 4
   },
   {
     "slug": "デイトユアドリーム18",
     "name": "イルデレーヴ",
     "club": "silk",
-    "status": "retired",
-    "notable": false,
     "sire": "ミッキーアイル",
     "dam": "デイトユアドリーム",
     "damsire": "トワイニング",
@@ -817,14 +775,13 @@
     "clubPage": "2018067",
     "netkeiba_horse_id": "2018105151",
     "jra_id": "pw01dud102018105151/39",
-    "jbis_id": "0001264919"
+    "jbis_id": "0001264919",
+    "tab": 4
   },
   {
     "slug": "タニノジャドール18",
     "name": "フェイダウェイ",
     "club": "normandy",
-    "status": "retired",
-    "notable": false,
     "sire": "トーセンジョーダン",
     "dam": "タニノジャドール",
     "damsire": "サンデーサイレンス",
@@ -837,14 +794,13 @@
     "clubPage": "",
     "netkeiba_horse_id": "",
     "jra_id": "",
-    "jbis_id": ""
+    "jbis_id": "",
+    "tab": 4
   },
   {
     "slug": "ユメザンマイ18",
     "name": "エストラテーガ",
     "club": "normandy",
-    "status": "retired",
-    "notable": false,
     "sire": "バトルプラン",
     "dam": "ユメザンマイ",
     "damsire": "フジキセキ",
@@ -857,14 +813,13 @@
     "clubPage": "",
     "netkeiba_horse_id": "",
     "jra_id": "",
-    "jbis_id": ""
+    "jbis_id": "",
+    "tab": 4
   },
   {
     "slug": "マスターエクレール18",
     "name": "カドル",
     "club": "union",
-    "status": "retired",
-    "notable": false,
     "sire": "モーリス",
     "dam": "マスターエクレール",
     "damsire": "Elusive Quality",
@@ -877,14 +832,13 @@
     "clubPage": "",
     "netkeiba_horse_id": "",
     "jra_id": "",
-    "jbis_id": ""
+    "jbis_id": "",
+    "tab": 4
   },
   {
     "slug": "フェルミオン18",
     "name": "アイソスピン",
     "club": "carrot",
-    "status": "retired",
-    "notable": false,
     "sire": "ロードカナロア",
     "dam": "フェルミオン",
     "damsire": "アグネスタキオン",
@@ -897,14 +851,13 @@
     "clubPage": "1952",
     "netkeiba_horse_id": "",
     "jra_id": "",
-    "jbis_id": ""
+    "jbis_id": "",
+    "tab": 4
   },
   {
     "slug": "マラコスタムブラダ17",
     "name": "レシステンシア",
     "club": "carrot",
-    "status": "retired",
-    "notable": true,
     "sire": "ダイワメジャー",
     "dam": "マラコスタムブラダ",
     "damsire": "Lizard Island",
@@ -917,14 +870,13 @@
     "clubPage": "1867",
     "netkeiba_horse_id": "2017105563",
     "jra_id": "pw01dud002017105563/80",
-    "jbis_id": "0001237289"
+    "jbis_id": "0001237289",
+    "tab": 5
   },
   {
     "slug": "アンティフォナ17",
     "name": "ラウダシオン",
     "club": "silk",
-    "status": "retired",
-    "notable": true,
     "sire": "リアルインパクト",
     "dam": "アンティフォナ",
     "damsire": "Songandaprayer",
@@ -937,14 +889,13 @@
     "clubPage": "2017062",
     "netkeiba_horse_id": "2017105072",
     "jra_id": "pw01dud102017105072/0F",
-    "jbis_id": "0001235600"
+    "jbis_id": "0001235600",
+    "tab": 5
   },
   {
     "slug": "カニョット16",
     "name": "ファクトゥーラ",
     "club": "carrot",
-    "status": "retired",
-    "notable": false,
     "sire": "マンハッタンカフェ",
     "dam": "カニョット",
     "damsire": "Sunray Spirit",
@@ -957,14 +908,13 @@
     "clubPage": "1774",
     "netkeiba_horse_id": "2016104448",
     "jra_id": "pw01dud102016104448/DA",
-    "jbis_id": "0001221432"
+    "jbis_id": "0001221432",
+    "tab": 4
   },
   {
     "slug": "バイラオーラ16",
     "name": "エスコビージャ",
     "club": "carrot",
-    "status": "retired",
-    "notable": false,
     "sire": "シンボリクリスエス",
     "dam": "バイラオーラ",
     "damsire": "トワイニング",
@@ -977,14 +927,13 @@
     "clubPage": "1773",
     "netkeiba_horse_id": "",
     "jra_id": "",
-    "jbis_id": ""
+    "jbis_id": "",
+    "tab": 4
   },
   {
     "slug": "ロフティーエイム15",
     "name": "エイムアンドエンド",
     "club": "carrot",
-    "status": "retired",
-    "notable": true,
     "sire": "エイシンフラッシュ",
     "dam": "ロフティーエイム",
     "damsire": "サンデーサイレンス",
@@ -997,14 +946,13 @@
     "clubPage": "1619",
     "netkeiba_horse_id": "2015104161",
     "jra_id": "pw01dud102015104161/B6",
-    "jbis_id": "0001202765"
+    "jbis_id": "0001202765",
+    "tab": 5
   },
   {
     "slug": "カニョット15",
     "name": "カラドゥラ",
     "club": "carrot",
-    "status": "retired",
-    "notable": false,
     "sire": "ハーツクライ",
     "dam": "カニョット",
     "damsire": "Sunray Spirit",
@@ -1017,14 +965,13 @@
     "clubPage": "1611",
     "netkeiba_horse_id": "",
     "jra_id": "",
-    "jbis_id": ""
+    "jbis_id": "",
+    "tab": 4
   },
   {
     "slug": "ジューンアナガリス13",
     "name": "デューズワイルズ",
     "club": "carrot",
-    "status": "retired",
-    "notable": false,
     "sire": "カジノドライヴ",
     "dam": "ジューンアナガリス",
     "damsire": "サンデーサイレンス",
@@ -1037,14 +984,13 @@
     "clubPage": "1473",
     "netkeiba_horse_id": "2013105931",
     "jra_id": "pw01dud102013105931/E5",
-    "jbis_id": "0001166999"
+    "jbis_id": "0001166999",
+    "tab": 4
   },
   {
     "slug": "イサドラ13",
     "name": "ジーニアスダンサー",
     "club": "carrot",
-    "status": "retired",
-    "notable": false,
     "sire": "カンパニー",
     "dam": "イサドラ",
     "damsire": "ダンスインザダーク",
@@ -1057,14 +1003,13 @@
     "clubPage": "1477",
     "netkeiba_horse_id": "",
     "jra_id": "",
-    "jbis_id": ""
+    "jbis_id": "",
+    "tab": 4
   },
   {
     "slug": "フェルミオン12",
     "name": "ストレンジクォーク",
     "club": "carrot",
-    "status": "retired",
-    "notable": true,
     "sire": "メイショウサムソン",
     "dam": "フェルミオン",
     "damsire": "アグネスタキオン",
@@ -1077,14 +1022,13 @@
     "clubPage": "1334",
     "netkeiba_horse_id": "",
     "jra_id": "",
-    "jbis_id": ""
+    "jbis_id": "",
+    "tab": 5
   },
   {
     "slug": "ハナランマン10",
     "name": "テンシンランマン",
     "club": "carrot",
-    "status": "retired",
-    "notable": false,
     "sire": "ハーツクライ",
     "dam": "ハナランマン",
     "damsire": "サクラユタカオー",
@@ -1097,14 +1041,13 @@
     "clubPage": "1118",
     "netkeiba_horse_id": "2010104455",
     "jra_id": "pw01dud101990101898/A2",
-    "jbis_id": "0000230393"
+    "jbis_id": "0000230393",
+    "tab": 4
   },
   {
     "slug": "プレラット10",
     "name": "バプテスマ",
     "club": "carrot",
-    "status": "retired",
-    "notable": false,
     "sire": "シンボリクリスエス",
     "dam": "プレラット",
     "damsire": "サンデーサイレンス",
@@ -1117,14 +1060,13 @@
     "clubPage": "1120",
     "netkeiba_horse_id": "",
     "jra_id": "",
-    "jbis_id": ""
+    "jbis_id": "",
+    "tab": 4
   },
   {
     "slug": "シンプルザベスト10",
     "name": "ベストリッジライン",
     "club": "carrot",
-    "status": "retired",
-    "notable": false,
     "sire": "フジキセキ",
     "dam": "シンプルザベスト",
     "damsire": "Thunder Gulch",
@@ -1137,6 +1079,7 @@
     "clubPage": "1125",
     "netkeiba_horse_id": "",
     "jra_id": "",
-    "jbis_id": ""
+    "jbis_id": "",
+    "tab": 4
   }
 ]
