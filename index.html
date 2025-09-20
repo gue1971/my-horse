@@ -291,44 +291,6 @@ function showTab(tab, {skipSave=false} = {}){
   waitForVisibleImages().then(()=>restoreScrollFor(tab));
 }
 
-/* ===== スワイプでタブ移動（ループあり） ===== */
-
-// タブの一覧（順番通り）
-const tabs = ['1','2','3','4','5'];  
-
-// タッチ開始位置
-let startX = 0;
-
-// スクロール対象（main内でスワイプを検知する）
-const SCROLLER = document.querySelector('main');
-
-// 指を置いた位置を記録
-SCROLLER.addEventListener('touchstart', e => {
-  startX = e.touches[0].clientX;
-});
-
-// 指を離したときに移動量を判定
-SCROLLER.addEventListener('touchend', e => {
-  let endX = e.changedTouches[0].clientX;
-  let diff = endX - startX;
-
-  // 50px以上動いたらスワイプとみなす
-  if (Math.abs(diff) > 50) {
-    let current = localStorage.getItem('lastTab') || '1';
-    let index = tabs.indexOf(current);
-
-    if (diff < 0) {
-      // 左スワイプ（次のタブへ）
-      let nextIndex = (index + 1) % tabs.length;  // 端なら最初に戻る
-      showTab(tabs[nextIndex]);
-    } else if (diff > 0) {
-      // 右スワイプ（前のタブへ）
-      let prevIndex = (index - 1 + tabs.length) % tabs.length; // 端なら最後に戻る
-      showTab(tabs[prevIndex]);
-    }
-  }
-});
-
 if (SCROLLER) SCROLLER.addEventListener('scroll', throttle(saveScroll, 250), {passive:true});
 window.addEventListener('pagehide', saveScroll);
 document.addEventListener('visibilitychange', ()=>{ if(document.visibilityState==='hidden') saveScroll(); });
