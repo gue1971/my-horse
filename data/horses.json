@@ -1,6 +1,6 @@
 [
   {
-    "slug": "レシステンシア24",
+    "slug": "reshisutenshia24",
     "name": "レシステンシア24",
     "club": "carrot",
     "sire": "モーリス",
@@ -10,8 +10,7 @@
     "price": "8000万",
     "stable": "栗東 松下武士",
     "farm": "ノーザンファーム",
-    "image": "images/レシステンシア24.jpg",
-    "page": "horses/レシステンシア24.html",
+    "image": "images/reshisutenshia24/###",
     "clubPage": "24062",
     "netkeiba_horse_id": "2024106723",
     "jra_id": "",
@@ -19,7 +18,7 @@
     "tab": 1
   },
   {
-    "slug": "プロミストリープ24",
+    "slug": "puromisutoriipu24",
     "name": "プロミストリープ24",
     "club": "silk",
     "sire": "クリソベリル",
@@ -29,8 +28,7 @@
     "price": "5000万",
     "stable": "栗東 杉山晴紀",
     "farm": "ノーザンファーム",
-    "image": "images/プロミストリープ24.jpg",
-    "page": "horses/プロミストリープ24.html",
+    "image": "images/puromisutoriipu24/###",
     "clubPage": "2024058",
     "netkeiba_horse_id": "2024106579",
     "jra_id": "",
@@ -38,7 +36,7 @@
     "tab": 1
   },
   {
-    "slug": "レッドレグナント24",
+    "slug": "reddoregunanto24",
     "name": "レッドレグナント24",
     "club": "tokyo",
     "sire": "オルフェーヴル",
@@ -48,8 +46,7 @@
     "price": "4000万",
     "stable": "美浦 大竹正博",
     "farm": "ノーザンファーム",
-    "image": "images/レッドレグナント24.jpg",
-    "page": "horses/レッドレグナント24.html",
+    "image": "images/reddoregunanto24/###",
     "clubPage": "next/2919",
     "netkeiba_horse_id": "2024106734",
     "jra_id": "",
@@ -57,7 +54,7 @@
     "tab": 1
   },
   {
-    "slug": "ファシネートゼット24",
+    "slug": "fashineetozetto24",
     "name": "ファシネートゼット24",
     "club": "carrot",
     "sire": "ニューイヤーズデイ",
@@ -67,8 +64,7 @@
     "price": "4000万",
     "stable": "美浦 林徹",
     "farm": "ノーザンファーム",
-    "image": "images/ファシネートゼット24.jpg",
-    "page": "horses/ファシネートゼット24.html",
+    "image": "images/fashineetozetto24/###",
     "clubPage": "24040",
     "netkeiba_horse_id": "2024106532",
     "jra_id": "",
@@ -76,7 +72,7 @@
     "tab": 1
   },
   {
-    "slug": "デサフィアンテ24",
+    "slug": "desafiante24",
     "name": "デサフィアンテ24",
     "club": "tokyo",
     "sire": "アルアイン",
@@ -86,8 +82,7 @@
     "price": "4000万",
     "stable": "栗東 池江泰寿",
     "farm": "ノーザンファーム",
-    "image": "images/デサフィアンテ24.jpg",
-    "page": "horses/デサフィアンテ24.html",
+    "image": "images/desafiante24/###",
     "clubPage": "next/2947",
     "netkeiba_horse_id": "2024106473",
     "jra_id": "",
@@ -95,7 +90,7 @@
     "tab": 1
   },
   {
-    "slug": "ウインアルカンナ24",
+    "slug": "uinarukanna24",
     "name": "ウインアルカンナ24",
     "club": "win",
     "sire": "フィエールマン",
@@ -105,8 +100,7 @@
     "price": "2000万",
     "stable": "美浦 武市康男",
     "farm": "コスモヴューファーム",
-    "image": "images/ウインアルカンナ24.jpg",
-    "page": "horses/ウインアルカンナ24.html",
+    "image": "images/uinarukanna24/###",
     "clubPage": "20240002",
     "netkeiba_horse_id": "2024103053",
     "jra_id": "",
@@ -114,7 +108,7 @@
     "tab": 1
   },
   {
-    "slug": "コンパルティシオン24",
+    "slug": "konparutishion24",
     "name": "コンパルティシオン24",
     "club": "tokyo",
     "sire": "ミッキーアイル",
@@ -124,8 +118,7 @@
     "price": "2400万",
     "stable": "栗東 杉山晴紀",
     "farm": "追分ファーム",
-    "image": "images/コンパルティシオン24.jpg",
-    "page": "horses/コンパルティシオン24.html",
+    "image": "images/konparutishion24/###",
     "clubPage": "next/2946",
     "netkeiba_horse_id": "2024106892",
     "jra_id": "",
@@ -133,7 +126,7 @@
     "tab": 1
   },
   {
-    "slug": "クラシックリディア24",
+    "slug": "kurashikkuridia24",
     "name": "クラシックリディア24",
     "club": "carrot",
     "sire": "アドマイヤマーズ",
@@ -143,8 +136,7 @@
     "price": "3000万",
     "stable": "栗東 高橋亮",
     "farm": "ノーザンファーム",
-    "image": "images/クラシックリディア24.jpg",
-    "page": "horses/クラシックリディア24.html",
+    "image": "images/kurashikkuridia24/###",
     "clubPage": "24072",
     "netkeiba_horse_id": "2024106283",
     "jra_id": "",
@@ -152,7 +144,7 @@
     "tab": 1
   },
   {
-    "slug": "ジルファ24",
+    "slug": "jirufa24",
     "name": "ジルファ24",
     "club": "silk",
     "sire": "Pinatubo",
@@ -162,8 +154,7 @@
     "price": "3500万",
     "stable": "美浦 嘉藤貴行",
     "farm": "フランス",
-    "image": "images/ジルファ24.jpg",
-    "page": "horses/ジルファ24.html",
+    "image": "images/jirufa24/###",
     "clubPage": "2024043",
     "netkeiba_horse_id": "2024110014",
     "jra_id": "",
@@ -171,7 +162,7 @@
     "tab": 1
   },
   {
-    "slug": "グラットラッシー24",
+    "slug": "gurattorasshii24",
     "name": "グラットラッシー24",
     "club": "tokyo",
     "sire": "スワーヴリチャード",
@@ -181,8 +172,7 @@
     "price": "2800万",
     "stable": "栗東 池江泰寿",
     "farm": "追分ファーム",
-    "image": "images/グラットラッシー24.jpg",
-    "page": "horses/グラットラッシー24.html",
+    "image": "images/gurattorasshii24/###",
     "clubPage": "next/2936",
     "netkeiba_horse_id": "2024106891",
     "jra_id": "",
@@ -190,7 +180,7 @@
     "tab": 1
   },
   {
-    "slug": "エリティエール23",
+    "slug": "eritieeru23",
     "name": "ガルディエンヌ",
     "club": "carrot",
     "sire": "ドレフォン",
@@ -200,8 +190,7 @@
     "price": "3000万",
     "stable": "栗東 高橋亮",
     "farm": "ノーザンファーム",
-    "image": "images/エリティエール23.jpg",
-    "page": "horses/エリティエール23.html",
+    "image": "images/eritieeru23/###",
     "clubPage": "23065",
     "netkeiba_horse_id": "2023106926",
     "jra_id": "pw01dud002023106926/87",
@@ -209,7 +198,7 @@
     "tab": 2
   },
   {
-    "slug": "シャーラレイ23",
+    "slug": "shaararei23",
     "name": "ルージュアリスタ",
     "club": "tokyo",
     "sire": "コントレイル",
@@ -219,8 +208,7 @@
     "price": "3600万",
     "stable": "美浦 宮田敬介",
     "farm": "社台ファーム",
-    "image": "images/シャーラレイ23.jpg",
-    "page": "horses/シャーラレイ23.html",
+    "image": "images/shaararei23/###",
     "clubPage": "runners/2803",
     "netkeiba_horse_id": "2023103427",
     "jra_id": "pw01dud102023103427/1F",
@@ -228,7 +216,7 @@
     "tab": 2
   },
   {
-    "slug": "メリート23",
+    "slug": "meriito23",
     "name": "パッセージピーク",
     "club": "carrot",
     "sire": "アドマイヤマーズ",
@@ -238,8 +226,7 @@
     "price": "4000万",
     "stable": "美浦 田村康仁",
     "farm": "ノーザンファーム",
-    "image": "images/メリート23.jpg",
-    "page": "horses/メリート23.html",
+    "image": "images/meriito23/###",
     "clubPage": "23039",
     "netkeiba_horse_id": "2023107275",
     "jra_id": "pw01dud102023107275/E3",
@@ -247,7 +234,7 @@
     "tab": 2
   },
   {
-    "slug": "レッドリヴェール23",
+    "slug": "reddorivueeru23",
     "name": "ルージュソムニウム",
     "club": "tokyo",
     "sire": "ロードカナロア",
@@ -257,8 +244,7 @@
     "price": "3600万",
     "stable": "栗東 須貝尚介",
     "farm": "社台ファーム",
-    "image": "images/レッドリヴェール23.jpg",
-    "page": "horses/レッドリヴェール23.html",
+    "image": "images/reddorivueeru23/###",
     "clubPage": "runners/2835",
     "netkeiba_horse_id": "2023103605",
     "jra_id": "",
@@ -266,7 +252,7 @@
     "tab": 2
   },
   {
-    "slug": "レッドクラウディア23",
+    "slug": "reddokuraudia23",
     "name": "ルージュビバーチェ",
     "club": "tokyo",
     "sire": "ミスターメロディ",
@@ -276,8 +262,7 @@
     "price": "2000万",
     "stable": "栗東 橋口慎介",
     "farm": "ノーザンファーム",
-    "image": "images/レッドクラウディア23.jpg",
-    "page": "horses/レッドクラウディア23.html",
+    "image": "images/reddokuraudia23/###",
     "clubPage": "runners/2852",
     "netkeiba_horse_id": "2023107337",
     "jra_id": "",
@@ -285,7 +270,7 @@
     "tab": 2
   },
   {
-    "slug": "レッドシェリール23",
+    "slug": "reddosheriiru23",
     "name": "レッドレグルス",
     "club": "tokyo",
     "sire": "コントレイル",
@@ -295,8 +280,7 @@
     "price": "5000万",
     "stable": "栗東 杉山晴紀",
     "farm": "富田牧場",
-    "image": "images/レッドシェリール23.jpg",
-    "page": "horses/レッドシェリール23.html",
+    "image": "images/reddosheriiru23/###",
     "clubPage": "runners/2828",
     "netkeiba_horse_id": "2023106617",
     "jra_id": "",
@@ -304,7 +288,7 @@
     "tab": 2
   },
   {
-    "slug": "ヴェニュセマース23",
+    "slug": "vuenyusemaasu23",
     "name": "ルージュウラヌス",
     "club": "tokyo",
     "sire": "サートゥルナーリア",
@@ -314,8 +298,7 @@
     "price": "2400万",
     "stable": "栗東 武幸四郎",
     "farm": "坂東牧場",
-    "image": "images/ヴェニュセマース23.jpg",
-    "page": "horses/ヴェニュセマース23.html",
+    "image": "images/vuenyusemaasu23/###",
     "clubPage": "runners/2837",
     "netkeiba_horse_id": "2023106622",
     "jra_id": "",
@@ -323,7 +306,7 @@
     "tab": 2
   },
   {
-    "slug": "ダイワデッセー23",
+    "slug": "daiwadessee23",
     "name": "ウイングリフィス",
     "club": "win",
     "sire": "カリフォルニアクローム",
@@ -333,8 +316,7 @@
     "price": "1400万",
     "stable": "栗東 宮徹",
     "farm": "フジワラファーム",
-    "image": "images/ダイワデッセー23.jpg",
-    "page": "horses/ダイワデッセー23.html",
+    "image": "images/daiwadessee23/###",
     "clubPage": "20230033",
     "netkeiba_horse_id": "2023103164",
     "jra_id": "",
@@ -342,7 +324,7 @@
     "tab": 2
   },
   {
-    "slug": "ルヴェソンヴェール23",
+    "slug": "ruvuesonvueeru23",
     "name": "ウインサルーテ",
     "club": "win",
     "sire": "ウインブライト",
@@ -352,8 +334,7 @@
     "price": "3300万",
     "stable": "美浦 深山雅史",
     "farm": "ハシモトファーム",
-    "image": "images/ルヴェソンヴェール23.jpg",
-    "page": "horses/ルヴェソンヴェール23.html",
+    "image": "images/ruvuesonvueeru23/###",
     "clubPage": "20230037",
     "netkeiba_horse_id": "2023104451",
     "jra_id": "",
@@ -361,7 +342,7 @@
     "tab": 2
   },
   {
-    "slug": "ダンシングラグズ22",
+    "slug": "danshinguraguzu22",
     "name": "レッドベルダンス",
     "club": "tokyo",
     "sire": "レイデオロ",
@@ -371,8 +352,7 @@
     "price": "6000万",
     "stable": "美浦 手塚貴久",
     "farm": "ノーザンファーム",
-    "image": "images/ダンシングラグズ22.jpg",
-    "page": "horses/ダンシングラグズ22.html",
+    "image": "images/danshinguraguzu22/###",
     "clubPage": "runners/2710",
     "netkeiba_horse_id": "2022104897",
     "jra_id": "pw01dud102022104897/B6",
@@ -380,7 +360,7 @@
     "tab": 3
   },
   {
-    "slug": "ユキチャン22",
+    "slug": "yukichan22",
     "name": "フォンデネージュ",
     "club": "silk",
     "sire": "ドレフォン",
@@ -390,8 +370,7 @@
     "price": "3000万",
     "stable": "美浦 武井亮",
     "farm": "ノーザンファーム",
-    "image": "images/ユキチャン22.jpg",
-    "page": "horses/ユキチャン22.html",
+    "image": "images/yukichan22/###",
     "clubPage": "2022016",
     "netkeiba_horse_id": "2022105100",
     "jra_id": "pw01dud102022105100/99",
@@ -399,7 +378,7 @@
     "tab": 3
   },
   {
-    "slug": "カーサデルシエロ22",
+    "slug": "kaasaderushiero22",
     "name": "ルージュミステリオ",
     "club": "tokyo",
     "sire": "ナダル",
@@ -409,8 +388,7 @@
     "price": "1800万",
     "stable": "栗東 辻野泰之",
     "farm": "下河辺牧場",
-    "image": "images/カーサデルシエロ22.jpg",
-    "page": "horses/カーサデルシエロ22.html",
+    "image": "images/kaasaderushiero22/###",
     "clubPage": "runners/2740",
     "netkeiba_horse_id": "2022101399",
     "jra_id": "pw01dud102022101399/DA",
@@ -418,7 +396,7 @@
     "tab": 3
   },
   {
-    "slug": "レゼトワール21",
+    "slug": "rezetowaaru21",
     "name": "エストレヤデベレン",
     "club": "silk",
     "sire": "エピファネイア",
@@ -428,8 +406,7 @@
     "price": "5500万",
     "stable": "栗東 武幸四郎",
     "farm": "新冠橋本牧場",
-    "image": "images/レゼトワール21.jpg",
-    "page": "horses/レゼトワール21.html",
+    "image": "images/rezetowaaru21/###",
     "clubPage": "2021086",
     "netkeiba_horse_id": "2021106587",
     "jra_id": "pw01dud102021106587/65",
@@ -437,7 +414,7 @@
     "tab": 3
   },
   {
-    "slug": "チアズメッセージ21",
+    "slug": "chiazumesseeji21",
     "name": "ブレスワード",
     "club": "carrot",
     "sire": "ニューイヤーズデイ",
@@ -447,8 +424,7 @@
     "price": "3000万",
     "stable": "美浦 中舘英二",
     "farm": "ノーザンファーム",
-    "image": "images/チアズメッセージ21.jpg",
-    "page": "horses/チアズメッセージ21.html",
+    "image": "images/chiazumesseeji21/###",
     "clubPage": "2220",
     "netkeiba_horse_id": "2021105642",
     "jra_id": "pw01dud102021105642/28",
@@ -456,7 +432,7 @@
     "tab": 3
   },
   {
-    "slug": "プチノワール21",
+    "slug": "puchinowaaru21",
     "name": "プリュノワール",
     "club": "silk",
     "sire": "ロードカナロア",
@@ -466,8 +442,7 @@
     "price": "5000万",
     "stable": "美浦 浅利英明",
     "farm": "ノーザンファーム",
-    "image": "images/プチノワール21.jpg",
-    "page": "horses/プチノワール21.html",
+    "image": "images/puchinowaaru21/###",
     "clubPage": "2021003",
     "netkeiba_horse_id": "2021105747",
     "jra_id": "pw01dud102021105747/98",
@@ -475,7 +450,7 @@
     "tab": 3
   },
   {
-    "slug": "コスモプラチナ20",
+    "slug": "kosumopurachina20",
     "name": "ウインエーデル",
     "club": "win",
     "sire": "リオンディーズ",
@@ -485,8 +460,7 @@
     "price": "1200万",
     "stable": "栗東 吉田直弘",
     "farm": "コスモヴューファーム",
-    "image": "images/コスモプラチナ20.jpg",
-    "page": "horses/コスモプラチナ20.html",
+    "image": "images/kosumopurachina20/###",
     "clubPage": "20200020",
     "netkeiba_horse_id": "2020107030",
     "jra_id": "pw01dud102020107030/5E",
@@ -494,7 +468,7 @@
     "tab": 3
   },
   {
-    "slug": "ライラヌール22",
+    "slug": "rairanuuru22",
     "name": "ルージュメアート",
     "club": "tokyo",
     "sire": "American Pharoah",
@@ -504,8 +478,7 @@
     "price": "2800万",
     "stable": "美浦 高柳瑞樹",
     "farm": "社台ファーム",
-    "image": "images/ライラヌール22.jpg",
-    "page": "horses/ライラヌール22.html",
+    "image": "images/rairanuuru22/###",
     "clubPage": "runners/2725",
     "netkeiba_horse_id": "2022105541",
     "jra_id": "pw01dud102022105541/10",
@@ -513,7 +486,7 @@
     "tab": 4
   },
   {
-    "slug": "ダイワプロパー22",
+    "slug": "daiwapuropaa22",
     "name": "ストラーダレアーレ",
     "club": "carrot",
     "sire": "サートゥルナーリア",
@@ -523,8 +496,7 @@
     "price": "5000万",
     "stable": "栗東 大久保龍志",
     "farm": "静内フジカワ牧場",
-    "image": "images/ダイワプロパー22.jpg",
-    "page": "horses/ダイワプロパー22.html",
+    "image": "images/daiwapuropaa22/###",
     "clubPage": "22058",
     "netkeiba_horse_id": "2022103928",
     "jra_id": "pw01dud102022103928/FB",
@@ -532,7 +504,7 @@
     "tab": 4
   },
   {
-    "slug": "リュズキナ22",
+    "slug": "ryuzukina22",
     "name": "レッドギフテッド",
     "club": "tokyo",
     "sire": "エピファネイア",
@@ -542,8 +514,7 @@
     "price": "4800万",
     "stable": "栗東 池江泰寿",
     "farm": "ノーザンファーム",
-    "image": "images/リュズキナ22.jpg",
-    "page": "horses/リュズキナ22.html",
+    "image": "images/ryuzukina22/###",
     "clubPage": "",
     "netkeiba_horse_id": "2022105136",
     "jra_id": "pw01dud102022105136/7B",
@@ -551,7 +522,7 @@
     "tab": 4
   },
   {
-    "slug": "メリート22",
+    "slug": "meriito22",
     "name": "サザリーバスター",
     "club": "carrot",
     "sire": "ドゥラメンテ",
@@ -561,8 +532,7 @@
     "price": "5000万",
     "stable": "美浦 萩原清",
     "farm": "ノーザンファーム",
-    "image": "images/メリート22.jpg",
-    "page": "horses/メリート22.html",
+    "image": "images/meriito22/###",
     "clubPage": "22012",
     "netkeiba_horse_id": "2022105088",
     "jra_id": "pw01dud102022105088/80",
@@ -570,7 +540,7 @@
     "tab": 4
   },
   {
-    "slug": "ヴィヴェンシャル22",
+    "slug": "vuivuensharu22",
     "name": "レッドヴィヴァン",
     "club": "tokyo",
     "sire": "ドゥラメンテ",
@@ -580,8 +550,7 @@
     "price": "2800万",
     "stable": "栗東 上村洋行",
     "farm": "社台牧場",
-    "image": "images/ヴィヴェンシャル22.jpg",
-    "page": "horses/ヴィヴェンシャル22.html",
+    "image": "images/vuivuensharu22/###",
     "clubPage": "",
     "netkeiba_horse_id": "2022105872",
     "jra_id": "",
@@ -589,7 +558,7 @@
     "tab": 4
   },
   {
-    "slug": "エクセレントデザイン21",
+    "slug": "ekuserentodezain21",
     "name": "レッドスフェーン",
     "club": "tokyo",
     "sire": "リアルスティール",
@@ -599,8 +568,7 @@
     "price": "2400万",
     "stable": "美浦 林徹",
     "farm": "社台牧場",
-    "image": "images/エクセレントデザイン21.jpg",
-    "page": "horses/エクセレントデザイン21.html",
+    "image": "images/ekuserentodezain21/###",
     "clubPage": "",
     "netkeiba_horse_id": "2021105308",
     "jra_id": "pw01dud102021105308/07",
@@ -608,7 +576,7 @@
     "tab": 4
   },
   {
-    "slug": "フラニーフロイド21",
+    "slug": "furaniifuroido21",
     "name": "ウインブリエ",
     "club": "win",
     "sire": "マインドユアビスケッツ",
@@ -618,8 +586,7 @@
     "price": "1500万",
     "stable": "美浦 国枝栄",
     "farm": "コスモヴューファーム",
-    "image": "images/フラニーフロイド21.jpg",
-    "page": "horses/フラニーフロイド21.html",
+    "image": "images/furaniifuroido21/###",
     "clubPage": "20210024",
     "netkeiba_horse_id": "2021106221",
     "jra_id": "pw01dud102021106221/C0",
@@ -627,7 +594,7 @@
     "tab": 4
   },
   {
-    "slug": "フレジェール21",
+    "slug": "furejeeru21",
     "name": "モンタンヴェール",
     "club": "carrot",
     "sire": "ブリックスアンドモルタル",
@@ -637,8 +604,7 @@
     "price": "2000万",
     "stable": "美浦 堀宣行",
     "farm": "社台ファーム",
-    "image": "images/フレジェール21.jpg",
-    "page": "horses/フレジェール21.html",
+    "image": "images/furejeeru21/###",
     "clubPage": "2225",
     "netkeiba_horse_id": "2021105196",
     "jra_id": "pw01dud102021105196/4F",
@@ -646,7 +612,7 @@
     "tab": 4
   },
   {
-    "slug": "ディオジェーヌ20",
+    "slug": "diojeenu20",
     "name": "ディオファントス",
     "club": "carrot",
     "sire": "モーリス",
@@ -656,8 +622,7 @@
     "price": "3200万",
     "stable": "栗東 斉藤崇史",
     "farm": "ノーザンファーム",
-    "image": "images/ディオジェーヌ20.jpg",
-    "page": "horses/ディオジェーヌ20.html",
+    "image": "images/diojeenu20/###",
     "clubPage": "2157",
     "netkeiba_horse_id": "2020103491",
     "jra_id": "pw01dud102020103491/39",
@@ -665,7 +630,7 @@
     "tab": 4
   },
   {
-    "slug": "ビウイッチアス20",
+    "slug": "biuicchiasu20",
     "name": "ウインシャルマン",
     "club": "win",
     "sire": "モーリス",
@@ -675,8 +640,7 @@
     "price": "1500万",
     "stable": "美浦 上原博之",
     "farm": "いとう牧場",
-    "image": "images/ビウイッチアス20.jpg",
-    "page": "horses/ビウイッチアス20.html",
+    "image": "images/biuicchiasu20/###",
     "clubPage": "20200028",
     "netkeiba_horse_id": "2020101289",
     "jra_id": "pw01dud102020101289/81",
@@ -684,7 +648,7 @@
     "tab": 4
   },
   {
-    "slug": "シスタリーラヴ19",
+    "slug": "shisutariiravu19",
     "name": "カンパニュール",
     "club": "union",
     "sire": "ハーツクライ",
@@ -694,8 +658,7 @@
     "price": "2600万",
     "stable": "栗東 須貝尚介",
     "farm": "矢野牧場",
-    "image": "images/シスタリーラヴ19.jpg",
-    "page": "horses/シスタリーラヴ19.html",
+    "image": "images/shisutariiravu19/###",
     "clubPage": "",
     "netkeiba_horse_id": "2019106737",
     "jra_id": "pw01dud102019106737/6C",
@@ -703,7 +666,7 @@
     "tab": 4
   },
   {
-    "slug": "シェイクラブハート19",
+    "slug": "sheikurabuhaato19",
     "name": "ウインリナリア",
     "club": "win",
     "sire": "スクリーンヒーロー",
@@ -713,8 +676,7 @@
     "price": "1600万",
     "stable": "美浦 粕谷昌央",
     "farm": "コスモヴューファーム",
-    "image": "images/シェイクラブハート19.jpg",
-    "page": "horses/シェイクラブハート19.html",
+    "image": "images/sheikurabuhaato19/###",
     "clubPage": "20190017",
     "netkeiba_horse_id": "2019100216",
     "jra_id": "pw01dud102019100216/4A",
@@ -722,7 +684,7 @@
     "tab": 4
   },
   {
-    "slug": "スイープトウショウ19",
+    "slug": "suiiputoushou19",
     "name": "ピエドラデルーナ",
     "club": "silk",
     "sire": "キタサンブラック",
@@ -732,8 +694,7 @@
     "price": "3000万",
     "stable": "栗東 清水久詞",
     "farm": "ノーザンファーム",
-    "image": "images/スイープトウショウ19.jpg",
-    "page": "horses/スイープトウショウ19.html",
+    "image": "images/suiiputoushou19/###",
     "clubPage": "2018067",
     "netkeiba_horse_id": "2019105257",
     "jra_id": "pw01dud102019105257/A8",
@@ -741,7 +702,7 @@
     "tab": 4
   },
   {
-    "slug": "カラベルラティーナ19",
+    "slug": "karaberuratiina19",
     "name": "トライセイル",
     "club": "carrot",
     "sire": "ディープブリランテ",
@@ -751,8 +712,7 @@
     "price": "1800万",
     "stable": "美浦 田村康仁",
     "farm": "ノーザンファーム",
-    "image": "images/カラベルラティーナ19.jpg",
-    "page": "horses/カラベルラティーナ19.html",
+    "image": "images/karaberuratiina19/###",
     "clubPage": "2030",
     "netkeiba_horse_id": "2019105135",
     "jra_id": "",
@@ -760,7 +720,7 @@
     "tab": 4
   },
   {
-    "slug": "デイトユアドリーム18",
+    "slug": "deitoyuadoriimu18",
     "name": "イルデレーヴ",
     "club": "silk",
     "sire": "ミッキーアイル",
@@ -770,8 +730,7 @@
     "price": "2000万",
     "stable": "栗東 小林真也",
     "farm": "ノーザンファーム",
-    "image": "images/デイトユアドリーム18.jpg",
-    "page": "horses/デイトユアドリーム18.html",
+    "image": "images/deitoyuadoriimu18/###",
     "clubPage": "2018067",
     "netkeiba_horse_id": "2018105151",
     "jra_id": "pw01dud102018105151/39",
@@ -779,7 +738,7 @@
     "tab": 4
   },
   {
-    "slug": "タニノジャドール18",
+    "slug": "taninojadooru18",
     "name": "フェイダウェイ",
     "club": "normandy",
     "sire": "トーセンジョーダン",
@@ -789,8 +748,7 @@
     "price": "1120万",
     "stable": "美浦 武井亮",
     "farm": "岡田スタッド",
-    "image": "images/タニノジャドール18.jpg",
-    "page": "horses/タニノジャドール18.html",
+    "image": "images/taninojadooru18/###",
     "clubPage": "",
     "netkeiba_horse_id": "",
     "jra_id": "",
@@ -798,7 +756,7 @@
     "tab": 4
   },
   {
-    "slug": "ユメザンマイ18",
+    "slug": "yumezanmai18",
     "name": "エストラテーガ",
     "club": "normandy",
     "sire": "バトルプラン",
@@ -808,8 +766,7 @@
     "price": "1040万",
     "stable": "栗東 矢作芳人",
     "farm": "グランド牧場",
-    "image": "images/ユメザンマイ18.jpg",
-    "page": "horses/ユメザンマイ18.html",
+    "image": "images/yumezanmai18/###",
     "clubPage": "",
     "netkeiba_horse_id": "",
     "jra_id": "",
@@ -817,7 +774,7 @@
     "tab": 4
   },
   {
-    "slug": "マスターエクレール18",
+    "slug": "masutaaekureeru18",
     "name": "カドル",
     "club": "union",
     "sire": "モーリス",
@@ -827,8 +784,7 @@
     "price": "1200万",
     "stable": "美浦 相沢郁",
     "farm": "服部牧場",
-    "image": "images/マスターエクレール18.jpg",
-    "page": "horses/マスターエクレール18.html",
+    "image": "images/masutaaekureeru18/###",
     "clubPage": "",
     "netkeiba_horse_id": "",
     "jra_id": "",
@@ -836,7 +792,7 @@
     "tab": 4
   },
   {
-    "slug": "フェルミオン18",
+    "slug": "ferumion18",
     "name": "アイソスピン",
     "club": "carrot",
     "sire": "ロードカナロア",
@@ -846,8 +802,7 @@
     "price": "3400万",
     "stable": "栗東 中内田充正",
     "farm": "ノーザンファーム",
-    "image": "images/フェルミオン18.jpg",
-    "page": "horses/フェルミオン18.html",
+    "image": "images/ferumion18/###",
     "clubPage": "1952",
     "netkeiba_horse_id": "",
     "jra_id": "",
@@ -855,7 +810,7 @@
     "tab": 4
   },
   {
-    "slug": "マラコスタムブラダ17",
+    "slug": "marakosutamuburada17",
     "name": "レシステンシア",
     "club": "carrot",
     "sire": "ダイワメジャー",
@@ -865,8 +820,7 @@
     "price": "2600万",
     "stable": "栗東 松下武士",
     "farm": "ノーザンファーム",
-    "image": "images/マラコスタムブラダ17.jpg",
-    "page": "horses/マラコスタムブラダ17.html",
+    "image": "images/marakosutamuburada17/###",
     "clubPage": "1867",
     "netkeiba_horse_id": "2017105563",
     "jra_id": "pw01dud002017105563/80",
@@ -874,7 +828,7 @@
     "tab": 5
   },
   {
-    "slug": "アンティフォナ17",
+    "slug": "antifona17",
     "name": "ラウダシオン",
     "club": "silk",
     "sire": "リアルインパクト",
@@ -884,8 +838,7 @@
     "price": "2500万",
     "stable": "栗東 斉藤崇史",
     "farm": "白老ファーム",
-    "image": "images/アンティフォナ17.jpg",
-    "page": "horses/アンティフォナ17.html",
+    "image": "images/antifona17/###",
     "clubPage": "2017062",
     "netkeiba_horse_id": "2017105072",
     "jra_id": "pw01dud102017105072/0F",
@@ -893,7 +846,7 @@
     "tab": 5
   },
   {
-    "slug": "カニョット16",
+    "slug": "kanyotto16",
     "name": "ファクトゥーラ",
     "club": "carrot",
     "sire": "マンハッタンカフェ",
@@ -903,8 +856,7 @@
     "price": "1800万",
     "stable": "栗東 高橋康之",
     "farm": "白老ファーム",
-    "image": "images/カニョット16.jpg",
-    "page": "horses/カニョット16.html",
+    "image": "images/kanyotto16/###",
     "clubPage": "1774",
     "netkeiba_horse_id": "2016104448",
     "jra_id": "pw01dud102016104448/DA",
@@ -912,7 +864,7 @@
     "tab": 4
   },
   {
-    "slug": "バイラオーラ16",
+    "slug": "bairaoora16",
     "name": "エスコビージャ",
     "club": "carrot",
     "sire": "シンボリクリスエス",
@@ -922,8 +874,7 @@
     "price": "2000万",
     "stable": "美浦 大竹正博",
     "farm": "白老ファーム",
-    "image": "images/バイラオーラ16.jpg",
-    "page": "horses/バイラオーラ16.html",
+    "image": "images/bairaoora16/###",
     "clubPage": "1773",
     "netkeiba_horse_id": "",
     "jra_id": "",
@@ -931,7 +882,7 @@
     "tab": 4
   },
   {
-    "slug": "ロフティーエイム15",
+    "slug": "rofutiieimu15",
     "name": "エイムアンドエンド",
     "club": "carrot",
     "sire": "エイシンフラッシュ",
@@ -941,8 +892,7 @@
     "price": "1800万",
     "stable": "美浦 奥村武",
     "farm": "追分ファーム",
-    "image": "images/ロフティーエイム15.jpg",
-    "page": "horses/ロフティーエイム15.html",
+    "image": "images/rofutiieimu15/###",
     "clubPage": "1619",
     "netkeiba_horse_id": "2015104161",
     "jra_id": "pw01dud102015104161/B6",
@@ -950,7 +900,7 @@
     "tab": 5
   },
   {
-    "slug": "カニョット15",
+    "slug": "kanyotto15",
     "name": "カラドゥラ",
     "club": "carrot",
     "sire": "ハーツクライ",
@@ -960,8 +910,7 @@
     "price": "1800万",
     "stable": "栗東 奥村豊",
     "farm": "白老ファーム",
-    "image": "images/カニョット15.jpg",
-    "page": "horses/カニョット15.html",
+    "image": "images/kanyotto15/###",
     "clubPage": "1611",
     "netkeiba_horse_id": "",
     "jra_id": "",
@@ -969,7 +918,7 @@
     "tab": 4
   },
   {
-    "slug": "ジューンアナガリス13",
+    "slug": "juunanagarisu13",
     "name": "デューズワイルズ",
     "club": "carrot",
     "sire": "カジノドライヴ",
@@ -979,8 +928,7 @@
     "price": "1400万",
     "stable": "栗東 橋口慎介",
     "farm": "ノーザンファーム",
-    "image": "images/ジューンアナガリス13.jpg",
-    "page": "horses/ジューンアナガリス13.html",
+    "image": "images/juunanagarisu13/###",
     "clubPage": "1473",
     "netkeiba_horse_id": "2013105931",
     "jra_id": "pw01dud102013105931/E5",
@@ -988,7 +936,7 @@
     "tab": 4
   },
   {
-    "slug": "イサドラ13",
+    "slug": "isadora13",
     "name": "ジーニアスダンサー",
     "club": "carrot",
     "sire": "カンパニー",
@@ -998,8 +946,7 @@
     "price": "1000万",
     "stable": "栗東 寺島良",
     "farm": "ノーザンファーム",
-    "image": "images/イサドラ13.jpg",
-    "page": "horses/イサドラ13.html",
+    "image": "images/isadora13/###",
     "clubPage": "1477",
     "netkeiba_horse_id": "",
     "jra_id": "",
@@ -1007,7 +954,7 @@
     "tab": 4
   },
   {
-    "slug": "フェルミオン12",
+    "slug": "ferumion12",
     "name": "ストレンジクォーク",
     "club": "carrot",
     "sire": "メイショウサムソン",
@@ -1017,8 +964,7 @@
     "price": "1400万",
     "stable": "美浦 古賀慎明",
     "farm": "ノーザンファーム",
-    "image": "images/フェルミオン12.jpg",
-    "page": "horses/フェルミオン12.html",
+    "image": "images/ferumion12/###",
     "clubPage": "1334",
     "netkeiba_horse_id": "",
     "jra_id": "",
@@ -1026,7 +972,7 @@
     "tab": 5
   },
   {
-    "slug": "ハナランマン10",
+    "slug": "hanaranman10",
     "name": "テンシンランマン",
     "club": "carrot",
     "sire": "ハーツクライ",
@@ -1036,8 +982,7 @@
     "price": "1400万",
     "stable": "美浦 菊沢隆徳",
     "farm": "白老ファーム",
-    "image": "images/ハナランマン10.jpg",
-    "page": "horses/ハナランマン10.html",
+    "image": "images/hanaranman10/###",
     "clubPage": "1118",
     "netkeiba_horse_id": "2010104455",
     "jra_id": "pw01dud101990101898/A2",
@@ -1045,7 +990,7 @@
     "tab": 4
   },
   {
-    "slug": "プレラット10",
+    "slug": "pureratto10",
     "name": "バプテスマ",
     "club": "carrot",
     "sire": "シンボリクリスエス",
@@ -1055,8 +1000,7 @@
     "price": "1000万",
     "stable": "美浦 尾形和幸",
     "farm": "白老ファーム",
-    "image": "images/プレラット10.jpg",
-    "page": "horses/プレラット10.html",
+    "image": "images/pureratto10/###",
     "clubPage": "1120",
     "netkeiba_horse_id": "",
     "jra_id": "",
@@ -1064,7 +1008,7 @@
     "tab": 4
   },
   {
-    "slug": "シンプルザベスト10",
+    "slug": "shinpuruzabesuto10",
     "name": "ベストリッジライン",
     "club": "carrot",
     "sire": "フジキセキ",
@@ -1074,8 +1018,7 @@
     "price": "1800万",
     "stable": "栗東 牧浦充徳",
     "farm": "坂東牧場",
-    "image": "images/シンプルザベスト10.jpg",
-    "page": "horses/シンプルザベスト10.html",
+    "image": "images/shinpuruzabesuto10/###",
     "clubPage": "1125",
     "netkeiba_horse_id": "",
     "jra_id": "",

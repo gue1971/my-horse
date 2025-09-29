@@ -1,0 +1,41 @@
+{
+  "measure": {
+    "height_cm": 159.0,
+    "girth_cm": 181.0,
+    "cannon_cm": 20.0,
+    "weight_kg": 482
+  },
+  "album": [
+    { "src": "images/malacostumbrada17/20180823.webp", "caption": "募集時　482kg　2018年8月23日（1歳）" },
+    { "src": "images/malacostumbrada17/20181031.webp", "caption": "NF早来　498kg　2018年10月31日（1歳）" },
+    { "src": "images/malacostumbrada17/20181130.webp", "caption": "NF早来　500kg　2018年11月30日（1歳）" },
+    { "src": "images/malacostumbrada17/20181221.webp", "caption": "NF早来　505kg　2018年12月21日（1歳）" },
+    { "src": "images/malacostumbrada17/20190113.webp", "caption": "NF早来　508kg　2019年1月13日（2歳）" },
+    { "src": "images/malacostumbrada17/20190228.webp", "caption": "NF早来　510kg　2019年2月28日（2歳）" },
+    { "src": "images/malacostumbrada17/20190329.webp", "caption": "NF早来　514kg　2019年3月29日（2歳）" },
+    { "src": "images/malacostumbrada17/20190426.webp", "caption": "NF早来　512kg　2019年4月26日（2歳）" },
+    { "src": "images/malacostumbrada17/20190531.webp", "caption": "NF早来　504kg　2019年5月31日（2歳）" },
+    { "src": "images/malacostumbrada17/20190702.webp", "caption": "NFしがらき　512kg　2019年7月2日（2歳）" },
+    { "src": "images/malacostumbrada17/20191014.webp", "caption": "2歳新馬　優勝　490kg　2019年10月14日（2歳）" },
+    { "src": "images/malacostumbrada17/20191102.webp", "caption": "ファンタジーS　優勝　488kg　2019年11月2日（2歳）" },
+    { "src": "images/malacostumbrada17/20191208a.webp", "caption": "阪神JF　優勝　484kg　2019年12月8日（2歳）" },
+    { "src": "images/malacostumbrada17/20191208b.webp", "caption": "阪神JF　優勝　484kg　2019年12月8日（2歳）" },
+    { "src": "images/malacostumbrada17/20200307.webp", "caption": "チューリップ賞　3着　488kg　2020年3月7日（3歳）" },
+    { "src": "images/malacostumbrada17/20200412.webp", "caption": "桜花賞　2着　482kg　2020年4月12日（3歳）" },
+    { "src": "images/malacostumbrada17/20200510.webp", "caption": "NHKマイルC　2着　476kg　2020年5月10日（3歳）" },
+    { "src": "images/malacostumbrada17/20201122.webp", "caption": "マイルCS　8着　500kg　2020年11月22日（3歳）" },
+    { "src": "images/malacostumbrada17/20210228a.webp", "caption": "阪急杯　優勝　508kg　2021年2月28日（4歳）" },
+    { "src": "images/malacostumbrada17/20210228b.webp", "caption": "阪急杯　優勝　508kg　2021年2月28日（4歳）" },
+    { "src": "images/malacostumbrada17/20210328.webp", "caption": "高松宮記念　2着　506kg　2021年3月28日（4歳）" },
+    { "src": "images/malacostumbrada17/20210516a.webp", "caption": "ヴィクトリアマイル　6着　504kg　2021年5月16日（4歳）" },
+    { "src": "images/malacostumbrada17/20210516b.webp", "caption": "ヴィクトリアマイル　6着　504kg　2021年5月16日（4歳）" },
+    { "src": "images/malacostumbrada17/20210912a.webp", "caption": "セントウルS　優勝　508kg　2021年9月12日（4歳）" },
+    { "src": "images/malacostumbrada17/20210912b.webp", "caption": "セントウルS　優勝　508kg　2021年9月12日（4歳）" },
+    { "src": "images/malacostumbrada17/20211003.webp", "caption": "スプリンターズS　2着　506kg　2021年10月3日（4歳）" },
+    { "src": "images/malacostumbrada17/20211212.webp", "caption": "香港スプリント　2着　2021年12月12日（4歳）" },
+    { "src": "images/malacostumbrada17/20220327.webp", "caption": "高松宮記念　6着　516kg　2022年3月27日（5歳）" },
+    { "src": "images/malacostumbrada17/20220515.webp", "caption": "ヴィクトリアマイル　3着　510kg　2022年5月15日（5歳）" },
+    { "src": "images/malacostumbrada17/20220605.webp", "caption": "安田記念　11着　512kg　2022年6月5日（5歳）" }
+  ],
+  "archiveComment": ""
+}
