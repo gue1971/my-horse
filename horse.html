@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>My Stable – 馬詳細</title>
+<style>
+  :root{
+    --bg:#000; --fg:#fff; --muted:#ccc; --card:#222; --line:#333;
+    --gap:12px; --pad:12px;
+    --fs-body: clamp(13px, 2.6vw, 16px);
+    --fs-name: clamp(16px, 3.6vw, 22px);
+    --fs-meta: clamp(12px, 2.4vw, 14px);
+  }
+
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--fg);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    font-size:var(--fs-body);
+    display:flex; flex-direction:column;
+  }
+
+  /* 固定ヘッダー */
+  .header{
+    position:sticky; top:0; z-index:5;
+    background:#111; border-bottom:1px solid var(--line);
+    display:flex; align-items:center; justify-content:center;
+    padding:8px;
+  }
+  .header .title{ display:flex; align-items:center; gap:8px; }
+  .header .title img{ width:18px; height:18px; object-fit:contain; }
+  .header .title b{ font-size:var(--fs-name); letter-spacing:.02em; }
+
+  /* main: 中央寄せ & 最大幅640px */
+  .main{ flex:1; overflow:auto; display:flex; justify-content:center; padding:12px; }
+  .content{ width:100%; max-width:640px; margin:0 auto; }
+
+  /* ヒーロー */
+  .hero{ background:#111; border:1px solid var(--line); }
+  .hero img{ width:100%; display:block; aspect-ratio:4/3; object-fit:cover; }
+  .hero .one-line{
+    padding:8px; color:var(--muted); border-top:1px solid var(--line);
+    font-size:var(--fs-meta);
+  }
+
+  /* プロフィール */
+  .profile{ margin-top:12px; background:#141414; border:1px solid var(--line); padding:10px; }
+  .profile .rows{ display:grid; row-gap:8px; }
+  .profile .row{ display:grid; grid-template-columns: 1fr; column-gap:16px; }
+  .profile .cell{ display:flex; gap:10px; }
+  .profile .label{ display:inline-block; min-width:5.5em; color:#bbb; }
+
+  @media (min-width:700px){
+    .profile .row{ grid-template-columns: 1fr 1fr; }
+  }
+
+  /* アルバム */
+  .album{ margin-top:12px; display:flex; flex-direction:column; gap:12px; }
+  .thumb{ background:#111; border:1px solid var(--line); }
+  .thumb img{ width:100%; height:auto; display:block; object-fit:cover; }
+  .cap{ font-size:var(--fs-meta); color:var(--muted); padding:6px 8px; }
+</style>
+</head>
+
+<body>
+  <!-- ヘッダー -->
+  <header class="header">
+    <div class="title" id="title"></div>
+  </header>
+
+  <main class="main">
+    <div class="content">
+      <section class="hero" id="hero"></section>
+      <section class="profile" id="profile"></section>
+      <section class="album" id="album"></section>
+    </div>
+  </main>
+
+<script>
+/* ==== 定数・ユーティリティ ==== */
+const clubIcon = {
+  carrot:'icons/carrot.gif',
+  silk:'icons/silk.gif',
+  tokyo:'icons/tokyo.gif',
+  win:'icons/win.gif',
+  union:'icons/union.gif',
+  normandy:'icons/normandy.gif',
+};
+function getParam(name){ return new URLSearchParams(location.search).get(name) || ''; }
+function dateKeyFromSrc(src){ const m = src.match(/(\d{8})/); return m ? m[1] : '00000000'; }
+
+/* ==== メイン ==== */
+(async function(){
+  const slug = (getParam('id') || getParam('slug') || '').trim().toLowerCase();
+  try {
+    const horses = await (await fetch('data/horses.json',{cache:'no-store'})).json();
+    const horse = horses.find(h => String(h.slug||'').toLowerCase() === slug);
+    if (!horse) {
+      document.querySelector('.main').innerHTML = '<div class="cap">データが見つかりません</div>';
+      return;
+    }
+
+    const detail = await (await fetch(`data/horses/${slug}.json`,{cache:'no-store'})).json();
+    const album = Array.isArray(detail.album)?[...detail.album]:[];
+
+    /* 1) ヘッダー */
+    const title = document.getElementById('title');
+    const iconSrc = clubIcon[horse.club] || clubIcon['carrot'];
+    title.innerHTML = `<img src="${iconSrc}" alt=""><b>${horse.name||''}</b>`;
+
+    /* 2) ヒーロー */
+    let heroItem = album.find(a=>a.isHero) ||
+                   album.slice().sort((a,b)=>dateKeyFromSrc(b.src).localeCompare(dateKeyFromSrc(a.src)))[0];
+    const hero = document.getElementById('hero');
+    if (heroItem) {
+      hero.innerHTML = `
+        <img src="${heroItem.src}" alt="">
+        <div class="one-line">${heroItem.caption||''}</div>`;
+    } else {
+      hero.innerHTML = `<div class="cap">（ヒーロー画像が未指定です）</div>`;
+    }
+
+    /* 3) プロフィール */
+    const p=document.getElementById('profile');
+    const M=detail.measure||{};
+    const cell=(label,val)=>`<div class="cell"><span class="label">${label}</span><span>${val||''}</span></div>`;
+    p.innerHTML=`<div class="rows">`+[
+      `<div class="row"><div>${cell('父',horse.sire)}</div><div>${cell('母',horse.dam)}</div></div>`,
+      `<div class="row"><div>${cell('母父',horse.damsire)}</div><div>${cell('','')}</div></div>`,
+      `<div class="row"><div>${cell('生産',horse.farm)}</div><div>${cell('厩舎',horse.stable)}</div></div>`,
+      `<div class="row"><div>${cell('生年月日',horse.birth)}</div><div>${cell('募集総額',horse.price)}</div></div>`,
+      `<div class="row"><div>${cell('体高',M.height_cm?`${M.height_cm}cm`: '')}</div><div>${cell('胸囲',M.girth_cm?`${M.girth_cm}cm`: '')}</div></div>`,
+      `<div class="row"><div>${cell('管囲',M.cannon_cm?`${M.cannon_cm}cm`: '')}</div><div>${cell('馬体重',M.weight_kg?`${M.weight_kg}kg`: '')}</div></div>`
+    ].join('')+`</div>`;
+
+    /* 4) アルバム（新しい順） */
+    const albumEl=document.getElementById('album');
+    const sorted=album.slice().sort((a,b)=>dateKeyFromSrc(b.src).localeCompare(dateKeyFromSrc(a.src)));
+    albumEl.innerHTML=sorted.length?sorted.map(item=>`
+      <figure class="thumb">
+        <img loading="lazy" src="${item.src}" alt="">
+        ${item.caption?`<figcaption class="cap">${item.caption}</figcaption>`:''}
+      </figure>`).join('')
+      :`<div class="cap">（まだ写真が登録されていません）</div>`;
+  } catch(e){
+    console.error(e);
+    document.querySelector('.main').innerHTML='<div class="cap">読み込みエラー</div>';
+  }
+})();
+</script>
+</body>
+</html>
