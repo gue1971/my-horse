@@ -31,10 +31,10 @@ my-horse/
 ├─ assets/
 │  ├─ icons/
 │  │  ├─ clubs/                # クラブアイコン
-│  │  │  ├─ carrot.svg
-│  │  │  ├─ silk.svg
-│  │  │  ├─ tokyo.svg
-│  │  │  └─ win.svg
+│  │  │  ├─ carrot.gif
+│  │  │  ├─ silk.gif
+│  │  │  ├─ tokyo.gif
+│  │  │  └─ win.gif
 │  │  └─ app/                  # PWA用アイコン類
 │  │     ├─ favicon.ico
 │  │     ├─ icon-192.png

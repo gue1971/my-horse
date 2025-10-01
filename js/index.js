@@ -13,7 +13,7 @@ async function getJSON(url){
 const PANELS = ['tab1','tab2','tab3','tab4','tab5'];
 const imgBase   = slug => `images/${slug}/`;
 const albumJson = slug => `data/albums/${slug}.json`;
-const clubIcon  = club => `assets/icons/clubs/${club}.svg`;
+const clubIcon  = club => `assets/icons/clubs/${club}.gif`;
 
 // ===== UA-based link builders =====
 const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
