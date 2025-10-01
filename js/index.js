@@ -11,9 +11,9 @@ async function getJSON(url){
 }
 
 const PANELS = ['tab1','tab2','tab3','tab4','tab5'];
-const imgBase   = slug => `/images/${slug}/`;
-const albumJson = slug => `/data/albums/${slug}.json`;
-const clubIcon  = club => `/assets/icons/clubs/${club}.svg`;
+const imgBase   = slug => `images/${slug}/`;
+const albumJson = slug => `data/albums/${slug}.json`;
+const clubIcon  = club => `assets/icons/clubs/${club}.svg`;
 
 // ===== UA-based link builders =====
 const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
@@ -80,8 +80,8 @@ function buildCard({ horse, hero, hasAlbum }){
   // 左：画像（アルバムが無ければ詳細へ）
   const left = document.createElement('a');
   left.className = 'card-left';
-  left.href = hasAlbum ? `/album.html?id=${encodeURIComponent(horse.slug)}`
-                       : `/horse.html?id=${encodeURIComponent(horse.slug)}`;
+  left.href = hasAlbum ? `album.html?id=${encodeURIComponent(horse.slug)}`
+                       : `horse.html?id=${encodeURIComponent(horse.slug)}`;
   if (hero) {
     const src = imgBase(horse.slug) + (hero.file || hero.src);
     left.innerHTML = `<img src="${src}" alt="${hero.caption || nameLabel}" loading="lazy">`; 
@@ -110,7 +110,7 @@ function buildCard({ horse, hero, hasAlbum }){
   // 右：中（詳細へ）
   const mid = document.createElement('a');
   mid.className = 'card-right-mid';
-  mid.href = `/horse.html?id=${encodeURIComponent(horse.slug)}`;
+  mid.href = `horse.html?id=${encodeURIComponent(horse.slug)}`;
   mid.setAttribute('aria-label', `${nameLabel} の詳細ページへ`);
   mid.innerHTML = `<span>詳細ページへ</span>`;
   right.appendChild(mid);
@@ -210,7 +210,7 @@ async function render(){
   // horses.json 読み込み
   let horses;
   try{
-    const doc = await getJSON('/data/horses.json');
+    const doc = await getJSON('data/horses.json');
     horses = Array.isArray(doc) ? doc : doc.horses;
   }catch(e){
     console.error(e);
