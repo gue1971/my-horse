@@ -33,12 +33,25 @@ function clubUrl(club, id){
 
 const jraUrl  = id => id ? `https://www.jra.go.jp/JRADB/accessU.html?CNAME=${encodeURIComponent(id)}` : '#';
 const jbisUrl = id => id ? `https://www.jbis.or.jp/horse/${encodeURIComponent(id)}/` : '#';
-function bbsUrl(id){
-  if(!id) return '#';
+// function bbsUrl(id){
+//   if(!id) return '#';
+//   return isMobile
+//     ? `https://db.sp.netkeiba.com/horse/horse_bbs.html?id=${encodeURIComponent(id)}`
+//     : `https://db.netkeiba.com/?pid=horse_board&id=${encodeURIComponent(id)}`;
+// }
+function bbsUrl(id) {
+  if (!id) return '#';
+  
+  // 画面幅に基づいてモバイル判定
+  const isMobile = window.innerWidth <= 768;
+
+  // モバイルとPCで異なるURLを返す
   return isMobile
     ? `https://db.sp.netkeiba.com/horse/horse_bbs.html?id=${encodeURIComponent(id)}`
     : `https://db.netkeiba.com/?pid=horse_board&id=${encodeURIComponent(id)}`;
 }
+
+
 
 // ===== album -> hero pick =====
 function pickHero(album){
