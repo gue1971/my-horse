@@ -1,48 +1,33 @@
 :root{
   --bg:#111315; --fg:#e9eef3; --muted:#9aa1a9; --line:#2b2f34; --link:#7db3ff;
-  --card:#171a1d; --chip:#20252b;
+  --card:#171a1d;
   --fs-body: clamp(13px, 2.6vw, 16px);
   --fs-name: clamp(14px, 3.3vw, 18px);
   --fs-meta: clamp(12px, 2.4vw, 14px);
 }
-html,body{
-  margin:0; background:var(--bg); color:var(--fg);
-  font: var(--fs-body)/1.55 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans JP",sans-serif;
-}
+html,body{ margin:0; background:var(--bg); color:var(--fg);
+  font: var(--fs-body)/1.55 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans JP",sans-serif; }
 
 /* Header */
-.site-header{
-  position:sticky; top:0; z-index:10; background:var(--bg);
-  border-bottom:1px solid var(--line);
-  padding:4px;
-  display:flex; align-items:center; justify-content:space-between;
-}
-.site-header h1{
-  margin:0; font-size:16px; font-weight:700; padding-left:6px; /* ① 少し右へ */
-}
+.site-header{ position:sticky; top:0; z-index:10; background:var(--bg);
+  border-bottom:1px solid var(--line); padding:4px; display:flex; align-items:center; justify-content:space-between; }
+.site-header h1{ margin:0; font-size:16px; font-weight:700; padding-left:6px; }
 
 /* Tabs */
 .tabs{ display:flex; gap:4px; padding:0 4px 6px; }
-.tab{
-  width:54px; height:28px; padding:4px 0;
-  background:#222; border:0; border-radius:6px;
-  font-size:12px; color:#eee; cursor:pointer; text-align:center;
-}
+.tab{ width:54px; height:28px; padding:4px 0; background:#222; border:0; border-radius:6px;
+  font-size:12px; color:#eee; cursor:pointer; text-align:center; }
 .tab.is-active{ background:#555; }
 
 /* Layout */
-main{ padding:4px 0 0; } /* ② 上余白を4pxに */
+main{ padding:4px 0 0; }
 .grid{ display:grid; gap:8px; }
 @media (min-width:860px){ .grid{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
-
 .tab-panel[hidden]{ display:none; }
 
 /* Card */
-.card{
-  display:grid; grid-template-columns:1.12fr 1fr;
-  background:var(--card); overflow:hidden;
-  padding:2px; margin:0 0 4px; /* ⑤ 下余白4px */
-}
+.card{ display:grid; grid-template-columns:1.12fr 1fr; background:var(--card); overflow:hidden;
+  padding:2px; margin:0 0 4px; }
 .card-left{ display:block; line-height:0; background:#0f1113; }
 .card-left img{ width:100%; aspect-ratio:4/3; object-fit:cover; display:block; }
 a.is-disabled{ pointer-events:none; opacity:.55; cursor:default; }
@@ -50,31 +35,34 @@ a.is-disabled{ pointer-events:none; opacity:.55; cursor:default; }
 .card-right{ display:grid; grid-template-rows:auto 1fr auto; padding:2px; gap:0; }
 
 /* Right-Top */
-.card-right-top{ padding:2px; } /* ③ 高さを詰める */
-.card-right-top a{
-  display:inline-flex; align-items:center; gap:4px;
-  text-decoration:none; color:var(--fg); font-weight:700; font-size:var(--fs-name);
-}
+.card-right-top{ padding:2px; }
+.card-right-top a{ display:inline-flex; align-items:center; gap:4px; text-decoration:none;
+  color:var(--fg); font-weight:700; font-size:var(--fs-name); }
 .club-icon{ width:14px; height:14px; object-fit:contain; border:0; background:#0d0f11; }
 
-/* Right-Mid */
-.card-right-mid{ display:block; text-decoration:none; padding:4px; border-radius:8px; }
+/* ===== Right-Middle (超密リード版) ===== */
+.card-right-mid{ display:block; text-decoration:none; padding:2px; border-radius:8px; }
 .card-right-mid:hover{ background:#161b20; }
-.mini-prof{ display:grid; gap:4px; font-size:12px; color:var(--fg); }
-.mini-prof .row{ display:flex; flex-wrap:wrap; gap:4px 10px; align-items:center; }
+
+/* 行間を極限まで詰める */
+.mini-prof{ display:grid; gap:2px; font-size:12px; color:var(--fg); line-height:1.22; }
+.mini-prof .row{ display:flex; flex-wrap:wrap; gap:2px 8px; align-items:center; }
+.mini-prof .row-1col{ display:flex; gap:2px 8px; align-items:center; }
+
 .mini-prof .label{
   color:var(--muted); border:1px solid var(--line); background:#0f1113;
-  padding:0 6px; border-radius:999px; font-size:11px; line-height:1.7; white-space:nowrap;
+  padding:0 4px; border-radius:999px; font-size:11px; line-height:1.22; white-space:nowrap;
 }
-.mini-prof .val{ min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.mini-prof .val{ min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; line-height:1.22; }
 
-/* ④ スマホでは5項目(父,母,母父,生年月日,募集総額)は1行に */
+/* モバイル: 1項目＝1行（label/value 2カラム）。ギャップも最小に */
 @media(max-width:520px){
-  .mini-prof .row{ display:grid; grid-template-columns:auto 1fr; gap:2px 8px; }
+  .mini-prof .row{ display:grid; grid-template-columns:auto 1fr; gap:1px 6px; }
+  .mini-prof .row-1col{ display:grid; grid-template-columns:auto 1fr; gap:1px 6px; }
 }
 
 /* Links */
-.links{ display:flex; gap:12px; flex-wrap:wrap; margin:4px 0 0; font-size:var(--fs-meta); }
+.links{ display:flex; gap:10px; flex-wrap:wrap; margin:2px 0 0; font-size:var(--fs-meta); }
 .links a{ color:var(--link); text-decoration:none; font-weight:600; }
 
 /* Placeholder */
