@@ -11,7 +11,7 @@ html,body{ margin:0; background:var(--bg); color:var(--fg);
 /* Header */
 .site-header{ position:fixed; top:0; left:0; right:0; z-index:10; background:var(--bg);
   border-bottom:0 ; padding:4px; display:flex; align-items:center; justify-content:space-between; }
-.site-header h1{ margin:0; font-size:20px; font-weight:700; padding-left:4px; }
+.site-header h1{ margin:0; font-size:16px; font-weight:700; padding-left:4px; }
 /* 出資馬タイトルのリンク：下線なし／色変化なし固定 */
 .site-header h1 a,
 .site-header h1 a:link,
@@ -33,7 +33,7 @@ html,body{ margin:0; background:var(--bg); color:var(--fg);
 .tab.is-active{ background:#555; }
 
 /* Layout */
-main{ padding:4px 0 0; }
+main{ padding:36px 0 0; }
 .grid{ display:grid; gap:8px; }
 @media (min-width:860px){ .grid{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
 .tab-panel[hidden]{ display:none; }
