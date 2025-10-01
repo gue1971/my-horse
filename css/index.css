@@ -40,22 +40,22 @@ main{ padding:40px 0 0; }
 
 /* Card */
 .card{ display:grid; grid-template-columns:1.2fr 1fr; background:var(--card); overflow:hidden;
-  padding:0; margin-bottom:8px; background-color: red;}
+  padding:0; margin-bottom:8px;}
 .card-left{ display:block; line-height:0; background:green; }
 .card-left img{ width:100%; aspect-ratio:4/3; object-fit:cover; display:block; }
 a.is-disabled{ pointer-events:none; opacity:.55; cursor:default; }
 
-.card-right{ display:grid; grid-template-rows:auto 1fr auto; padding:2px; gap:0;}
+.card-right{ display:grid; grid-template-rows:auto 1fr auto; padding:2px 8px; gap:0;}
 
 /* Right-Top */
 .card-right-top{ padding:2px; }
 .card-right-top a{ display:inline-flex; align-items:center; gap:4px; text-decoration:none;
   color:var(--fg); font-weight:700; font-size:var(--fs-name); }
-.club-icon{ width:14px; height:14px; object-fit:contain; border:0; background:#0d0f11; }
+.club-icon{ width:14px; height:14px; object-fit:contain; border:none; }
 
 /* ===== Right-Middle (超密リード版) ===== */
-.card-right-mid{ display:block; text-decoration:none; padding:2px; border-radius:8px; }
-.card-right-mid:hover{ background:#161b20; }
+.card-right-mid{ display:block; text-decoration:none; padding:2px;}
+/* .card-right-mid:hover{ background:#161b20; } */
 
 /* 行間を極限まで詰める */
 .mini-prof{ display:grid; gap:2px; font-size:12px; color:var(--fg); line-height:1.22; }
@@ -63,8 +63,8 @@ a.is-disabled{ pointer-events:none; opacity:.55; cursor:default; }
 .mini-prof .row-1col{ display:flex; gap:2px 8px; align-items:center; }
 
 .mini-prof .label{
-  color:var(--muted); border:1px solid var(--line); background:#0f1113;
-  padding:0 4px; border-radius:999px; font-size:11px; line-height:1.22; white-space:nowrap;
+  color:var(--muted);
+  padding:0 4px; font-size:11px; line-height:1.22; white-space:nowrap;
 }
 .mini-prof .val{ min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; line-height:1.22; }
 
