@@ -6,7 +6,7 @@
   --fs-meta: clamp(12px, 2.4vw, 14px);
 }
 html,body{ margin:0; background:var(--bg); color:var(--fg);
-  font: var(--fs-body)/1.55 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans JP",sans-serif; }
+  font: var(--fs-body)/1.25 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans JP",sans-serif; }
 
 /* Header */
 .site-header{ position:sticky; top:0; z-index:10; background:var(--bg);
@@ -39,7 +39,7 @@ main{ padding:4px 0 0; }
 .tab-panel[hidden]{ display:none; }
 
 /* Card */
-.card{ display:grid; grid-template-columns:1.25fr 1fr; background:var(--card); overflow:hidden;
+.card{ display:grid; grid-template-columns:1.4fr 1fr; background:var(--card); overflow:hidden;
   padding:2px; margin:0 0 4px; background-color: red;}
 .card-left{ display:block; line-height:0; background:green; }
 .card-left img{ width:100%; aspect-ratio:4/3; object-fit:cover; display:block; }
