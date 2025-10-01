@@ -46,7 +46,7 @@ main{padding:12px 8px}
 .tab-panel[hidden]{display:none}
 
 .card{
-  display:grid; grid-template-columns:1.15fr 1fr; gap:10px;
+  display:grid; grid-template-columns:1.15fr 1fr; gap:0px;
   border:1px solid var(--line); border-radius:12px; background:var(--card); overflow:hidden;
 }
 /* @media (max-width: 520px){ .card{grid-template-columns: 1fr;} } */
