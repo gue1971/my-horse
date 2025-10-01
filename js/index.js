@@ -122,11 +122,6 @@ function buildCard({ horse, hero, hasAlbum }){
   aClub.appendChild(nameSpan);
   top.appendChild(aClub);
 
-  const topSub = document.createElement('div');
-  topSub.className = 'subtle';
-  topSub.textContent = 'クラブ公式';
-  top.appendChild(topSub);
-
   right.appendChild(top);
 
   // 右：中（詳細＝ミニプロフィール全体がリンク）

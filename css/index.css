@@ -12,16 +12,32 @@ html,body{
 }
 .site-header{
   position:sticky; top:0; z-index:10; background:var(--bg);
-  border-bottom:1px solid var(--line); padding:10px 8px 6px;
+  border-bottom:1px solid var(--line);
+  padding:4px 8px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
 }
-.site-header h1{margin:0 0 8px 4px; font-size:18px; font-weight:700}
+.site-header h1{margin:0; font-size:18px; font-weight:700}
 
-.tabs{display:flex; gap:6px; padding:0 4px 6px}
-.tab{
-  width:54px; height:28px; border-radius:10px; border:1px solid var(--line);
-  background:var(--chip); color:var(--fg); cursor:pointer; font:inherit;
+.tabs{
+  padding:0 4px 6px;
+  display:flex;
+  gap:4px;
 }
-.tab.is-active{outline:2px solid #2f3740; background:#1f2429}
+.tab{
+  height: 28px;
+  width: 54px;
+  padding: 4px 0;
+  background: #222;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  color: #eee;
+  cursor:pointer;
+  text-align: center;
+}
+.tab.is-active{background:#555}
 
 main{padding:12px 8px}
 .grid{display:grid; gap:12px}
@@ -88,3 +104,29 @@ a.is-disabled{pointer-events:none; opacity:.55; cursor:default}
 
 .placeholder{display:grid; place-items:center; color:#9aa1a9}
 .placeholder .ph{display:grid; place-items:center; width:100%; aspect-ratio:4/3; user-select:none}
+
+/* 一覧をスマホで詰める */
+.card {
+  padding: 6px 8px;
+  margin-bottom: 6px;
+}
+.card-right-top span {
+  font-size: 14px;
+  font-weight: 600;
+}
+.mini-prof {
+  gap: 4px;   /* 行間を縮める */
+  font-size: 12px;
+}
+.mini-prof .label {
+  font-size: 11px;
+  padding: 0 6px;
+}
+.mini-prof .val {
+  font-size: 12px;
+}
+.links {
+  margin-top: 4px;
+  font-size: 12px;
+}
+
