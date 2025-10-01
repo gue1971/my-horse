@@ -107,12 +107,41 @@ function buildCard({ horse, hero, hasAlbum }){
   `;
   right.appendChild(top);
 
-  // 右：中（詳細へ）
+  // 右：中（詳細＝ミニプロフィール全体がリンク）
   const mid = document.createElement('a');
   mid.className = 'card-right-mid';
   mid.href = `horse.html?id=${encodeURIComponent(horse.slug)}`;
   mid.setAttribute('aria-label', `${nameLabel} の詳細ページへ`);
-  mid.innerHTML = `<span>詳細ページへ</span>`;
+
+  // 値が無い時のフォールバック
+  const val = (x) => (x ?? '').toString().trim() || '—';
+
+  mid.innerHTML = `
+    <div class="mini-prof">
+      <!-- 1段目：父・母（PCは横並び／SPは縦2行） -->
+      <div class="row">
+        <span class="label">父</span><span class="val">${val(horse.sire)}</span>
+        <span class="label">母</span><span class="val">${val(horse.dam)}</span>
+      </div>
+
+      <!-- 2段目：母父（1列1行） -->
+      <div class="row row-1col">
+        <span class="label">母父</span><span class="val">${val(horse.damsire)}</span>
+      </div>
+
+      <!-- 3段目：生産・厩舎（PCは横並び／SPは縦2行） -->
+      <div class="row">
+        <span class="label">生産</span><span class="val">${val(horse.farm)}</span>
+        <span class="label">厩舎</span><span class="val">${val(horse.stable)}</span>
+      </div>
+
+      <!-- 4段目：生年月日・募集総額（PCは横並び／SPは縦2行） -->
+      <div class="row">
+        <span class="label">生年月日</span><span class="val">${val(horse.birth)}</span>
+        <span class="label">募集総額</span><span class="val">${val(horse.price)}</span>
+      </div>
+    </div>
+  `;
   right.appendChild(mid);
 
   // 右：下（JRA/JBIS/BBS）
