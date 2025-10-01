@@ -189,13 +189,14 @@ if (horse.jra_id) {
   jraLink.href = jraUrl(horse.jra_id);
   jraLink.target = "_blank";
   jraLink.rel = "noopener";
-  jraLink.innerText = 'JRA';
-
+  
   const jraIcon = document.createElement('img');
   jraIcon.className = 'icon';
   jraIcon.src = 'assets/icons/jra.ico';  // JRAのアイコン
   jraIcon.alt = 'JRAアイコン';
-  jraLink.prepend(jraIcon);  // アイコンをリンクの前に追加
+  
+  jraLink.appendChild(jraIcon);  // アイコンをリンクに追加
+  jraLink.innerText = 'JRA';  // テキストを後から追加
 
   bottom.appendChild(jraLink);
 }
@@ -206,13 +207,14 @@ if (horse.jbis_id) {
   jbisLink.href = jbisUrl(horse.jbis_id);
   jbisLink.target = "_blank";
   jbisLink.rel = "noopener";
-  jbisLink.innerText = 'JBIS';
 
   const jbisIcon = document.createElement('img');
   jbisIcon.className = 'icon';
   jbisIcon.src = 'assets/icons/jbis.png';  // JBISのアイコン
   jbisIcon.alt = 'JBISアイコン';
-  jbisLink.prepend(jbisIcon);  // アイコンをリンクの前に追加
+
+  jbisLink.appendChild(jbisIcon);  // アイコンをリンクに追加
+  jbisLink.innerText = 'JBIS';  // テキストを後から追加
 
   bottom.appendChild(jbisLink);
 }
@@ -223,20 +225,20 @@ if (horse.netkeiba_horse_id) {
   bbsLink.href = bbsUrl(horse.netkeiba_horse_id);
   bbsLink.target = "_blank";
   bbsLink.rel = "noopener";
-  bbsLink.innerText = 'BBS';
 
   const bbsIcon = document.createElement('img');
   bbsIcon.className = 'icon';
   bbsIcon.src = 'assets/icons/netkeiba.png';  // netkeibaのアイコン
   bbsIcon.alt = 'BBSアイコン';
-  bbsLink.prepend(bbsIcon);  // アイコンをリンクの前に追加
+
+  bbsLink.appendChild(bbsIcon);  // アイコンをリンクに追加
+  bbsLink.innerText = 'BBS';  // テキストを後から追加
 
   bottom.appendChild(bbsLink);
 }
 
 right.appendChild(bottom);
 card.appendChild(right);
-
 }
 
 // ===== tabs: show/hide + swipe + per-tab scroll restore =====
