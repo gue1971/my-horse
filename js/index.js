@@ -36,7 +36,7 @@ const jbisUrl = id => id ? `https://www.jbis.or.jp/horse/${encodeURIComponent(id
 function bbsUrl(id){
   if(!id) return '#';
   return isMobile
-    ? `https://db.sp.netkeiba.com/horse_bbs/board.html?horse_id=${encodeURIComponent(id)}`
+    ? `https://db.sp.netkeiba.com/horse/horse_bbs.html?horse_id=${encodeURIComponent(id)}`
     : `https://db.netkeiba.com/?pid=horse_board&id=${encodeURIComponent(id)}`;
 }
 
