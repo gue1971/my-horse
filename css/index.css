@@ -45,7 +45,7 @@ a.is-disabled{pointer-events:none; opacity:.55; cursor:default}
 .club-icon{width:22px; height:22px; object-fit:contain; border-radius:4px; border:1px solid var(--line); background:#0d0f11}
 .subtle{color:var(--muted); font-size:12px; margin-top:2px}
 
-/* 右中央：ミニプロフィール（従来風＋拡張） */
+/* 右中央：ミニプロフィール */
 .card-right-mid{
   display:block;
   border:1px dashed #3a4047;
@@ -59,13 +59,11 @@ a.is-disabled{pointer-events:none; opacity:.55; cursor:default}
 .mini-prof{ display:grid; gap:8px; font-size:13px; color:var(--fg); }
 .mini-prof .row{
   display:grid;
-  grid-template-columns: auto 1fr auto 1fr; /* ラベル・値 x2 */
+  grid-template-columns: auto 1fr auto 1fr;
   gap:8px 12px;
   align-items:center;
 }
-.mini-prof .row-1col{ grid-template-columns:auto 1fr; } /* ラベル・値 x1 */
-
-/* ラベルと値 */
+.mini-prof .row-1col{ grid-template-columns:auto 1fr; }
 .mini-prof .label{
   color:var(--muted);
   border:1px solid var(--line);
@@ -79,8 +77,6 @@ a.is-disabled{pointer-events:none; opacity:.55; cursor:default}
 .mini-prof .val{
   overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
 }
-
-/* モバイル：父/母、生産/厩舎は縦2行に（1列2行） */
 @media (max-width:520px){
   .mini-prof .row{ grid-template-columns:auto 1fr; }
 }

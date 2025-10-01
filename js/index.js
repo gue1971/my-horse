@@ -73,6 +73,7 @@ function placeholderHTML(label='画像準備中'){
 // ===== card builder =====
 function buildCard({ horse, hero, hasAlbum }){
   const nameLabel = horse.nameJa || horse.name || horse.slug;
+  const val = (x) => (x ?? '').toString().trim() || '—';
 
   const card = document.createElement('article');
   card.className = 'card';
@@ -83,8 +84,12 @@ function buildCard({ horse, hero, hasAlbum }){
   left.href = hasAlbum ? `album.html?id=${encodeURIComponent(horse.slug)}`
                        : `horse.html?id=${encodeURIComponent(horse.slug)}`;
   if (hero) {
-    const src = imgBase(horse.slug) + (hero.file || hero.src);
-    left.innerHTML = `<img src="${src}" alt="${hero.caption || nameLabel}" loading="lazy">`; 
+    const src = `images/${horse.slug}/${hero.file || hero.src}`;
+    const img = document.createElement('img');
+    img.src = src;
+    img.alt = hero.caption || nameLabel;
+    img.loading = 'lazy';
+    left.appendChild(img);
     if (!hasAlbum) left.classList.add('is-disabled');
   } else {
     left.innerHTML = placeholderHTML();
@@ -92,19 +97,36 @@ function buildCard({ horse, hero, hasAlbum }){
   }
   card.appendChild(left);
 
-  // 右：上（クラブ公式）
+  // 右コンテナ
   const right = document.createElement('div');
   right.className = 'card-right';
 
+  // 右：上（クラブ公式）
   const top = document.createElement('div');
   top.className = 'card-right-top';
-  top.innerHTML = `
-    <a href="${clubUrl(horse.club, horse.clubPage)}" target="_blank" rel="noopener" aria-label="${nameLabel} のクラブ公式へ">
-      <img class="club-icon" src="${clubIcon(horse.club)}" alt="${horse.club}">
-      <span>${nameLabel}</span>
-    </a>
-    <div class="subtle">クラブ公式</div>
-  `;
+  const aClub = document.createElement('a');
+  aClub.href = clubUrl(horse.club, horse.clubPage);
+  aClub.target = '_blank';
+  aClub.rel = 'noopener';
+  aClub.setAttribute('aria-label', `${nameLabel} のクラブ公式へ`);
+
+  const clubImg = document.createElement('img');
+  clubImg.className = 'club-icon';
+  clubImg.src = `assets/icons/clubs/${horse.club}.gif`; // ← いまは .gif 運用
+  clubImg.alt = horse.club;
+
+  const nameSpan = document.createElement('span');
+  nameSpan.textContent = nameLabel;
+
+  aClub.appendChild(clubImg);
+  aClub.appendChild(nameSpan);
+  top.appendChild(aClub);
+
+  const topSub = document.createElement('div');
+  topSub.className = 'subtle';
+  topSub.textContent = 'クラブ公式';
+  top.appendChild(topSub);
+
   right.appendChild(top);
 
   // 右：中（詳細＝ミニプロフィール全体がリンク）
@@ -113,35 +135,50 @@ function buildCard({ horse, hero, hasAlbum }){
   mid.href = `horse.html?id=${encodeURIComponent(horse.slug)}`;
   mid.setAttribute('aria-label', `${nameLabel} の詳細ページへ`);
 
-  // 値が無い時のフォールバック
-  const val = (x) => (x ?? '').toString().trim() || '—';
+  const mini = document.createElement('div');
+  mini.className = 'mini-prof';
 
-  mid.innerHTML = `
-    <div class="mini-prof">
-      <!-- 1段目：父・母（PCは横並び／SPは縦2行） -->
-      <div class="row">
-        <span class="label">父</span><span class="val">${val(horse.sire)}</span>
-        <span class="label">母</span><span class="val">${val(horse.dam)}</span>
-      </div>
+  // helper: row を作る
+  const mkRow = (pairs, oneCol=false) => {
+    const row = document.createElement('div');
+    row.className = 'row' + (oneCol ? ' row-1col' : '');
+    pairs.forEach(([label, value]) => {
+      const l = document.createElement('span');
+      l.className = 'label';
+      l.textContent = label;
+      const v = document.createElement('span');
+      v.className = 'val';
+      v.textContent = val(value);
+      row.appendChild(l);
+      row.appendChild(v);
+    });
+    return row;
+  };
 
-      <!-- 2段目：母父（1列1行） -->
-      <div class="row row-1col">
-        <span class="label">母父</span><span class="val">${val(horse.damsire)}</span>
-      </div>
+  // 1段目：父・母
+  mini.appendChild(mkRow([
+    ['父', horse.sire],
+    ['母', horse.dam]
+  ]));
 
-      <!-- 3段目：生産・厩舎（PCは横並び／SPは縦2行） -->
-      <div class="row">
-        <span class="label">生産</span><span class="val">${val(horse.farm)}</span>
-        <span class="label">厩舎</span><span class="val">${val(horse.stable)}</span>
-      </div>
+  // 2段目：母父（1列）
+  mini.appendChild(mkRow([
+    ['母父', horse.damsire]
+  ], true));
 
-      <!-- 4段目：生年月日・募集総額（PCは横並び／SPは縦2行） -->
-      <div class="row">
-        <span class="label">生年月日</span><span class="val">${val(horse.birth)}</span>
-        <span class="label">募集総額</span><span class="val">${val(horse.price)}</span>
-      </div>
-    </div>
-  `;
+  // 3段目：生産・厩舎
+  mini.appendChild(mkRow([
+    ['生産', horse.farm],
+    ['厩舎', horse.stable]
+  ]));
+
+  // 4段目：生年月日・募集総額
+  mini.appendChild(mkRow([
+    ['生年月日', horse.birth],
+    ['募集総額', horse.price]
+  ]));
+
+  mid.appendChild(mini);
   right.appendChild(mid);
 
   // 右：下（JRA/JBIS/BBS）
