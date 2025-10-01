@@ -179,66 +179,66 @@ function buildCard({ horse, hero, hasAlbum }){
   mid.appendChild(mini);
   right.appendChild(mid);
 
-// 右：下（JRA/JBIS/BBS）
-const bottom = document.createElement('div');
-bottom.className = 'links';
+  // 右：下（JRA/JBIS/BBS）
+  const bottom = document.createElement('div');
+  bottom.className = 'links';
 
-// JRAリンクとアイコン
-if (horse.jra_id) {
-  const jraLink = document.createElement('a');
-  jraLink.href = jraUrl(horse.jra_id);
-  jraLink.target = "_blank";
-  jraLink.rel = "noopener";
-  
-  const jraIcon = document.createElement('img');
-  jraIcon.className = 'icon';
-  jraIcon.src = 'assets/icons/jra.ico';  // JRAのアイコン
-  jraIcon.alt = 'JRAアイコン';
-  
-  jraLink.appendChild(jraIcon);  // アイコンをリンクに追加
-  jraLink.innerText = 'JRA';  // テキストを後から追加
+  // JRAリンクとアイコン
+  if (horse.jra_id) {
+    const jraLink = document.createElement('a');
+    jraLink.href = jraUrl(horse.jra_id);
+    jraLink.target = "_blank";
+    jraLink.rel = "noopener";
 
-  bottom.appendChild(jraLink);
-}
+    const jraIcon = document.createElement('img');
+    jraIcon.className = 'icon';
+    jraIcon.src = 'assets/icons/jra.ico';  // JRAのアイコン
+    jraIcon.alt = 'JRAアイコン';
+    
+    jraLink.appendChild(jraIcon);  // アイコンをリンクに追加
+    jraLink.appendChild(document.createTextNode('JRA')); // テキストをリンクに追加
 
-// JBISリンクとアイコン
-if (horse.jbis_id) {
-  const jbisLink = document.createElement('a');
-  jbisLink.href = jbisUrl(horse.jbis_id);
-  jbisLink.target = "_blank";
-  jbisLink.rel = "noopener";
+    bottom.appendChild(jraLink);  // リンクをbottomに追加
+  }
 
-  const jbisIcon = document.createElement('img');
-  jbisIcon.className = 'icon';
-  jbisIcon.src = 'assets/icons/jbis.png';  // JBISのアイコン
-  jbisIcon.alt = 'JBISアイコン';
+  // JBISリンクとアイコン
+  if (horse.jbis_id) {
+    const jbisLink = document.createElement('a');
+    jbisLink.href = jbisUrl(horse.jbis_id);
+    jbisLink.target = "_blank";
+    jbisLink.rel = "noopener";
 
-  jbisLink.appendChild(jbisIcon);  // アイコンをリンクに追加
-  jbisLink.innerText = 'JBIS';  // テキストを後から追加
+    const jbisIcon = document.createElement('img');
+    jbisIcon.className = 'icon';
+    jbisIcon.src = 'assets/icons/jbis.png';  // JBISのアイコン
+    jbisIcon.alt = 'JBISアイコン';
 
-  bottom.appendChild(jbisLink);
-}
+    jbisLink.appendChild(jbisIcon);  // アイコンをリンクに追加
+    jbisLink.appendChild(document.createTextNode('JBIS')); // テキストをリンクに追加
 
-// netkeibaリンクとアイコン
-if (horse.netkeiba_horse_id) {
-  const bbsLink = document.createElement('a');
-  bbsLink.href = bbsUrl(horse.netkeiba_horse_id);
-  bbsLink.target = "_blank";
-  bbsLink.rel = "noopener";
+    bottom.appendChild(jbisLink);  // リンクをbottomに追加
+  }
 
-  const bbsIcon = document.createElement('img');
-  bbsIcon.className = 'icon';
-  bbsIcon.src = 'assets/icons/netkeiba.png';  // netkeibaのアイコン
-  bbsIcon.alt = 'BBSアイコン';
+  // netkeibaリンクとアイコン
+  if (horse.netkeiba_horse_id) {
+    const bbsLink = document.createElement('a');
+    bbsLink.href = bbsUrl(horse.netkeiba_horse_id);
+    bbsLink.target = "_blank";
+    bbsLink.rel = "noopener";
 
-  bbsLink.appendChild(bbsIcon);  // アイコンをリンクに追加
-  bbsLink.innerText = 'BBS';  // テキストを後から追加
+    const bbsIcon = document.createElement('img');
+    bbsIcon.className = 'icon';
+    bbsIcon.src = 'assets/icons/netkeiba.png';  // netkeibaのアイコン
+    bbsIcon.alt = 'BBSアイコン';
 
-  bottom.appendChild(bbsLink);
-}
+    bbsLink.appendChild(bbsIcon);  // アイコンをリンクに追加
+    bbsLink.appendChild(document.createTextNode('BBS')); // テキストをリンクに追加
 
-right.appendChild(bottom);
-card.appendChild(right);
+    bottom.appendChild(bbsLink);  // リンクをbottomに追加
+  }
+
+  right.appendChild(bottom);
+  card.appendChild(right);
 }
 
 // ===== tabs: show/hide + swipe + per-tab scroll restore =====
