@@ -33,12 +33,15 @@ function clubUrl(club, id){
 
 const jraUrl  = id => id ? `https://www.jra.go.jp/JRADB/accessU.html?CNAME=${encodeURIComponent(id)}` : '#';
 const jbisUrl = id => id ? `https://www.jbis.or.jp/horse/${encodeURIComponent(id)}/` : '#';
-function bbsUrl(id){
-  if(!id) return '#';
-  return isMobile
+const bbsUrl = id => {
+  if (!id) return '#';
+  const icon = 'assets/icons/netkeiba.png';  // アイコンを指定
+  const bbsLink = isMobile
     ? `https://db.sp.netkeiba.com/horse_bbs/board.html?horse_id=${encodeURIComponent(id)}`
     : `https://db.netkeiba.com/?pid=horse_board&id=${encodeURIComponent(id)}`;
-}
+  return { url: bbsLink, icon };
+};
+
 
 // ===== album -> hero pick =====
 function pickHero(album){
@@ -176,16 +179,64 @@ function buildCard({ horse, hero, hasAlbum }){
   mid.appendChild(mini);
   right.appendChild(mid);
 
-  // 右：下（JRA/JBIS/BBS）
-  const bottom = document.createElement('div');
-  bottom.className = 'links';
-  if (horse.jra_id)  bottom.innerHTML += `<a href="${jraUrl(horse.jra_id)}" target="_blank" rel="noopener">JRA</a>`;
-  if (horse.jbis_id) bottom.innerHTML += `<a href="${jbisUrl(horse.jbis_id)}" target="_blank" rel="noopener">JBIS</a>`;
-  if (horse.netkeiba_horse_id) bottom.innerHTML += `<a href="${bbsUrl(horse.netkeiba_horse_id)}" target="_blank" rel="noopener">BBS</a>`;
-  right.appendChild(bottom);
+// 右：下（JRA/JBIS/BBS）
+const bottom = document.createElement('div');
+bottom.className = 'links';
 
-  card.appendChild(right);
-  return card;
+// JRAリンクとアイコン
+if (horse.jra_id) {
+  const jraLink = document.createElement('a');
+  jraLink.href = jraUrl(horse.jra_id);
+  jraLink.target = "_blank";
+  jraLink.rel = "noopener";
+  jraLink.innerText = 'JRA';
+
+  const jraIcon = document.createElement('img');
+  jraIcon.className = 'icon';
+  jraIcon.src = 'assets/icons/jra.ico';  // JRAのアイコン
+  jraIcon.alt = 'JRAアイコン';
+  jraLink.prepend(jraIcon);  // アイコンをリンクの前に追加
+
+  bottom.appendChild(jraLink);
+}
+
+// JBISリンクとアイコン
+if (horse.jbis_id) {
+  const jbisLink = document.createElement('a');
+  jbisLink.href = jbisUrl(horse.jbis_id);
+  jbisLink.target = "_blank";
+  jbisLink.rel = "noopener";
+  jbisLink.innerText = 'JBIS';
+
+  const jbisIcon = document.createElement('img');
+  jbisIcon.className = 'icon';
+  jbisIcon.src = 'assets/icons/jbis.png';  // JBISのアイコン
+  jbisIcon.alt = 'JBISアイコン';
+  jbisLink.prepend(jbisIcon);  // アイコンをリンクの前に追加
+
+  bottom.appendChild(jbisLink);
+}
+
+// netkeibaリンクとアイコン
+if (horse.netkeiba_horse_id) {
+  const bbsLink = document.createElement('a');
+  bbsLink.href = bbsUrl(horse.netkeiba_horse_id);
+  bbsLink.target = "_blank";
+  bbsLink.rel = "noopener";
+  bbsLink.innerText = 'BBS';
+
+  const bbsIcon = document.createElement('img');
+  bbsIcon.className = 'icon';
+  bbsIcon.src = 'assets/icons/netkeiba.png';  // netkeibaのアイコン
+  bbsIcon.alt = 'BBSアイコン';
+  bbsLink.prepend(bbsIcon);  // アイコンをリンクの前に追加
+
+  bottom.appendChild(bbsLink);
+}
+
+right.appendChild(bottom);
+card.appendChild(right);
+
 }
 
 // ===== tabs: show/hide + swipe + per-tab scroll restore =====
