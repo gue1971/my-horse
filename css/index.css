@@ -41,11 +41,11 @@ main{ padding:4px 0 0; }
 /* Card */
 .card{ display:grid; grid-template-columns:1.12fr 1fr; gap:8px; background:var(--card); overflow:hidden;
   padding:2px; margin:0 0 4px; background-color: red;}
-.card-left{ display:block; line-height:0; background:#0f1113; }
+.card-left{ display:block; line-height:0; background:green; }
 .card-left img{ width:100%; aspect-ratio:4/3; object-fit:cover; display:block; }
 a.is-disabled{ pointer-events:none; opacity:.55; cursor:default; }
 
-.card-right{ display:grid; grid-template-rows:auto 1fr auto; padding:2px; gap:0; }
+.card-right{ display:grid; grid-template-rows:auto 1fr auto; padding:2px; gap:0; background-color: orange;}
 
 /* Right-Top */
 .card-right-top{ padding:2px; }
