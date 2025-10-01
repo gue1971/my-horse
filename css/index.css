@@ -12,6 +12,19 @@ html,body{ margin:0; background:var(--bg); color:var(--fg);
 .site-header{ position:sticky; top:0; z-index:10; background:var(--bg);
   border-bottom:1px solid var(--line); padding:4px; display:flex; align-items:center; justify-content:space-between; }
 .site-header h1{ margin:0; font-size:16px; font-weight:700; padding-left:6px; }
+/* 出資馬タイトルのリンク：下線なし／色変化なし固定 */
+.site-header h1 a,
+.site-header h1 a:link,
+.site-header h1 a:visited,
+.site-header h1 a:hover,
+.site-header h1 a:active,
+.site-header h1 a:focus {
+  color: var(--fg);           /* 常に同じ色 */
+  text-decoration: none;      /* 下線なし */
+  outline: none;              /* フォーカス時の枠も無しにしたいなら */
+  -webkit-tap-highlight-color: transparent; /* モバイルのタップ強調を消す */
+  cursor: pointer;
+}
 
 /* Tabs */
 .tabs{ display:flex; gap:4px; padding:0 4px 6px; }
