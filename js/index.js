@@ -1,0 +1,247 @@
+
+// ===== helpers =====
+const $ = (s, r=document)=>r.querySelector(s);
+const $$ = (s, r=document)=>[...r.querySelectorAll(s)];
+const sleep = ms => new Promise(r=>setTimeout(r, ms));
+
+async function getJSON(url){
+  const r = await fetch(url, {cache:'no-store'});
+  if(!r.ok) throw new Error(`${url}: ${r.status}`);
+  return r.json();
+}
+
+const PANELS = ['tab1','tab2','tab3','tab4','tab5'];
+const imgBase   = slug => `/images/${slug}/`;
+const albumJson = slug => `/data/albums/${slug}.json`;
+const clubIcon  = club => `/assets/icons/clubs/${club}.svg`;
+
+// ===== UA-based link builders =====
+const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+function clubUrl(club, id){
+  if (!id) return '#';
+  switch (club) {
+    case 'carrot': return isMobile
+      ? `https://carrotclub.net/sp/horse/lfx-horse-id-${id}.htm`
+      : `https://carrotclub.net/horse/horse.asp?id=${id}`;
+    case 'silk':   return `https://www.silkhorseclub.jp/horse_info/shozoku/detail/${id}/view`;
+    case 'tokyo':  return `https://www.tokyo-tc.com/${id}`; // horses.json 側が next/xxxx 等を持っている想定
+    case 'win':    return `https://www.win-rc.co.jp/site/belonging/list/belong_list_detail.php?hcd=${id}`;
+    default:       return '#';
+  }
+}
+
+const jraUrl  = id => id ? `https://www.jra.go.jp/JRADB/accessU.html?CNAME=${encodeURIComponent(id)}` : '#';
+const jbisUrl = id => id ? `https://www.jbis.or.jp/horse/${encodeURIComponent(id)}/` : '#';
+function bbsUrl(id){
+  if(!id) return '#';
+  return isMobile
+    ? `https://db.sp.netkeiba.com/horse_bbs/board.html?horse_id=${encodeURIComponent(id)}`
+    : `https://db.netkeiba.com/?pid=horse_board&id=${encodeURIComponent(id)}`;
+}
+
+// ===== album -> hero pick =====
+function pickHero(album){
+  if (!Array.isArray(album) || album.length===0) return null;
+  return album.find(x=>x.isHero) || album[0];
+}
+
+// ===== placeholder (SVG data URI) =====
+function placeholderHTML(label='画像準備中'){
+  const svg = encodeURIComponent(`
+    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300' width='400' height='300'>
+      <defs>
+        <linearGradient id='g' x1='0' x2='0' y1='0' y2='1'>
+          <stop offset='0%' stop-color='#111315'/>
+          <stop offset='100%' stop-color='#0c0e10'/>
+        </linearGradient>
+        <pattern id='p' width='20' height='20' patternUnits='userSpaceOnUse'>
+          <path d='M20 0H0V20' fill='none' stroke='#2b2f34' stroke-width='1'/>
+        </pattern>
+      </defs>
+      <rect x='1' y='1' width='398' height='298' rx='12' ry='12' fill='url(#g)' stroke='#2b2f34'/>
+      <rect x='1' y='1' width='398' height='298' rx='12' ry='12' fill='url(#p)' opacity='0.55'/>
+      <g fill='#3f4750' transform='translate(0,6)'>
+        <circle cx='150' cy='140' r='22'/><rect x='185' y='120' width='80' height='40' rx='6'/>
+      </g>
+      <text x='200' y='246' text-anchor='middle' font-family='system-ui, -apple-system, Segoe UI, Roboto, Noto Sans JP, sans-serif' font-size='16' fill='#9aa1a9'>${label}</text>
+    </svg>
+  `);
+  return `<div class="placeholder"><div class="ph"><img alt="${label}" src="data:image/svg+xml,${svg}"></div></div>`;
+}
+
+// ===== card builder =====
+function buildCard({ horse, hero, hasAlbum }){
+  const nameLabel = horse.nameJa || horse.name || horse.slug;
+
+  const card = document.createElement('article');
+  card.className = 'card';
+
+  // 左：画像（アルバムが無ければ詳細へ）
+  const left = document.createElement('a');
+  left.className = 'card-left';
+  left.href = hasAlbum ? `/album.html?id=${encodeURIComponent(horse.slug)}`
+                       : `/horse.html?id=${encodeURIComponent(horse.slug)}`;
+  if (hero) {
+    const src = imgBase(horse.slug) + (hero.file || hero.src);
+    left.innerHTML = `<img src="${src}" alt="${hero.caption || nameLabel}" loading="lazy">`; 
+    if (!hasAlbum) left.classList.add('is-disabled');
+  } else {
+    left.innerHTML = placeholderHTML();
+    left.classList.add('is-disabled');
+  }
+  card.appendChild(left);
+
+  // 右：上（クラブ公式）
+  const right = document.createElement('div');
+  right.className = 'card-right';
+
+  const top = document.createElement('div');
+  top.className = 'card-right-top';
+  top.innerHTML = `
+    <a href="${clubUrl(horse.club, horse.clubPage)}" target="_blank" rel="noopener" aria-label="${nameLabel} のクラブ公式へ">
+      <img class="club-icon" src="${clubIcon(horse.club)}" alt="${horse.club}">
+      <span>${nameLabel}</span>
+    </a>
+    <div class="subtle">クラブ公式</div>
+  `;
+  right.appendChild(top);
+
+  // 右：中（詳細へ）
+  const mid = document.createElement('a');
+  mid.className = 'card-right-mid';
+  mid.href = `/horse.html?id=${encodeURIComponent(horse.slug)}`;
+  mid.setAttribute('aria-label', `${nameLabel} の詳細ページへ`);
+  mid.innerHTML = `<span>詳細ページへ</span>`;
+  right.appendChild(mid);
+
+  // 右：下（JRA/JBIS/BBS）
+  const bottom = document.createElement('div');
+  bottom.className = 'links';
+  if (horse.jra_id)  bottom.innerHTML += `<a href="${jraUrl(horse.jra_id)}" target="_blank" rel="noopener">JRA</a>`;
+  if (horse.jbis_id) bottom.innerHTML += `<a href="${jbisUrl(horse.jbis_id)}" target="_blank" rel="noopener">JBIS</a>`;
+  if (horse.netkeiba_horse_id) bottom.innerHTML += `<a href="${bbsUrl(horse.netkeiba_horse_id)}" target="_blank" rel="noopener">BBS</a>`;
+  right.appendChild(bottom);
+
+  card.appendChild(right);
+  return card;
+}
+
+// ===== tabs: show/hide + swipe + per-tab scroll restore =====
+function showTab(id){
+  PANELS.forEach(tid=>{
+    const p = document.getElementById(tid);
+    if (!p) return;
+    p.hidden = (tid !== id);
+  });
+  $$('.tab').forEach(b=>b.classList.toggle('is-active', b.dataset.tab===id));
+  localStorage.setItem('lastTab', id);
+}
+
+function saveScroll(id){
+  const y = document.documentElement.scrollTop || document.body.scrollTop || 0;
+  sessionStorage.setItem(`scroll:${id}`, String(y));
+}
+
+function restoreScrollAfterImages(id){
+  const panel = document.getElementById(id);
+  if (!panel) return;
+
+  const targetY = Number(sessionStorage.getItem(`scroll:${id}`) || 0);
+  if (!targetY) return;
+
+  const imgs = [...panel.querySelectorAll('img')].filter(img => img.complete === false);
+  if (imgs.length === 0) {
+    window.scrollTo({top: targetY});
+    return;
+  }
+  let loaded = 0;
+  const tryRestore = () => {
+    loaded++;
+    if (loaded >= imgs.length) window.scrollTo({top: targetY});
+  };
+  imgs.forEach(img => {
+    img.addEventListener('load', tryRestore, {once:true});
+    img.addEventListener('error', tryRestore, {once:true});
+  });
+}
+
+// swipe between tabs (mobile UX)
+function enableSwipe(){
+  let sx=0, sy=0, moving=false;
+  const el = document.body;
+  el.addEventListener('touchstart', e=>{
+    if (!e.touches[0]) return;
+    sx = e.touches[0].clientX; sy = e.touches[0].clientY; moving=true;
+  }, {passive:true});
+  el.addEventListener('touchmove', e=>{
+    if (!moving || !e.touches[0]) return;
+    const dx = e.touches[0].clientX - sx;
+    const dy = e.touches[0].clientY - sy;
+    if (Math.abs(dy) > Math.abs(dx)) return;   // 縦優先
+    if (Math.abs(dx) < 48) return;             // しきい値
+    moving=false;
+    const cur = localStorage.getItem('lastTab') || 'tab1';
+    const idx = PANELS.indexOf(cur);
+    const next = dx < 0 ? PANELS[(idx+1)%PANELS.length] : PANELS[(idx-1+PANELS.length)%PANELS.length];
+    saveScroll(cur);
+    showTab(next);
+    setTimeout(()=>restoreScrollAfterImages(next), 0);
+  }, {passive:true});
+}
+
+// ===== render =====
+async function render(){
+  // タブクリック
+  $$('.tab').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const cur = localStorage.getItem('lastTab') || 'tab1';
+      saveScroll(cur);
+      const next = btn.dataset.tab;
+      showTab(next);
+      setTimeout(()=>restoreScrollAfterImages(next), 0);
+    });
+  });
+
+  // 初期タブ
+  const init = localStorage.getItem('lastTab') || 'tab1';
+  showTab(init);
+
+  // horses.json 読み込み
+  let horses;
+  try{
+    const doc = await getJSON('/data/horses.json');
+    horses = Array.isArray(doc) ? doc : doc.horses;
+  }catch(e){
+    console.error(e);
+    $('#tab1')?.insertAdjacentText('afterbegin','horses.json の読み込みに失敗しました。');
+    return;
+  }
+
+  // パネル要素
+  const areas = Object.fromEntries(PANELS.map(id=>[id, document.getElementById(id)]));
+
+  // 各馬カード
+  for (const h of horses){
+    let hero=null, hasAlbum=false;
+    try{
+      const a = await getJSON(albumJson(h.slug)); // /data/albums/<slug>.json
+      hasAlbum = Array.isArray(a.album) && a.album.length>0;
+      hero = hasAlbum ? (pickHero(a.album)) : null;
+    }catch(e){
+      // 未整備OK
+    }
+    const card = buildCard({horse:h, hero, hasAlbum});
+    const key = 'tab' + String(h.tab || 1);
+    (areas[key] || areas['tab1']).appendChild(card);
+  }
+
+  // 初期タブのスクロール復元（画像読み込み待ち）
+  restoreScrollAfterImages(init);
+}
+
+// ===== boot =====
+window.addEventListener('DOMContentLoaded', ()=>{
+  render().catch(console.error);
+  enableSwipe();
+});
