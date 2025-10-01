@@ -33,14 +33,14 @@ html,body{ margin:0; background:var(--bg); color:var(--fg);
 .tab.is-active{ background:#555; }
 
 /* Layout */
-main{ padding:36px 0 0; }
+main{ padding:40px 0 0; }
 .grid{ display:grid; gap:8px; }
 @media (min-width:860px){ .grid{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
 .tab-panel[hidden]{ display:none; }
 
 /* Card */
 .card{ display:grid; grid-template-columns:1.25fr 1fr; background:var(--card); overflow:hidden;
-  padding:0; margin:4px 0; background-color: red;}
+  padding:0; margin-bottom:8px; background-color: red;}
 .card-left{ display:block; line-height:0; background:green; }
 .card-left img{ width:100%; aspect-ratio:4/3; object-fit:cover; display:block; }
 a.is-disabled{ pointer-events:none; opacity:.55; cursor:default; }
