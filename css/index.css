@@ -1,4 +1,3 @@
-
 :root{
   --bg:#111315; --fg:#e9eef3; --muted:#9aa1a9; --line:#2b2f34; --link:#7db3ff;
   --card:#171a1d; --chip:#20252b;
@@ -6,146 +5,84 @@
   --fs-name: clamp(14px, 3.3vw, 18px);
   --fs-meta: clamp(12px, 2.4vw, 14px);
 }
+
+/* Base */
 html,body{
   margin:0; background:var(--bg); color:var(--fg);
   font: var(--fs-body)/1.55 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans JP",sans-serif;
 }
+
+/* Header: title + tabs */
 .site-header{
   position:sticky; top:0; z-index:10; background:var(--bg);
   border-bottom:1px solid var(--line);
   padding:4px 4px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
+  display:flex; align-items:center; justify-content:space-between;
 }
-.site-header h1{margin:0; font-size:18px; font-weight:700}
+.site-header h1{ margin:0; font-size:16px; font-weight:700; } /* ① 出資馬 少し小さく */
 
-.tabs{
-  padding:0 4px 6px;
-  display:flex;
-  gap:4px;
-}
+/* Tabs */
+.tabs{ display:flex; gap:4px; padding:0 4px 6px; }
 .tab{
-  height: 28px;
-  width: 54px;
-  padding: 4px 0;
-  background: #222;
-  border: none;
-  border-radius: 6px;
-  font-size: 12px;
-  color: #eee;
-  cursor:pointer;
-  text-align: center;
+  width:54px; height:28px; padding:4px 0;
+  background:#222; border:0; border-radius:6px;
+  font-size:12px; color:#eee; cursor:pointer; text-align:center;
 }
-.tab.is-active{background:#555}
+.tab.is-active{ background:#555; }
 
-main{padding:12px 0}
-.grid{display:grid; gap:12px}
-@media (min-width: 860px){ .grid{grid-template-columns: repeat(2, minmax(0,1fr));} }
+/* Layout */
+main{ padding:2px 0 0; } /* ② カード上の余白を詰める */
+.grid{ display:grid; gap:8px; }
+@media (min-width: 860px){ .grid{ grid-template-columns: repeat(2, minmax(0,1fr)); } }
 
-.tab-panel[hidden]{display:none}
+.tab-panel[hidden]{ display:none; }
 
+/* Card */
 .card{
-  display:grid; grid-template-columns:1.15fr 1fr; gap:0px;
-  /* border:1px solid var(--line); */
-  border: none;
-  /* border-radius:12px; */
-  background:var(--card);
-  overflow:hidden;
+  display:grid; grid-template-columns:1.12fr 1fr; gap:0;
+  background:var(--card); overflow:hidden;
+  padding:2px; margin:0 0 4px; /* ⑤ 下余白は 4px */
 }
-/* @media (max-width: 520px){ .card{grid-template-columns: 1fr;} } */
+.card-left{ display:block; line-height:0; background:#0f1113; }
+.card-left img{ width:100%; aspect-ratio:4/3; object-fit:cover; display:block; }
+a.is-disabled{ pointer-events:none; opacity:.55; cursor:default; }
 
-.card-left{display:block; line-height:0; background:#0f1113
-}
-.card-left img{width:100%; aspect-ratio:4/3; object-fit:cover; display:block
-}
-a.is-disabled{pointer-events:none; opacity:.55; cursor:default
-}
+.card-right{ display:grid; grid-template-rows:auto 1fr auto; padding:2px; gap:0; }
 
-.card-right{display:grid; grid-template-rows:auto 1fr auto; padding:4px; gap:0
+/* Right-Top: icon + name (③ 高さを抑える) */
+.card-right-top{ padding:2px; }
+.card-right-top a{
+  display:inline-flex; align-items:center; gap:4px;
+  text-decoration:none; color:var(--fg); font-weight:700; font-size:var(--fs-name);
 }
+.club-icon{ width:14px; height:14px; object-fit:contain; border:0; background:#0d0f11; }
 
-.card-right-top {
-  padding: 4px;
-}
-.card-right-top a{display:inline-flex; align-items:center; gap:4px; text-decoration:none; color:var(--fg); font-weight:700; font-size:var(--fs-name)
-}
-.club-icon{width:14px; height:14px; object-fit:contain; border:none; background:#0d0f11
-}
-.subtle{color:var(--muted); font-size:12px; margin-top:2px
-}
+/* Right-Middle: mini profile */
+.card-right-mid{ display:block; text-decoration:none; padding:4px; border-radius:8px; }
+.card-right-mid:hover{ background:#161b20; }
 
-/* 右中央：ミニプロフィール */
-.card-right-mid{
-  display:block;
-  border:none;
-  text-decoration:none;
-  padding:4px 4px;
-  transition:background .15s ease;
-}
-.card-right-mid:hover{ background:#161b20; 
-}
+.mini-prof{ display:grid; gap:4px; font-size:12px; color:var(--fg); }
 
-/* ===== mini-prof を flex 左寄せに（grid を上書き）===== */
-.mini-prof .row{
-  display:flex !important;          /* ← タイポ修正＆強制適用 */
-  flex-wrap:wrap;
-  gap:4px 10px;
-  justify-content:flex-start;
-  align-items:center;
+/* デフォルトは横に詰める（PC/広い画面） */
+.mini-prof .row{ display:flex; flex-wrap:wrap; gap:4px 10px; align-items:center; justify-content:flex-start; }
+.mini-prof .row-1col{ display:flex; gap:4px 10px; align-items:center; }
+
+.mini-prof .label{
+  color:var(--muted); border:1px solid var(--line); background:#0f1113;
+  padding:0 6px; border-radius:999px; font-size:11px; line-height:1.7; white-space:nowrap;
 }
-.mini-prof .row-1col{
-  display:flex !important;          /* 1列行も flex に統一 */
-  flex-wrap:nowrap;
-  gap:4px 10px;
-  justify-content:flex-start;
-  align-items:center;
+.mini-prof .val{ min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+
+/* モバイルは ④ 1項目＝1行（ラベル・値の2カラム）に強制して縦並びへ */
+@media (max-width: 520px){
+  .mini-prof .row{ display:grid; grid-template-columns:auto 1fr; gap:4px 12px; }
+  .mini-prof .row-1col{ display:grid; grid-template-columns:auto 1fr; }
 }
 
-/* 値が省略記号でちゃんと収まるように */
-.mini-prof .val{
-  min-width:0;                      /* ← flex での省略可 */
-  overflow:hidden;
-  text-overflow:ellipsis;
-  white-space:nowrap;
-}
+/* Right-Bottom: links */
+.links{ display:flex; gap:12px; flex-wrap:wrap; margin:4px 0 0; } /* ⑤ 8px/4px/4px相当の控えめ余白 */
+.links a{ color:var(--link); text-decoration:none; font-weight:600; font-size:var(--fs-meta); }
 
-/* スマホ用の grid 指定は無効化（flex に任せる） */
-@media (max-width:520px){
-  .mini-prof .row{
-    /* grid-template-columns:auto 1fr; ← 削除/無効化 */
-  }
-  .card-right-mid span{display:flex; align-items:center; justify-content:center; height:100%; font-size:13px; color:var(--muted)}
-
-  .links{display:flex; gap:12px; flex-wrap:wrap}
-  .links a{color:var(--link); text-decoration:none; font-weight:600; font-size:var(--fs-meta)}
-
-  .placeholder{display:grid; place-items:center; color:#9aa1a9}
-  .placeholder .ph{display:grid; place-items:center; width:100%; aspect-ratio:4/3; user-select:none}
-
-  /* 一覧をスマホで詰める */
-  .card {
-  padding: 2px 2px;
-  margin-bottom: 2px;
-  }
-  .card-right-top span {
-  font-size: 14px;
-  font-weight: 600;
-  }
-  .mini-prof {
-  gap: 2px;   /* 行間を縮める */
-  font-size: 12px;
-  }
-  .mini-prof .label {
-  font-size: 11px;
-  padding: 0 2px;
-  }
-  .mini-prof .val {
-  font-size: 12px;
-  }
-  .links {
-  margin-top: 4px;
-  font-size: 12px;
-  }
-
-}
+/* Placeholder */
+.placeholder{ display:grid; place-items:center; color:#9aa1a9; }
+.placeholder .ph{ display:grid; place-items:center; width:100%; aspect-ratio:4/3; user-select:none; }
