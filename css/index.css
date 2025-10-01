@@ -61,6 +61,9 @@ a.is-disabled{pointer-events:none; opacity:.55; cursor:default}
 
 .card-right{display:grid; grid-template-rows:auto 1fr auto; padding:4px; gap:0}
 
+.card-right-top {
+  padding: 4px;
+}
 .card-right-top a{display:inline-flex; align-items:center; gap:4px; text-decoration:none; color:var(--fg); font-weight:700; font-size:var(--fs-name)}
 .club-icon{width:16px; height:16px; object-fit:contain; border:none; background:#0d0f11}
 .subtle{color:var(--muted); font-size:12px; margin-top:2px}
@@ -77,10 +80,10 @@ a.is-disabled{pointer-events:none; opacity:.55; cursor:default}
 
 .mini-prof{ display:grid; gap:4px; font-size:12px; color:var(--fg); }
 .mini-prof .row{
-  display:grid;
-  grid-template-columns: auto 1fr auto 1fr;
+  display:grflexid;
+  flex-wrap: wrap;
   gap:4px;
-  align-items:center;
+  justify-content: flex-start;
 }
 .mini-prof .row-1col{ grid-template-columns:auto 1fr; }
 .mini-prof .label{
