@@ -182,68 +182,68 @@ function buildCard({ horse, hero, hasAlbum }){
   // 右：下（JRA/JBIS/BBS）
   const bottom = document.createElement('div');
   bottom.className = 'links';
+// 右：下（JRA/JBIS/BBS）
+const linksContainer = document.createElement('div');
+linksContainer.className = 'links';
 
-  // 右：下（JRA/JBIS/BBS）
-  const bottom = document.createElement('div');
-  bottom.className = 'links';
+// リンク作成関数
+function createLink(url, text, iconSrc, iconAlt) {
+  // URLが無ければnullを返す
+  if (!url) return null;
 
-  // リンク作成関数
-  function createLink(url, text, iconSrc, iconAlt) {
-    // URLが無ければnullを返す
-    if (!url) return null;
+  // リンク要素を作成
+  const a = document.createElement('a');
+  a.href = url;
+  a.target = "_blank";
+  a.rel = "noopener";
 
-    // リンク要素を作成
-    const a = document.createElement('a');
-    a.href = url;
-    a.target = "_blank";
-    a.rel = "noopener";
+  // アイコン要素を作成
+  const img = document.createElement('img');
+  img.className = 'icon';
+  img.src = iconSrc;
+  img.alt = iconAlt;
 
-    // アイコン要素を作成
-    const img = document.createElement('img');
-    img.className = 'icon';
-    img.src = iconSrc;
-    img.alt = iconAlt;
+  // アイコンとテキストをリンクに追加
+  a.appendChild(img);
+  a.appendChild(document.createTextNode(text));
 
-    // アイコンとテキストをリンクに追加
-    a.appendChild(img);
-    a.appendChild(document.createTextNode(text));
+  // リンク要素を返す
+  return a;
+}
 
-    // リンク要素を返す
-    return a;
-  }
+// JRAリンクを作成
+const jraLink = createLink(
+  horse.jra_id ? jraUrl(horse.jra_id) : null,  // URLがあれば生成、無ければnull
+  'JRA',  // リンクテキスト
+  'assets/icons/jra.ico',  // アイコン
+  'JRAアイコン'  // アイコンの代替テキスト
+);
 
-  // JRAリンクを作成
-  const jraLink = createLink(
-    horse.jra_id ? jraUrl(horse.jra_id) : null,  // URLがあれば生成、無ければnull
-    'JRA',  // リンクテキスト
-    'assets/icons/jra.ico',  // アイコン
-    'JRAアイコン'  // アイコンの代替テキスト
-  );
+// JBISリンクを作成
+const jbisLink = createLink(
+  horse.jbis_id ? jbisUrl(horse.jbis_id) : null,
+  'JBIS',
+  'assets/icons/jbis.png',
+  'JBISアイコン'
+);
 
-  // JBISリンクを作成
-  const jbisLink = createLink(
-    horse.jbis_id ? jbisUrl(horse.jbis_id) : null,
-    'JBIS',
-    'assets/icons/jbis.png',
-    'JBISアイコン'
-  );
+// netkeibaのBBSリンクを作成
+const bbsLink = createLink(
+  horse.netkeiba_horse_id ? bbsUrl(horse.netkeiba_horse_id) : null,
+  'BBS',
+  'assets/icons/netkeiba.png',
+  'BBSアイコン'
+);
 
-  // netkeibaのBBSリンクを作成
-  const bbsLink = createLink(
-    horse.netkeiba_horse_id ? bbsUrl(horse.netkeiba_horse_id) : null,
-    'BBS',
-    'assets/icons/netkeiba.png',
-    'BBSアイコン'
-  );
+// それぞれのリンクが作成された場合にlinksContainerに追加
+if (jraLink) linksContainer.appendChild(jraLink);
+if (jbisLink) linksContainer.appendChild(jbisLink);
+if (bbsLink) linksContainer.appendChild(bbsLink);
 
-  // それぞれのリンクが作成された場合にbottomに追加
-  if (jraLink) bottom.appendChild(jraLink);
-  if (jbisLink) bottom.appendChild(jbisLink);
-  if (bbsLink) bottom.appendChild(bbsLink);
+// 最後にlinksContainerをrightに追加してカードに追加
+right.appendChild(linksContainer);
+card.appendChild(right);
 
-  // 最後にbottomをrightに追加してカードに追加
-  right.appendChild(bottom);
-  card.appendChild(right);
 }
 
 // ===== tabs: show/hide + swipe + per-tab scroll restore =====
