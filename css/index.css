@@ -45,7 +45,7 @@ main{ padding:40px 0 0; }
 .card-left img{ width:100%; aspect-ratio:4/3; object-fit:cover; display:block; }
 a.is-disabled{ pointer-events:none; opacity:.55; cursor:default; }
 
-.card-right{ display:grid; grid-template-rows:auto 1fr auto; padding:2px; gap:0; background-color: orange;}
+.card-right{ display:grid; grid-template-rows:auto 1fr auto; padding:2px; gap:0;}
 
 /* Right-Top */
 .card-right-top{ padding:2px; }
