@@ -84,7 +84,7 @@ function placeholderHTML(label='画像準備中'){
 }
 
 // ===== card builder =====
-function buildCard({ horse, hero, hasAlbum }){
+function buildCard({ horse, hero, hasAlbum }) {
   const nameLabel = horse.nameJa || horse.name || horse.slug;
   const val = (x) => (x ?? '').toString().trim() || '—';
 
@@ -95,7 +95,7 @@ function buildCard({ horse, hero, hasAlbum }){
   const left = document.createElement('a');
   left.className = 'card-left';
   left.href = hasAlbum ? `album.html?id=${encodeURIComponent(horse.slug)}`
-                       : `horse.html?id=${encodeURIComponent(horse.slug)}`;
+    : `horse.html?id=${encodeURIComponent(horse.slug)}`;
   if (hero) {
     const src = `images/${horse.slug}/${hero.file || hero.src}`;
     const img = document.createElement('img');
@@ -147,7 +147,7 @@ function buildCard({ horse, hero, hasAlbum }){
   mini.className = 'mini-prof';
 
   // helper: row を作る
-  const mkRow = (pairs, oneCol=false) => {
+  const mkRow = (pairs, oneCol = false) => {
     const row = document.createElement('div');
     row.className = 'row' + (oneCol ? ' row-1col' : '');
     pairs.forEach(([label, value]) => {
@@ -192,9 +192,45 @@ function buildCard({ horse, hero, hasAlbum }){
   // 右：下（JRA/JBIS/BBS）
   const bottom = document.createElement('div');
   bottom.className = 'links';
-  if (horse.jra_id)  bottom.innerHTML += `<a href="${jraUrl(horse.jra_id)}" target="_blank" rel="noopener">JRA</a>`;
-  if (horse.jbis_id) bottom.innerHTML += `<a href="${jbisUrl(horse.jbis_id)}" target="_blank" rel="noopener">JBIS</a>`;
-  if (horse.netkeiba_horse_id) bottom.innerHTML += `<a href="${bbsUrl(horse.netkeiba_horse_id)}" target="_blank" rel="noopener">BBS</a>`;
+
+  // JRAリンク（IDがない場合、クリックできない）
+  const jraLink = document.createElement('a');
+  jraLink.href = horse.jra_id ? jraUrl(horse.jra_id) : '#';
+  jraLink.target = '_blank';
+  jraLink.rel = 'noopener';
+  jraLink.innerHTML = '<img src="assets/icons/jra.png" alt="JRA">JRA';
+  if (!horse.jra_id) {
+    jraLink.style.pointerEvents = 'none'; // クリックできないようにする
+    jraLink.style.opacity = '0.5'; // 見た目も無効に
+  }
+
+  // JBISリンク（IDがない場合、クリックできない）
+  const jbisLink = document.createElement('a');
+  jbisLink.href = horse.jbis_id ? jbisUrl(horse.jbis_id) : '#';
+  jbisLink.target = '_blank';
+  jbisLink.rel = 'noopener';
+  jbisLink.innerHTML = '<img src="assets/icons/jbis.png" alt="JBIS">JBIS';
+  if (!horse.jbis_id) {
+    jbisLink.style.pointerEvents = 'none'; // クリックできないようにする
+    jbisLink.style.opacity = '0.5'; // 見た目も無効に
+  }
+
+  // BBSリンク（IDがない場合、クリックできない）
+  const bbsLink = document.createElement('a');
+  bbsLink.href = horse.netkeiba_horse_id ? bbsUrl(horse.netkeiba_horse_id) : '#';
+  bbsLink.target = '_blank';
+  bbsLink.rel = 'noopener';
+  bbsLink.innerHTML = '<img src="assets/icons/netkeiba.png" alt="BBS">BBS';
+  if (!horse.netkeiba_horse_id) {
+    bbsLink.style.pointerEvents = 'none'; // クリックできないようにする
+    bbsLink.style.opacity = '0.5'; // 見た目も無効に
+  }
+
+  // リンクをまとめて追加
+  bottom.appendChild(jraLink);
+  bottom.appendChild(jbisLink);
+  bottom.appendChild(bbsLink);
+
   right.appendChild(bottom);
 
   card.appendChild(right);
