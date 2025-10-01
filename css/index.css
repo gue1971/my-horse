@@ -1,17 +1,17 @@
 :root{
-  --bg:#111315; --fg:#e9eef3; --muted:#9aa1a9; --line:#2b2f34; --link:#7db3ff;
-  --card:#171a1d;
+  --bg:#000; --fg:#eee; --muted:#9aa1a9; --line:#2b2f34; --link:#7db3ff;
+  --card:#333;
   --fs-body: clamp(13px, 2.6vw, 16px);
   --fs-name: clamp(14px, 3.3vw, 18px);
   --fs-meta: clamp(12px, 2.4vw, 14px);
 }
-html,body{ margin:0; background:var(--bg); color:var(--fg);
+html,body{ margin:0; background:var(--bg); color:var(--fg);padding-top: 40px;
   font: var(--fs-body)/1.25 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans JP",sans-serif; }
 
 /* Header */
-.site-header{ position:sticky; top:0; z-index:10; background:var(--bg);
-  border-bottom:1px solid var(--line); padding:4px; display:flex; align-items:center; justify-content:space-between; }
-.site-header h1{ margin:0; font-size:16px; font-weight:700; padding-left:6px; }
+.site-header{ position:fixed; top:0; left:0; right:0; z-index:10; background:var(--bg);
+  border-bottom:0 ; padding:4px; display:flex; align-items:center; justify-content:space-between; }
+.site-header h1{ margin:0; font-size:20px; font-weight:700; padding-left:4px; }
 /* 出資馬タイトルのリンク：下線なし／色変化なし固定 */
 .site-header h1 a,
 .site-header h1 a:link,
@@ -27,8 +27,8 @@ html,body{ margin:0; background:var(--bg); color:var(--fg);
 }
 
 /* Tabs */
-.tabs{ display:flex; gap:4px; padding:0 4px 6px; }
-.tab{ width:54px; height:28px; padding:4px 0; background:#222; border:0; border-radius:6px;
+.tabs{ display:flex; gap:8px; padding:0 4px; }
+.tab{ width:54px; height:28px; padding:0; background:var(--card); border:0;
   font-size:12px; color:#eee; cursor:pointer; text-align:center; }
 .tab.is-active{ background:#555; }
 
