@@ -65,7 +65,7 @@ a.is-disabled{pointer-events:none; opacity:.55; cursor:default}
   padding: 4px;
 }
 .card-right-top a{display:inline-flex; align-items:center; gap:4px; text-decoration:none; color:var(--fg); font-weight:700; font-size:var(--fs-name)}
-.club-icon{width:16px; height:16px; object-fit:contain; border:none; background:#0d0f11}
+.club-icon{width:14px; height:14px; object-fit:contain; border:none; background:#0d0f11}
 .subtle{color:var(--muted); font-size:12px; margin-top:2px}
 
 /* 右中央：ミニプロフィール */
@@ -112,20 +112,20 @@ a.is-disabled{pointer-events:none; opacity:.55; cursor:default}
 
 /* 一覧をスマホで詰める */
 .card {
-  padding: 6px 8px;
-  margin-bottom: 6px;
+  padding: 2px 2px;
+  margin-bottom: 2px;
 }
 .card-right-top span {
   font-size: 14px;
   font-weight: 600;
 }
 .mini-prof {
-  gap: 4px;   /* 行間を縮める */
+  gap: 2px;   /* 行間を縮める */
   font-size: 12px;
 }
 .mini-prof .label {
   font-size: 11px;
-  padding: 0 6px;
+  padding: 0 2px;
 }
 .mini-prof .val {
   font-size: 12px;
