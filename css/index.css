@@ -55,18 +55,25 @@ main{padding:12px 0}
 }
 /* @media (max-width: 520px){ .card{grid-template-columns: 1fr;} } */
 
-.card-left{display:block; line-height:0; background:#0f1113}
-.card-left img{width:100%; aspect-ratio:4/3; object-fit:cover; display:block}
-a.is-disabled{pointer-events:none; opacity:.55; cursor:default}
+.card-left{display:block; line-height:0; background:#0f1113
+}
+.card-left img{width:100%; aspect-ratio:4/3; object-fit:cover; display:block
+}
+a.is-disabled{pointer-events:none; opacity:.55; cursor:default
+}
 
-.card-right{display:grid; grid-template-rows:auto 1fr auto; padding:4px; gap:0}
+.card-right{display:grid; grid-template-rows:auto 1fr auto; padding:4px; gap:0
+}
 
 .card-right-top {
   padding: 4px;
 }
-.card-right-top a{display:inline-flex; align-items:center; gap:4px; text-decoration:none; color:var(--fg); font-weight:700; font-size:var(--fs-name)}
-.club-icon{width:14px; height:14px; object-fit:contain; border:none; background:#0d0f11}
-.subtle{color:var(--muted); font-size:12px; margin-top:2px}
+.card-right-top a{display:inline-flex; align-items:center; gap:4px; text-decoration:none; color:var(--fg); font-weight:700; font-size:var(--fs-name)
+}
+.club-icon{width:14px; height:14px; object-fit:contain; border:none; background:#0d0f11
+}
+.subtle{color:var(--muted); font-size:12px; margin-top:2px
+}
 
 /* 右中央：ミニプロフィール */
 .card-right-mid{
@@ -76,62 +83,69 @@ a.is-disabled{pointer-events:none; opacity:.55; cursor:default}
   padding:4px 4px;
   transition:background .15s ease;
 }
-.card-right-mid:hover{ background:#161b20; }
-
-.mini-prof{ display:grid; gap:4px; font-size:12px; color:var(--fg); }
-.mini-prof .row{
-  display:grflexid;
-  flex-wrap: wrap;
-  gap:4px;
-  justify-content: flex-start;
+.card-right-mid:hover{ background:#161b20; 
 }
-.mini-prof .row-1col{ grid-template-columns:auto 1fr; }
-.mini-prof .label{
-  color:var(--muted);
-  border:1px solid var(--line);
-  background:#0f1113;
-  padding:1px 8px;
-  font-size:12px;
-  line-height:1.6;
+
+/* ===== mini-prof を flex 左寄せに（grid を上書き）===== */
+.mini-prof .row{
+  display:flex !important;          /* ← タイポ修正＆強制適用 */
+  flex-wrap:wrap;
+  gap:4px 10px;
+  justify-content:flex-start;
+  align-items:center;
+}
+.mini-prof .row-1col{
+  display:flex !important;          /* 1列行も flex に統一 */
+  flex-wrap:nowrap;
+  gap:4px 10px;
+  justify-content:flex-start;
+  align-items:center;
+}
+
+/* 値が省略記号でちゃんと収まるように */
+.mini-prof .val{
+  min-width:0;                      /* ← flex での省略可 */
+  overflow:hidden;
+  text-overflow:ellipsis;
   white-space:nowrap;
 }
-.mini-prof .val{
-  overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
-}
+
+/* スマホ用の grid 指定は無効化（flex に任せる） */
 @media (max-width:520px){
-  .mini-prof .row{ grid-template-columns:auto 1fr; }
-}
+  .mini-prof .row{
+    /* grid-template-columns:auto 1fr; ← 削除/無効化 */
+  }
+  .card-right-mid span{display:flex; align-items:center; justify-content:center; height:100%; font-size:13px; color:var(--muted)}
 
-.card-right-mid span{display:flex; align-items:center; justify-content:center; height:100%; font-size:13px; color:var(--muted)}
+  .links{display:flex; gap:12px; flex-wrap:wrap}
+  .links a{color:var(--link); text-decoration:none; font-weight:600; font-size:var(--fs-meta)}
 
-.links{display:flex; gap:12px; flex-wrap:wrap}
-.links a{color:var(--link); text-decoration:none; font-weight:600; font-size:var(--fs-meta)}
+  .placeholder{display:grid; place-items:center; color:#9aa1a9}
+  .placeholder .ph{display:grid; place-items:center; width:100%; aspect-ratio:4/3; user-select:none}
 
-.placeholder{display:grid; place-items:center; color:#9aa1a9}
-.placeholder .ph{display:grid; place-items:center; width:100%; aspect-ratio:4/3; user-select:none}
-
-/* 一覧をスマホで詰める */
-.card {
+  /* 一覧をスマホで詰める */
+  .card {
   padding: 2px 2px;
   margin-bottom: 2px;
-}
-.card-right-top span {
+  }
+  .card-right-top span {
   font-size: 14px;
   font-weight: 600;
-}
-.mini-prof {
+  }
+  .mini-prof {
   gap: 2px;   /* 行間を縮める */
   font-size: 12px;
-}
-.mini-prof .label {
+  }
+  .mini-prof .label {
   font-size: 11px;
   padding: 0 2px;
-}
-.mini-prof .val {
+  }
+  .mini-prof .val {
   font-size: 12px;
-}
-.links {
+  }
+  .links {
   margin-top: 4px;
   font-size: 12px;
-}
+  }
 
+}
