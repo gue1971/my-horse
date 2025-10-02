@@ -10,12 +10,13 @@
       --line: #333;
       --gap: 12px;
       --pad: 12px;
-      --fs-body: clamp(16px, 3vw, 18px); /* 大きなフォント */
-      --fs-name: clamp(20px, 4vw, 24px); /* 馬名の大きさ */
+      --fs-body: clamp(15px, 2.8vw, 18px); /* 大きなフォント */
+      --fs-name: clamp(18px, 3.8vw, 24px); /* 馬名の大きさ */
       --fs-meta: clamp(14px, 2.6vw, 16px); /* メタ情報のサイズ */
       --fs-label: 1.2em; /* ラベルのフォントサイズ */
     }
 
+    /* 全般的なレイアウト */
     html, body {
       height: 100%;
       margin: 0;
@@ -25,9 +26,9 @@
       font-size: var(--fs-body);
       display: flex;
       flex-direction: column;
-      padding: 0;
     }
 
+    /* ヘッダー */
     .header {
       position: sticky;
       top: 0;
@@ -45,19 +46,39 @@
       display: flex;
       align-items: center;
       gap: 8px;
-      font-weight: bold;
     }
 
+    .header .title img {
+      width: 18px;
+      height: 18px;
+      object-fit: contain;
+    }
+
+    /* メインコンテンツ */
+    .main {
+      flex: 1;
+      overflow: auto;
+      display: flex;
+      justify-content: center;
+      padding: 12px;
+    }
+
+    .content {
+      width: 100%;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    /* ヒーロー */
     .hero {
       background: #111;
       border: 1px solid var(--line);
-      margin-top: 10px;
-      display: block;
     }
 
     .hero img {
       width: 100%;
-      height: auto;
+      display: block;
+      aspect-ratio: 4/3;
       object-fit: cover;
     }
 
@@ -68,18 +89,18 @@
       font-size: var(--fs-meta);
     }
 
+    /* プロフィール部 */
     .profile {
       margin-top: 12px;
-      background: var(--card);
+      background: #141414;
       border: 1px solid var(--line);
-      padding: 15px;
-      border-radius: 8px;
+      padding: 10px;
     }
 
     .profile .horse-name {
-      font-size: var(--fs-name);
+      font-size: 2em;
+      color: var(--fg);
       font-weight: bold;
-      margin-bottom: 10px;
     }
 
     .profile .rows {
@@ -104,6 +125,7 @@
       color: #bbb;
     }
 
+    /* コメント部 */
     .comments {
       margin-top: 12px;
       font-size: var(--fs-body);
@@ -112,9 +134,8 @@
     .comment {
       margin-bottom: 16px;
       padding: 8px;
-      background: var(--card);
+      background: #222;
       border: 1px solid var(--line);
-      border-radius: 8px;
     }
 
     .comment .date {
@@ -141,6 +162,7 @@
 </head>
 
 <body>
+  <!-- ヘッダー -->
   <header class="header">
     <div class="title" id="title">プロフィール</div>
   </header>
@@ -148,49 +170,49 @@
   <main class="main">
     <div class="content">
       <!-- ヒーロー -->
-      <section class="hero" id="hero">
-        <img src="path/to/your/image.jpg" alt="Hero Image">
-        <div class="one-line">阪神JF 優勝 484kg 2019年12月8日（2歳）</div>
-      </section>
+      <section class="hero" id="hero"></section>
 
       <!-- プロフィール -->
       <section class="profile" id="profile">
-        <div class="horse-name" id="horse-name">レシステンシア</div>
-        
+        <!-- 見出し -->
+        <div class="horse-name" id="horse-name"></div>
+
+        <!-- プロフィール詳細 -->
         <div class="rows">
           <!-- 父、母、母父 -->
           <div class="row">
-            <div class="cell"><span class="label">父</span><span id="sire">ダイワメジャー</span></div>
-            <div class="cell"><span class="label">母</span><span id="dam">マラコスタムブラダ</span></div>
+            <div class="cell"><span class="label">父</span><span id="sire"></span></div>
+            <div class="cell"><span class="label">母</span><span id="dam"></span></div>
           </div>
 
           <div class="row">
-            <div class="cell"><span class="label">母父</span><span id="damsire">Lizard Island</span></div>
+            <div class="cell"><span class="label">母父</span><span id="damsire"></span></div>
           </div>
 
           <!-- 生産、厩舎 -->
           <div class="row">
-            <div class="cell"><span class="label">生産</span><span id="farm">ノーザンファーム</span></div>
-            <div class="cell"><span class="label">厩舎</span><span id="stable">栗東 松下武士</span></div>
+            <div class="cell"><span class="label">生産</span><span id="farm"></span></div>
+            <div class="cell"><span class="label">厩舎</span><span id="stable"></span></div>
           </div>
 
           <!-- 生年月日、募集総額 -->
           <div class="row">
-            <div class="cell"><span class="label">生年月日</span><span id="birth">2017年3月15日生</span></div>
-            <div class="cell"><span class="label">募集総額</span><span id="price">2600万円</span></div>
+            <div class="cell"><span class="label">生年月日</span><span id="birth"></span></div>
+            <div class="cell"><span class="label">募集総額</span><span id="price"></span></div>
           </div>
 
           <!-- 測尺 -->
           <div class="row">
             <div class="cell"><span class="label">即尺</span></div>
-            <div class="cell"><span class="label">体高</span><span id="height">153.5cm</span></div>
-            <div class="cell"><span class="label">胸囲</span><span id="girth">179.0cm</span></div>
-            <div class="cell"><span class="label">管囲</span><span id="cannon">20.0cm</span></div>
-            <div class="cell"><span class="label">馬体重</span><span id="weight">482kg</span></div>
+            <div class="cell"><span class="label">体高</span><span id="height"></span></div>
+            <div class="cell"><span class="label">胸囲</span><span id="girth"></span></div>
+            <div class="cell"><span class="label">管囲</span><span id="cannon"></span></div>
+            <div class="cell"><span class="label">馬体重</span><span id="weight"></span></div>
           </div>
         </div>
       </section>
 
+      <!-- コメント -->
       <section class="comments" id="comments"></section>
     </div>
   </main>
