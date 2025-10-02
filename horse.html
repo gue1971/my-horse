@@ -10,9 +10,9 @@
       --line: #333;
       --gap: 12px;
       --pad: 12px;
-      --fs-body: clamp(16px, 3vw, 18px); /* 大きなフォント */
-      --fs-name: clamp(20px, 4vw, 24px); /* 馬名の大きさ */
-      --fs-meta: clamp(14px, 2.6vw, 16px); /* メタ情報のサイズ */
+      --fs-body: 16px; /* 文字サイズ固定 */
+      --fs-name: 18px; /* 馬名のサイズ */
+      --fs-meta: 12px; /* one-lineのサイズ */
       --fs-label: 1.2em; /* ラベルのフォントサイズ */
     }
 
@@ -28,6 +28,7 @@
       padding: 0;
     }
 
+    /* ヘッダー */
     .header {
       position: sticky;
       top: 0;
@@ -37,7 +38,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 8px;
+      height: 40px; /* 高さ40px */
+      padding-left: 4px; /* 左のパディング */
     }
 
     .header .title {
@@ -48,6 +50,13 @@
       font-weight: bold;
     }
 
+    .header .title img {
+      width: 18px;
+      height: 18px;
+      object-fit: contain;
+    }
+
+    /* ヒーロー */
     .hero {
       background: #111;
       border: 1px solid var(--line);
@@ -65,9 +74,10 @@
       padding: 8px;
       color: var(--muted);
       border-top: 1px solid var(--line);
-      font-size: var(--fs-meta);
+      font-size: var(--fs-meta); /* one-lineのフォントサイズ */
     }
 
+    /* プロフィール */
     .profile {
       margin-top: 12px;
       background: var(--card);
@@ -80,23 +90,27 @@
       font-size: var(--fs-name);
       font-weight: bold;
       margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+
+    .profile .horse-name img {
+      width: 20px; /* クラブアイコンのサイズ */
+      height: 20px;
+      object-fit: contain;
+      margin-right: 8px;
     }
 
     .profile .rows {
       display: grid;
       row-gap: 8px;
-    }
-
-    .profile .row {
-      display: grid;
       grid-template-columns: 1fr;
-      column-gap: 16px;
     }
 
     .profile .cell {
       display: flex;
       gap: 10px;
-      font-size: var(--fs-body);
+      font-size: var(--fs-body); /* 文字サイズ固定 */
     }
 
     .profile .label {
@@ -134,7 +148,7 @@
 
     @media (min-width: 700px) {
       .profile .row {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr; /* 横2列にならないように縦1列に */
       }
     }
   </style>
@@ -155,7 +169,9 @@
 
       <!-- プロフィール -->
       <section class="profile" id="profile">
-        <div class="horse-name" id="horse-name">レシステンシア</div>
+        <div class="horse-name" id="horse-name">
+          <img src="path/to/club-icon.gif" alt="クラブアイコン">レシステンシア
+        </div>
         
         <div class="rows">
           <!-- 父、母、母父 -->
@@ -194,6 +210,8 @@
       <section class="comments" id="comments"></section>
     </div>
   </main>
+
+
 
  
 
