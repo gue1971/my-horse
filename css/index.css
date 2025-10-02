@@ -40,7 +40,7 @@ main{ padding:40px 0 0; }
 
 /* Card */
 .card{ display:grid; grid-template-columns:1.2fr 1fr; background:var(--card); overflow:hidden;
-  padding:0; margin-bottom:8px;}
+  padding-left:4px; margin-bottom:8px;}
 .card-left{ display:block; line-height:0; background:green; }
 .card-left img{ width:100%; aspect-ratio:4/3; object-fit:cover; display:block; }
 a.is-disabled{ pointer-events:none; opacity:.55; cursor:default; }
@@ -93,7 +93,7 @@ a.is-disabled{ pointer-events:none; opacity:.55; cursor:default; }
 }
 
 /* Right-Bottom（Links） */
-.links{ display:flex; gap:10px; flex-wrap:wrap; margin:2px 0 0; font-size:var(--fs-meta); }
+.links{ display:flex; gap:10px; flex-wrap:wrap; margin-left:8px; font-size:var(--fs-meta); }
 /* アイコンのスタイル */
 .links a img {
   width: 14px;             /* アイコンの横幅 */
