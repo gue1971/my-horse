@@ -80,7 +80,7 @@ function dateSort(a, b) {
   const slug = (getParam('id') || getParam('slug') || '').trim().toLowerCase();
   try {
     // 1) horses.json から馬名を取得
-    const horses = await (await fetch('data/horses/horses.json', {cache:'no-store'})).json();
+    const horses = await (await fetch('data/horses.json', {cache:'no-store'})).json();
     const horse = horses.find(h => String(h.slug || '').toLowerCase() === slug);
     if (!horse) {
       document.querySelector('.main').innerHTML = '<div class="cap">馬のデータが見つかりません</div>';
