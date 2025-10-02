@@ -45,7 +45,7 @@ main{ padding:40px 0 0; }
 .card-left img{ width:100%; aspect-ratio:4/3; object-fit:cover; display:block; }
 a.is-disabled{ pointer-events:none; opacity:.55; cursor:default; }
 
-.card-right{ display:grid; grid-template-rows:auto 1fr auto; padding:0; gap:0;}
+.card-right{ display:grid; grid-template-rows:auto 1fr auto;  padding-left:12px; gap:0;}
 
 /* Right-Top （クラブアイコンと馬名）*/
 .card-right-top{ padding:0px; }
@@ -54,11 +54,11 @@ a.is-disabled{ pointer-events:none; opacity:.55; cursor:default; }
 .club-icon{ width:14px; height:14px; object-fit:contain; border:none; }
 
 /* ===== Right-Middle (超密リード版) ===== */
-.card-right-mid{ display:block; text-decoration:none; padding-left:12px;}
+.card-right-mid{ display:block; text-decoration:none;}
 /* .card-right-mid:hover{ background:#161b20; } */
 
 /* 行間を極限まで詰める */
-.mini-prof{ margin-left: 8px; display:grid; gap:0; font-size:12px; color:var(--fg); line-height:1.22; }
+.mini-prof{ margin-left: 8px; display:grid; gap:0; font-size:8px; color:var(--fg); line-height:1.22; }
 .mini-prof .row{ display:flex; flex-wrap:wrap; gap:0px 0px; align-items:center; }
 .mini-prof .row-1col{ display:flex; gap:0px 0px; align-items:center; }
 
