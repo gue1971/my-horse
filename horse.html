@@ -101,7 +101,7 @@ function dateKeyFromSrc(src){ const m = src.match(/(\d{8})/); return m ? m[1] : 
       return;
     }
 
-    const detail = await (await fetch(`data/horses/${slug}.json`,{cache:'no-store'})).json();
+    const detail = await (await fetch(`data/albums/${slug}.json`,{cache:'no-store'})).json();
     const album = Array.isArray(detail.album)?[...detail.album]:[];
 
     /* 1) ヘッダー */
