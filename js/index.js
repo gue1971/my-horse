@@ -175,7 +175,8 @@ function buildCard({ horse, hero, hasAlbum }) {
   ], true));  // 縦並びにするためにtrueを指定
 
   // 3段目：生年月日と募集総額を結合して表示（ラベルなし）
-  const birthDate = horse.birth.replace(/^(\d{4})(\d{2})(\d{2})$/, '$1年$2月$3日生');
+  const birthDate = horse.birth.replace(/^(\d{4})\.(\d{1,2})\.(\d{1,2})$/, '$1年$2月$3日生');
+
 
   // 募集額をそのまま表示（「万募集」の形式にする）
   const price = horse.price + '募集';  // 「万」をそのまま使い、「募集」を追加
