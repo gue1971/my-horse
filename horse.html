@@ -8,8 +8,8 @@
   :root{
     --bg:#000; --fg:#fff; --muted:#ccc; --card:#222; --line:#333;
     --gap:12px; --pad:12px;
-    --fs-body: clamp(13px, 2.6vw, 16px);
-    --fs-name: clamp(16px, 3.6vw, 22px);
+    --fs-body: clamp(16px, 2.6vw, 16px);
+    --fs-name: clamp(20px, 3.6vw, 22px);
     --fs-meta: clamp(12px, 2.4vw, 14px);
   }
 
@@ -24,9 +24,11 @@
   /* 固定ヘッダー */
   .header{
     position:sticky; top:0; z-index:5;
-    background:#111; border-bottom:1px solid var(--line);
+    background:#111;
+    /* border-bottom:1px solid var(--line); */
     display:flex; align-items:center; justify-content:center;
     padding:8px;
+    font-size: 20px;
   }
   .header .title{ display:flex; align-items:center; gap:8px; }
   .header .title img{ width:18px; height:18px; object-fit:contain; }
@@ -40,12 +42,15 @@
   .hero{ background:#111; border:1px solid var(--line); }
   .hero img{ width:100%; display:block; aspect-ratio:4/3; object-fit:cover; }
   .hero .one-line{
-    padding:8px; color:var(--muted); border-top:1px solid var(--line);
+    padding:8px; color:var(--fg); background-color: #333; border-top:1px solid var(--line);
     font-size:var(--fs-meta);
   }
 
   /* プロフィール */
-  .profile{ margin-top:12px; background:#141414; border:1px solid var(--line); padding:10px; }
+  .profile{ margin-top:12px; background:#111;
+            /* border:1px solid var(--line); */
+            padding:20px;
+  }
   .profile .rows{ display:grid; row-gap:8px; }
   .profile .row{ display:grid; grid-template-columns: 1fr; column-gap:16px; }
   .profile .cell{ display:flex; gap:10px; }
