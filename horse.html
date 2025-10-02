@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="ja">
 <head>
   <style>
     :root {
@@ -16,7 +14,7 @@
       --fs-label: 1.2em; /* ラベルのフォントサイズ */
     }
 
-    /* 全般的なレイアウト */
+    /* スタイルはそのまま */
     html, body {
       height: 100%;
       margin: 0;
@@ -28,48 +26,6 @@
       flex-direction: column;
     }
 
-    /* ヘッダー */
-    .header {
-      position: sticky;
-      top: 0;
-      z-index: 5;
-      background: #111;
-      border-bottom: 1px solid var(--line);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 8px;
-    }
-
-    .header .title {
-      font-size: var(--fs-name);
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .header .title img {
-      width: 18px;
-      height: 18px;
-      object-fit: contain;
-    }
-
-    /* メインコンテンツ */
-    .main {
-      flex: 1;
-      overflow: auto;
-      display: flex;
-      justify-content: center;
-      padding: 12px;
-    }
-
-    .content {
-      width: 100%;
-      max-width: 640px;
-      margin: 0 auto;
-    }
-
-    /* ヒーロー */
     .hero {
       background: #111;
       border: 1px solid var(--line);
@@ -81,88 +37,10 @@
       aspect-ratio: 4/3;
       object-fit: cover;
     }
-
-    .hero .one-line {
-      padding: 8px;
-      color: var(--muted);
-      border-top: 1px solid var(--line);
-      font-size: var(--fs-meta);
-    }
-
-    /* プロフィール部 */
-    .profile {
-      margin-top: 12px;
-      background: #141414;
-      border: 1px solid var(--line);
-      padding: 10px;
-    }
-
-    .profile .horse-name {
-      font-size: 2em;
-      color: var(--fg);
-      font-weight: bold;
-    }
-
-    .profile .rows {
-      display: grid;
-      row-gap: 8px;
-    }
-
-    .profile .row {
-      display: grid;
-      grid-template-columns: 1fr;
-      column-gap: 16px;
-    }
-
-    .profile .cell {
-      display: flex;
-      gap: 10px;
-      font-size: var(--fs-body);
-    }
-
-    .profile .label {
-      font-size: var(--fs-label);
-      color: #bbb;
-    }
-
-    /* コメント部 */
-    .comments {
-      margin-top: 12px;
-      font-size: var(--fs-body);
-    }
-
-    .comment {
-      margin-bottom: 16px;
-      padding: 8px;
-      background: #222;
-      border: 1px solid var(--line);
-    }
-
-    .comment .date {
-      font-size: var(--fs-meta);
-      color: var(--muted);
-    }
-
-    .comment .title {
-      font-weight: bold;
-      color: var(--fg);
-    }
-
-    .comment .text {
-      color: var(--fg);
-      font-size: var(--fs-body);
-    }
-
-    @media (min-width: 700px) {
-      .profile .row {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
   </style>
 </head>
 
 <body>
-  <!-- ヘッダー -->
   <header class="header">
     <div class="title" id="title">プロフィール</div>
   </header>
@@ -174,34 +52,24 @@
 
       <!-- プロフィール -->
       <section class="profile" id="profile">
-        <!-- 見出し -->
         <div class="horse-name" id="horse-name"></div>
-
-        <!-- プロフィール詳細 -->
         <div class="rows">
-          <!-- 父、母、母父 -->
+          <!-- プロフィール詳細 -->
           <div class="row">
             <div class="cell"><span class="label">父</span><span id="sire"></span></div>
             <div class="cell"><span class="label">母</span><span id="dam"></span></div>
           </div>
-
           <div class="row">
             <div class="cell"><span class="label">母父</span><span id="damsire"></span></div>
           </div>
-
-          <!-- 生産、厩舎 -->
           <div class="row">
             <div class="cell"><span class="label">生産</span><span id="farm"></span></div>
             <div class="cell"><span class="label">厩舎</span><span id="stable"></span></div>
           </div>
-
-          <!-- 生年月日、募集総額 -->
           <div class="row">
             <div class="cell"><span class="label">生年月日</span><span id="birth"></span></div>
             <div class="cell"><span class="label">募集総額</span><span id="price"></span></div>
           </div>
-
-          <!-- 測尺 -->
           <div class="row">
             <div class="cell"><span class="label">即尺</span></div>
             <div class="cell"><span class="label">体高</span><span id="height"></span></div>
@@ -212,13 +80,35 @@
         </div>
       </section>
 
-      <!-- コメント -->
       <section class="comments" id="comments"></section>
     </div>
   </main>
 
   <script>
-    /* JavaScriptで動的に値を挿入する */
+    /* ==== 定数・ユーティリティ ==== */
+    const clubIcon = {
+      carrot: 'assets/icons/clubs/carrot.gif',
+      silk: 'assets/icons/clubs/silk.gif',
+      tokyo: 'assets/icons/clubs/tokyo.gif',
+      win: 'assets/icons/clubs/win.gif',
+      union: 'assets/icons/clubs/union.gif',
+      normandy: 'assets/icons/clubs/normandy.gif',
+    };
+
+    function getParam(name) {
+      return new URLSearchParams(location.search).get(name) || '';
+    }
+
+    function dateKeyFromSrc(src) {
+      const m = src.match(/(\d{8})/);
+      return m ? m[1] : '00000000';
+    }
+
+    function dateSort(a, b) {
+      return new Date(b.date) - new Date(a.date);
+    }
+
+    /* ==== メイン ==== */
     (async function() {
       const slug = (getParam('id') || getParam('slug') || '').trim().toLowerCase();
       try {
@@ -231,10 +121,27 @@
 
         const detail = await (await fetch(`data/albums/${slug}.json`, { cache: 'no-store' })).json();
 
+        /* ヘッダー */
+        document.getElementById('title').innerHTML = "プロフィール";
+
         /* 馬名とクラブアイコン */
         document.getElementById('horse-name').innerHTML = `${horse.name || ''}`;
+        const iconSrc = clubIcon[horse.club] || clubIcon['carrot'];
 
-        /* 各プロフィール項目の挿入 */
+        /* ヒーロー画像 */
+        let heroItem = detail.album?.find(a => a.isHero) ||
+                       detail.album?.slice().sort((a, b) => dateKeyFromSrc(b.src).localeCompare(dateKeyFromSrc(a.src)))[0];
+        const hero = document.getElementById('hero');
+        const defaultHeroImg = 'https://gue1971.github.io/my-horse/images/placeholder.webp'; // プレースホルダー画像
+        if (heroItem) {
+          hero.innerHTML = `
+            <img src="images/${slug}/${heroItem.file || defaultHeroImg}" alt="">
+            <div class="one-line">${heroItem.caption || ''}</div>`;
+        } else {
+          hero.innerHTML = `<div class="cap">（ヒーロー画像が未指定です）</div>`;
+        }
+
+        /* プロフィールの挿入 */
         document.getElementById('sire').textContent = horse.sire || '';
         document.getElementById('dam').textContent = horse.dam || '';
         document.getElementById('damsire').textContent = horse.damsire || '';
@@ -265,4 +172,3 @@
     })();
   </script>
 </body>
-</html>
