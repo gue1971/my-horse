@@ -79,15 +79,24 @@ function dateSort(a, b) {
 (async function(){
   const slug = (getParam('id') || getParam('slug') || '').trim().toLowerCase();
   try {
-    // ヘッダー生成部分
-    const title = document.getElementById('title');
-    const iconSrc = clubIcon[slug] || clubIcon['carrot'];  // クラブアイコンの選定
-    title.innerHTML = `<img src="${iconSrc}" alt=""><b>${slug}</b>`; // 馬名とアイコンを表示
+    // 1) horses.json から馬名を取得
+    const horses = await (await fetch('data/horses/horses.json', {cache:'no-store'})).json();
+    const horse = horses.find(h => String(h.slug || '').toLowerCase() === slug);
+    if (!horse) {
+      document.querySelector('.main').innerHTML = '<div class="cap">馬のデータが見つかりません</div>';
+      return;
+    }
 
+    // 2) ヘッダー生成部分
+    const title = document.getElementById('title');
+    const iconSrc = clubIcon[horse.club] || clubIcon['carrot'];  // クラブアイコンの選定
+    title.innerHTML = `<img src="${iconSrc}" alt=""><b>${horse.name}</b>`; // 馬名を表示
+
+    // 3) アルバムデータ取得
     const detail = await (await fetch(`data/albums/${slug}.json`, {cache:'no-store'})).json();
     const album = Array.isArray(detail.album) ? [...detail.album] : [];
 
-    /* 1) アルバムリスト */
+    /* アルバムリスト */
     const albumList = document.getElementById('album-list');
     if (album.length > 0) {
       album.reverse().forEach(item => {
