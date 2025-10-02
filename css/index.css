@@ -54,7 +54,7 @@ a.is-disabled{ pointer-events:none; opacity:.55; cursor:default; }
 .club-icon{ width:14px; height:14px; object-fit:contain; border:none; }
 
 /* ===== Right-Middle (超密リード版) ===== */
-.card-right-mid{ display:block; text-decoration:none; padding:0px;}
+.card-right-mid{ display:block; text-decoration:none; padding-left:12px;}
 /* .card-right-mid:hover{ background:#161b20; } */
 
 /* 行間を極限まで詰める */
