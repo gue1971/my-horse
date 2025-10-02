@@ -174,11 +174,13 @@ mini.appendChild(mkRow([
   ['母父', horse.damsire]
 ], true));  // 縦並びにするためにtrueを指定
 
-// 3段目：生年月日・募集総額（横並びに変更し、表示内容を変更）
-const birthAndPrice = `${horse.birth.replace(/^(\d{4})(\d{2})(\d{2})$/, '$1年$2月$3日生')}　${horse.price / 10000}万募集`;
+// 3段目：生年月日と募集総額を横並びにして表示（ラベルなし）
+const birthDate = horse.birth.replace(/^(\d{4})(\d{2})(\d{2})$/, '$1年$2月$3日生');
+const price = `${horse.price / 10000}万募集`;
+
 mini.appendChild(mkRow([
-  ['生年月日・募集総額', birthAndPrice]
-], false));  // 横並びにするためにfalseを指定
+  [birthDate, price]
+], false));  // falseを指定して横並びに
 
 // 4段目：生産・厩舎（縦並びに変更）
 mini.appendChild(mkRow([
