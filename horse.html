@@ -42,12 +42,12 @@
   .hero{ background:#111; border:1px solid var(--line); }
   .hero img{ width:100%; display:block; aspect-ratio:4/3; object-fit:cover; }
   .hero .one-line{
-    padding:8px; color:var(--fg); background-color: #333; border-top:1px solid var(--line);
+    padding:8px; color:var(--fg); background-color: var(--card); border-top:1px solid var(--line);
     font-size:var(--fs-meta);
   }
 
   /* プロフィール */
-  .profile{ margin-top:12px; background:#111;
+  .profile{ margin-top:12px; background:var(--card);
             /* border:1px solid var(--line); */
             padding:20px;
   }
@@ -63,10 +63,10 @@
 
   /* コメント */
   .comments{ margin-top:12px; }
-  .comment{ margin-bottom:16px; padding:8px; background:#222; border:1px solid var(--line); }
-  .comment .date{ font-size:var(--fs-meta); color:var(--muted); }
+  .comment{ margin-bottom:16px; padding:16px; background: var(--card); border:1px solid var(--line); }
+  .comment .date{ color:var(--fg); }
   .comment .title{ font-weight:bold; color:var(--fg); }
-  .comment .text{ color:var(--fg); }
+  .comment .text{ color:var(--fg); line-height: 1.8;}
 </style>
 </head>
 
