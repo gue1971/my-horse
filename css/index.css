@@ -45,7 +45,7 @@ main{ padding:40px 0 0; }
 .card-left img{ width:100%; aspect-ratio:4/3; object-fit:cover; display:block; }
 a.is-disabled{ pointer-events:none; opacity:.55; cursor:default; }
 
-.card-right{ display:grid; grid-template-rows:auto 1fr auto;  padding-left:12px; gap:0;}
+.card-right{ display:grid; grid-template-rows:auto 1fr auto;  padding-left:8px; gap:0;}
 
 /* Right-Top （クラブアイコンと馬名）*/
 .card-right-top{ padding:0px; }
