@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>My Stable – アルバム</title>
+<style>
+  :root{
+    --bg:#000; --fg:#fff; --muted:#ccc; --card:#222; --line:#333;
+    --gap:12px; --pad:12px;
+    --fs-body: clamp(16px, 2.6vw, 16px);
+    --fs-name: clamp(20px, 3.6vw, 22px);
+    --fs-meta: clamp(12px, 2.4vw, 14px);
+  }
+
+  html,body{height:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--fg);
+    font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    font-size:var(--fs-body);
+    display:flex; flex-direction:column;
+  }
+
+  /* 固定ヘッダー */
+  .header{
+    position:sticky; top:0; z-index:5;
+    background:#111;
+    display:flex; align-items:center; justify-content:center;
+    padding:8px;
+    font-size: 20px;
+  }
+  .header .title{ display:flex; align-items:center; gap:8px; }
+  .header .title img{ width:18px; height:18px; object-fit:contain; }
+  .header .title b{ font-size:var(--fs-name); letter-spacing:.02em; }
+
+  /* main: 中央寄せ & 最大幅640px */
+  .main{ flex:1; overflow:auto; display:flex; justify-content:center; padding:12px; }
+  .content{ width:100%; max-width:640px; margin:0 auto; }
+
+  /* ヒーロー */
+  .hero{ background:#111; border:1px solid var(--line); }
+  .hero img{ width:100%; display:block; aspect-ratio:4/3; object-fit:cover; }
+  .hero .one-line{
+    padding:8px; color:var(--fg); background-color: var(--card); border-top:1px solid var(--line);
+    font-size:var(--fs-meta);
+  }
+
+  /* アルバムリスト */
+  .album-list{ margin-top:12px; }
+  .album-item{ margin-bottom:16px; padding:16px; background: var(--card); border:1px solid var(--line); }
+  .album-item img{ width:100%; display:block; aspect-ratio:4/3; object-fit:cover; }
+  .album-item .caption{ color:var(--fg); font-size:var(--fs-meta); margin-top:8px; }
+
+  @media (min-width:700px){
+    .album-item img{ aspect-ratio:16/9; }
+  }
+
+</style>
+</head>
+
+<body>
+  <!-- ヘッダー -->
+  <header class="header">
+    <div class="title" id="title"></div>
+  </header>
+
+  <main class="main">
+    <div class="content">
+      <!-- アルバムリスト -->
+      <section class="album-list" id="album-list"></section>
+    </div>
+  </main>
+
+<script>
+/* ==== 定数・ユーティリティ ==== */
+function getParam(name){ return new URLSearchParams(location.search).get(name) || ''; }
+function dateKeyFromSrc(src){ const m = src.match(/(\d{8})/); return m ? m[1] : '00000000'; }
+function dateSort(a, b) {
+  return new Date(b.date) - new Date(a.date);
+}
+
+/* ==== メイン ==== */
+(async function(){
+  const slug = (getParam('id') || getParam('slug') || '').trim().toLowerCase();
+  try {
+    const detail = await (await fetch(`data/albums/${slug}.json`, {cache:'no-store'})).json();
+    const album = Array.isArray(detail.album) ? [...detail.album] : [];
+
+    /* 1) アルバムリスト */
+    const albumList = document.getElementById('album-list');
+    if (album.length > 0) {
+      album.reverse().forEach(item => {
+        albumList.innerHTML += `
+          <div class="album-item">
+            <img src="images/${slug}/${item.file}" alt="${item.caption || '画像'}">
+            <div class="caption">${item.caption || ''}</div>
+          </div>`;
+      });
+    } else {
+      albumList.innerHTML = '<div class="cap">アルバムがありません</div>';
+    }
+
+  } catch (e) {
+    console.error(e);
+    document.querySelector('.main').innerHTML = '<div class="cap">読み込みエラー</div>';
+  }
+})();
+</script>
+</body>
+</html>
