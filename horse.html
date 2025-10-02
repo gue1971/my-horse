@@ -1,72 +1,58 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>My Stable – 馬詳細</title>
-<style>
-  :root{
-    --bg:#000; --fg:#fff; --muted:#ccc; --card:#222; --line:#333;
-    --gap:12px; --pad:12px;
-    --fs-body: clamp(13px, 2.6vw, 16px);
-    --fs-name: clamp(16px, 3.6vw, 22px);
-    --fs-meta: clamp(12px, 2.4vw, 14px);
-  }
+  <style>
+    :root{
+      --bg:#000; --fg:#fff; --muted:#ccc; --card:#222; --line:#333;
+      --gap:12px; --pad:12px;
+      --fs-body: clamp(15px, 2.8vw, 18px); /* 全般的に大きなフォント */
+      --fs-name: clamp(18px, 3.8vw, 24px); /* 馬名の大きさ */
+      --fs-meta: clamp(14px, 2.6vw, 16px); /* その他メタ情報 */
+      --fs-label: 1.2em; /* ラベルのフォントサイズを調整 */
+    }
 
-  html,body{height:100%}
-  body{
-    margin:0; background:var(--bg); color:var(--fg);
-    font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
-    font-size:var(--fs-body);
-    display:flex; flex-direction:column;
-  }
+    /* ヘッダーのスタイル */
+    .header{
+      position:sticky; top:0; z-index:5;
+      background:#111; border-bottom:1px solid var(--line);
+      display:flex; align-items:center; justify-content:space-between; padding:8px;
+    }
+    .header .title{ display:flex; align-items:center; gap:8px; font-size:var(--fs-name); }
+    .header .title img{ width:18px; height:18px; object-fit:contain; }
+    .header .title b{ font-size:var(--fs-name); letter-spacing:.02em; }
+    .header .back-btn{
+      background:none; border:none;
+      color:var(--muted); font-size:1.5em;
+      cursor:pointer;
+    }
 
-  /* 固定ヘッダー */
-  .header{
-    position:sticky; top:0; z-index:5;
-    background:#111; border-bottom:1px solid var(--line);
-    display:flex; align-items:center; justify-content:center;
-    padding:8px;
-  }
-  .header .title{ display:flex; align-items:center; gap:8px; }
-  .header .title img{ width:18px; height:18px; object-fit:contain; }
-  .header .title b{ font-size:var(--fs-name); letter-spacing:.02em; }
+    /* プロフィール */
+    .profile{ margin-top:12px; background:#141414; border:1px solid var(--line); padding:10px; }
+    .profile .rows{ display:grid; row-gap:8px; }
+    .profile .row{ display:grid; grid-template-columns: 1fr; column-gap:16px; }
+    .profile .cell{ display:flex; gap:10px; font-size: var(--fs-body); }
+    .profile .label{ font-size:var(--fs-label); color:#bbb; }
 
-  /* main: 中央寄せ & 最大幅640px */
-  .main{ flex:1; overflow:auto; display:flex; justify-content:center; padding:12px; }
-  .content{ width:100%; max-width:640px; margin:0 auto; }
+    .profile .horse-name { font-size: 2em; color: var(--fg); font-weight: bold; }
+    .profile .sire, .profile .dam { font-size: 1.5em; color: var(--fg); }
+    .profile .damsire { font-size: var(--fs-meta); color: var(--muted); }
 
-  /* ヒーロー */
-  .hero{ background:#111; border:1px solid var(--line); }
-  .hero img{ width:100%; display:block; aspect-ratio:4/3; object-fit:cover; }
-  .hero .one-line{
-    padding:8px; color:var(--muted); border-top:1px solid var(--line);
-    font-size:var(--fs-meta);
-  }
+    @media (min-width:700px){
+      .profile .row{ grid-template-columns: 1fr 1fr; }
+    }
 
-  /* プロフィール */
-  .profile{ margin-top:12px; background:#141414; border:1px solid var(--line); padding:10px; }
-  .profile .rows{ display:grid; row-gap:8px; }
-  .profile .row{ display:grid; grid-template-columns: 1fr; column-gap:16px; }
-  .profile .cell{ display:flex; gap:10px; }
-  .profile .label{ display:inline-block; min-width:5.5em; color:#bbb; }
-
-  @media (min-width:700px){
-    .profile .row{ grid-template-columns: 1fr 1fr; }
-  }
-
-  /* コメント */
-  .comments{ margin-top:12px; }
-  .comment{ margin-bottom:16px; padding:8px; background:#222; border:1px solid var(--line); }
-  .comment .date{ font-size:var(--fs-meta); color:var(--muted); }
-  .comment .title{ font-weight:bold; color:var(--fg); }
-  .comment .text{ color:var(--fg); }
-</style>
+    /* コメント */
+    .comments{ margin-top:12px; font-size: var(--fs-body); }
+    .comment{ margin-bottom:16px; padding:8px; background:#222; border:1px solid var(--line); }
+    .comment .date{ font-size:var(--fs-meta); color:var(--muted); }
+    .comment .title{ font-weight:bold; color:var(--fg); }
+    .comment .text{ color:var(--fg); font-size: var(--fs-body); }
+  </style>
 </head>
-
 <body>
   <!-- ヘッダー -->
   <header class="header">
+    <button class="back-btn" onclick="window.history.back()">←</button>
     <div class="title" id="title"></div>
   </header>
 
@@ -76,12 +62,16 @@
       <section class="hero" id="hero"></section>
 
       <!-- プロフィール -->
-      <section class="profile" id="profile"></section>
+      <section class="profile" id="profile">
+        <div class="horse-name" id="horse-name"></div>
+        <!-- その他のプロフィール内容はここに表示 -->
+      </section>
 
       <!-- コメント -->
       <section class="comments" id="comments"></section>
     </div>
   </main>
+
 
 <script>
 /* ==== 定数・ユーティリティ ==== */
