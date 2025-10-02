@@ -141,14 +141,7 @@ function dateSort(a, b) {
     const p = document.getElementById('profile');
     const M = detail.measure || horse; // horses.jsonの測尺データを使用
     const cell = (label, val) => `<div class="cell"><span class="label">${label}</span><span>${val || ''}</span></div>`;
-    p.innerHTML = `<div class="rows">` + [
-      `<div class="row"><div>${cell('父', horse.sire)}</div><div>${cell('母', horse.dam)}</div></div>`,
-      `<div class="row"><div>${cell('母父', horse.damsire)}</div><div>${cell('', '')}</div></div>`,
-      `<div class="row"><div>${cell('生産', horse.farm)}</div><div>${cell('厩舎', horse.stable)}</div></div>`,
-      `<div class="row"><div>${cell('生年月日', horse.birth)}</div><div>${cell('募集総額', horse.price)}</div></div>`,
-      `<div class="row"><div>${cell('体高', M.height_cm ? `${M.height_cm}cm` : '')}</div><div>${cell('胸囲', M.girth_cm ? `${M.girth_cm}cm` : '')}</div></div>`,
-      `<div class="row"><div>${cell('管囲', M.cannon_cm ? `${M.cannon_cm}cm` : '')}</div><div>${cell('馬体重', M.weight_kg ? `${M.weight_kg}kg` : '')}</div></div>`
-    ].join('') + `</div>`;
+    p.innerHTML = `<div class="rows">` + [`<div class="row"><div>${cell('父', horse.sire)}</div><div>${cell('母', horse.dam)}</div></div>`,`<div class="row"><div>${cell('母父', horse.damsire)}</div><div>${cell('', '')}</div></div>`,`<div class="row"><div>${cell('生産', horse.farm)}</div><div>${cell('厩舎', horse.stable)}</div></div>`,`<div class="row"><div>${cell('生年月日', horse.birth)}</div><div>${cell('募集総額', horse.price)}</div></div>`,`<div class="row"><div>${cell('体高', M.height_cm ? `${M.height_cm}cm` : '')}</div><div>${cell('胸囲', M.girth_cm ? `${M.girth_cm}cm` : '')}</div><div>${cell('管囲', M.cannon_cm ? `${M.cannon_cm}cm` : '')}</div><div>${cell('馬体重', M.weight_kg ? `${M.weight_kg}kg` : '')}</div></div>`].join('') + `</div>`;
 
     /* 4) コメント */
     const comments = document.getElementById('comments');
