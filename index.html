@@ -1,268 +1,66 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <style>
-    :root {
-      --bg: #000;
-      --fg: #fff;
-      --muted: #ccc;
-      --card: #222;
-      --line: #333;
-      --gap: 12px;
-      --pad: 12px;
-      --fs-body: clamp(15px, 2.8vw, 18px); /* 大きなフォント */
-      --fs-name: clamp(18px, 3.8vw, 24px); /* 馬名の大きさ */
-      --fs-meta: clamp(14px, 2.6vw, 16px); /* メタ情報のサイズ */
-      --fs-label: 1.2em; /* ラベルのフォントサイズ */
-    }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Horse</title>
 
-    /* 全般的なレイアウト */
-    html, body {
-      height: 100%;
-      margin: 0;
-      background: var(--bg);
-      color: var(--fg);
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-      font-size: var(--fs-body);
-      display: flex;
-      flex-direction: column;
-    }
+  <!-- PWA 関連（継続仕様） -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#111315">
+  <link rel="apple-touch-icon" href="assets/icons/app/icon-192.png">
 
-    /* ヘッダー */
-    .header {
-      position: sticky;
-      top: 0;
-      z-index: 5;
-      background: #111;
-      border-bottom: 1px solid var(--line);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 8px;
-    }
-
-    .header .title {
-      font-size: var(--fs-name);
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .header .title img {
-      width: 18px;
-      height: 18px;
-      object-fit: contain;
-    }
-
-    /* メインコンテンツ */
-    .main {
-      flex: 1;
-      overflow: auto;
-      display: flex;
-      justify-content: center;
-      padding: 12px;
-    }
-
-    .content {
-      width: 100%;
-      max-width: 640px;
-      margin: 0 auto;
-    }
-
-    /* ヒーロー */
-    .hero {
-      background: #111;
-      border: 1px solid var(--line);
-    }
-
-    .hero img {
-      width: 100%;
-      display: block;
-      aspect-ratio: 4/3;
-      object-fit: cover;
-    }
-
-    .hero .one-line {
-      padding: 8px;
-      color: var(--muted);
-      border-top: 1px solid var(--line);
-      font-size: var(--fs-meta);
-    }
-
-    /* プロフィール部 */
-    .profile {
-      margin-top: 12px;
-      background: #141414;
-      border: 1px solid var(--line);
-      padding: 10px;
-    }
-
-    .profile .horse-name {
-      font-size: 2em;
-      color: var(--fg);
-      font-weight: bold;
-    }
-
-    .profile .rows {
-      display: grid;
-      row-gap: 8px;
-    }
-
-    .profile .row {
-      display: grid;
-      grid-template-columns: 1fr;
-      column-gap: 16px;
-    }
-
-    .profile .cell {
-      display: flex;
-      gap: 10px;
-      font-size: var(--fs-body);
-    }
-
-    .profile .label {
-      font-size: var(--fs-label);
-      color: #bbb;
-    }
-
-    /* コメント部 */
-    .comments {
-      margin-top: 12px;
-      font-size: var(--fs-body);
-    }
-
-    .comment {
-      margin-bottom: 16px;
-      padding: 8px;
-      background: #222;
-      border: 1px solid var(--line);
-    }
-
-    .comment .date {
-      font-size: var(--fs-meta);
-      color: var(--muted);
-    }
-
-    .comment .title {
-      font-weight: bold;
-      color: var(--fg);
-    }
-
-    .comment .text {
-      color: var(--fg);
-      font-size: var(--fs-body);
-    }
-
-    @media (min-width: 700px) {
-      .profile .row {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-  </style>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/index.css">
 </head>
-
 <body>
-  <!-- ヘッダー -->
-  <header class="header">
-    <div class="title" id="title">プロフィール</div>
+  <header class="site-header">
+    <h1>
+      <a href="https://www.umadb.com/member/" target="_blank" rel="noopener noreferrer">
+        出資馬
+      </a>
+    </h1>
+    <nav class="tabs">
+      <button class="tab is-active" data-tab="tab1">1</button>
+      <button class="tab" data-tab="tab2">2</button>
+      <button class="tab" data-tab="tab3">3</button>
+      <button class="tab" data-tab="tab4">引退馬</button>
+      <button class="tab" data-tab="tab5">活躍馬</button>
+    </nav>
   </header>
 
-  <main class="main">
-    <div class="content">
-      <!-- ヒーロー -->
-      <section class="hero" id="hero"></section>
-
-      <!-- プロフィール -->
-      <section class="profile" id="profile">
-        <!-- 見出し -->
-        <div class="horse-name" id="horse-name"></div>
-
-        <!-- プロフィール詳細 -->
-        <div class="rows">
-          <!-- 父、母、母父 -->
-          <div class="row">
-            <div class="cell"><span class="label">父</span><span id="sire"></span></div>
-            <div class="cell"><span class="label">母</span><span id="dam"></span></div>
-          </div>
-
-          <div class="row">
-            <div class="cell"><span class="label">母父</span><span id="damsire"></span></div>
-          </div>
-
-          <!-- 生産、厩舎 -->
-          <div class="row">
-            <div class="cell"><span class="label">生産</span><span id="farm"></span></div>
-            <div class="cell"><span class="label">厩舎</span><span id="stable"></span></div>
-          </div>
-
-          <!-- 生年月日、募集総額 -->
-          <div class="row">
-            <div class="cell"><span class="label">生年月日</span><span id="birth"></span></div>
-            <div class="cell"><span class="label">募集総額</span><span id="price"></span></div>
-          </div>
-
-          <!-- 測尺 -->
-          <div class="row">
-            <div class="cell"><span class="label">即尺</span></div>
-            <div class="cell"><span class="label">体高</span><span id="height"></span></div>
-            <div class="cell"><span class="label">胸囲</span><span id="girth"></span></div>
-            <div class="cell"><span class="label">管囲</span><span id="cannon"></span></div>
-            <div class="cell"><span class="label">馬体重</span><span id="weight"></span></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- コメント -->
-      <section class="comments" id="comments"></section>
-    </div>
+  <main>
+    <div id="tab1" class="tab-panel grid"></div>
+    <div id="tab2" class="tab-panel grid" hidden></div>
+    <div id="tab3" class="tab-panel grid" hidden></div>
+    <div id="tab4" class="tab-panel grid" hidden></div>
+    <div id="tab5" class="tab-panel grid" hidden></div>
   </main>
 
+  <!-- JS -->
+  <script src="js/index.js" defer></script>
+
+  <!-- Service Worker 登録（継続仕様） -->
   <script>
-    /* JavaScriptで動的に値を挿入する */
-    (async function() {
-      const slug = (getParam('id') || getParam('slug') || '').trim().toLowerCase();
-      try {
-        const horses = await (await fetch('data/horses.json', { cache: 'no-store' })).json();
-        const horse = horses.find(h => String(h.slug || '').toLowerCase() === slug);
-        if (!horse) {
-          document.querySelector('.main').innerHTML = '<div class="cap">データが見つかりません</div>';
-          return;
-        }
-
-        const detail = await (await fetch(`data/albums/${slug}.json`, { cache: 'no-store' })).json();
-
-        /* 馬名とクラブアイコン */
-        document.getElementById('horse-name').innerHTML = `${horse.name || ''}`;
-
-        /* 各プロフィール項目の挿入 */
-        document.getElementById('sire').textContent = horse.sire || '';
-        document.getElementById('dam').textContent = horse.dam || '';
-        document.getElementById('damsire').textContent = horse.damsire || '';
-        document.getElementById('farm').textContent = horse.farm || '';
-        document.getElementById('stable').textContent = horse.stable || '';
-        document.getElementById('birth').textContent = horse.birth || '';
-        document.getElementById('price').textContent = horse.price || '';
-        document.getElementById('height').textContent = detail.measure?.height_cm || '';
-        document.getElementById('girth').textContent = detail.measure?.girth_cm || '';
-        document.getElementById('cannon').textContent = detail.measure?.cannon_cm || '';
-        document.getElementById('weight').textContent = detail.measure?.weight_kg || '';
-
-        /* コメント */
-        const comments = document.getElementById('comments');
-        const sortedComments = detail.archiveComment ? detail.archiveComment.sort(dateSort) : [];
-        const commentsHTML = sortedComments.map(comment => `
-          <div class="comment">
-            <div class="date">${comment.date}</div>
-            <div class="title">${comment.title}</div>
-            <div class="text">${comment.text}</div>
-          </div>`).join('');
-        comments.innerHTML = commentsHTML || '<div class="cap">コメントはありません</div>';
-
-      } catch (e) {
-        console.error(e);
-        document.querySelector('.main').innerHTML = '<div class="cap">読み込みエラー</div>';
-      }
-    })();
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js', { scope: './' }).then(reg => {
+          if (reg.waiting) {
+            reg.waiting.postMessage({ type: 'SKIP_WAITING' });
+          }
+          reg.addEventListener('updatefound', () => {
+            const newWorker = reg.installing;
+            if (newWorker) {
+              newWorker.addEventListener('statechange', () => {
+                if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                  window.location.reload();
+                }
+              });
+            }
+          });
+        });
+      });
+    }
   </script>
 </body>
 </html>
