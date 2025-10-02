@@ -88,8 +88,11 @@ const clubIcon = {
   normandy:'assets/icons/clubs/normandy.gif',
 };
 function getParam(name){ return new URLSearchParams(location.search).get(name) || ''; }
-function dateKeyFromSrc(src){ const m = src.match(/(\d{8})/); return m ? m[1] : '00000000'; }
-
+function dateKeyFromSrc(src){
+  const s = String(src || '');               // ← null/undefinedでも空文字に
+  const m = s.match(/(\d{8})/);              // 例: 20240930 を抜き出す
+  return m ? m[1] : '00000000';              // 見つからなければ最小キー
+}
 /* ==== メイン ==== */
 (async function(){
   const slug = (getParam('id') || getParam('slug') || '').trim().toLowerCase();
@@ -109,9 +112,12 @@ function dateKeyFromSrc(src){ const m = src.match(/(\d{8})/); return m ? m[1] : 
     const iconSrc = clubIcon[horse.club] || clubIcon['carrot'];
     title.innerHTML = `<img src="${iconSrc}" alt=""><b>${horse.name||''}</b>`;
 
-    /* 2) ヒーロー */
-    let heroItem = album.find(a=>a.isHero) ||
-                   album.slice().sort((a,b)=>dateKeyFromSrc(b.src).localeCompare(dateKeyFromSrc(a.src)))[0];
+/* 2) ヒーロー */
+let heroItem =
+  album.find(a => a && a.isHero) ||
+  album.slice().sort((a,b) =>
+    dateKeyFromSrc(b?.src).localeCompare(dateKeyFromSrc(a?.src))
+  )[0];
     const hero = document.getElementById('hero');
     if (heroItem) {
       hero.innerHTML = `
@@ -136,8 +142,10 @@ function dateKeyFromSrc(src){ const m = src.match(/(\d{8})/); return m ? m[1] : 
 
     /* 4) アルバム（新しい順） */
     const albumEl=document.getElementById('album');
-    const sorted=album.slice().sort((a,b)=>dateKeyFromSrc(b.src).localeCompare(dateKeyFromSrc(a.src)));
-    albumEl.innerHTML=sorted.length?sorted.map(item=>`
+/* 4) アルバム（新しい順） */
+const sorted = album.slice().sort((a,b) =>
+  dateKeyFromSrc(b?.src).localeCompare(dateKeyFromSrc(a?.src))
+);    albumEl.innerHTML=sorted.length?sorted.map(item=>`
       <figure class="thumb">
         <img loading="lazy" src="${item.src}" alt="">
         ${item.caption?`<figcaption class="cap">${item.caption}</figcaption>`:''}
