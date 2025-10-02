@@ -71,6 +71,7 @@ a.is-disabled{ pointer-events:none; opacity:.55; cursor:default; }
 /* 画面幅に関係なく、常に縦並びにする */
 .row {
   display: block; /* 縦並びにする */
+  margin-bottom: 4px;
 }
 
 .row-1col {
