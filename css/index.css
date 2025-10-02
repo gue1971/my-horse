@@ -64,7 +64,7 @@ a.is-disabled{ pointer-events:none; opacity:.55; cursor:default; }
 
 .mini-prof .label{
   color:var(--muted);
-  padding:0 4px; font-size:11px; line-height:1.22; white-space:nowrap;
+  padding:0 4px; font-size:12px; line-height:1.22; white-space:nowrap;
 }
 .mini-prof .val{ min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; line-height:1.22; }
 
