@@ -68,6 +68,24 @@ a.is-disabled{ pointer-events:none; opacity:.55; cursor:default; }
 }
 .mini-prof .val{ min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; line-height:1.22; }
 
+/* 画面幅に関係なく、常に縦並びにする */
+.row {
+  display: block; /* 縦並びにする */
+}
+
+.row-1col {
+  display: block; /* 1列表示 */
+}
+
+.row .label {
+  width: 100%;  /* ラベルは100%にして縦並びに */
+}
+
+.row .val {
+  width: 100%;  /* 値は100%にして縦並びに */
+}
+
+
 /* モバイル: 1項目＝1行（label/value 2カラム）。ギャップも最小に */
 @media(max-width:520px){
   .mini-prof .row{ display:grid; grid-template-columns:auto 1fr; gap:1px 6px; }

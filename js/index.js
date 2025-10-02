@@ -163,31 +163,32 @@ function buildCard({ horse, hero, hasAlbum }) {
     return row;
   };
 
-  // 1段目：父・母
-  mini.appendChild(mkRow([
-    ['父', horse.sire],
-    ['母', horse.dam]
-  ]));
+// 1段目：父・母（縦並びに変更）
+mini.appendChild(mkRow([
+  ['父', horse.sire],
+  ['母', horse.dam]
+], true));  // 縦並びにするためにtrueを指定
 
-  // 2段目：母父（1列）
-  mini.appendChild(mkRow([
-    ['母父', horse.damsire]
-  ], true));
+// 2段目：母父（縦並びに変更）
+mini.appendChild(mkRow([
+  ['母父', horse.damsire]
+], true));  // 縦並びにするためにtrueを指定
 
-  // 3段目：生産・厩舎
-  mini.appendChild(mkRow([
-    ['生産', horse.farm],
-    ['厩舎', horse.stable]
-  ]));
+// 3段目：生年月日・募集総額（横並びに変更し、表示内容を変更）
+const birthAndPrice = `${horse.birth.replace(/^(\d{4})(\d{2})(\d{2})$/, '$1年$2月$3日生')}　${horse.price / 10000}万募集`;
+mini.appendChild(mkRow([
+  ['生年月日・募集総額', birthAndPrice]
+], false));  // 横並びにするためにfalseを指定
 
-  // 4段目：生年月日・募集総額
-  mini.appendChild(mkRow([
-    ['生年月日', horse.birth],
-    ['募集総額', horse.price]
-  ]));
+// 4段目：生産・厩舎（縦並びに変更）
+mini.appendChild(mkRow([
+  ['生産', horse.farm],
+  ['厩舎', horse.stable]
+], true));  // 縦並びにするためにtrueを指定
 
-  mid.appendChild(mini);
-  right.appendChild(mid);
+mid.appendChild(mini);
+right.appendChild(mid);
+
 
   // 右：下（JRA/JBIS/BBS）
   const bottom = document.createElement('div');
