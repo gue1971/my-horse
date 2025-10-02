@@ -55,11 +55,12 @@
     .profile .row{ grid-template-columns: 1fr 1fr; }
   }
 
-  /* アルバム */
-  .album{ margin-top:12px; display:flex; flex-direction:column; gap:12px; }
-  .thumb{ background:#111; border:1px solid var(--line); }
-  .thumb img{ width:100%; height:auto; display:block; object-fit:cover; }
-  .cap{ font-size:var(--fs-meta); color:var(--muted); padding:6px 8px; }
+  /* コメント */
+  .comments{ margin-top:12px; }
+  .comment{ margin-bottom:16px; padding:8px; background:#222; border:1px solid var(--line); }
+  .comment .date{ font-size:var(--fs-meta); color:var(--muted); }
+  .comment .title{ font-weight:bold; color:var(--fg); }
+  .comment .text{ color:var(--fg); }
 </style>
 </head>
 
@@ -71,9 +72,14 @@
 
   <main class="main">
     <div class="content">
+      <!-- ヒーロー -->
       <section class="hero" id="hero"></section>
+
+      <!-- プロフィール -->
       <section class="profile" id="profile"></section>
-      <section class="album" id="album"></section>
+
+      <!-- コメント -->
+      <section class="comments" id="comments"></section>
     </div>
   </main>
 
@@ -88,11 +94,8 @@ const clubIcon = {
   normandy:'assets/icons/clubs/normandy.gif',
 };
 function getParam(name){ return new URLSearchParams(location.search).get(name) || ''; }
-function dateKeyFromSrc(src){
-  const s = String(src || '');               // ← null/undefinedでも空文字に
-  const m = s.match(/(\d{8})/);              // 例: 20240930 を抜き出す
-  return m ? m[1] : '00000000';              // 見つからなければ最小キー
-}
+function dateKeyFromSrc(src){ const m = src.match(/(\d{8})/); return m ? m[1] : '00000000'; }
+
 /* ==== メイン ==== */
 (async function(){
   const slug = (getParam('id') || getParam('slug') || '').trim().toLowerCase();
@@ -105,19 +108,16 @@ function dateKeyFromSrc(src){
     }
 
     const detail = await (await fetch(`data/albums/${slug}.json`,{cache:'no-store'})).json();
-    const album = Array.isArray(detail.album)?[...detail.album]:[];
+    const album = Array.isArray(detail.album) ? [...detail.album] : [];
 
     /* 1) ヘッダー */
     const title = document.getElementById('title');
     const iconSrc = clubIcon[horse.club] || clubIcon['carrot'];
     title.innerHTML = `<img src="${iconSrc}" alt=""><b>${horse.name||''}</b>`;
 
-/* 2) ヒーロー */
-let heroItem =
-  album.find(a => a && a.isHero) ||
-  album.slice().sort((a,b) =>
-    dateKeyFromSrc(b?.src).localeCompare(dateKeyFromSrc(a?.src))
-  )[0];
+    /* 2) ヒーロー画像 */
+    let heroItem = album.find(a => a.isHero) ||
+                   album.slice().sort((a,b) => dateKeyFromSrc(b.src).localeCompare(dateKeyFromSrc(a.src)))[0];
     const hero = document.getElementById('hero');
     if (heroItem) {
       hero.innerHTML = `
@@ -128,32 +128,31 @@ let heroItem =
     }
 
     /* 3) プロフィール */
-    const p=document.getElementById('profile');
-    const M=detail.measure||{};
-    const cell=(label,val)=>`<div class="cell"><span class="label">${label}</span><span>${val||''}</span></div>`;
-    p.innerHTML=`<div class="rows">`+[
-      `<div class="row"><div>${cell('父',horse.sire)}</div><div>${cell('母',horse.dam)}</div></div>`,
-      `<div class="row"><div>${cell('母父',horse.damsire)}</div><div>${cell('','')}</div></div>`,
-      `<div class="row"><div>${cell('生産',horse.farm)}</div><div>${cell('厩舎',horse.stable)}</div></div>`,
-      `<div class="row"><div>${cell('生年月日',horse.birth)}</div><div>${cell('募集総額',horse.price)}</div></div>`,
-      `<div class="row"><div>${cell('体高',M.height_cm?`${M.height_cm}cm`: '')}</div><div>${cell('胸囲',M.girth_cm?`${M.girth_cm}cm`: '')}</div></div>`,
-      `<div class="row"><div>${cell('管囲',M.cannon_cm?`${M.cannon_cm}cm`: '')}</div><div>${cell('馬体重',M.weight_kg?`${M.weight_kg}kg`: '')}</div></div>`
-    ].join('')+`</div>`;
+    const p = document.getElementById('profile');
+    const M = detail.measure || {};
+    const cell = (label, val) => `<div class="cell"><span class="label">${label}</span><span>${val || ''}</span></div>`;
+    p.innerHTML = `<div class="rows">` + [
+      `<div class="row"><div>${cell('父', horse.sire)}</div><div>${cell('母', horse.dam)}</div></div>`,
+      `<div class="row"><div>${cell('母父', horse.damsire)}</div><div>${cell('', '')}</div></div>`,
+      `<div class="row"><div>${cell('生産', horse.farm)}</div><div>${cell('厩舎', horse.stable)}</div></div>`,
+      `<div class="row"><div>${cell('生年月日', horse.birth)}</div><div>${cell('募集総額', horse.price)}</div></div>`,
+      `<div class="row"><div>${cell('体高', M.height_cm ? `${M.height_cm}cm` : '')}</div><div>${cell('胸囲', M.girth_cm ? `${M.girth_cm}cm` : '')}</div></div>`,
+      `<div class="row"><div>${cell('管囲', M.cannon_cm ? `${M.cannon_cm}cm` : '')}</div><div>${cell('馬体重', M.weight_kg ? `${M.weight_kg}kg` : '')}</div></div>`
+    ].join('') + `</div>`;
 
-    /* 4) アルバム（新しい順） */
-    const albumEl=document.getElementById('album');
-/* 4) アルバム（新しい順） */
-const sorted = album.slice().sort((a,b) =>
-  dateKeyFromSrc(b?.src).localeCompare(dateKeyFromSrc(a?.src))
-);    albumEl.innerHTML=sorted.length?sorted.map(item=>`
-      <figure class="thumb">
-        <img loading="lazy" src="${item.src}" alt="">
-        ${item.caption?`<figcaption class="cap">${item.caption}</figcaption>`:''}
-      </figure>`).join('')
-      :`<div class="cap">（まだ写真が登録されていません）</div>`;
-  } catch(e){
+    /* 4) コメント */
+    const comments = document.getElementById('comments');
+    const commentsHTML = detail.comments ? detail.comments.map(comment => `
+      <div class="comment">
+        <div class="date">${comment.date}</div>
+        <div class="title">${comment.title}</div>
+        <div class="text">${comment.text}</div>
+      </div>`).join('') : '<div class="cap">コメントはありません</div>';
+    comments.innerHTML = commentsHTML;
+
+  } catch (e) {
     console.error(e);
-    document.querySelector('.main').innerHTML='<div class="cap">読み込みエラー</div>';
+    document.querySelector('.main').innerHTML = '<div class="cap">読み込みエラー</div>';
   }
 })();
 </script>
