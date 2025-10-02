@@ -1,0 +1,12 @@
+{
+  "album": [
+    { "file": "YYYYMMDD?.jpg", "caption": "", "isHero": true },
+    { "file": "", "caption": "" },
+    { "file": "", "caption": "" }
+  ],
+  "archiveComment": [
+    { "date": "YYYY-MM-DD","title": "","text": ""},
+    { "date": "YYYY-MM-DD","title": "","text": ""},
+    { "date": "YYYY-MM-DD","title": "","text": ""}
+  ]
+}
