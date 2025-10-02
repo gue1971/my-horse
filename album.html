@@ -37,23 +37,11 @@
   .main{ flex:1; overflow:auto; display:flex; justify-content:center; padding:12px; }
   .content{ width:100%; max-width:640px; margin:0 auto; }
 
-  /* ヒーロー */
-  .hero{ background:#111; border:1px solid var(--line); }
-  .hero img{ width:100%; display:block; aspect-ratio:4/3; object-fit:cover; }
-  .hero .one-line{
-    padding:8px; color:var(--fg); background-color: var(--card); border-top:1px solid var(--line);
-    font-size:var(--fs-meta);
-  }
-
   /* アルバムリスト */
   .album-list{ margin-top:12px; }
   .album-item{ margin-bottom:16px; padding:16px; background: var(--card); border:1px solid var(--line); }
   .album-item img{ width:100%; display:block; aspect-ratio:4/3; object-fit:cover; }
   .album-item .caption{ color:var(--fg); font-size:var(--fs-meta); margin-top:8px; }
-
-  @media (min-width:700px){
-    .album-item img{ aspect-ratio:16/9; }
-  }
 
 </style>
 </head>
@@ -73,6 +61,14 @@
 
 <script>
 /* ==== 定数・ユーティリティ ==== */
+const clubIcon = {
+  carrot:'assets/icons/clubs/carrot.gif',
+  silk:'assets/icons/clubs/silk.gif',
+  tokyo:'assets/icons/clubs/tokyo.gif',
+  win:'assets/icons/clubs/win.gif',
+  union:'assets/icons/clubs/union.gif',
+  normandy:'assets/icons/clubs/normandy.gif',
+};
 function getParam(name){ return new URLSearchParams(location.search).get(name) || ''; }
 function dateKeyFromSrc(src){ const m = src.match(/(\d{8})/); return m ? m[1] : '00000000'; }
 function dateSort(a, b) {
@@ -83,6 +79,11 @@ function dateSort(a, b) {
 (async function(){
   const slug = (getParam('id') || getParam('slug') || '').trim().toLowerCase();
   try {
+    // ヘッダー生成部分
+    const title = document.getElementById('title');
+    const iconSrc = clubIcon[slug] || clubIcon['carrot'];  // クラブアイコンの選定
+    title.innerHTML = `<img src="${iconSrc}" alt=""><b>${slug}</b>`; // 馬名とアイコンを表示
+
     const detail = await (await fetch(`data/albums/${slug}.json`, {cache:'no-store'})).json();
     const album = Array.isArray(detail.album) ? [...detail.album] : [];
 
