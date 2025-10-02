@@ -66,7 +66,7 @@ a.is-disabled{ pointer-events:none; opacity:.55; cursor:default; }
   color:var(--muted);
   padding:0; font-size:12px; line-height:1.22; white-space:nowrap;
 }
-.mini-prof .val{ margin-left: 8px; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; line-height:1.22; }
+.mini-prof .val{ margin-left: 4px; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; line-height:1.22; }
 
 /* 画面幅に関係なく、常に縦並びにする */
 .row {
