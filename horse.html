@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>My Stable – 馬詳細</title>
+
   <style>
     :root {
       --bg: #000;
@@ -10,198 +14,269 @@
       --line: #333;
       --gap: 12px;
       --pad: 12px;
-      --fs-body: 16px;       /* 全体の文字サイズ */
-      --fs-name: 18px;       /* 馬名 */
-      --fs-meta: 12px;       /* one-lineの文字 */
-      --fs-label: 16px;      /* ラベルのフォント */
+      --fs-body: clamp(16px, 3vw, 18px); /* 大きなフォント */
+      --fs-name: clamp(20px, 4vw, 24px); /* 馬名の大きさ */
+      --fs-meta: clamp(14px, 2.6vw, 16px); /* メタ情報のサイズ */
+      --fs-label: 1.2em; /* ラベルのフォントサイズ */
     }
 
     html, body {
+      height: 100%;
       margin: 0;
       background: var(--bg);
       color: var(--fg);
       font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
       font-size: var(--fs-body);
+      display: flex;
+      flex-direction: column;
+      padding: 0;
     }
 
-    /* ヘッダー */
     .header {
       position: sticky;
       top: 0;
+      z-index: 5;
       background: #111;
       border-bottom: 1px solid var(--line);
       display: flex;
       align-items: center;
-      padding-left: 4px;
-      height: 40px;
+      justify-content: center;
+      padding: 8px;
     }
 
-    .header h1 {
-      font-size: 16px;
-      margin: 0;
-      font-weight: normal;
-      text-align: left;
-      flex-grow: 1;  /* 左寄せ */
+    .header .title {
+      font-size: var(--fs-name);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: bold;
     }
 
-    /* ヒーロー */
+    .hero {
+      background: #111;
+      border: 1px solid var(--line);
+      margin-top: 10px;
+      display: block;
+    }
+
     .hero img {
       width: 100%;
-      display: block;
+      height: auto;
       object-fit: cover;
     }
 
     .hero .one-line {
-      font-size: var(--fs-meta);
+      padding: 8px;
       color: var(--muted);
-      padding: 8px 0;
+      border-top: 1px solid var(--line);
+      font-size: var(--fs-meta);
     }
 
-    /* プロフィール */
     .profile {
+      margin-top: 12px;
       background: var(--card);
       border: 1px solid var(--line);
-      padding: 12px;
+      padding: 15px;
       border-radius: 8px;
     }
 
-    .horse-name {
-      display: flex;
-      align-items: center;
+    .profile .horse-name {
       font-size: var(--fs-name);
       font-weight: bold;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
-    .horse-name img {
-      width: 20px;
-      height: 20px;
-      margin-right: 8px;
-      object-fit: contain;
+    .profile .rows {
+      display: grid;
+      row-gap: 8px;
+    }
+
+    .profile .row {
+      display: grid;
+      grid-template-columns: 1fr;
+      column-gap: 16px;
     }
 
     .profile .cell {
       display: flex;
-      gap: 8px;
-      font-size: var(--fs-body);  /* 文字サイズ固定 */
-      margin-bottom: 4px;
-    }
-
-    .profile .label {
-      font-weight: bold;
-      min-width: 70px;
-    }
-
-    /* コメント */
-    .comments .comment {
-      margin-bottom: 12px;
-      padding: 8px;
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 6px;
+      gap: 10px;
       font-size: var(--fs-body);
     }
 
-    .comments .date {
+    .profile .label {
+      font-size: var(--fs-label);
+      color: #bbb;
+    }
+
+    .comments {
+      margin-top: 12px;
+      font-size: var(--fs-body);
+    }
+
+    .comment {
+      margin-bottom: 16px;
+      padding: 8px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    .comment .date {
       font-size: var(--fs-meta);
       color: var(--muted);
     }
 
+    .comment .title {
+      font-weight: bold;
+      color: var(--fg);
+    }
+
+    .comment .text {
+      color: var(--fg);
+      font-size: var(--fs-body);
+    }
+
+    @media (min-width: 700px) {
+      .profile .row {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
   </style>
 </head>
 
 <body>
   <header class="header">
-    <h1>プロフィール</h1>
+    <div class="title" id="title">プロフィール</div>
   </header>
 
   <main class="main">
     <div class="content">
       <!-- ヒーロー -->
       <section class="hero" id="hero">
-        <img src="images/slug/hero.jpg" alt="ヒーロー画像">
-        <div class="one-line" id="hero-caption"></div>
+        <img src="path/to/your/image.jpg" alt="Hero Image">
+        <div class="one-line">阪神JF 優勝 484kg 2019年12月8日（2歳）</div>
       </section>
 
       <!-- プロフィール -->
       <section class="profile" id="profile">
-        <div class="horse-name" id="horse-name">
-          <img src="path/to/club-icon.gif" alt="クラブアイコン" id="club-icon">
-          <span id="horse-name-text"></span>
+        <div class="horse-name" id="horse-name">レシステンシア</div>
+        
+        <div class="rows">
+          <!-- 父、母、母父 -->
+          <div class="row">
+            <div class="cell"><span class="label">父</span><span id="sire">ダイワメジャー</span></div>
+            <div class="cell"><span class="label">母</span><span id="dam">マラコスタムブラダ</span></div>
+          </div>
+
+          <div class="row">
+            <div class="cell"><span class="label">母父</span><span id="damsire">Lizard Island</span></div>
+          </div>
+
+          <!-- 生産、厩舎 -->
+          <div class="row">
+            <div class="cell"><span class="label">生産</span><span id="farm">ノーザンファーム</span></div>
+            <div class="cell"><span class="label">厩舎</span><span id="stable">栗東 松下武士</span></div>
+          </div>
+
+          <!-- 生年月日、募集総額 -->
+          <div class="row">
+            <div class="cell"><span class="label">生年月日</span><span id="birth">2017年3月15日生</span></div>
+            <div class="cell"><span class="label">募集総額</span><span id="price">2600万円</span></div>
+          </div>
+
+          <!-- 測尺 -->
+          <div class="row">
+            <div class="cell"><span class="label">即尺</span></div>
+            <div class="cell"><span class="label">体高</span><span id="height">153.5cm</span></div>
+            <div class="cell"><span class="label">胸囲</span><span id="girth">179.0cm</span></div>
+            <div class="cell"><span class="label">管囲</span><span id="cannon">20.0cm</span></div>
+            <div class="cell"><span class="label">馬体重</span><span id="weight">482kg</span></div>
+          </div>
         </div>
-
-        <div class="cell"><span class="label">父</span><span id="sire"></span></div>
-        <div class="cell"><span class="label">母</span><span id="dam"></span></div>
-        <div class="cell"><span class="label">母父</span><span id="damsire"></span></div>
-        <div class="cell"><span class="label">生産</span><span id="farm"></span></div>
-        <div class="cell"><span class="label">厩舎</span><span id="stable"></span></div>
-        <div class="cell"><span class="label">生年月日</span><span id="birth"></span></div>
-        <div class="cell"><span class="label">募集総額</span><span id="price"></span></div>
-
-        <div class="cell"><span class="label">即尺</span><span id="height"></span><span id="girth"></span><span id="cannon"></span><span id="weight"></span></div>
       </section>
 
-      <!-- コメント -->
       <section class="comments" id="comments"></section>
     </div>
   </main>
 
-  <script>
-    const clubIcon = {
-      carrot: 'assets/icons/clubs/carrot.gif',
-      silk: 'assets/icons/clubs/silk.gif',
-      tokyo: 'assets/icons/clubs/tokyo.gif',
-      win: 'assets/icons/clubs/win.gif',
-      union: 'assets/icons/clubs/union.gif',
-      normandy: 'assets/icons/clubs/normandy.gif',
-    };
 
-    function getParam(name){ return new URLSearchParams(location.search).get(name) || ''; }
+<script>
+/* ==== 定数・ユーティリティ ==== */
+const clubIcon = {
+  carrot:'assets/icons/clubs/carrot.gif',
+  silk:'assets/icons/clubs/silk.gif',
+  tokyo:'assets/icons/clubs/tokyo.gif',
+  win:'assets/icons/clubs/win.gif',
+  union:'assets/icons/clubs/union.gif',
+  normandy:'assets/icons/clubs/normandy.gif',
+};
+function getParam(name){ return new URLSearchParams(location.search).get(name) || ''; }
+function dateKeyFromSrc(src){ const m = src.match(/(\d{8})/); return m ? m[1] : '00000000'; }
+function dateSort(a, b) {
+  return new Date(b.date) - new Date(a.date);
+}
 
-    (async function(){
-      const slug = (getParam('id') || getParam('slug') || '').trim().toLowerCase();
-      const horses = await (await fetch('data/horses.json')).json();
-      const horse = horses.find(h=> (h.slug||'').toLowerCase()===slug);
-      if(!horse) return;
+/* ==== メイン ==== */
+(async function(){
+  const slug = (getParam('id') || getParam('slug') || '').trim().toLowerCase();
+  try {
+    const horses = await (await fetch('data/horses.json',{cache:'no-store'})).json();
+    const horse = horses.find(h => String(h.slug||'').toLowerCase() === slug);
+    if (!horse) {
+      document.querySelector('.main').innerHTML = '<div class="cap">データが見つかりません</div>';
+      return;
+    }
 
-      const detail = await (await fetch(`data/albums/${slug}.json`)).json();
+    const detail = await (await fetch(`data/albums/${slug}.json`,{cache:'no-store'})).json();
+    const album = Array.isArray(detail.album) ? [...detail.album] : [];
 
-      // ヘッダー画像キャプション
-      const heroCaption = detail.album?.find(a=>a.isHero)?.caption || '';
-      document.getElementById('hero-caption').textContent = heroCaption;
+    /* 1) ヘッダー */
+    const title = document.getElementById('title');
+    const iconSrc = clubIcon[horse.club] || clubIcon['carrot'];
+    title.innerHTML = `<img src="${iconSrc}" alt=""><b>${horse.name||''}</b>`;
 
-      // 馬名とクラブアイコン
-      document.getElementById('horse-name-text').textContent = horse.name || '';
-      document.getElementById('club-icon').src = clubIcon[horse.club] || clubIcon.carrot;
+    /* 2) ヒーロー画像 */
+    let heroItem = album.find(a => a.isHero) ||
+                   album.slice().sort((a,b) => dateKeyFromSrc(b.src).localeCompare(dateKeyFromSrc(a.src)))[0];
+    const hero = document.getElementById('hero');
+    const defaultHeroImg = 'https://gue1971.github.io/my-horse/images/placeholder.webp'; // プレースホルダー画像
+    if (heroItem) {
+      hero.innerHTML = `
+        <img src="images/${slug}/${heroItem.file || defaultHeroImg}" alt="">
+        <div class="one-line">${heroItem.caption || ''}</div>`;
+    } else {
+      hero.innerHTML = `<div class="cap">（ヒーロー画像が未指定です）</div>`;
+    }
 
-      // プロフィール値
-      document.getElementById('sire').textContent = horse.sire || '';
-      document.getElementById('dam').textContent = horse.dam || '';
-      document.getElementById('damsire').textContent = horse.damsire || '';
-      document.getElementById('farm').textContent = horse.farm || '';
-      document.getElementById('stable').textContent = horse.stable || '';
-      document.getElementById('birth').textContent = horse.birth || '';
-      document.getElementById('price').textContent = horse.price || '';
+    /* 3) プロフィール */
+    const p = document.getElementById('profile');
+    const M = detail.measure || horse; // horses.jsonの測尺データを使用
+    const cell = (label, val) => `<div class="cell"><span class="label">${label}</span><span>${val || ''}</span></div>`;
+    p.innerHTML = `<div class="rows">` + [
+      `<div class="row"><div>${cell('父', horse.sire)}</div><div>${cell('母', horse.dam)}</div></div>`,
+      `<div class="row"><div>${cell('母父', horse.damsire)}</div><div>${cell('', '')}</div></div>`,
+      `<div class="row"><div>${cell('生産', horse.farm)}</div><div>${cell('厩舎', horse.stable)}</div></div>`,
+      `<div class="row"><div>${cell('生年月日', horse.birth)}</div><div>${cell('募集総額', horse.price)}</div></div>`,
+      `<div class="row"><div>${cell('体高', M.height_cm ? `${M.height_cm}cm` : '')}</div><div>${cell('胸囲', M.girth_cm ? `${M.girth_cm}cm` : '')}</div></div>`,
+      `<div class="row"><div>${cell('管囲', M.cannon_cm ? `${M.cannon_cm}cm` : '')}</div><div>${cell('馬体重', M.weight_kg ? `${M.weight_kg}kg` : '')}</div></div>`
+    ].join('') + `</div>`;
 
-      // 測尺
-      const M = detail.measure || {};
-      document.getElementById('height').textContent = `体高 ${M.height_cm || ''}cm`;
-      document.getElementById('girth').textContent = `胸囲 ${M.girth_cm || ''}cm`;
-      document.getElementById('cannon').textContent = `管囲 ${M.cannon_cm || ''}cm`;
-      document.getElementById('weight').textContent = `馬体重 ${M.weight_kg || ''}kg`;
+    /* 4) コメント */
+    const comments = document.getElementById('comments');
+    const sortedComments = detail.archiveComment ? detail.archiveComment.sort(dateSort) : [];
+    const commentsHTML = sortedComments.map(comment => `
+      <div class="comment">
+        <div class="date">${comment.date}</div>
+        <div class="title">${comment.title}</div>
+        <div class="text">${comment.text}</div>
+      </div>`).join('');
+    comments.innerHTML = commentsHTML || '<div class="cap">コメントはありません</div>';
 
-      // コメント
-      const comments = detail.archiveComment || [];
-      const commentsHTML = comments.map(c=>`
-        <div class="comment">
-          <div class="date">${c.date}</div>
-          <div class="title">${c.title}</div>
-          <div class="text">${c.text}</div>
-        </div>`).join('');
-      document.getElementById('comments').innerHTML = commentsHTML;
-    })();
-  </script>
+  } catch (e) {
+    console.error(e);
+    document.querySelector('.main').innerHTML = '<div class="cap">読み込みエラー</div>';
+  }
+})();
+</script>
 </body>
-
-
 </html>
