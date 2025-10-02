@@ -196,10 +196,52 @@
   </main>
 
   <script>
-    /* JavaScriptの部分（動的に挿入） */
+    /* JavaScriptで動的に値を挿入する */
     (async function() {
-      // ここにAPIからのデータ取得を行う処理を追加することができます
+      const slug = (getParam('id') || getParam('slug') || '').trim().toLowerCase();
+      try {
+        const horses = await (await fetch('data/horses.json', { cache: 'no-store' })).json();
+        const horse = horses.find(h => String(h.slug || '').toLowerCase() === slug);
+        if (!horse) {
+          document.querySelector('.main').innerHTML = '<div class="cap">データが見つかりません</div>';
+          return;
+        }
+
+        const detail = await (await fetch(`data/albums/${slug}.json`, { cache: 'no-store' })).json();
+
+        /* 馬名とクラブアイコン */
+        document.getElementById('horse-name').innerHTML = `${horse.name || ''}`;
+
+        /* 各プロフィール項目の挿入 */
+        document.getElementById('sire').textContent = horse.sire || '';
+        document.getElementById('dam').textContent = horse.dam || '';
+        document.getElementById('damsire').textContent = horse.damsire || '';
+        document.getElementById('farm').textContent = horse.farm || '';
+        document.getElementById('stable').textContent = horse.stable || '';
+        document.getElementById('birth').textContent = horse.birth || '';
+        document.getElementById('price').textContent = horse.price || '';
+        document.getElementById('height').textContent = detail.measure?.height_cm || '';
+        document.getElementById('girth').textContent = detail.measure?.girth_cm || '';
+        document.getElementById('cannon').textContent = detail.measure?.cannon_cm || '';
+        document.getElementById('weight').textContent = detail.measure?.weight_kg || '';
+
+        /* コメント */
+        const comments = document.getElementById('comments');
+        const sortedComments = detail.archiveComment ? detail.archiveComment.sort(dateSort) : [];
+        const commentsHTML = sortedComments.map(comment => `
+          <div class="comment">
+            <div class="date">${comment.date}</div>
+            <div class="title">${comment.title}</div>
+            <div class="text">${comment.text}</div>
+          </div>`).join('');
+        comments.innerHTML = commentsHTML || '<div class="cap">コメントはありません</div>';
+
+      } catch (e) {
+        console.error(e);
+        document.querySelector('.main').innerHTML = '<div class="cap">読み込みエラー</div>';
+      }
     })();
   </script>
 </body>
+
 </html>
