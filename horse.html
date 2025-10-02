@@ -121,15 +121,15 @@ function dateKeyFromSrc(src){ const m = src.match(/(\d{8})/); return m ? m[1] : 
     const hero = document.getElementById('hero');
     if (heroItem) {
       hero.innerHTML = `
-        <img src="${heroItem.src}" alt="">
-        <div class="one-line">${heroItem.caption||''}</div>`;
+        <img src="${heroItem.src || '###'}" alt="">
+        <div class="one-line">${heroItem.caption || ''}</div>`;
     } else {
       hero.innerHTML = `<div class="cap">（ヒーロー画像が未指定です）</div>`;
     }
 
     /* 3) プロフィール */
     const p = document.getElementById('profile');
-    const M = detail.measure || {};
+    const M = detail.measure || horse; // horses.jsonの測尺データを使用
     const cell = (label, val) => `<div class="cell"><span class="label">${label}</span><span>${val || ''}</span></div>`;
     p.innerHTML = `<div class="rows">` + [
       `<div class="row"><div>${cell('父', horse.sire)}</div><div>${cell('母', horse.dam)}</div></div>`,
