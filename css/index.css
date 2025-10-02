@@ -47,7 +47,7 @@ a.is-disabled{ pointer-events:none; opacity:.55; cursor:default; }
 
 .card-right{ display:grid; grid-template-rows:auto 1fr auto; padding:2px 8px; gap:0;}
 
-/* Right-Top */
+/* Right-Top （クラブアイコンと馬名）*/
 .card-right-top{ padding:2px; }
 .card-right-top a{ display:inline-flex; align-items:center; gap:4px; text-decoration:none;
   color:var(--fg); font-weight:700; font-size:var(--fs-name); }
@@ -74,9 +74,28 @@ a.is-disabled{ pointer-events:none; opacity:.55; cursor:default; }
   .mini-prof .row-1col{ display:grid; grid-template-columns:auto 1fr; gap:1px 6px; }
 }
 
-/* Links */
+/* Right-Bottom（Links） */
 .links{ display:flex; gap:10px; flex-wrap:wrap; margin:2px 0 0; font-size:var(--fs-meta); }
-.links a{ color:var(--link); text-decoration:none; font-weight:600; }
+/* アイコンのスタイル */
+.links a img {
+  width: 14px;             /* アイコンの横幅 */
+  height: 14px;            /* アイコンの縦幅 */
+  object-fit: contain;     /* アイコンのサイズが枠に収まるように調整 */
+  border: none;            /* ボーダーなし */
+  margin-right: 5px;       /* テキストとアイコンの間に少しスペースを追加 */
+}
+/* リンクのテキストの色 */
+.links a {
+  color: var(--fg);        /* リンクテキストの色を--fgで指定 */
+  text-decoration: none;    /* テキストの下線を削除 */
+  font-size: 14px;          /* テキストのサイズ */
+  display: inline-flex;     /* アイコンとテキストを横並びに */
+  align-items: center;      /* アイコンとテキストを縦揃えに */
+}
+
+.links a:hover {
+  text-decoration: underline; /* ホバー時に下線を表示 */
+}
 
 /* Placeholder */
 .placeholder{ display:grid; place-items:center; color:#9aa1a9; }
