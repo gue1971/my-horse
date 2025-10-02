@@ -89,10 +89,10 @@ my-horse/
 }
 ```
 
-### comments/<slug>.json
+### archiveComment/<slug>.json
 ```json
 {
-  "comments": [
+  "archiveComment": [
     {
       "date": "2025-09-30",
       "title": "坂東牧場",
@@ -118,7 +118,7 @@ my-horse/
 
 - **コメント**  
   - 引退後のクラブコメントをアーカイブ用に保存  
-  - 基本はテキストのみ
+  - 日付、タイトル、テキストを保持
 
 ---
 
