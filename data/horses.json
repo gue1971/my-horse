@@ -105,7 +105,7 @@
     "tab": 1
   },
   {
-    "slug": "uinarukanna24",
+    "slug": "winalkanna24",
     "name": "ウインアルカンナ24",
     "club": "win",
     "sire": "フィエールマン",
@@ -126,7 +126,7 @@
     "tab": 1
   },
   {
-    "slug": "konparutishion24",
+    "slug": "comparticion24",
     "name": "コンパルティシオン24",
     "club": "tokyo",
     "sire": "ミッキーアイル",
@@ -168,7 +168,7 @@
     "tab": 1
   },
   {
-    "slug": "jirufa24",
+    "slug": "zylpha24",
     "name": "ジルファ24",
     "club": "silk",
     "sire": "Pinatubo",
@@ -178,10 +178,10 @@
     "price": "3500万",
     "stable": "美浦　嘉藤貴行",
     "farm": "フランス",
-    "height_cm": null,
-    "girth_cm": null,
-    "cannon_cm": null,
-    "weight_kg": null,
+    "height_cm": 152.0,
+    "girth_cm": 179.5,
+    "cannon_cm": 19.8,
+    "weight_kg": 423,
     "clubPage": "2024043",
     "netkeiba_horse_id": "2024110014",
     "jra_id": "",
@@ -189,7 +189,7 @@
     "tab": 1
   },
   {
-    "slug": "gurattorasshii24",
+    "slug": "gluttonlassie24",
     "name": "グラットラッシー24",
     "club": "tokyo",
     "sire": "スワーヴリチャード",
