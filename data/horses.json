@@ -21,7 +21,7 @@
     "tab": 1
   },
   {
-    "slug": "puromisutoriipu24",
+    "slug": "promisedleap24",
     "name": "プロミストリープ24",
     "club": "silk",
     "sire": "クリソベリル",
@@ -31,10 +31,10 @@
     "price": "5000万",
     "stable": "栗東　杉山晴紀",
     "farm": "ノーザンファーム",
-    "height_cm": null,
-    "girth_cm": null,
-    "cannon_cm": null,
-    "weight_kg": null,
+    "height_cm": 159.0,
+    "girth_cm": 181.0,
+    "cannon_cm": 21.9,
+    "weight_kg": 502,
     "clubPage": "2024058",
     "netkeiba_horse_id": "2024106579",
     "jra_id": "",
