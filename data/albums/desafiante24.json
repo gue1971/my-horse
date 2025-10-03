@@ -1,8 +1,28 @@
 {
   "album": [
     {
-      "file": "",
-      "caption": "",
+      "file": "20250930.jpg",
+      "caption": "NF空港　492kg　2025年9月30日（1歳）",
+      "isHero": true
+    },
+    {
+      "file": "20250831.webp",
+      "caption": "NF空港　474kg　2025年8月31日（1歳）",
+      "isHero": false
+    },
+    {
+      "file": "20250731.webp",
+      "caption": "NF空港　474kg　2025年7月31日（1歳）",
+      "isHero": false
+    },
+    {
+      "file": "20250616.webp",
+      "caption": "募集時　452kg　2025年6月16日（1歳）",
+      "isHero": false
+    },
+    {
+      "file": "20250601.webp",
+      "caption": "募集カタログ　2025年6月（1歳）",
       "isHero": false
     }
   ],
