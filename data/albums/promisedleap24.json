@@ -1,0 +1,21 @@
+{
+  "album": [
+    {
+      "file": "20250814.webp",
+      "caption": "NFイヤリング　504kg　2025年8月14日（1歳）",
+      "isHero": true
+    },
+    {
+      "file": "20250527.webp",
+      "caption": "募集時　502kg　2025年5月27日（1歳）",
+      "isHero": false
+    }
+  ],
+  "archiveComment": [
+    {
+      "date": "YYYY-MM-DD",
+      "title": "",
+      "text": ""
+    }
+  ]
+}
