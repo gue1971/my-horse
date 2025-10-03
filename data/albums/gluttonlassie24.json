@@ -1,8 +1,28 @@
 {
   "album": [
     {
-      "file": "",
-      "caption": "",
+      "file": "20250930.jpg",
+      "caption": "追分Fリリーバレー　497kg　2025年9月30日",
+      "isHero": true
+    },
+    {
+      "file": "20250831.webp",
+      "caption": "追分Fリリーバレー　480kg　2025年8月31日",
+      "isHero": false
+    },
+    {
+      "file": "20250731.webp",
+      "caption": "追分Fリリーバレー　490kg　2025年7月31日",
+      "isHero": false
+    },
+    {
+      "file": "20250616.webp",
+      "caption": "募集時　457kg　2025年6月（1歳）",
+      "isHero": false
+    },
+    {
+      "file": "20250601.webp",
+      "caption": "募集カタログ　2025年6月（1歳）",
       "isHero": false
     }
   ],
