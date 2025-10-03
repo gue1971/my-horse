@@ -3,77 +3,77 @@
     {
       "file": "20241110.webp",
       "caption": "ユートピアS　優勝　446kg　2024年11月10日（4歳）",
-      "isTrue": true
+      "isHero": true
     },
     {
       "file": "20240920.webp",
       "caption": "コスモヴューファーム　479kg　2024年9月中旬（4歳）",
-      "isTrue": false
+      "isHero": false
     },
     {
       "file": "20240823.webp",
       "caption": "コスモヴューファーム　2024年8月中旬（4歳）",
-      "isTrue": false
+      "isHero": false
     },
     {
       "file": "20240511.webp",
       "caption": "国分寺特別　優勝　450kg　2024年5月11日（4歳）",
-      "isTrue": false
+      "isHero": false
     },
     {
       "file": "20231022.webp",
       "caption": "柏崎特別　優勝　448kg　2023年10月22日（3歳）",
-      "isTrue": false
+      "isHero": false
     },
     {
       "file": "20230902.webp",
       "caption": "3歳未勝利　優勝　444kg　2023年9月2日（3歳）",
-      "isTrue": false
+      "isHero": false
     },
     {
       "file": "20220617.webp",
       "caption": "コスモヴューファーム　2022年6月中旬（2歳）",
-      "isTrue": false
+      "isHero": false
     },
     {
       "file": "20220520.webp",
       "caption": "コスモヴューファーム　2022年5月中旬（2歳）",
-      "isTrue": false
+      "isHero": false
     },
     {
       "file": "20220415.webp",
       "caption": "コスモヴューファーム　2022年4月中旬（2歳）",
-      "isTrue": false
+      "isHero": false
     },
     {
       "file": "20220318.webp",
       "caption": "コスモヴューファーム　2022年3月中旬（2歳）",
-      "isTrue": false
+      "isHero": false
     },
     {
       "file": "20220218.webp",
       "caption": "コスモヴューファーム　2022年2月中旬（2歳）",
-      "isTrue": false
+      "isHero": false
     },
     {
       "file": "20211217.webp",
       "caption": "コスモヴューファーム　2021年11月中旬（1歳）",
-      "isTrue": false
+      "isHero": false
     },
     {
       "file": "20211015.webp",
       "caption": "コスモヴューファーム　415kg　2021年10月中旬（1歳）",
-      "isTrue": false
+      "isHero": false
     },
     {
       "file": "20210917.webp",
       "caption": "コスモヴューファーム　2021年9月中旬（1歳）",
-      "isTrue": false
+      "isHero": false
     },
     {
       "file": "20210701.webp",
       "caption": "募集時　405kg　2021年7月（1歳）",
-      "isTrue": false
+      "isHero": false
     }
   ],
 
