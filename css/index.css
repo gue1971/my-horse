@@ -1,5 +1,5 @@
 :root{
-  --bg:#000; --fg:#eee; --muted:#9aa1a9; --line:#2b2f34; --link:#7db3ff;
+  --bg:#000; --fg:#eee; --muted:#9aa1a9; --line:#2b2f34; --link:#ccc;
   --card:#333;
   --fs-body: clamp(13px, 2.6vw, 16px);
   --fs-name: clamp(14px, 3.3vw, 18px);
