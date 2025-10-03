@@ -525,7 +525,7 @@
     "tab": 3
   },
   {
-    "slug": "kosumopurachina20",
+    "slug": "cosmoplatina20",
     "name": "ウインエーデル",
     "club": "win",
     "sire": "リオンディーズ",
@@ -535,10 +535,10 @@
     "price": "1200万",
     "stable": "栗東　吉田直弘",
     "farm": "コスモヴューファーム",
-    "height_cm": null,
+    "height_cm": 151.0,
     "girth_cm": null,
     "cannon_cm": null,
-    "weight_kg": null,
+    "weight_kg": 405,
     "clubPage": "20200020",
     "netkeiba_horse_id": "2020107030",
     "jra_id": "pw01dud102020107030/5E",
@@ -966,7 +966,7 @@
     "tab": 5
   },
   {
-    "slug": "antifona17",
+    "slug": "antiphona17",
     "name": "ラウダシオン",
     "club": "silk",
     "sire": "リアルインパクト",
