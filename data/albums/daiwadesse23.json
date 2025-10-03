@@ -1,0 +1,22 @@
+{
+  "album": [
+    { "file": "20250919.jpg", "caption": "コスモヴューF　---kg　2025年9月19日（2歳）", "isHero": true },
+    { "file": "20250815.webp", "caption": "コスモヴューF　---kg　2025年8月15日（2歳）", "isHero": false },
+    { "file": "20250718.webp", "caption": "コスモヴューF　---kg　2025年7月18日（2歳）", "isHero": false },
+    { "file": "20250620.webp", "caption": "コスモヴューF　---kg　2025年6月20日（2歳）", "isHero": false },
+    { "file": "20250523.webp", "caption": "コスモヴューF　---kg　2025年5月23日（2歳）", "isHero": false },
+    { "file": "20250418.webp", "caption": "コスモヴューF　480kg　2025年4月18日（2歳）", "isHero": false },
+    { "file": "20250321.webp", "caption": "コスモヴューF　---kg　2025年3月21日（2歳）", "isHero": false },
+    { "file": "20250221.webp", "caption": "コスモヴューF　473kg　2025年2月21日（2歳）", "isHero": false },
+    { "file": "20250117.webp", "caption": "コスモヴューF　473kg　2025年1月17日（2歳）", "isHero": false },
+    { "file": "20241227.webp", "caption": "コスモヴューF　487kg　2024年12月27日（1歳）", "isHero": false },
+    { "file": "20241018.webp", "caption": "募集時　471kg　2024年10月18日（1歳）", "isHero": false }
+  ],
+  "archiveComment": [
+    {
+      "date": "YYYY-MM-DD",
+      "title": "",
+      "text": ""
+    }
+  ]
+}

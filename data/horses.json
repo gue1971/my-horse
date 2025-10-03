@@ -357,7 +357,7 @@
     "tab": 2
   },
   {
-    "slug": "daiwadessee23",
+    "slug": "daiwadesse23",
     "name": "ウイングリフィス",
     "club": "win",
     "sire": "カリフォルニアクローム",
@@ -367,10 +367,10 @@
     "price": "1400万",
     "stable": "栗東　宮徹",
     "farm": "フジワラファーム",
-    "height_cm": null,
+    "height_cm": 158.0,
     "girth_cm": null,
     "cannon_cm": null,
-    "weight_kg": null,
+    "weight_kg": 471,
     "clubPage": "20230033",
     "netkeiba_horse_id": "2023103164",
     "jra_id": "",
