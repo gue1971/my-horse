@@ -252,7 +252,7 @@
     "tab": 2
   },
   {
-    "slug": "meriito23",
+    "slug": "melito23",
     "name": "パッセージピーク",
     "club": "carrot",
     "sire": "アドマイヤマーズ",
@@ -262,10 +262,10 @@
     "price": "4000万",
     "stable": "美浦　田村康仁",
     "farm": "ノーザンファーム",
-    "height_cm": null,
-    "girth_cm": null,
-    "cannon_cm": null,
-    "weight_kg": null,
+    "height_cm": 160.5,
+    "girth_cm": 177.5,
+    "cannon_cm": 21.0,
+    "weight_kg": 460,
     "clubPage": "23039",
     "netkeiba_horse_id": "2023107275",
     "jra_id": "pw01dud102023107275/E3",
