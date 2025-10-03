@@ -210,7 +210,7 @@
     "tab": 1
   },
   {
-    "slug": "eritieeru23",
+    "slug": "heritiere23",
     "name": "ガルディエンヌ",
     "club": "carrot",
     "sire": "ドレフォン",
@@ -220,10 +220,10 @@
     "price": "3000万",
     "stable": "栗東　高橋亮",
     "farm": "ノーザンファーム",
-    "height_cm": null,
-    "girth_cm": null,
-    "cannon_cm": null,
-    "weight_kg": null,
+    "height_cm": 155.5,
+    "girth_cm": 170.5,
+    "cannon_cm": 20.3,
+    "weight_kg": 432,
     "clubPage": "23065",
     "netkeiba_horse_id": "2023106926",
     "jra_id": "pw01dud002023106926/87",

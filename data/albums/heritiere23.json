@@ -1,0 +1,36 @@
+{
+  "album": [
+    {
+      "file": "20250320.webp",
+      "caption": "NF天栄　451kg　2025年3月20日（2歳）",
+      "isHero": true
+    },
+    {
+      "file": "20250131.webp",
+      "caption": "NF早来　461kg　2025年1月31日（2歳）",
+      "isHero": false
+    },
+    {
+      "file": "20241129.webp",
+      "caption": "NF早来　442kg　2024年11月29日（1歳）",
+      "isHero": false
+    },
+    {
+      "file": "20240930.webp",
+      "caption": "NF早来　448kg　2024年9月30日（1歳）",
+      "isHero": false
+    },
+    {
+      "file": "20240826.webp",
+      "caption": "募集時　432kg　2024年8月26日（1歳）",
+      "isHero": false
+    }
+  ],
+  "archiveComment": [
+    {
+      "date": "YYYY-MM-DD",
+      "title": "",
+      "text": ""
+    }
+  ]
+}
