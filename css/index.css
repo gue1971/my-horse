@@ -41,7 +41,7 @@ main{ padding:40px 0 0; }
 /* Card */
 .card{ display:grid; grid-template-columns:1.2fr 1fr; background:var(--card); overflow:hidden;
   padding:0; margin-bottom:8px;}
-.card-left{ display:block; line-height:0; background:green; }
+.card-left{ display:block; line-height:0; background:#000; }
 .card-left img{ width:100%; aspect-ratio:4/3; object-fit:cover; display:block; }
 a.is-disabled{ pointer-events:none; opacity:.55; cursor:default; }
 
