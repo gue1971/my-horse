@@ -336,7 +336,7 @@
     "tab": 2
   },
   {
-    "slug": "vuenyusemaasu23",
+    "slug": "venusetmars23",
     "name": "ルージュウラヌス",
     "club": "tokyo",
     "sire": "サートゥルナーリア",
@@ -346,10 +346,10 @@
     "price": "2400万",
     "stable": "栗東　武幸四郎",
     "farm": "坂東牧場",
-    "height_cm": null,
-    "girth_cm": null,
-    "cannon_cm": null,
-    "weight_kg": null,
+    "height_cm": 154.0,
+    "girth_cm": 174.0,
+    "cannon_cm": 20.0,
+    "weight_kg": 458,
     "clubPage": "runners/2837",
     "netkeiba_horse_id": "2023106622",
     "jra_id": "",
