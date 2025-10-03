@@ -1,0 +1,23 @@
+{
+  "album": [
+    { "file": "20250430.webp", "caption": "社台F　496kg　2025年4月30日（2歳）", "isHero": true },
+    { "file": "20250331.webp", "caption": "社台F　499kg　2025年3月31日（2歳）", "isHero": false },
+    { "file": "20250228.webp", "caption": "社台F　484kg　2025年2月28日（2歳）", "isHero": false },
+    { "file": "20250131.webp", "caption": "社台F　480kg　2025年1月（2歳）", "isHero": false },
+    { "file": "20241227.webp", "caption": "社台F　478kg　2024年12月（1歳）", "isHero": false },
+    { "file": "20241130.webp", "caption": "社台F　473kg　2024年11月（1歳）", "isHero": false },
+    { "file": "20241031.webp", "caption": "社台F　461kg　2024年10月（1歳）", "isHero": false },
+    { "file": "20240930.webp", "caption": "社台F　440kg　2024年9月（1歳）", "isHero": false },
+    { "file": "20240830.webp", "caption": "社台F　458kg　2024年8月（1歳）", "isHero": false },
+    { "file": "20240731.webp", "caption": "社台F　465kg　2024年7月（1歳）", "isHero": false },
+    { "file": "20240607.webp", "caption": "募集時　416kg　2024年6月（1歳）", "isHero": false },
+    { "file": "20240601.webp", "caption": "募集カタログ　2024年6月（1歳）", "isHero": false }
+  ],
+  "archiveComment": [
+    {
+      "date": "YYYY-MM-DD",
+      "title": "",
+      "text": ""
+    }
+  ]
+}

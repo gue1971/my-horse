@@ -231,7 +231,7 @@
     "tab": 2
   },
   {
-    "slug": "shaararei23",
+    "slug": "sharlarae23",
     "name": "ルージュアリスタ",
     "club": "tokyo",
     "sire": "コントレイル",
@@ -241,10 +241,10 @@
     "price": "3600万",
     "stable": "美浦　宮田敬介",
     "farm": "社台ファーム",
-    "height_cm": null,
-    "girth_cm": null,
-    "cannon_cm": null,
-    "weight_kg": null,
+    "height_cm": 157.0,
+    "girth_cm": 175.0,
+    "cannon_cm": 20.0,
+    "weight_kg": 416,
     "clubPage": "runners/2803",
     "netkeiba_horse_id": "2023103427",
     "jra_id": "pw01dud102023103427/1F",
