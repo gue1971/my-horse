@@ -96,10 +96,18 @@ function dateSort(a, b) {
     const detail = await (await fetch(`data/albums/${slug}.json`, {cache:'no-store'})).json();
     const album = Array.isArray(detail.album) ? [...detail.album] : [];
 
+    /* アルバムリストのファイル名順で降順にソート */
+    album.sort((a, b) => {
+      // file名の最初の8桁を取得して日付順に比較
+      const dateA = a.file.slice(0, 8); // 20220202 のように最初の8桁を取得
+      const dateB = b.file.slice(0, 8); // 20220202 のように最初の8桁を取得
+      return dateB.localeCompare(dateA); // 日付降順に並べ替え
+    });
+
     /* アルバムリスト */
     const albumList = document.getElementById('album-list');
     if (album.length > 0) {
-      album.reverse().forEach(item => {
+      album.forEach(item => {
         albumList.innerHTML += `
           <div class="album-item">
             <img src="images/${slug}/${item.file}" alt="${item.caption || '画像'}">
@@ -115,6 +123,7 @@ function dateSort(a, b) {
     document.querySelector('.main').innerHTML = '<div class="cap">読み込みエラー</div>';
   }
 })();
+
 </script>
 </body>
 </html>
