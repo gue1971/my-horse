@@ -378,7 +378,7 @@
     "tab": 2
   },
   {
-    "slug": "ruvuesonvueeru23",
+    "slug": "leversonverre23",
     "name": "ウインサルーテ",
     "club": "win",
     "sire": "ウインブライト",
@@ -388,10 +388,10 @@
     "price": "3300万",
     "stable": "美浦　深山雅史",
     "farm": "ハシモトファーム",
-    "height_cm": null,
+    "height_cm": 160.0,
     "girth_cm": null,
     "cannon_cm": null,
-    "weight_kg": null,
+    "weight_kg": 528,
     "clubPage": "20230037",
     "netkeiba_horse_id": "2023104451",
     "jra_id": "",
