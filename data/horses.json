@@ -315,7 +315,7 @@
     "tab": 2
   },
   {
-    "slug": "reddosheriiru23",
+    "slug": "redcherir23",
     "name": "レッドレグルス",
     "club": "tokyo",
     "sire": "コントレイル",
@@ -325,10 +325,10 @@
     "price": "5000万",
     "stable": "栗東　杉山晴紀",
     "farm": "富田牧場",
-    "height_cm": null,
-    "girth_cm": null,
-    "cannon_cm": null,
-    "weight_kg": null,
+    "height_cm": 154.0,
+    "girth_cm": 168.0,
+    "cannon_cm": 20.3,
+    "weight_kg": 394,
     "clubPage": "runners/2828",
     "netkeiba_horse_id": "2023106617",
     "jra_id": "",
