@@ -42,7 +42,7 @@
     "tab": 1
   },
   {
-    "slug": "reddoregunanto24",
+    "slug": "redregnant24",
     "name": "レッドレグナント24",
     "club": "tokyo",
     "sire": "オルフェーヴル",
@@ -52,10 +52,10 @@
     "price": "4000万",
     "stable": "美浦大竹正博",
     "farm": "ノーザンファーム",
-    "height_cm": null,
-    "girth_cm": null,
-    "cannon_cm": null,
-    "weight_kg": null,
+    "height_cm": 151.0,
+    "girth_cm": 175.0,
+    "cannon_cm": 20.0,
+    "weight_kg": 416,
     "clubPage": "next/2919",
     "netkeiba_horse_id": "2024106734",
     "jra_id": "",

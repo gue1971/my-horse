@@ -1,0 +1,36 @@
+{
+  "album": [
+    {
+      "file": "20250930.jpg",
+      "caption": "NF空港　461kg　2025年9月30日（1歳）",
+      "isHero": true
+    },
+    {
+      "file": "20250831.webp",
+      "caption": "NF空港　448kg　2025年8月31日（1歳）",
+      "isHero": false
+    },
+    {
+      "file": "20250731.webp",
+      "caption": "レイクヴィラF　439kg　2025年7月31日（1歳）",
+      "isHero": false
+    },
+    {
+      "file": "20250616.webp",
+      "caption": "募集時　416kg　2025年6月（1歳）",
+      "isHero": false
+    },
+    {
+      "file": "20250601.webp",
+      "caption": "募集カタログ　2025年6月（1歳）",
+      "isHero": false
+    }
+  ],
+  "archiveComment": [
+    {
+      "date": "YYYY-MM-DD",
+      "title": "",
+      "text": ""
+    }
+  ]
+}
