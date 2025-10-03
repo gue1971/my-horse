@@ -1,6 +1,6 @@
 [
     {
-    "slug": "reshisutenshia24",
+    "slug": "resistencia24",
     "name": "レシステンシア24",
     "club": "carrot",
     "sire": "モーリス",
@@ -10,10 +10,10 @@
     "price": "8000万",
     "stable": "栗東　松下武士",
     "farm": "ノーザンファーム",
-    "height_cm": null,
-    "girth_cm": null,
-    "cannon_cm": null,
-    "weight_kg": null,
+    "height_cm": 153.0,
+    "girth_cm": 176.5,
+    "cannon_cm": 19.8,
+    "weight_kg": 446,
     "clubPage": "24062",
     "netkeiba_horse_id": "2024106723",
     "jra_id": "",

@@ -1,0 +1,21 @@
+{
+  "album": [
+    {
+      "file": "20250930.jpg",
+      "caption": "NF早来　434kg　2025年9月30（１歳）",
+      "isHero": true
+    },
+    {
+      "file": "20250819.jpg",
+      "caption": "募集時　446kg　2025年8月（１歳）",
+      "isHero": false
+    }
+  ],
+  "archiveComment": [
+    {
+      "date": "YYYY-MM-DD",
+      "title": "",
+      "text": ""
+    }
+  ]
+}
