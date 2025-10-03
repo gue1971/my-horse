@@ -1,8 +1,13 @@
 {
   "album": [
     {
-      "file": "",
-      "caption": "",
+      "file": "20250919.jpg",
+      "caption": "コスモヴューF　458kg　2025年9月19日（1歳）",
+      "isHero": true
+    },
+    {
+      "file": "20250714.webp",
+      "caption": "募集時　402kg　2025年7月14日（1歳）",
       "isHero": false
     }
   ],
