@@ -24,7 +24,7 @@
   /* 固定ヘッダー */
   .header{
     position:sticky; top:0; z-index:5;
-    background:#111;
+    background:var(--bg);
     display:flex; align-items:center; justify-content:center;
     padding:8px;
     font-size: 20px;
@@ -38,10 +38,9 @@
   .content{ width:100%; max-width:640px; margin:0 auto; }
 
   /* アルバムリスト */
-  .album-list{ margin-top:12px; }
-  .album-item{ margin-bottom:16px; padding:16px; background: var(--card); border:1px solid var(--line); }
+  .album-item{ margin-bottom:16px; padding:16px; background: #fff; border:1px solid var(--line); }
   .album-item img{ width:100%; display:block; aspect-ratio:4/3; object-fit:cover; }
-  .album-item .caption{ color:var(--fg); font-size:var(--fs-meta); margin-top:8px; }
+  .album-item .caption{ color:#000; font-size:var(--fs-meta); margin-top:8px; }
 
 </style>
 </head>
