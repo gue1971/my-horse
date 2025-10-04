@@ -104,7 +104,39 @@
       <section class="hero" id="hero"></section>
 
       <!-- プロフィール -->
-      <section class="profile" id="profile"></section>
+      <section class="profile" id="profile">
+        <div class="rows">
+          <div class="row">
+            <div class="cell"><span class="label">父</span><span id="sire"></span></div>
+            <div class="cell"><span class="label">母</span><span id="dam"></span></div>
+          </div>
+
+          <div class="row">
+            <div class="cell"><span class="label">母父</span><span id="damsire"></span></div>
+            <div class="cell"><span class="label">&nbsp;</span><span id="blank1"></span></div>
+          </div>
+
+          <div class="row">
+            <div class="cell"><span class="label">生産</span><span id="farm"></span></div>
+            <div class="cell"><span class="label">厩舎</span><span id="stable"></span></div>
+          </div>
+
+          <div class="row">
+            <div class="cell"><span class="label">生年月日</span><span id="birth"></span></div>
+            <div class="cell"><span class="label">募集総額</span><span id="price"></span></div>
+          </div>
+
+          <div class="row">
+            <div class="cell"><span class="label">体高</span><span id="height_cm"></span></div>
+            <div class="cell"><span class="label">胸囲</span><span id="girth_cm"></span></div>
+          </div>
+
+          <div class="row">
+            <div class="cell"><span class="label">管囲</span><span id="cannon_cm"></span></div>
+            <div class="cell"><span class="label">馬体重</span><span id="weight_kg"></span></div>
+          </div>
+        </div>
+      </section>
 
       <!-- コメント -->
       <section class="comments" id="comments"></section>
@@ -176,20 +208,11 @@ function dateSort(a, b) {
     /* 3) プロフィール（M廃止 → horseを直接参照） */
     const p = document.getElementById('profile');
     const cell = (label, val) => `<div class="cell"><span class="label">${label}</span><span>${val || ''}</span></div>`;
-    p.innerHTML = `<div class="rows">` + [
-      `<div class="row"><div>${cell('父', horse.sire)}</div><div>${cell('母', horse.dam)}</div></div>`,
-      `<div class="row"><div>${cell('母父', horse.damsire)}</div><div>${cell('', '')}</div></div>`,
-      `<div class="row"><div>${cell('生産', horse.farm)}</div><div>${cell('厩舎', horse.stable)}</div></div>`,
-      `<div class="row"><div>${cell('生年月日', horse.birth)}</div><div>${cell('募集総額', horse.price)}</div></div>`,
-      `<div class="row">
-        <div>${cell('体高',   horse.height_cm ? `${horse.height_cm}cm` : '')}</div>
-        <div>${cell('胸囲',   horse.girth_cm  ? `${horse.girth_cm}cm`   : '')}</div>
-      </div>`,
-      `<div class="row">
-        <div>${cell('管囲',   horse.cannon_cm ? `${horse.cannon_cm}cm` : '')}</div>
-        <div>${cell('馬体重', horse.weight_kg ? `${horse.weight_kg}kg` : '')}</div>
-      </div>`
-    ].join('') + `</div>`;
+
+
+
+
+    
 
     /* 4) コメント（安全化：配列チェック→ソート） */
     const comments = document.getElementById('comments');
