@@ -58,7 +58,7 @@ main{ padding:40px 0 72px; } /* ← フッターぶん下余白を確保 */
   padding:10px 0;
 }
 .card-left{ display:grid; place-items: center; }
-.card-left img{ width:80%; aspect-ratio:4/3; border: 8px solid rgba(255, 255, 255, 0.1); }
+.card-left img{ width:84%; aspect-ratio:4/3; border: 8px solid rgba(255, 255, 255, 0.1); }
 a.is-disabled{ pointer-events:none; opacity:1; cursor:default; }
 
 .card-right{ display:grid; grid-template-rows:auto 1fr auto; padding-left:8px; gap:0; }
