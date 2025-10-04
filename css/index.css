@@ -23,7 +23,7 @@ html, body {
   border-bottom:0; padding:6px;
   display:flex; align-items:center; justify-content:space-between;
 }
-.site-header h1{ margin:0; font-size:16px; font-weight:700; padding-left:4px; }
+.site-header h1{ margin:0; font-size:20px; font-weight:700; text-align: center;flex-direction: 1; }
 .site-header h1 a,
 .site-header h1 a:link,
 .site-header h1 a:visited,
@@ -111,16 +111,20 @@ a.is-disabled{ pointer-events:none; opacity:1; cursor:default; }
 .placeholder .ph{ display:grid; place-items:center; width:100%; aspect-ratio:4/3; user-select:none; }
 
 /* ===== Footer（ドットナビ）===== */
-.site-footer{
-  position: fixed; left: 0; right: 0; bottom: 0; z-index: 20;
-  display: grid; place-items: center;
+.site-footer {
+  position: fixed;
+  left: 0; right: 0; bottom: 0;
+  z-index: 20;
+  display: grid;
+  place-items: center;
   padding: 8px max(8px, env(safe-area-inset-left))
            calc(8px + env(safe-area-inset-bottom))
            max(8px, env(safe-area-inset-right));
-  background: rgba(0,0,0,0.35);
-  backdrop-filter: blur(10px);
+  background: var(--bg);           /* ←ここを変更（透過なし） */
+  backdrop-filter: none;           /* ←ぼかしも無効化 */
   border-top: 1px solid rgba(255,255,255,0.08);
 }
+
 
 .dots{
   display:flex; align-items:center; justify-content:center;
