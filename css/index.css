@@ -36,10 +36,37 @@ html, body {
 }
 
 /* Tabs */
-.tabs{ display:flex; gap:8px; padding:0 4px; }
+.tabs {
+  display: flex;
+  gap: 8px;
+  padding: 0 4px;
+}
+/* 通常状態：背景透過＆文字は地味な灰色 */
+.tab {
+  width: 54px;
+  height: 28px;
+  padding: 0;
+  background: transparent;    /* 背景なし */
+  border: none;               /* 枠線も消す */
+  font-size: 12px;
+  color: #888;                /* 地味な灰色。背景に合わせて調整してもOK */
+  cursor: pointer;
+  text-align: center;
+  transition: color 0.2s ease;
+}
+/* アクティブ状態：文字だけ白に */
+.tab.is-active {
+  background: transparent;    /* 背景はそのまま透過 */
+  color: #fff;                /* 白文字で強調 */
+}
+/* ホバー時のちょい強調（任意） */
+.tab:hover {
+  color: #ccc;
+}
+/*.tabs{ display:flex; gap:8px; padding:0 4px; }
 .tab{ width:54px; height:28px; padding:0; background:var(--card); border:0;
   font-size:12px; color:#eee; cursor:pointer; text-align:center; }
-.tab.is-active{ background:#555; }
+.tab.is-active{ background:#555; }*/
 
 /* Layout */
 main{ padding:40px 0 0; }
