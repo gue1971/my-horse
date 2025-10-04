@@ -78,9 +78,9 @@
     align-items:center;
   }
   .profile .cell{ display:flex; gap:10px; align-items:center; }
-  .profile .label{ display:inline-block; width:50px; color:#bbb; }
+  .profile .label{ display:inline-block; width:65px; color:#bbb; }
   .measure span[id] {
-    width: 90px;  /* すべてのIDに対して幅を揃える */
+    width: 100px;  /* すべてのIDに対して幅を揃える */
   }
 
 
@@ -129,12 +129,19 @@
           </div>
 
           <div class="row">
-            <div class="cell"><span id="birth"></span><span id="price"></span></div>
+            <div class="cell"><span id="birth"></span></div>
           </div>
 
           <div class="row">
-            <div class="cell"><!--<span class="label">生産</span>--><span id="farm"></span></div>
-            <div class="cell"><!--<span class="label">厩舎</span>--><span id="stable"></span></div>
+            <div class="cell"><span id="price"></span></div>
+          </div>
+
+          <div class="row">
+            <div class="cell"><!--<生産--><span id="farm"></span></div>
+          </div>
+
+          <div class="row">
+            <div class="cell"><!--厩舎--><span id="stable"></span></div>
           </div>
 
 
