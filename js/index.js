@@ -174,28 +174,29 @@ function buildCard({ horse, hero, hasAlbum }) {
    ['母父', horse.damsire]
   ], true));  // 縦並びにするためにtrueを指定
 
-  // 3段目：生年月日と募集総額を結合して表示（ラベルなし）
-// 生年月日を「2017.3.15生」の形式に変換
-const birthDate = horse.birth + '生'; 
-
-// 募集額をそのまま表示（「万募集」の形式にする）
-const price = horse.price + '募集';  // 「万」をそのまま使い、「募集」を追加
-
-// birthDate と price の間に全角スペースを挟んで結合
-const birthAndPrice = `${birthDate}　${price}`;  // 全角スペース（「　」）で繋げる
-
-// 横並びに表示（ラベルなし）
-mini.appendChild(mkRow([
-  ['', birthAndPrice]  // ラベルは空白、値を表示
-], false));  // falseを指定して横並びに
-
-
-
-  // 4段目：生産・厩舎（縦並びに変更）
+  // 3段目：生産・厩舎（縦並びに変更）
   mini.appendChild(mkRow([
    ['生産', horse.farm],
    ['厩舎', horse.stable]
   ], true));  // 縦並びにするためにtrueを指定
+
+  // 4段目：生年月日と募集総額を結合して表示（ラベルなし）
+  // 生年月日を「2017.3.15生」の形式に変換
+  const birthDate = horse.birth + '生'; 
+
+  // 募集額をそのまま表示（「万募集」の形式にする）
+  const price = horse.price + '募集';  // 「万」をそのまま使い、「募集」を追加
+
+  // birthDate と price の間に全角スペースを挟んで結合
+  const birthAndPrice = `${birthDate}　${price}`;  // 全角スペース（「　」）で繋げる
+
+  // 横並びに表示（ラベルなし）
+  mini.appendChild(mkRow([
+    ['', birthAndPrice]  // ラベルは空白、値を表示
+  ], false));  // falseを指定して横並びに
+
+
+
 
   mid.appendChild(mini);
   right.appendChild(mid);
