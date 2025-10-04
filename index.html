@@ -20,13 +20,6 @@
         出資馬
       </a>
     </h1>
-    <nav class="tabs">
-      <button class="tab is-active" data-tab="tab1">1</button>
-      <button class="tab" data-tab="tab2">2</button>
-      <button class="tab" data-tab="tab3">3</button>
-      <button class="tab" data-tab="tab4">引退馬</button>
-      <button class="tab" data-tab="tab5">活躍馬</button>
-    </nav>
   </header>
 
   <main>
@@ -36,6 +29,17 @@
     <div id="tab4" class="tab-panel grid" hidden></div>
     <div id="tab5" class="tab-panel grid" hidden></div>
   </main>
+
+  <footer class="site-footer" role="navigation" aria-label="タブ切り替え">
+    <nav class="dots">
+      <button class="dot is-active" data-target="tab1" aria-label="1"></button>
+      <button class="dot" data-target="tab2" aria-label="2"></button>
+      <button class="dot" data-target="tab3" aria-label="3"></button>
+      <button class="dot" data-target="tab4" aria-label="引退馬"></button>
+      <button class="dot" data-target="tab5" aria-label="活躍馬"></button>
+    </nav>
+  </footer>
+
 
   <!-- JS -->
   <script src="js/index.js" defer></script>

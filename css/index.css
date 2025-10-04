@@ -7,69 +7,38 @@
 }
 
 html, body {
-    margin: 0;
-    height: 100%;
-    background:var(--bg);
-    background: url("../images/bgNorthernFarm.png") no-repeat center center fixed;
-    background-size: cover;  /* 全画面にフィット */
-    color: var(--fg);
-    font: var(--fs-body)/1.25 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans JP",sans-serif;
+  margin: 0;
+  height: 100%;
+  color: var(--fg);
+  font: var(--fs-body)/1.25 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans JP",sans-serif;
+  /* 背景は1本に集約（色＋画像） */
+  background: var(--bg) url("../images/bgNorthernFarm.png") no-repeat center center fixed;
+  background-size: cover;
 }
 
-
 /* Header */
-.site-header{ position:fixed; top:0; left:0; right:0; z-index:10; background:var(--bg);
-  border-bottom:0 ; padding:6px; display:flex; align-items:center; justify-content:space-between; }
+.site-header{
+  position:fixed; top:0; left:0; right:0; z-index:10;
+  background:var(--bg);
+  border-bottom:0; padding:6px;
+  display:flex; align-items:center; justify-content:space-between;
+}
 .site-header h1{ margin:0; font-size:16px; font-weight:700; padding-left:4px; }
-/* 出資馬タイトルのリンク：下線なし／色変化なし固定 */
 .site-header h1 a,
 .site-header h1 a:link,
 .site-header h1 a:visited,
 .site-header h1 a:hover,
 .site-header h1 a:active,
 .site-header h1 a:focus {
-  color: var(--fg);           /* 常に同じ色 */
-  text-decoration: none;      /* 下線なし */
-  outline: none;              /* フォーカス時の枠も無しにしたいなら */
-  -webkit-tap-highlight-color: transparent; /* モバイルのタップ強調を消す */
+  color: var(--fg);
+  text-decoration: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
   cursor: pointer;
 }
-
-/* Tabs */
-.tabs {
-  display: flex;
-  gap: 8px;
-  padding: 0 4px;
-}
-/* 通常状態：背景透過＆文字は地味な灰色 */
-.tab {
-  width: 54px;
-  height: 28px;
-  padding: 0;
-  background: transparent;    /* 背景なし */
-  border: none;               /* 枠線も消す */
-  font-size: 12px;
-  color: #888;                /* 地味な灰色。背景に合わせて調整してもOK */
-  cursor: pointer;
-  text-align: center;
-  transition: color 0.2s ease;
-}
-/* アクティブ状態：文字だけ白に */
-.tab.is-active {
-  background: transparent;    /* 背景はそのまま透過 */
-  color: #fff;                /* 白文字で強調 */
-}
-/* ホバー時のちょい強調（任意） */
-.tab:hover {
-  color: #ccc;
-}
-/*.tabs{ display:flex; gap:8px; padding:0 4px; }
-.tab{ width:54px; height:28px; padding:0; background:var(--card); border:0;
-  font-size:12px; color:#eee; cursor:pointer; text-align:center; }
-.tab.is-active{ background:#555; }*/
 
 /* Layout */
-main{ padding:40px 0 0; }
+main{ padding:40px 0 72px; } /* ← フッターぶん下余白を確保 */
 .grid{ display:grid; gap:10px; }
 @media (min-width:860px){ .grid{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
 .tab-panel[hidden]{ display:none; }
@@ -83,82 +52,98 @@ main{ padding:40px 0 0; }
   overflow:hidden;
   padding:10px 0;
 }
-
-.card-left{ display:grid;place-items: center; }
+.card-left{ display:grid; place-items: center; }
 .card-left img{ width:80%; aspect-ratio:4/3; border: 8px solid rgba(255, 255, 255, 0.1); }
-a.is-disabled{ pointer-events:none; opacity:1.0; cursor:default; }
+a.is-disabled{ pointer-events:none; opacity:1; cursor:default; }
 
-.card-right{ display:grid; grid-template-rows:auto 1fr auto;  padding-left:8px; gap:0;}
+.card-right{ display:grid; grid-template-rows:auto 1fr auto; padding-left:8px; gap:0; }
 
-/* Right-Top （クラブアイコンと馬名）*/
-.card-right-top{ padding:0px; }
-.card-right-top a{ margin: 8px;display:inline-flex; align-items:center; gap:4px; text-decoration:none;
-  color:var(--fg); font-weight:700; font-size:var(--fs-name); }
+/* Right-Top */
+.card-right-top{ padding:0; }
+.card-right-top a{
+  margin: 8px;
+  display:inline-flex; align-items:center; gap:4px;
+  text-decoration:none; color:var(--fg);
+  font-weight:700; font-size:var(--fs-name);
+}
 .club-icon{ width:14px; height:14px; object-fit:contain; border:none; }
 
-/* ===== Right-Middle (超密リード版) ===== */
-.card-right-mid{ display:block; text-decoration:none;}
-/* .card-right-mid:hover{ background:#161b20; } */
-
-/* 行間を極限まで詰める */
+/* Right-Middle（超密リード） */
+.card-right-mid{ display:block; text-decoration:none; }
 .mini-prof{ margin-left: 8px; display:grid; gap:0; font-size:12px; color:var(--fg); line-height:1.22; }
-.mini-prof .row{ display:flex; flex-wrap:wrap; gap:0px 0px; align-items:center; }
-.mini-prof .row-1col{ display:flex; gap:0px 0px; align-items:center; }
+.mini-prof .row{ display:flex; flex-wrap:wrap; gap:0; align-items:center; }
+.mini-prof .row-1col{ display:flex; gap:0; align-items:center; }
 
 .mini-prof .label{
   color:var(--muted);
   padding:0; font-size:12px; line-height:1.22; white-space:nowrap;
 }
-.mini-prof .val{ margin-left: 8px; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; line-height:1.22; }
-
-/* 画面幅に関係なく、常に縦並びにする */
-.row {
-  display: block; /* 縦並びにする */
+.mini-prof .val{
+  margin-left: 8px; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; line-height:1.22;
 }
 
-.row-1col {
-  display: block; /* 1列表示 */
-  margin-bottom: 4px;
-}
+/* 常に縦並び */
+.row{ display:block; }
+.row-1col{ display:block; margin-bottom:4px; }
+.row .label, .row .val{ width:100%; }
 
-.row .label {
-  width: 100%;  /* ラベルは100%にして縦並びに */
-}
-
-.row .val {
-  width: 100%;  /* 値は100%にして縦並びに */
-}
-
-
-/* モバイル: 1項目＝1行（label/value 2カラム）。ギャップも最小に */
+/* モバイル：label/value 2カラム */
 @media(max-width:520px){
-  .mini-prof .row{ display:grid; grid-template-columns:auto 1fr; gap:0px 0px; }
-  .mini-prof .row-1col{ display:grid; grid-template-columns:auto 1fr; gap:0px 0px; }
+  .mini-prof .row,
+  .mini-prof .row-1col{
+    display:grid; grid-template-columns:auto 1fr; gap:0;
+  }
 }
 
-/* Right-Bottom（Links） */
+/* Links */
 .links{ display:flex; gap:10px; flex-wrap:wrap; padding: 8px; font-size:var(--fs-meta); }
-/* アイコンのスタイル */
-.links a img {
-  width: 14px;             /* アイコンの横幅 */
-  height: 14px;            /* アイコンの縦幅 */
-  object-fit: contain;     /* アイコンのサイズが枠に収まるように調整 */
-  border: none;            /* ボーダーなし */
-  margin-right: 5px;       /* テキストとアイコンの間に少しスペースを追加 */
+.links a img{
+  width:14px; height:14px; object-fit:contain; border:none; margin-right:5px;
 }
-/* リンクのテキストの色 */
-.links a {
-  color: var(--fg);        /* リンクテキストの色を--fgで指定 */
-  text-decoration: none;    /* テキストの下線を削除 */
-  font-size: 14px;          /* テキストのサイズ */
-  display: inline-flex;     /* アイコンとテキストを横並びに */
-  align-items: center;      /* アイコンとテキストを縦揃えに */
+.links a{
+  color: var(--fg); text-decoration:none; font-size:14px;
+  display:inline-flex; align-items:center;
 }
-
-.links a:hover {
-  text-decoration: underline; /* ホバー時に下線を表示 */
-}
+.links a:hover{ text-decoration: underline; }
 
 /* Placeholder */
 .placeholder{ display:grid; place-items:center; color:#9aa1a9; }
 .placeholder .ph{ display:grid; place-items:center; width:100%; aspect-ratio:4/3; user-select:none; }
+
+/* ===== Footer（ドットナビ）===== */
+.site-footer{
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 20;
+  display: grid; place-items: center;
+  padding: 8px max(8px, env(safe-area-inset-left))
+           calc(8px + env(safe-area-inset-bottom))
+           max(8px, env(safe-area-inset-right));
+  background: rgba(0,0,0,0.35);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.dots{
+  display:flex; align-items:center; justify-content:center;
+  gap:14px; min-height:40px;
+}
+
+.dot{
+  position:relative;
+  width:36px; height:36px; /* タップ領域（視覚は小丸で表現） */
+  background:transparent; border:none; padding:0; cursor:pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.dot::before{
+  content:""; position:absolute; inset:0; margin:auto;
+  width:10px; height:10px; border-radius:50%;
+  background:#888; /* 非アクティブは地味グレー */
+  transition: transform .18s ease, background-color .18s ease;
+}
+
+.dot.is-active::before{
+  background:#fff; transform:scale(1.25);
+}
+
+.dot:hover::before{ background:#ccc; }
+.dot:focus-visible::before{ box-shadow:0 0 0 6px rgba(255,255,255,0.12); }
