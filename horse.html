@@ -65,7 +65,11 @@
   }
 
   /* プロフィール */
-  .profile{ margin:12px 0; padding:20px; }
+  .profile{
+    margin:12px 0;
+    padding:20px;
+    font-size: 20px;
+  }
   .profile .rows{ display:grid; row-gap:8px; }
   .profile .row{
     display:grid;
@@ -88,13 +92,19 @@
   .comment{
     margin-bottom:16px;
     padding:16px;
+    color:#000;
     background:beige;
     border:1px solid var(--line);
     border-radius: 2px;
   }
-  .comment .date{ color:#000; }
-  .comment .title{ font-weight:bold; color:chocolate; line-height: 3; }
-  .comment .text{ color:#000; line-height: 1.8; }
+  .comment .title{
+    font-weight:bold;
+    color:chocolate;
+    line-height: 3;
+  }
+  .comment .text{
+    line-height: 1.8;
+  }
 </style>
 </head>
 
