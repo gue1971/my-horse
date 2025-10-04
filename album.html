@@ -34,13 +34,32 @@
   .header .title b{ font-size:var(--fs-name); letter-spacing:.02em; }
 
   /* main: 中央寄せ & 最大幅640px */
-  .main{ flex:1; overflow:auto; display:flex; justify-content:center; padding:12px; }
+  .main{
+    flex:1;
+    overflow:auto;
+    display:flex;
+    justify-content:center;
+    padding:12px;
+  }
   .content{ width:100%; max-width:640px; margin:0 auto; }
 
   /* アルバムリスト */
-  .album-item{ margin-bottom:16px; padding:16px; background: #fff; border:1px solid var(--line); }
-  .album-item img{ width:100%; display:block; aspect-ratio:4/3; object-fit:cover; }
-  .album-item .caption{ color:#000; font-size:var(--fs-meta); margin-top:8px; }
+  .album-item{
+    margin: bottom 8px;
+    padding:8px;
+    background: #fff;
+    border:1px solid var(--line);
+  }
+  .album-item img{
+    width:100%;
+    display:block;
+    aspect-ratio:4/3;
+    object-fit:cover;
+  }
+  .album-item .caption{
+    color:#000;
+    font-size:var(--fs-meta);
+    margin-top:8px; }
 
 </style>
 </head>
