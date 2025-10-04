@@ -75,6 +75,10 @@
   }
   .profile .cell{ display:flex; gap:10px; align-items:center; }
   .profile .label{ display:inline-block; width:3em ;; color:#bbb; }
+  .measure span[id] {
+    width: 150px;  /* すべてのIDに対して幅を揃える */
+  }
+
 
   @media (min-width:700px){
     .profile .row{ grid-template-columns: 1fr 1fr; }
@@ -125,7 +129,7 @@
           </div>
 
 
-          <div class="row">
+          <div class="row measure">
             <div class="cell">
               <span class="label">体高</span><span id="height_cm"></span>
               <span class="label">胸囲</span><span id="girth_cm"></span>
