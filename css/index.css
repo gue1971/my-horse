@@ -80,6 +80,7 @@ a.is-disabled{ pointer-events:none; opacity:1.0; cursor:default; }
 
 .row-1col {
   display: block; /* 1列表示 */
+  margin-bottom: 4px;
 }
 
 .row .label {
