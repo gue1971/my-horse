@@ -166,8 +166,8 @@ function buildCard({ horse, hero, hasAlbum }) {
   // 1段目：父・母（縦並びに変更）
   mini.appendChild(mkRow([
   ['父', horse.sire],
-  ['母', horse.dam]
-  ['母父', horse.damsire]
+  ['母', horse.dam],
+  ['母父', horse.damsire],
   ['生産', horse.farm],
   ['厩舎', horse.stable]
   ], true));  // 縦並びにするためにtrueを指定
