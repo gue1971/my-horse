@@ -23,7 +23,7 @@ html, body {
   z-index: 10;
   background: var(--bg);
   border-bottom: 0;
-  padding: 6px;
+  padding: 8px;
   display: flex;
   justify-content: center; /* ← 横方向中央寄せに */
   align-items: center;
