@@ -167,18 +167,21 @@ function buildCard({ horse, hero, hasAlbum }) {
   mini.appendChild(mkRow([
   ['父', horse.sire],
   ['母', horse.dam]
+  ['母父', horse.damsire]
+  ['生産', horse.farm],
+  ['厩舎', horse.stable]
   ], true));  // 縦並びにするためにtrueを指定
 
   // 2段目：母父（縦並びに変更）
-  mini.appendChild(mkRow([
-   ['母父', horse.damsire]
-  ], true));  // 縦並びにするためにtrueを指定
+  // mini.appendChild(mkRow([
+  //  ['母父', horse.damsire]
+  // ], true));  // 縦並びにするためにtrueを指定
 
   // 3段目：生産・厩舎（縦並びに変更）
-  mini.appendChild(mkRow([
-   ['生産', horse.farm],
-   ['厩舎', horse.stable]
-  ], true));  // 縦並びにするためにtrueを指定
+  // mini.appendChild(mkRow([
+  //   ['生産', horse.farm],
+  //   ['厩舎', horse.stable]
+  // ], true));  // 縦並びにするためにtrueを指定
 
   // 4段目：生年月日と募集総額を結合して表示（ラベルなし）
   // 生年月日を「2017.3.15生」の形式に変換
