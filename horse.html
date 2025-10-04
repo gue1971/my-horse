@@ -230,37 +230,38 @@ function dateSort(a, b) {
     // const cell = (label, val) => `<div class="cell"><span class="label">${label}</span><span>${val || ''}</span></div>`;
 
     /* 3) プロフィール：固定ラベルに値だけ差し込み */
-    const setVal = (id, val, suffix = '') => {
-      const el = document.getElementById(id);
-      if (!el) return;
-      const v = (val ?? '') === '' ? '' : `${val}${suffix}`;
-      el.textContent = v;
+const setVal = (id, val, suffix = '') => {
+  const el = document.getElementById(id);
+  if (!el) return;
+  const v = (val ?? '') === '' ? '' : `${val}${suffix}`;
+  el.textContent = v;
 
-      // 空ならセルを畳む（任意：使わないならこの3行は消してOK）
-      const cell = el.closest('.cell');
-      if (cell) cell.classList.toggle('is-empty', v === '');
-    };
+  // 空ならセルを畳む（任意：使わないならこの3行は消してOK）
+  const cell = el.closest('.cell');
+  if (cell) cell.classList.toggle('is-empty', v === '');
+};
 
-    // 文字系
-    setVal('sire',    horse.sire);
-    setVal('dam',     horse.dam);
-    setVal('damsire', horse.damsire);
+// 文字系
+setVal('sire',    horse.sire);
+setVal('dam',     horse.dam);
+setVal('damsire', horse.damsire);
 
-    // 生年月日を "YYYY年M月D日生まれ" の形式に変換
-    const birthDate = horse.birth;  // 例: "2017.3.15"
-    const [year, month, day] = birthDate.split('.');  // 分割
-    const formattedBirthDate = `${year}年${month}月${day}日生まれ`;  // 整形
-    setVal('birth',   horse.birth,);
+// 生年月日を "YYYY年M月D日生まれ" の形式に変換
+const birthDate = horse.birth;  // 例: "2017.3.15"
+const [year, month, day] = birthDate.split('.');  // 分割
+const formattedBirthDate = `${year}年${month}月${day}日生まれ`;  // 整形
 
-    setVal('price',   horse.price, '円募集');
-    setVal('farm',    horse.farm);
-    setVal('stable',  horse.stable, '厩舎');
+setVal('birth', formattedBirthDate);  // 整形した生年月日を挿入
+setVal('price', horse.price, '円募集');
+setVal('farm',    horse.farm);
+setVal('stable',  horse.stable, '厩舎');
 
-    // 測尺（単位付与）
-    setVal('height_cm', horse.height_cm, 'cm');
-    setVal('girth_cm',  horse.girth_cm,  'cm');
-    setVal('cannon_cm', horse.cannon_cm, 'cm');
-    setVal('weight_kg', horse.weight_kg, 'kg');
+// 測尺（単位付与）
+setVal('height_cm', horse.height_cm, 'cm');
+setVal('girth_cm',  horse.girth_cm,  'cm');
+setVal('cannon_cm', horse.cannon_cm, 'cm');
+setVal('weight_kg', horse.weight_kg, 'kg');
+
 
     /* 4) コメント（安全化：配列チェック→ソート） */
     const comments = document.getElementById('comments');
