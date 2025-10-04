@@ -117,13 +117,14 @@
           </div>
 
           <div class="row">
+            <div class="cell"><span id="birth"></span><span id="price"></span></div>
+          </div>
+
+          <div class="row">
             <div class="cell"><!--<span class="label">生産</span>--><span id="farm"></span></div>
             <div class="cell"><!--<span class="label">厩舎</span>--><span id="stable"></span></div>
           </div>
 
-          <div class="row">
-            <div class="cell"><span id="birth"></span><span id="price"></span></div>
-          </div>
 
           <div class="row">
             <div class="cell">
@@ -228,11 +229,10 @@ function dateSort(a, b) {
     setVal('sire',    horse.sire);
     setVal('dam',     horse.dam);
     setVal('damsire', horse.damsire);
-    setVal('farm',    horse.farm);
-    setVal('stable',  horse.stable, '厩舎');
     setVal('birth',   horse.birth,);
     setVal('price',   horse.price, '募集');
-
+    setVal('farm',    horse.farm);
+    setVal('stable',  horse.stable, '厩舎');
     // 測尺（単位付与）
     setVal('height_cm', horse.height_cm, 'cm');
     setVal('girth_cm',  horse.girth_cm,  'cm');
