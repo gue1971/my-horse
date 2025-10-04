@@ -34,13 +34,13 @@ html,body{ margin:0; background:var(--bg); color:var(--fg);
 
 /* Layout */
 main{ padding:40px 0 0; }
-.grid{ display:grid; gap:8px; }
+.grid{ display:grid; gap:10px; }
 @media (min-width:860px){ .grid{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
 .tab-panel[hidden]{ display:none; }
 
 /* Card */
 .card{ display:grid; grid-template-columns:1.2fr 1fr; background:var(--card); overflow:hidden;
-  padding:8px 0;}
+  padding:10px 0;}
 .card-left{ display:grid;place-items: center; }/*; line-height:0は意味ないのでは*/
 .card-left img{ width:90%; aspect-ratio:4/3; object-fit:cover;  }/*display:block;*/
 a.is-disabled{ pointer-events:none; opacity:1.0; cursor:default; }
