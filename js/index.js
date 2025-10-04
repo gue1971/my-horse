@@ -272,4 +272,56 @@ async function render(){
       setTimeout(()=>restoreScrollAfterImages(next), 0);
     });
     btn.addEventListener('keydown', (e)=>{
-      if (e.key === 'Enter' |
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        const cur = localStorage.getItem('lastTab') || 'tab1';
+        saveScroll(cur);
+        const next = btn.dataset.target;
+        showTab(next);
+        setTimeout(()=>restoreScrollAfterImages(next), 0);
+      }
+    });
+  });
+
+  // 初期タブ
+  const init = localStorage.getItem('lastTab') || 'tab1';
+  showTab(init);
+
+  // horses.json 読み込み
+  let horses;
+  try{
+    const doc = await getJSON('data/horses.json');
+    horses = Array.isArray(doc) ? doc : doc.horses;
+  }catch(e){
+    console.error(e);
+    $('#tab1')?.insertAdjacentText('afterbegin','horses.json の読み込みに失敗しました。');
+    return;
+  }
+
+  // パネル要素
+  const areas = Object.fromEntries(PANELS.map(id=>[id, document.getElementById(id)]));
+
+  // 各馬カード
+  for (const h of horses){
+    let hero=null, hasAlbum=false;
+    try{
+      const a = await getJSON(albumJson(h.slug));
+      hasAlbum = Array.isArray(a.album) && a.album.length>0;
+      hero = hasAlbum ? (pickHero(a.album)) : null;
+    }catch(e){
+      // 未整備OK
+    }
+    const card = buildCard({horse:h, hero, hasAlbum});
+    const key = 'tab' + String(h.tab || 1);
+    (areas[key] || areas['tab1']).appendChild(card);
+  }
+
+  // 初期タブのスクロール復元（画像読み込み待ち）
+  restoreScrollAfterImages(init);
+}
+
+// ===== boot =====
+window.addEventListener('DOMContentLoaded', ()=>{
+  render().catch(console.error);
+  enableSwipe();
+});
