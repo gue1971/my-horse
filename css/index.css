@@ -5,17 +5,12 @@
   --fs-name: clamp(14px, 3.3vw, 18px);
   --fs-meta: clamp(12px, 2.4vw, 14px);
 }
-html,body{
-   margin:0;
-   height: 100%;
-   color:var(--fg);
-   font: var(--fs-body)/1.25 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans JP",sans-serif;
-  }
-  html, body {
+
+html, body {
     margin: 0;
     height: 100%;
     background:var(--bg);
-    background: url("https://gue1971.github.io/my-horse/images/bgNorthernFarm.png") no-repeat center center fixed;
+    background: url("../images/bgNorthernFarm.png") no-repeat center center fixed;
     background-size: cover;  /* 全画面にフィット */
     color: var(--fg);
     font: var(--fs-body)/1.25 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans JP",sans-serif;
@@ -56,15 +51,14 @@ main{ padding:40px 0 0; }
 .card{
   display:grid;
   grid-template-columns:1.2fr 1fr;
-  background-color:rgba(0, 0, 0, 0.5);
+  background-color:rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(6px);
   overflow:hidden;
   padding:10px 0;
-  border-radius: 8px;
 }
 
 .card-left{ display:grid;place-items: center; }
-.card-left img{ width:84%; aspect-ratio:4/3; border: 4px solid rgba(255, 255, 255, 0.5); }
+.card-left img{ width:84%; aspect-ratio:4/3; border: 4px solid rgba(0, 0, 0, 0.3); }
 a.is-disabled{ pointer-events:none; opacity:1.0; cursor:default; }
 
 .card-right{ display:grid; grid-template-rows:auto 1fr auto;  padding-left:8px; gap:0;}
