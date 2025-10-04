@@ -17,11 +17,16 @@ html, body {
 }
 
 /* Header */
-.site-header{
-  position:fixed; top:0; left:0; right:0; z-index:10;
-  background:var(--bg);
-  border-bottom:0; padding:6px;
-  display:flex; align-items:center; justify-content:space-between;
+.site-header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 10;
+  background: var(--bg);
+  border-bottom: 0;
+  padding: 6px;
+  display: flex;
+  justify-content: center; /* ← 横方向中央寄せに */
+  align-items: center;
 }
 .site-header h1{ margin:0; font-size:20px; font-weight:700; text-align: center;flex-direction: 1; }
 .site-header h1 a,
