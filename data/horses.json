@@ -462,7 +462,7 @@
     "tab": 3
   },
   {
-    "slug": "rezetowaaru21",
+    "slug": "lesetoile21",
     "name": "エストレヤデベレン",
     "club": "silk",
     "sire": "エピファネイア",
@@ -472,10 +472,10 @@
     "price": "5500万",
     "stable": "栗東　武幸四郎",
     "farm": "新冠橋本牧場",
-    "height_cm": null,
-    "girth_cm": null,
-    "cannon_cm": null,
-    "weight_kg": null,
+    "height_cm": 163.0,
+    "girth_cm": 187.0,
+    "cannon_cm": 21.2,
+    "weight_kg": 504,
     "clubPage": "2021086",
     "netkeiba_horse_id": "2021106587",
     "jra_id": "pw01dud102021106587/65",

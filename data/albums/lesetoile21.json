@@ -1,0 +1,18 @@
+{
+  "album": [
+    {"file": "20240622.webp","caption": "清里特別　優勝　540kg　2024年6月22日（3歳）","isHero": true},
+    {"file": "20240511.webp","caption": "NFしがらき　561kg　2024年5月11日（3歳）","isHero": false},
+    {"file": "20240421.webp","caption": "3歳1勝クラス　優勝　540kg　2024年4月21日（3歳）","isHero": false},
+    {"file": "20231103.webp","caption": "2歳新馬　優勝　522kg　2023年11月3日（3歳）","isHero": false},
+    {"file": "20230413.webp","caption": "NF空港　522kg　2023年4月13日（2歳）","isHero": false},
+    {"file": "20230325.webp","caption": "募集時　504kg　2023年3月25日（2歳）","isHero": false},
+    {"file": "20220701.webp","caption": "セレクションセール　2022年7月1日（1歳）","isHero": false}
+  ],
+  "archiveComment": [
+    {
+      "date": "YYYY-MM-DD",
+      "title": "",
+      "text": ""
+    }
+  ]
+}
