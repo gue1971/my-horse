@@ -1,0 +1,66 @@
+{
+  "album": [
+    {
+      "file": "20241102.webp",
+      "caption": "2歳未勝利　優勝　464kg　2024年11月2日（2歳）",
+      "isHero": true
+    },
+    {
+      "file": "20240329.webp",
+      "caption": "NF早来　457kg　2024年3月29日（2歳）",
+      "isHero": false
+    },
+    {
+      "file": "20240229.webp",
+      "caption": "NF早来　460kg　2024年2月29日（2歳）",
+      "isHero": false
+    },
+    {
+      "file": "20240131.webp",
+      "caption": "NF早来　458kg　2024年1月31日（2歳）",
+      "isHero": false
+    },
+    {
+      "file": "20231227.webp",
+      "caption": "NF早来　454kg　2023年12月27日（1歳）",
+      "isHero": false
+    },
+    {
+      "file": "20231130.webp",
+      "caption": "NF早来　462kg　2023年11月30日（1歳）",
+      "isHero": false
+    },
+    {
+      "file": "20231031.webp",
+      "caption": "NF早来　448kg　2023年10月31日（1歳）",
+      "isHero": false
+    },
+    {
+      "file": "20230929.webp",
+      "caption": "NF早来　441kg　2023年9月29日（1歳）",
+      "isHero": false
+    },
+    {
+      "file": "20230831.webp",
+      "caption": "NFイヤリング　437kg　2023年8月31日（1歳）",
+      "isHero": false
+    },
+    {
+      "file": "20230731.webp",
+      "caption": "NFイヤリング　435kg　2023年7月31日（1歳）",
+      "isHero": false
+    },
+    {
+      "file": "20230609.webp",
+      "caption": "募集時　415kg　2023年6月9日（1歳）",
+      "isHero": false
+    }
+  ],
+  "archiveComment": [
+    {
+      "date": "YYYY-MM-DD",
+      "title": "",
+      "text": ""
+    }
+  ]
+}

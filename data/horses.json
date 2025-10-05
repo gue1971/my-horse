@@ -399,7 +399,7 @@
     "tab": 2
   },
   {
-    "slug": "danshinguraguzu22",
+    "slug": "dancingrags22",
     "name": "レッドベルダンス",
     "club": "tokyo",
     "sire": "レイデオロ",
@@ -409,10 +409,10 @@
     "price": "6000万",
     "stable": "美浦　手塚貴久",
     "farm": "ノーザンファーム",
-    "height_cm": null,
-    "girth_cm": null,
-    "cannon_cm": null,
-    "weight_kg": null,
+    "height_cm": 156.0,
+    "girth_cm": 167.5,
+    "cannon_cm": 19.8,
+    "weight_kg": 415,
     "clubPage": "runners/2710",
     "netkeiba_horse_id": "2022104897",
     "jra_id": "pw01dud102022104897/B6",
