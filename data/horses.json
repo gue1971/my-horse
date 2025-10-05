@@ -441,7 +441,7 @@
     "tab": 3
   },
   {
-    "slug": "kaasaderushiero22",
+    "slug": "casadelcielo(22",
     "name": "ルージュミステリオ",
     "club": "tokyo",
     "sire": "ナダル",
@@ -451,10 +451,10 @@
     "price": "1800万",
     "stable": "栗東　辻野泰之",
     "farm": "下河辺牧場",
-    "height_cm": null,
-    "girth_cm": null,
-    "cannon_cm": null,
-    "weight_kg": null,
+    "height_cm": 148.0,
+    "girth_cm": 168.0,
+    "cannon_cm": 19.0,
+    "weight_kg": 390,
     "clubPage": "runners/2740",
     "netkeiba_horse_id": "2022101399",
     "jra_id": "pw01dud102022101399/DA",

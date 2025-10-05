@@ -1,0 +1,32 @@
+{
+  "album": [
+    {"file": "20250627.webp","caption": "チャンピオンヒルズ　446kg　2025年6月27日（3歳）","isHero": false},
+    {"file": "20250530.webp","caption": "チャンピオンヒルズ　440kg　2025年5月30日（3歳）","isHero": false},
+    {"file": "20250503.webp","caption": "3歳未勝利　優勝　424kg　2025年5月3日（3歳）","isHero": true},
+    {"file": "20250321.webp","caption": "チャンピオンヒルズ　434kg　2025年3月21日（3歳）","isHero": false},
+    {"file": "20241129.webp","caption": "チャンピオンヒルズ　442kg　2024年11月29日（2歳）","isHero": false},
+    {"file": "20240726.webp","caption": "チャンピオンヒルズ　448kg　2024年7月26日（2歳）","isHero": false},
+    {"file": "20240719.webp","caption": "チャンピオンヒルズ　446kg　2024年7月19日（2歳）","isHero": false},
+    {"file": "20240628.webp","caption": "チャンピオンヒルズ　450kg　2024年6月28日（2歳）","isHero": false},
+    {"file": "20240607.webp","caption": "チャンピオンヒルズ　432kg　2024年6月7日（2歳）","isHero": false},
+    {"file": "20240530.webp","caption": "下河辺牧場　440kg　2024年5月30日（2歳）","isHero": false},
+    {"file": "20240430.webp","caption": "下河辺牧場　442kg　2024年4月30日（2歳）","isHero": false},
+    {"file": "20240329.webp","caption": "下河辺牧場　442kg　2024年3月29日（2歳）","isHero": false},
+    {"file": "20240229.webp","caption": "下河辺牧場　444kg　2024年2月29日（2歳）","isHero": false},
+    {"file": "20240131.webp","caption": "下河辺牧場　442kg　2024年1月31日（2歳）","isHero": false},
+    {"file": "20231227.webp","caption": "下河辺牧場　438kg　2023年12月27日（1歳）","isHero": false},
+    {"file": "20231130.webp","caption": "下河辺牧場　427kg　2023年11月30日（1歳）","isHero": false},
+    {"file": "20231031.webp","caption": "下河辺牧場　412kg　2023年10月31日（1歳）","isHero": false},
+    {"file": "20230929.webp","caption": "下河辺牧場　423kg　2023年9月29日（1歳）","isHero": false},
+    {"file": "20230831.webp","caption": "下河辺牧場　420kg　2023年8月31日（1歳）","isHero": false},
+    {"file": "20230731.webp","caption": "下河辺牧場　412kg　2023年7月31日（1歳）","isHero": false},
+    {"file": "20230609.webp","caption": "募集時　390kg　2023年6月9日（1歳）","isHero": false}
+  ],
+  "archiveComment": [
+    {
+      "date": "YYYY-MM-DD",
+      "title": "",
+      "text": ""
+    }
+  ]
+}
