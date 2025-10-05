@@ -1029,7 +1029,7 @@
     "tab": 4
   },
   {
-    "slug": "rofutiieimu15",
+    "slug": "loftyaim15",
     "name": "エイムアンドエンド",
     "club": "carrot",
     "sire": "エイシンフラッシュ",
@@ -1039,10 +1039,10 @@
     "price": "1800万",
     "stable": "美浦　奥村武",
     "farm": "追分ファーム",
-    "height_cm": null,
-    "girth_cm": null,
-    "cannon_cm": null,
-    "weight_kg": null,
+    "height_cm": 155.0,
+    "girth_cm": 173.0,
+    "cannon_cm": 20.9,
+    "weight_kg": 444,
     "clubPage": "1619",
     "netkeiba_horse_id": "2015104161",
     "jra_id": "pw01dud102015104161/B6",

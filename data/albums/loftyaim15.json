@@ -1,0 +1,28 @@
+{
+  "album": [
+    { "file": "20220522.jpg", "caption": "障害4歳以上未勝利　優勝　506kg　22年5月22日（7歳）", "isHero": true },
+    { "file": "20211211.jpg", "caption": "3歳以上500万　優勝　502kg　2021年12月11日（6歳）", "isHero": false },
+    { "file": "20210206.jpg", "caption": "テレビ山梨杯　優勝　504kg　2021年2月6日（6歳）", "isHero": false },
+    { "file": "20181209.jpg", "caption": "3歳以上500万　優勝　488kg　2018年12月9日（3歳）", "isHero": false },
+    { "file": "20171118.jpg", "caption": "2歳新馬　優勝　486kg　2017年11月18日（2歳）", "isHero": false },
+    { "file": "20170703.jpg", "caption": "山元TC　---kg　2017年7月3日（2歳）", "isHero": false },
+    { "file": "20170630.jpg", "caption": "追分Fリリーバレー　496kg　2017年6月30日（2歳）", "isHero": false },
+    { "file": "20170531.jpg", "caption": "追分Fリリーバレー　496kg　2017年5月31日（2歳）", "isHero": false },
+    { "file": "20170428.jpg", "caption": "追分Fリリーバレー　493kg　2017年4月28日（2歳）", "isHero": false },
+    { "file": "20170331.jpg", "caption": "追分Fリリーバレー　496kg　2017年3月31日（2歳）", "isHero": false },
+    { "file": "20170228.jpg", "caption": "追分Fリリーバレー　490kg　2017年2月28日（2歳）", "isHero": false },
+    { "file": "20170131.jpg", "caption": "追分Fリリーバレー　480kg　2017年1月31日（2歳）", "isHero": false },
+    { "file": "20161222.jpg", "caption": "追分Fリリーバレー　476kg　2016年12月22日（1歳）", "isHero": false },
+    { "file": "20161130.jpg", "caption": "追分Fリリーバレー　475kg　2016年11月30日（1歳）", "isHero": false },
+    { "file": "20161031.jpg", "caption": "追分Fリリーバレー　473kg　2016年10月31日（1歳）", "isHero": false },
+    { "file": "20160930.jpg", "caption": "追分Fリリーバレー　458kg　2016年9月30日（1歳）", "isHero": false },
+    { "file": "20160825.jpg", "caption": "募集時　444kg　2016年8月25日（1歳）", "isHero": false }
+  ],
+  "archiveComment": [
+    {
+      "date": "YYYY-MM-DD",
+      "title": "",
+      "text": ""
+    }
+  ]
+}
