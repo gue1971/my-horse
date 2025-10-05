@@ -1,7 +1,6 @@
 {
   "album": [
     { "file": "20220522.jpg", "caption": "障害4歳以上未勝利　優勝　506kg　22年5月22日（7歳）", "isHero": true },
-    { "file": "20211211.jpg", "caption": "3歳以上500万　優勝　502kg　2021年12月11日（6歳）", "isHero": false },
     { "file": "20210206.jpg", "caption": "テレビ山梨杯　優勝　504kg　2021年2月6日（6歳）", "isHero": false },
     { "file": "20181209.jpg", "caption": "3歳以上500万　優勝　488kg　2018年12月9日（3歳）", "isHero": false },
     { "file": "20171118.jpg", "caption": "2歳新馬　優勝　486kg　2017年11月18日（2歳）", "isHero": false },
