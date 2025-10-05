@@ -1,0 +1,21 @@
+{
+  "album": [
+    {"file": "20251002.jpg","caption": "NF天栄　476kg　2025年10月2日（4歳）","isHero": false},
+    {"file": "20250522.webp","caption": "NF天栄　463kg　2025年5月22日（4歳）","isHero": false},
+    {"file": "20240912.webp","caption": "NF天栄　470kg　2024年9月12日（3歳）","isHero": false},
+    {"file": "20240714.webp","caption": "3歳未勝利　優勝　442kg　2024年7月14日（3歳）","isHero": true},
+    {"file": "20230410.webp","caption": "NF空港　469kg　2023年4月10日（2歳）","isHero": false},
+    {"file": "20230211.webp","caption": "NF空港　458kg　2023年2月11日（2歳）","isHero": false},
+    {"file": "20221205.webp","caption": "NF空港　441kg　2022年12月5日（1歳）","isHero": false},
+    {"file": "20221021.webp","caption": "NF空港　415kg　2022年10月21日（1歳）","isHero": false},
+    {"file": "20220812.webp","caption": "NF空港　400kg　2022年8月12日（1歳）","isHero": false},
+    {"file": "20220701.webp","caption": "募集時　392kg　2022年7月1日（1歳）","isHero": false}
+  ],
+  "archiveComment": [
+    {
+      "date": "YYYY-MM-DD",
+      "title": "",
+      "text": ""
+    }
+  ]
+}

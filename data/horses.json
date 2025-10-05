@@ -504,7 +504,7 @@
     "tab": 3
   },
   {
-    "slug": "puchinowaaru21",
+    "slug": "petitnoire21",
     "name": "プリュノワール",
     "club": "silk",
     "sire": "ロードカナロア",
@@ -514,10 +514,10 @@
     "price": "5000万",
     "stable": "美浦　浅利英明",
     "farm": "ノーザンファーム",
-    "height_cm": null,
-    "girth_cm": null,
-    "cannon_cm": null,
-    "weight_kg": null,
+    "height_cm": 148.5,
+    "girth_cm": 168.0,
+    "cannon_cm": 19.7,
+    "weight_kg": 392,
     "clubPage": "2021003",
     "netkeiba_horse_id": "2021105747",
     "jra_id": "pw01dud102021105747/98",
