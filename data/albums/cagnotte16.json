@@ -1,0 +1,16 @@
+{
+  "album": [
+    {
+      "file": "",
+      "caption": "",
+      "isHero": false
+    }
+  ],
+  "archiveComment": [
+    {
+      "date": "YYYY-MM-DD",
+      "title": "",
+      "text": ""
+    }
+  ]
+}
