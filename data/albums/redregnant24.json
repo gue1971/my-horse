@@ -1,9 +1,14 @@
 {
   "album": [
     {
+      "file": "20251031.jpg",
+      "caption": "NF空港　468kg　2025年10月31日（1歳）",
+      "isHero": true
+    },
+    {
       "file": "20250930.jpg",
       "caption": "NF空港　461kg　2025年9月30日（1歳）",
-      "isHero": true
+      "isHero": false
     },
     {
       "file": "20250831.webp",
