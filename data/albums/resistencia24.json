@@ -1,9 +1,14 @@
 {
   "album": [
     {
+      "file": "20251128.jpg",
+      "caption": "NF早来　459kg　2025年11月28（１歳）",
+      "isHero": true
+    },
+    {
       "file": "20250930.jpg",
       "caption": "NF早来　434kg　2025年9月30（１歳）",
-      "isHero": true
+      "isHero": false
     },
     {
       "file": "20250819.jpg",
