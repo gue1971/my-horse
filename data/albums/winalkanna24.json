@@ -1,9 +1,19 @@
 {
   "album": [
     {
+      "file": "20251121.jpg",
+      "caption": "コスモヴューF　---kg　2025年11月21日（1歳）",
+      "isHero": true
+    },
+    {
+      "file": "20251024.jpg",
+      "caption": "コスモヴューF　444kg　2025年10月24日（1歳）",
+      "isHero": false
+    },
+    {
       "file": "20250919.jpg",
       "caption": "コスモヴューF　458kg　2025年9月19日（1歳）",
-      "isHero": true
+      "isHero": false
     },
     {
       "file": "20250714.webp",
