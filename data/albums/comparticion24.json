@@ -1,9 +1,14 @@
 {
   "album": [
     {
+      "file": "20251226.jpg",
+      "caption": "追分Fリリーバレー　505kg　2025年12月26日",
+      "isHero": true
+    },
+    {
       "file": "20251130.jpg",
       "caption": "追分Fリリーバレー　507kg　2025年11月30日",
-      "isHero": true
+      "isHero": false
     },
     {
       "file": "20251031.jpg",
