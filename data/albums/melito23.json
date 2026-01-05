@@ -1,9 +1,14 @@
 {
   "album": [
     {
+      "file": "20251227.jpeg",
+      "caption": "2歳未勝利　優勝　504kg　2025年12月27日（2歳）",
+      "isHero": true
+    },
+    {
       "file": "20250331.webp",
       "caption": "NF早来　491kg　2025年3月31日（2歳）",
-      "isHero": true
+      "isHero": false
     },
     {
       "file": "20250131.jpg",
