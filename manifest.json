@@ -1,7 +1,7 @@
 {
   "id": "./",
   "name": "My Stable",
-  "short_name": "Stable",
+  "short_name": "出資馬",
   "description": "My thoroughbred stable app",
   "start_url": "./index.html",
   "scope": "./",
