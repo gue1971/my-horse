@@ -1,7 +1,8 @@
 {
   "album": [
+    { "file": "20260105.jpeg", "caption": "３歳未勝利　452kg　2026年1月5日（3歳）", "isHero": true },
     { "file": "20250731.webp", "caption": "NF空港　491kg　2025年7月31日（2歳）", "isHero": false },
-    { "file": "20250628.webp", "caption": "NF空港　489kg　2025年6月28日（2歳）", "isHero": true },
+    { "file": "20250628.webp", "caption": "NF空港　489kg　2025年6月28日（2歳）", "isHero": false },
     { "file": "20250531.webp", "caption": "NF空港　480kg　2025年5月31日（2歳）", "isHero": false },
     { "file": "20250430.webp", "caption": "NF空港　466kg　2025年4月30日（2歳）", "isHero": false },
     { "file": "20250331.webp", "caption": "NF空港　471kg　2025年3月31日（2歳）", "isHero": false },
