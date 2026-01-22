@@ -1,6 +1,7 @@
 {
   "album": [
-    {"file": "20250726.webp","caption": "3歳未勝利　優勝　516kg　2025年7月26日（3歳）","isHero": true},
+    {"file": "20250726.jpeg","caption": "3歳未勝利　優勝　516kg　2025年7月26日（3歳）","isHero": true},
+    {"file": "20250726.webp","caption": "3歳未勝利　優勝　516kg　2025年7月26日（3歳）","isHero": false},
     {"file": "20240523.webp","caption": "NF天栄　514kg　2024年5月23日（2歳）","isHero": false},
     {"file": "20240403.webp","caption": "NF空港　503kg　2024年4月3日（2歳）","isHero": false},
     {"file": "20240209.webp","caption": "NF空港　513kg　2024年2月9日（2歳）","isHero": false},
