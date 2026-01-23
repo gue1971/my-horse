@@ -1,12 +1,15 @@
 // sw.js
-const STATIC_CACHE = 'mystable-static-v2';
+const STATIC_CACHE = 'mystable-static-v3';
 const RUNTIME_CACHE = 'mystable-runtime-v1';
 
 const STATIC_ASSETS = [
   './', './index.html',
-  './data/horses.json',        // 初回キャッシュに入れておく（オフライン初回対策）
-  './icons/icon-192.png', './icons/icon-512.png',
-  './icons/apple-touch-icon.png', './icons/favicon-32x32.png'
+  './data/horses.json',
+
+  './assets/icons/app/icon-192.png',
+  './assets/icons/app/icon-512.png',
+  './assets/icons/app/apple-touch-icon.png',
+  './assets/icons/app/favicon.ico' // 入れとくと安心（不要なら外してOK）
 ];
 
 self.addEventListener('install', e => {
