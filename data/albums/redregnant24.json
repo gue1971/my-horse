@@ -1,9 +1,14 @@
 {
   "album": [
     {
+      "file": "20260131.jpeg",
+      "caption": "NF空港　480kg　2026年1月31日（2歳）",
+      "isHero": true
+    },
+    {
       "file": "20251226.jpg",
       "caption": "NF空港　471kg　2025年12月26日（1歳）",
-      "isHero": true
+      "isHero": false
     },
     {
       "file": "20251130.jpg",

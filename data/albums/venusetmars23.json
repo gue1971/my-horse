@@ -1,8 +1,9 @@
 {
   "album": [
+    { "file": "20260131.jpeg", "caption": "坂東牧場　560kg　2026年1月31日（2歳）", "isHero": true },
     { "file": "20251130.jpg", "caption": "坂東牧場　565kg　2025年11月30日（2歳）", "isHero": false },
     { "file": "20251031.jpg", "caption": "坂東牧場　560kg　2025年10月31日（2歳）", "isHero": false },
-    { "file": "20250930.jpg", "caption": "坂東牧場　543kg　2025年9月30日（2歳）", "isHero": true },
+    { "file": "20250930.jpg", "caption": "坂東牧場　543kg　2025年9月30日（2歳）", "isHero": false },
     { "file": "20250831.webp", "caption": "坂東牧場　560kg　2025年8月31日（2歳）", "isHero": false },
     { "file": "20250731.webp", "caption": "坂東牧場　564kg　2025年7月31日（2歳）", "isHero": false },
     { "file": "20250628.webp", "caption": "坂東牧場　564kg　2025年6月28日（2歳）", "isHero": false },
