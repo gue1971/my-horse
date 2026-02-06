@@ -22,7 +22,7 @@
   },
   {
     "slug": "promisedleap24",
-    "name": "プロミストリープ24",
+    "name": "ベリルアンヴォル",
     "club": "silk",
     "sire": "クリソベリル",
     "dam": "プロミストリープ",
@@ -43,7 +43,7 @@
   },
   {
     "slug": "redregnant24",
-    "name": "レッドレグナント24",
+    "name": "レッドアブソルート",
     "club": "tokyo",
     "sire": "オルフェーヴル",
     "dam": "レッドレグナント",
@@ -64,7 +64,7 @@
   },
   {
     "slug": "desafiante24",
-    "name": "デサフィアンテ24",
+    "name": "レッドシーカー",
     "club": "tokyo",
     "sire": "アルアイン",
     "dam": "デサフィアンテ",
@@ -85,7 +85,7 @@
   },
   {
     "slug": "comparticion24",
-    "name": "コンパルティシオン24",
+    "name": "レッドゲレーロ",
     "club": "tokyo",
     "sire": "ミッキーアイル",
     "dam": "コンパルティシオン",
@@ -169,10 +169,10 @@
   },
   {
     "slug": "gluttonlassie24",
-    "name": "グラットラッシー24",
+    "name": "ルージュフラッパー",
     "club": "tokyo",
     "sire": "スワーヴリチャード",
-    "dam": "グラットラッシー",
+    "dam": "グラットンラッシー",
     "damsire": "American Pharoah",
     "birth": "2024.2.5",
     "price": "2800万",
