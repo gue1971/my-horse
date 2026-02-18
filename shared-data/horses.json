@@ -31,7 +31,9 @@
       "horse_id": "carrot_24062",
       "source": "my-horse",
       "career_status": "active",
-      "local_id": "24062"
+      "local_id": "24062",
+      "training_center": "栗東",
+      "trainer": "松下武士"
     },
     {
       "slug": "promisedleap24",
@@ -56,7 +58,9 @@
       "horse_id": "silk_2024058",
       "source": "my-horse",
       "career_status": "active",
-      "local_id": "2024058"
+      "local_id": "2024058",
+      "training_center": "栗東",
+      "trainer": "杉山晴紀"
     },
     {
       "slug": "redregnant24",
@@ -81,7 +85,9 @@
       "horse_id": "tosara_2919",
       "source": "my-horse",
       "career_status": "active",
-      "local_id": "2919"
+      "local_id": "2919",
+      "training_center": "美浦",
+      "trainer": "大竹正博"
     },
     {
       "slug": "desafiante24",
@@ -106,7 +112,9 @@
       "horse_id": "tosara_2947",
       "source": "my-horse",
       "career_status": "active",
-      "local_id": "2947"
+      "local_id": "2947",
+      "training_center": "栗東",
+      "trainer": "池江泰寿"
     },
     {
       "slug": "comparticion24",
@@ -131,7 +139,9 @@
       "horse_id": "tosara_2946",
       "source": "my-horse",
       "career_status": "active",
-      "local_id": "2946"
+      "local_id": "2946",
+      "training_center": "栗東",
+      "trainer": "杉山晴紀"
     },
     {
       "slug": "fascinatez24",
@@ -156,7 +166,9 @@
       "horse_id": "carrot_24040",
       "source": "my-horse",
       "career_status": "active",
-      "local_id": "24040"
+      "local_id": "24040",
+      "training_center": "美浦",
+      "trainer": "林徹"
     },
     {
       "slug": "winalkanna24",
@@ -181,7 +193,9 @@
       "horse_id": "win_20240002",
       "source": "my-horse",
       "career_status": "active",
-      "local_id": "20240002"
+      "local_id": "20240002",
+      "training_center": "美浦",
+      "trainer": "武市康男"
     },
     {
       "slug": "zylpha24",
@@ -206,7 +220,9 @@
       "horse_id": "silk_2024043",
       "source": "my-horse",
       "career_status": "active",
-      "local_id": "2024043"
+      "local_id": "2024043",
+      "training_center": "美浦",
+      "trainer": "嘉藤貴行"
     },
     {
       "slug": "gluttonlassie24",
@@ -231,7 +247,9 @@
       "horse_id": "tosara_2936",
       "source": "my-horse",
       "career_status": "active",
-      "local_id": "2936"
+      "local_id": "2936",
+      "training_center": "栗東",
+      "trainer": "池江泰寿"
     },
     {
       "slug": "classiclydia24",
@@ -256,7 +274,9 @@
       "horse_id": "carrot_24072",
       "source": "my-horse",
       "career_status": "active",
-      "local_id": "24072"
+      "local_id": "24072",
+      "training_center": "栗東",
+      "trainer": "高橋亮"
     },
     {
       "slug": "melito23",
@@ -281,7 +301,9 @@
       "horse_id": "carrot_23039",
       "source": "my-horse",
       "career_status": "active",
-      "local_id": "23039"
+      "local_id": "23039",
+      "training_center": "美浦",
+      "trainer": "田村康仁"
     },
     {
       "slug": "redclaudia23",
@@ -306,7 +328,9 @@
       "horse_id": "tosara_2852",
       "source": "my-horse",
       "career_status": "active",
-      "local_id": "2852"
+      "local_id": "2852",
+      "training_center": "栗東",
+      "trainer": "橋口慎介"
     },
     {
       "slug": "heritiere23",
@@ -331,7 +355,9 @@
       "horse_id": "carrot_23065",
       "source": "my-horse",
       "career_status": "active",
-      "local_id": "23065"
+      "local_id": "23065",
+      "training_center": "栗東",
+      "trainer": "高橋亮"
     },
     {
       "slug": "sharlarae23",
@@ -356,7 +382,9 @@
       "horse_id": "tosara_2803",
       "source": "my-horse",
       "career_status": "active",
-      "local_id": "2803"
+      "local_id": "2803",
+      "training_center": "美浦",
+      "trainer": "宮田敬介"
     },
     {
       "slug": "redreveur23",
@@ -381,7 +409,9 @@
       "horse_id": "tosara_2835",
       "source": "my-horse",
       "career_status": "active",
-      "local_id": "2835"
+      "local_id": "2835",
+      "training_center": "栗東",
+      "trainer": "須貝尚介"
     },
     {
       "slug": "redcherir23",
@@ -406,7 +436,9 @@
       "horse_id": "tosara_2828",
       "source": "my-horse",
       "career_status": "active",
-      "local_id": "2828"
+      "local_id": "2828",
+      "training_center": "栗東",
+      "trainer": "杉山晴紀"
     },
     {
       "slug": "venusetmars23",
@@ -431,7 +463,9 @@
       "horse_id": "tosara_2837",
       "source": "my-horse",
       "career_status": "active",
-      "local_id": "2837"
+      "local_id": "2837",
+      "training_center": "栗東",
+      "trainer": "武幸四郎"
     },
     {
       "slug": "daiwadesse23",
@@ -456,7 +490,9 @@
       "horse_id": "win_20230033",
       "source": "my-horse",
       "career_status": "active",
-      "local_id": "20230033"
+      "local_id": "20230033",
+      "training_center": "栗東",
+      "trainer": "宮徹"
     },
     {
       "slug": "leversonverre23",
@@ -481,7 +517,9 @@
       "horse_id": "win_20230037",
       "source": "my-horse",
       "career_status": "active",
-      "local_id": "20230037"
+      "local_id": "20230037",
+      "training_center": "美浦",
+      "trainer": "深山雅史"
     },
     {
       "slug": "dancingrags22",
@@ -506,7 +544,9 @@
       "horse_id": "tosara_2710",
       "source": "my-horse",
       "career_status": "active",
-      "local_id": "2710"
+      "local_id": "2710",
+      "training_center": "美浦",
+      "trainer": "手塚貴久"
     },
     {
       "slug": "yukichan22",
@@ -531,7 +571,9 @@
       "horse_id": "silk_2022016",
       "source": "my-horse",
       "career_status": "active",
-      "local_id": "2022016"
+      "local_id": "2022016",
+      "training_center": "美浦",
+      "trainer": "武井亮"
     },
     {
       "slug": "casadelcielo22",
@@ -556,7 +598,9 @@
       "horse_id": "tosara_2740",
       "source": "my-horse",
       "career_status": "active",
-      "local_id": "2740"
+      "local_id": "2740",
+      "training_center": "栗東",
+      "trainer": "辻野泰之"
     },
     {
       "slug": "lesetoile21",
@@ -581,7 +625,9 @@
       "horse_id": "silk_2021086",
       "source": "my-horse",
       "career_status": "active",
-      "local_id": "2021086"
+      "local_id": "2021086",
+      "training_center": "栗東",
+      "trainer": "武幸四郎"
     },
     {
       "slug": "cheersmessage21",
@@ -606,7 +652,9 @@
       "horse_id": "carrot_2220",
       "source": "my-horse",
       "career_status": "active",
-      "local_id": "2220"
+      "local_id": "2220",
+      "training_center": "美浦",
+      "trainer": "中舘英二"
     },
     {
       "slug": "petitnoire21",
@@ -631,7 +679,9 @@
       "horse_id": "silk_2021003",
       "source": "my-horse",
       "career_status": "active",
-      "local_id": "2021003"
+      "local_id": "2021003",
+      "training_center": "美浦",
+      "trainer": "浅利英明"
     },
     {
       "slug": "cosmoplatina20",
@@ -656,7 +706,9 @@
       "horse_id": "win_20200020",
       "source": "my-horse",
       "career_status": "retired",
-      "local_id": "20200020"
+      "local_id": "20200020",
+      "training_center": "栗東",
+      "trainer": "吉田直弘"
     },
     {
       "slug": "laylanor22",
@@ -681,7 +733,9 @@
       "horse_id": "tosara_2725",
       "source": "my-horse",
       "career_status": "retired",
-      "local_id": "2725"
+      "local_id": "2725",
+      "training_center": "美浦",
+      "trainer": "高柳瑞樹"
     },
     {
       "slug": "daiwaproper22",
@@ -706,7 +760,9 @@
       "horse_id": "carrot_22058",
       "source": "my-horse",
       "career_status": "retired",
-      "local_id": "22058"
+      "local_id": "22058",
+      "training_center": "栗東",
+      "trainer": "大久保龍志"
     },
     {
       "slug": "ryzhkina22",
@@ -731,7 +787,9 @@
       "horse_id": "tosara_2022105136",
       "source": "my-horse",
       "career_status": "retired",
-      "local_id": "2022105136"
+      "local_id": "2022105136",
+      "training_center": "栗東",
+      "trainer": "池江泰寿"
     },
     {
       "slug": "melito22",
@@ -756,7 +814,9 @@
       "horse_id": "carrot_22012",
       "source": "my-horse",
       "career_status": "retired",
-      "local_id": "22012"
+      "local_id": "22012",
+      "training_center": "美浦",
+      "trainer": "萩原清"
     },
     {
       "slug": "vivencial22",
@@ -781,7 +841,9 @@
       "horse_id": "tosara_2022105872",
       "source": "my-horse",
       "career_status": "retired",
-      "local_id": "2022105872"
+      "local_id": "2022105872",
+      "training_center": "栗東",
+      "trainer": "上村洋行"
     },
     {
       "slug": "excellentdesign21",
@@ -806,7 +868,9 @@
       "horse_id": "tosara_2021105308",
       "source": "my-horse",
       "career_status": "retired",
-      "local_id": "2021105308"
+      "local_id": "2021105308",
+      "training_center": "美浦",
+      "trainer": "林徹"
     },
     {
       "slug": "frannyfreud21",
@@ -831,7 +895,9 @@
       "horse_id": "win_20210024",
       "source": "my-horse",
       "career_status": "retired",
-      "local_id": "20210024"
+      "local_id": "20210024",
+      "training_center": "美浦",
+      "trainer": "和田正一郎"
     },
     {
       "slug": "flegere21",
@@ -856,7 +922,9 @@
       "horse_id": "carrot_2225",
       "source": "my-horse",
       "career_status": "retired",
-      "local_id": "2225"
+      "local_id": "2225",
+      "training_center": "美浦",
+      "trainer": "堀宣行"
     },
     {
       "slug": "diogene20",
@@ -881,7 +949,9 @@
       "horse_id": "carrot_2157",
       "source": "my-horse",
       "career_status": "retired",
-      "local_id": "2157"
+      "local_id": "2157",
+      "training_center": "栗東",
+      "trainer": "斉藤崇史"
     },
     {
       "slug": "bewitchus20",
@@ -906,7 +976,9 @@
       "horse_id": "win_20200028",
       "source": "my-horse",
       "career_status": "retired",
-      "local_id": "20200028"
+      "local_id": "20200028",
+      "training_center": "美浦",
+      "trainer": "水野貴大"
     },
     {
       "slug": "sisterlylove19",
@@ -931,7 +1003,9 @@
       "horse_id": "union_2019106737",
       "source": "my-horse",
       "career_status": "retired",
-      "local_id": "2019106737"
+      "local_id": "2019106737",
+      "training_center": "美浦",
+      "trainer": "堀内岳志"
     },
     {
       "slug": "shakeloveheart19",
@@ -956,7 +1030,9 @@
       "horse_id": "win_20190017",
       "source": "my-horse",
       "career_status": "retired",
-      "local_id": "20190017"
+      "local_id": "20190017",
+      "training_center": "栗東",
+      "trainer": "新谷功一"
     },
     {
       "slug": "sweeptosho19",
@@ -981,7 +1057,9 @@
       "horse_id": "silk_2018067",
       "source": "my-horse",
       "career_status": "retired",
-      "local_id": "2018067"
+      "local_id": "2018067",
+      "training_center": "栗東",
+      "trainer": "清水久詞"
     },
     {
       "slug": "caravela1atina19",
@@ -1006,7 +1084,9 @@
       "horse_id": "carrot_2030",
       "source": "my-horse",
       "career_status": "retired",
-      "local_id": "2030"
+      "local_id": "2030",
+      "training_center": "美浦",
+      "trainer": "中舘英二"
     },
     {
       "slug": "dateyourdream18",
@@ -1031,7 +1111,9 @@
       "horse_id": "silk_2018067",
       "source": "my-horse",
       "career_status": "retired",
-      "local_id": "2018067"
+      "local_id": "2018067",
+      "training_center": "栗東",
+      "trainer": "小林真也"
     },
     {
       "slug": "taninojadore18",
@@ -1056,7 +1138,9 @@
       "horse_id": "normandy_2018103511",
       "source": "my-horse",
       "career_status": "retired",
-      "local_id": "2018103511"
+      "local_id": "2018103511",
+      "training_center": "美浦",
+      "trainer": "中川公成"
     },
     {
       "slug": "yumezammai18",
@@ -1081,7 +1165,9 @@
       "horse_id": "normandy_2018103753",
       "source": "my-horse",
       "career_status": "retired",
-      "local_id": "2018103753"
+      "local_id": "2018103753",
+      "training_center": "美浦",
+      "trainer": "稲垣幸雄"
     },
     {
       "slug": "mastereclair18",
@@ -1106,7 +1192,9 @@
       "horse_id": "union_2018104264",
       "source": "my-horse",
       "career_status": "retired",
-      "local_id": "2018104264"
+      "local_id": "2018104264",
+      "training_center": "栗東",
+      "trainer": "上村洋行"
     },
     {
       "slug": "fermion18",
@@ -1131,7 +1219,9 @@
       "horse_id": "carrot_1952",
       "source": "my-horse",
       "career_status": "retired",
-      "local_id": "1952"
+      "local_id": "1952",
+      "training_center": "栗東",
+      "trainer": "大久保龍志"
     },
     {
       "slug": "malacostumbrada17",
@@ -1156,7 +1246,9 @@
       "horse_id": "carrot_1867",
       "source": "my-horse",
       "career_status": "retired",
-      "local_id": "1867"
+      "local_id": "1867",
+      "training_center": "栗東",
+      "trainer": "松下武士"
     },
     {
       "slug": "antiphona17",
@@ -1181,7 +1273,9 @@
       "horse_id": "silk_2017062",
       "source": "my-horse",
       "career_status": "retired",
-      "local_id": "2017062"
+      "local_id": "2017062",
+      "training_center": "栗東",
+      "trainer": "斉藤崇史"
     },
     {
       "slug": "cagnotte16",
@@ -1206,7 +1300,9 @@
       "horse_id": "carrot_1774",
       "source": "my-horse",
       "career_status": "retired",
-      "local_id": "1774"
+      "local_id": "1774",
+      "training_center": "栗東",
+      "trainer": "高橋康之"
     },
     {
       "slug": "bailaora16",
@@ -1231,7 +1327,9 @@
       "horse_id": "carrot_1773",
       "source": "my-horse",
       "career_status": "retired",
-      "local_id": "1773"
+      "local_id": "1773",
+      "training_center": "美浦",
+      "trainer": "大竹正博"
     },
     {
       "slug": "loftyaim15",
@@ -1256,7 +1354,9 @@
       "horse_id": "carrot_1619",
       "source": "my-horse",
       "career_status": "retired",
-      "local_id": "1619"
+      "local_id": "1619",
+      "training_center": "美浦",
+      "trainer": "奥村武"
     },
     {
       "slug": "cagnotte15",
@@ -1281,7 +1381,9 @@
       "horse_id": "carrot_1611",
       "source": "my-horse",
       "career_status": "retired",
-      "local_id": "1611"
+      "local_id": "1611",
+      "training_center": "栗東",
+      "trainer": "奥村豊"
     },
     {
       "slug": "juneanagalis13",
@@ -1306,7 +1408,9 @@
       "horse_id": "carrot_1473",
       "source": "my-horse",
       "career_status": "retired",
-      "local_id": "1473"
+      "local_id": "1473",
+      "training_center": "栗東",
+      "trainer": "橋口慎介"
     },
     {
       "slug": "isadora13",
@@ -1331,7 +1435,9 @@
       "horse_id": "carrot_1477",
       "source": "my-horse",
       "career_status": "retired",
-      "local_id": "1477"
+      "local_id": "1477",
+      "training_center": "栗東",
+      "trainer": "寺島良"
     },
     {
       "slug": "fermion12",
@@ -1356,7 +1462,9 @@
       "horse_id": "carrot_1334",
       "source": "my-horse",
       "career_status": "retired",
-      "local_id": "1334"
+      "local_id": "1334",
+      "training_center": "美浦",
+      "trainer": "古賀慎明"
     },
     {
       "slug": "hanaramman10",
@@ -1381,7 +1489,9 @@
       "horse_id": "carrot_1118",
       "source": "my-horse",
       "career_status": "retired",
-      "local_id": "1118"
+      "local_id": "1118",
+      "training_center": "美浦",
+      "trainer": "菊沢隆徳"
     },
     {
       "slug": "Prelate10",
@@ -1406,7 +1516,9 @@
       "horse_id": "carrot_1120",
       "source": "my-horse",
       "career_status": "retired",
-      "local_id": "1120"
+      "local_id": "1120",
+      "training_center": "美浦",
+      "trainer": "尾形和幸"
     },
     {
       "slug": "simplethebest10",
@@ -1431,7 +1543,9 @@
       "horse_id": "carrot_1125",
       "source": "my-horse",
       "career_status": "retired",
-      "local_id": "1125"
+      "local_id": "1125",
+      "training_center": "栗東",
+      "trainer": "牧浦充徳"
     }
   ]
 }

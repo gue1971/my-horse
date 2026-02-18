@@ -180,6 +180,13 @@ function dateSort(a, b) {
   return new Date(b.date) - new Date(a.date);
 }
 
+function stableLabel(horse) {
+  const tc = String(horse.training_center || '').trim();
+  const tr = String(horse.trainer || '').trim();
+  if (tc && tr) return `${tc}　${tr}`;
+  return String(horse.stable || '').trim();
+}
+
 async function loadHorses() {
   const sources = [
     'https://raw.githubusercontent.com/gue1971/shared-horses-data/main/horses.json',
@@ -273,7 +280,7 @@ const formattedBirthDate = parts.length === 3
 setVal('birth', formattedBirthDate);
 setVal('price', horse.price, '円募集');
 setVal('farm',    horse.farm);
-setVal('stable',  horse.stable, '厩舎');
+setVal('stable',  stableLabel(horse), '厩舎');
 
 // 測尺（単位付与）
 setVal('height_cm', horse.height_cm, 'cm');

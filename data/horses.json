@@ -20,7 +20,9 @@
     "jbis_id": "0001395766",
     "tab": 1,
     "career_status": "active",
-    "local_id": "24062"
+    "local_id": "24062",
+    "training_center": "栗東",
+    "trainer": "松下武士"
   },
   {
     "slug": "promisedleap24",
@@ -43,7 +45,9 @@
     "jbis_id": "0001391917",
     "tab": 1,
     "career_status": "active",
-    "local_id": "2024058"
+    "local_id": "2024058",
+    "training_center": "栗東",
+    "trainer": "杉山晴紀"
   },
   {
     "slug": "redregnant24",
@@ -66,7 +70,9 @@
     "jbis_id": "0001392131",
     "tab": 1,
     "career_status": "active",
-    "local_id": "2919"
+    "local_id": "2919",
+    "training_center": "美浦",
+    "trainer": "大竹正博"
   },
   {
     "slug": "desafiante24",
@@ -89,7 +95,9 @@
     "jbis_id": "0001392433",
     "tab": 1,
     "career_status": "active",
-    "local_id": "2947"
+    "local_id": "2947",
+    "training_center": "栗東",
+    "trainer": "池江泰寿"
   },
   {
     "slug": "comparticion24",
@@ -112,7 +120,9 @@
     "jbis_id": "0001395807",
     "tab": 1,
     "career_status": "active",
-    "local_id": "2946"
+    "local_id": "2946",
+    "training_center": "栗東",
+    "trainer": "杉山晴紀"
   },
   {
     "slug": "fascinatez24",
@@ -135,7 +145,9 @@
     "jbis_id": "0001396200",
     "tab": 1,
     "career_status": "active",
-    "local_id": "24040"
+    "local_id": "24040",
+    "training_center": "美浦",
+    "trainer": "林徹"
   },
   {
     "slug": "winalkanna24",
@@ -158,7 +170,9 @@
     "jbis_id": "0001396509",
     "tab": 1,
     "career_status": "active",
-    "local_id": "20240002"
+    "local_id": "20240002",
+    "training_center": "美浦",
+    "trainer": "武市康男"
   },
   {
     "slug": "zylpha24",
@@ -181,7 +195,9 @@
     "jbis_id": "0001419621",
     "tab": 1,
     "career_status": "active",
-    "local_id": "2024043"
+    "local_id": "2024043",
+    "training_center": "美浦",
+    "trainer": "嘉藤貴行"
   },
   {
     "slug": "gluttonlassie24",
@@ -204,7 +220,9 @@
     "jbis_id": "0001396423",
     "tab": 1,
     "career_status": "active",
-    "local_id": "2936"
+    "local_id": "2936",
+    "training_center": "栗東",
+    "trainer": "池江泰寿"
   },
   {
     "slug": "classiclydia24",
@@ -227,7 +245,9 @@
     "jbis_id": "0001390467",
     "tab": 1,
     "career_status": "active",
-    "local_id": "24072"
+    "local_id": "24072",
+    "training_center": "栗東",
+    "trainer": "高橋亮"
   },
   {
     "slug": "melito23",
@@ -250,7 +270,9 @@
     "jbis_id": "0001373109",
     "tab": 2,
     "career_status": "active",
-    "local_id": "23039"
+    "local_id": "23039",
+    "training_center": "美浦",
+    "trainer": "田村康仁"
   },
   {
     "slug": "redclaudia23",
@@ -273,7 +295,9 @@
     "jbis_id": "0001369150",
     "tab": 2,
     "career_status": "active",
-    "local_id": "2852"
+    "local_id": "2852",
+    "training_center": "栗東",
+    "trainer": "橋口慎介"
   },
   {
     "slug": "heritiere23",
@@ -296,7 +320,9 @@
     "jbis_id": "0001372811",
     "tab": 2,
     "career_status": "active",
-    "local_id": "23065"
+    "local_id": "23065",
+    "training_center": "栗東",
+    "trainer": "高橋亮"
   },
   {
     "slug": "sharlarae23",
@@ -319,7 +345,9 @@
     "jbis_id": "0001375140",
     "tab": 2,
     "career_status": "active",
-    "local_id": "2803"
+    "local_id": "2803",
+    "training_center": "美浦",
+    "trainer": "宮田敬介"
   },
   {
     "slug": "redreveur23",
@@ -342,7 +370,9 @@
     "jbis_id": "0001370107",
     "tab": 2,
     "career_status": "active",
-    "local_id": "2835"
+    "local_id": "2835",
+    "training_center": "栗東",
+    "trainer": "須貝尚介"
   },
   {
     "slug": "redcherir23",
@@ -365,7 +395,9 @@
     "jbis_id": "0001370550",
     "tab": 2,
     "career_status": "active",
-    "local_id": "2828"
+    "local_id": "2828",
+    "training_center": "栗東",
+    "trainer": "杉山晴紀"
   },
   {
     "slug": "venusetmars23",
@@ -388,7 +420,9 @@
     "jbis_id": "0001375182",
     "tab": 2,
     "career_status": "active",
-    "local_id": "2837"
+    "local_id": "2837",
+    "training_center": "栗東",
+    "trainer": "武幸四郎"
   },
   {
     "slug": "daiwadesse23",
@@ -411,7 +445,9 @@
     "jbis_id": "0001369045",
     "tab": 2,
     "career_status": "active",
-    "local_id": "20230033"
+    "local_id": "20230033",
+    "training_center": "栗東",
+    "trainer": "宮徹"
   },
   {
     "slug": "leversonverre23",
@@ -434,7 +470,9 @@
     "jbis_id": "0001370177",
     "tab": 2,
     "career_status": "active",
-    "local_id": "20230037"
+    "local_id": "20230037",
+    "training_center": "美浦",
+    "trainer": "深山雅史"
   },
   {
     "slug": "dancingrags22",
@@ -457,7 +495,9 @@
     "jbis_id": "0001360268",
     "tab": 3,
     "career_status": "active",
-    "local_id": "2710"
+    "local_id": "2710",
+    "training_center": "美浦",
+    "trainer": "手塚貴久"
   },
   {
     "slug": "yukichan22",
@@ -480,7 +520,9 @@
     "jbis_id": "0001352577",
     "tab": 3,
     "career_status": "active",
-    "local_id": "2022016"
+    "local_id": "2022016",
+    "training_center": "美浦",
+    "trainer": "武井亮"
   },
   {
     "slug": "casadelcielo22",
@@ -503,7 +545,9 @@
     "jbis_id": "0001361920",
     "tab": 3,
     "career_status": "active",
-    "local_id": "2740"
+    "local_id": "2740",
+    "training_center": "栗東",
+    "trainer": "辻野泰之"
   },
   {
     "slug": "lesetoile21",
@@ -526,7 +570,9 @@
     "jbis_id": "0001335433",
     "tab": 3,
     "career_status": "active",
-    "local_id": "2021086"
+    "local_id": "2021086",
+    "training_center": "栗東",
+    "trainer": "武幸四郎"
   },
   {
     "slug": "cheersmessage21",
@@ -549,7 +595,9 @@
     "jbis_id": "0001331771",
     "tab": 3,
     "career_status": "active",
-    "local_id": "2220"
+    "local_id": "2220",
+    "training_center": "美浦",
+    "trainer": "中舘英二"
   },
   {
     "slug": "petitnoire21",
@@ -572,7 +620,9 @@
     "jbis_id": "0001332993",
     "tab": 3,
     "career_status": "active",
-    "local_id": "2021003"
+    "local_id": "2021003",
+    "training_center": "美浦",
+    "trainer": "浅利英明"
   },
   {
     "slug": "cosmoplatina20",
@@ -595,7 +645,9 @@
     "jbis_id": "0001318737",
     "tab": 5,
     "career_status": "retired",
-    "local_id": "20200020"
+    "local_id": "20200020",
+    "training_center": "栗東",
+    "trainer": "吉田直弘"
   },
   {
     "slug": "laylanor22",
@@ -618,7 +670,9 @@
     "jbis_id": "0001365962",
     "tab": 4,
     "career_status": "retired",
-    "local_id": "2725"
+    "local_id": "2725",
+    "training_center": "美浦",
+    "trainer": "高柳瑞樹"
   },
   {
     "slug": "daiwaproper22",
@@ -641,7 +695,9 @@
     "jbis_id": "0001356550",
     "tab": 4,
     "career_status": "retired",
-    "local_id": "22058"
+    "local_id": "22058",
+    "training_center": "栗東",
+    "trainer": "大久保龍志"
   },
   {
     "slug": "ryzhkina22",
@@ -664,7 +720,9 @@
     "jbis_id": "0001360019",
     "tab": 4,
     "career_status": "retired",
-    "local_id": "2022105136"
+    "local_id": "2022105136",
+    "training_center": "栗東",
+    "trainer": "池江泰寿"
   },
   {
     "slug": "melito22",
@@ -687,7 +745,9 @@
     "jbis_id": "0001358811",
     "tab": 4,
     "career_status": "retired",
-    "local_id": "22012"
+    "local_id": "22012",
+    "training_center": "美浦",
+    "trainer": "萩原清"
   },
   {
     "slug": "vivencial22",
@@ -710,7 +770,9 @@
     "jbis_id": "0001359603",
     "tab": 4,
     "career_status": "retired",
-    "local_id": "2022105872"
+    "local_id": "2022105872",
+    "training_center": "栗東",
+    "trainer": "上村洋行"
   },
   {
     "slug": "excellentdesign21",
@@ -733,7 +795,9 @@
     "jbis_id": "0001340212",
     "tab": 4,
     "career_status": "retired",
-    "local_id": "2021105308"
+    "local_id": "2021105308",
+    "training_center": "美浦",
+    "trainer": "林徹"
   },
   {
     "slug": "frannyfreud21",
@@ -756,7 +820,9 @@
     "jbis_id": "0001336951",
     "tab": 4,
     "career_status": "retired",
-    "local_id": "20210024"
+    "local_id": "20210024",
+    "training_center": "美浦",
+    "trainer": "和田正一郎"
   },
   {
     "slug": "flegere21",
@@ -779,7 +845,9 @@
     "jbis_id": "0001332392",
     "tab": 4,
     "career_status": "retired",
-    "local_id": "2225"
+    "local_id": "2225",
+    "training_center": "美浦",
+    "trainer": "堀宣行"
   },
   {
     "slug": "diogene20",
@@ -802,7 +870,9 @@
     "jbis_id": "0001323010",
     "tab": 4,
     "career_status": "retired",
-    "local_id": "2157"
+    "local_id": "2157",
+    "training_center": "栗東",
+    "trainer": "斉藤崇史"
   },
   {
     "slug": "bewitchus20",
@@ -825,7 +895,9 @@
     "jbis_id": "0001321649",
     "tab": 4,
     "career_status": "retired",
-    "local_id": "20200028"
+    "local_id": "20200028",
+    "training_center": "美浦",
+    "trainer": "水野貴大"
   },
   {
     "slug": "sisterlylove19",
@@ -848,7 +920,9 @@
     "jbis_id": "0001312088",
     "tab": 4,
     "career_status": "retired",
-    "local_id": "2019106737"
+    "local_id": "2019106737",
+    "training_center": "美浦",
+    "trainer": "堀内岳志"
   },
   {
     "slug": "shakeloveheart19",
@@ -871,7 +945,9 @@
     "jbis_id": "0001307615",
     "tab": 4,
     "career_status": "retired",
-    "local_id": "20190017"
+    "local_id": "20190017",
+    "training_center": "栗東",
+    "trainer": "新谷功一"
   },
   {
     "slug": "sweeptosho19",
@@ -894,7 +970,9 @@
     "jbis_id": "0001304139",
     "tab": 4,
     "career_status": "retired",
-    "local_id": "2018067"
+    "local_id": "2018067",
+    "training_center": "栗東",
+    "trainer": "清水久詞"
   },
   {
     "slug": "caravela1atina19",
@@ -917,7 +995,9 @@
     "jbis_id": "0001305229",
     "tab": 4,
     "career_status": "retired",
-    "local_id": "2030"
+    "local_id": "2030",
+    "training_center": "美浦",
+    "trainer": "中舘英二"
   },
   {
     "slug": "dateyourdream18",
@@ -940,7 +1020,9 @@
     "jbis_id": "0001264919",
     "tab": 4,
     "career_status": "retired",
-    "local_id": "2018067"
+    "local_id": "2018067",
+    "training_center": "栗東",
+    "trainer": "小林真也"
   },
   {
     "slug": "taninojadore18",
@@ -963,7 +1045,9 @@
     "jbis_id": "0001261609",
     "tab": 4,
     "career_status": "retired",
-    "local_id": "2018103511"
+    "local_id": "2018103511",
+    "training_center": "美浦",
+    "trainer": "中川公成"
   },
   {
     "slug": "yumezammai18",
@@ -986,7 +1070,9 @@
     "jbis_id": "0001266040",
     "tab": 4,
     "career_status": "retired",
-    "local_id": "2018103753"
+    "local_id": "2018103753",
+    "training_center": "美浦",
+    "trainer": "稲垣幸雄"
   },
   {
     "slug": "mastereclair18",
@@ -1009,7 +1095,9 @@
     "jbis_id": "0001268258",
     "tab": 4,
     "career_status": "retired",
-    "local_id": "2018104264"
+    "local_id": "2018104264",
+    "training_center": "栗東",
+    "trainer": "上村洋行"
   },
   {
     "slug": "fermion18",
@@ -1032,7 +1120,9 @@
     "jbis_id": "0001264787",
     "tab": 4,
     "career_status": "retired",
-    "local_id": "1952"
+    "local_id": "1952",
+    "training_center": "栗東",
+    "trainer": "大久保龍志"
   },
   {
     "slug": "malacostumbrada17",
@@ -1055,7 +1145,9 @@
     "jbis_id": "0001237289",
     "tab": 5,
     "career_status": "retired",
-    "local_id": "1867"
+    "local_id": "1867",
+    "training_center": "栗東",
+    "trainer": "松下武士"
   },
   {
     "slug": "antiphona17",
@@ -1078,7 +1170,9 @@
     "jbis_id": "0001235600",
     "tab": 5,
     "career_status": "retired",
-    "local_id": "2017062"
+    "local_id": "2017062",
+    "training_center": "栗東",
+    "trainer": "斉藤崇史"
   },
   {
     "slug": "cagnotte16",
@@ -1101,7 +1195,9 @@
     "jbis_id": "0001221432",
     "tab": 4,
     "career_status": "retired",
-    "local_id": "1774"
+    "local_id": "1774",
+    "training_center": "栗東",
+    "trainer": "高橋康之"
   },
   {
     "slug": "bailaora16",
@@ -1124,7 +1220,9 @@
     "jbis_id": "0001218073",
     "tab": 4,
     "career_status": "retired",
-    "local_id": "1773"
+    "local_id": "1773",
+    "training_center": "美浦",
+    "trainer": "大竹正博"
   },
   {
     "slug": "loftyaim15",
@@ -1147,7 +1245,9 @@
     "jbis_id": "0001202765",
     "tab": 5,
     "career_status": "retired",
-    "local_id": "1619"
+    "local_id": "1619",
+    "training_center": "美浦",
+    "trainer": "奥村武"
   },
   {
     "slug": "cagnotte15",
@@ -1170,7 +1270,9 @@
     "jbis_id": "0001129792",
     "tab": 4,
     "career_status": "retired",
-    "local_id": "1611"
+    "local_id": "1611",
+    "training_center": "栗東",
+    "trainer": "奥村豊"
   },
   {
     "slug": "juneanagalis13",
@@ -1193,7 +1295,9 @@
     "jbis_id": "0001166999",
     "tab": 4,
     "career_status": "retired",
-    "local_id": "1473"
+    "local_id": "1473",
+    "training_center": "栗東",
+    "trainer": "橋口慎介"
   },
   {
     "slug": "isadora13",
@@ -1216,7 +1320,9 @@
     "jbis_id": "0001168188",
     "tab": 4,
     "career_status": "retired",
-    "local_id": "1477"
+    "local_id": "1477",
+    "training_center": "栗東",
+    "trainer": "寺島良"
   },
   {
     "slug": "fermion12",
@@ -1239,7 +1345,9 @@
     "jbis_id": "0001156553",
     "tab": 5,
     "career_status": "retired",
-    "local_id": "1334"
+    "local_id": "1334",
+    "training_center": "美浦",
+    "trainer": "古賀慎明"
   },
   {
     "slug": "hanaramman10",
@@ -1262,7 +1370,9 @@
     "jbis_id": "0000230393",
     "tab": 4,
     "career_status": "retired",
-    "local_id": "1118"
+    "local_id": "1118",
+    "training_center": "美浦",
+    "trainer": "菊沢隆徳"
   },
   {
     "slug": "Prelate10",
@@ -1285,7 +1395,9 @@
     "jbis_id": "0001124020",
     "tab": 4,
     "career_status": "retired",
-    "local_id": "1120"
+    "local_id": "1120",
+    "training_center": "美浦",
+    "trainer": "尾形和幸"
   },
   {
     "slug": "simplethebest10",
@@ -1308,6 +1420,8 @@
     "jbis_id": "0001120538",
     "tab": 4,
     "career_status": "retired",
-    "local_id": "1125"
+    "local_id": "1125",
+    "training_center": "栗東",
+    "trainer": "牧浦充徳"
   }
 ]

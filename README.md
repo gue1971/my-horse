@@ -68,6 +68,8 @@ my-horse/
     "birth": "2017.3.15",
     "price": "2600万",
     "stable": "栗東 松下武士",
+    "training_center": "栗東",
+    "trainer": "松下武士",
     "farm": "ノーザンファーム",
     "height_cm": 153.5,
     "girth_cm": 179.0,
@@ -190,6 +192,13 @@ ID規約:
 
 `local_id` は `clubPage` の末尾数字から生成します。  
 `clubPage` が空の場合は `netkeiba_horse_id`、それも空なら `slug` で補完します。
+
+### 2.5) `stable` を分割（`training_center` / `trainer`）
+
+```bash
+node scripts/split_stable_fields.mjs \
+  --file /Users/gue1971/MyWorks/競馬/出資馬アプリ/shared-horses-data/horses.json
+```
 
 ### 3) 正本からMyStableへ同期（通常運用）
 

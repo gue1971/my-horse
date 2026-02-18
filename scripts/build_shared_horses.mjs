@@ -29,6 +29,19 @@ function normalizeHorsesDoc(doc) {
   throw new Error('horses JSON は配列、または { horses: [...] } 形式で指定してください');
 }
 
+function splitStable(stable) {
+  const raw = String(stable || '').trim();
+  if (!raw) return { training_center: '', trainer: '' };
+  const normalized = raw.replace(/\s+/g, ' ').trim();
+  const m = normalized.match(/^(美浦|栗東|地方|海外)\s*(.+)$/);
+  if (m) return { training_center: m[1], trainer: m[2].trim() };
+  const parts = normalized.split(' ');
+  if (parts.length >= 2) {
+    return { training_center: parts[0], trainer: parts.slice(1).join(' ') };
+  }
+  return { training_center: '', trainer: normalized };
+}
+
 function normalizedClubForId(club) {
   const normalized = String(club || '').trim().toLowerCase() || 'unknown';
   if (normalized === 'tokyo') return 'tosara';
@@ -61,6 +74,9 @@ function normalizeHorse(rawHorse, source) {
   const horse = { ...rawHorse };
   delete horse.birth_year;
 
+  const stableFields = splitStable(horse.stable);
+  horse.training_center = String(horse.training_center || '').trim() || stableFields.training_center;
+  horse.trainer = String(horse.trainer || '').trim() || stableFields.trainer;
   horse.local_id = extractLocalId(horse);
   horse.horse_id = deriveHorseId(horse);
   horse.source = source;

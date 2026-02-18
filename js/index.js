@@ -56,6 +56,13 @@ function bbsUrl(id) {
     : `https://db.netkeiba.com/?pid=horse_board&id=${encodeURIComponent(id)}`;
 }
 
+function stableLabel(horse) {
+  const tc = String(horse.training_center || '').trim();
+  const tr = String(horse.trainer || '').trim();
+  if (tc && tr) return `${tc}　${tr}`;
+  return String(horse.stable || '').trim();
+}
+
 // ===== album -> hero pick =====
 function pickHero(album){
   if (!Array.isArray(album) || album.length===0) return null;
@@ -171,7 +178,7 @@ function buildCard({ horse, hero, hasAlbum }) {
     ['母', horse.dam],
     ['母父', horse.damsire],
     ['生産', horse.farm],
-    ['厩舎', horse.stable]
+    ['厩舎', stableLabel(horse)]
   ], true));
 
   // 2段目：生年月日＋募集額（ラベルなし・横並び1項目）
