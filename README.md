@@ -186,7 +186,11 @@ node scripts/build_shared_horses.mjs \
   --output /Users/gue1971/MyWorks/競馬/出資馬アプリ/shared-horses-data/horses.json
 ```
 
-`horse_id` は `club + clubPage` から生成します。  
+ID規約:
+- `horse_id`: `<club>_<local_id>`（例: `carrot_24062`, `tosara_2919`）
+- `local_id`: クラブ内ローカルID（数字部分。文字列で保持）
+
+`local_id` は `clubPage` の末尾数字から生成します。  
 `clubPage` が空の場合は `netkeiba_horse_id`、それも空なら `slug` で補完します。
 
 ### 3) 正本からMyStableへ同期（通常運用）

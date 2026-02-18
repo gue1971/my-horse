@@ -29,24 +29,39 @@ function normalizeHorsesDoc(doc) {
   throw new Error('horses JSON は配列、または { horses: [...] } 形式で指定してください');
 }
 
-function deriveHorseId(horse) {
-  const club = String(horse.club || '').trim().toLowerCase() || 'unknown';
+function normalizedClubForId(club) {
+  const normalized = String(club || '').trim().toLowerCase() || 'unknown';
+  if (normalized === 'tokyo') return 'tosara';
+  return normalized;
+}
+
+function extractLocalId(horse) {
   const clubPage = String(horse.clubPage || '').trim().replace(/^\/+|\/+$/g, '');
-  if (clubPage) return `${club}:${clubPage}`;
+  if (clubPage) {
+    const m = clubPage.match(/(\d+)$/);
+    if (m) return m[1];
+  }
 
   const netkeiba = String(horse.netkeiba_horse_id || '').trim();
-  if (netkeiba) return `${club}:netkeiba:${netkeiba}`;
+  if (netkeiba) return netkeiba;
 
   const slug = String(horse.slug || '').trim().toLowerCase();
-  if (slug) return `${club}:slug:${slug}`;
+  if (slug) return slug;
 
-  return `${club}:unknown`;
+  return 'unknown';
+}
+
+function deriveHorseId(horse) {
+  const club = normalizedClubForId(horse.club);
+  const localId = extractLocalId(horse);
+  return `${club}_${localId}`;
 }
 
 function normalizeHorse(rawHorse, source) {
   const horse = { ...rawHorse };
   delete horse.birth_year;
 
+  horse.local_id = extractLocalId(horse);
   horse.horse_id = deriveHorseId(horse);
   horse.source = source;
   return horse;
@@ -68,7 +83,7 @@ function ensureUniqueHorseIds(horses) {
     seen.set(id, seq);
     const slug = String(horse.slug || '').trim().toLowerCase();
     const suffix = slug || `dup${seq}`;
-    horse.horse_id = `${id}:${suffix}`;
+    horse.horse_id = `${id}_${suffix}`;
   }
 }
 

@@ -26,9 +26,13 @@ function asHorseId(horse) {
   if (horse && horse.horse_id) return String(horse.horse_id);
   const club = String(horse?.club || '').trim().toLowerCase();
   const clubPage = String(horse?.clubPage || '').trim().replace(/^\/+|\/+$/g, '');
-  if (club && clubPage) return `${club}:${clubPage}`;
+  if (club && clubPage) {
+    const m = clubPage.match(/(\d+)$/);
+    const localId = m ? m[1] : clubPage;
+    return `${club}_${localId}`;
+  }
   const slug = String(horse?.slug || '').trim();
-  return slug ? `${club || 'unknown'}:slug:${slug}` : '';
+  return slug ? `${club || 'unknown'}_${slug}` : '';
 }
 
 function splitDoc(doc) {

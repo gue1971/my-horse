@@ -69,7 +69,7 @@ const byKey = new Map();
 const byName = new Map();
 for (const h of canonicalHorses) {
   const club = canonicalClubToOuma(h.club);
-  const localId = extractLocalId(h.clubPage);
+  const localId = String(h.local_id || '').trim() || extractLocalId(h.clubPage);
   if (club && localId) {
     byKey.set(`${club}_${localId}`, h);
   }
