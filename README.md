@@ -145,8 +145,14 @@ my-horse/
 
 `horses` は共通データ、`transactions` はアプリ固有データとして分離して運用します。
 
-共通リポジトリは以下を作成済みです。  
-`/Users/gue1971/MyWorks/競馬/出資馬アプリ/shared-horses-data`
+正本（手編集するのはここだけ）:
+`/Users/gue1971/MyWorks/競馬/出資馬アプリ/shared-horses-data/horses.json`
+
+MyStableが読むファイル:
+`/Users/gue1971/MyWorks/競馬/出資馬アプリ/my-horse/shared-data/horses.json`
+
+互換用生成ファイル（手編集しない）:
+`/Users/gue1971/MyWorks/競馬/出資馬アプリ/my-horse/data/horses.json`
 
 ### 1) おウマのかよいJSONを分割
 
@@ -161,61 +167,39 @@ node scripts/split_ouma_json.mjs \
 
 ```bash
 node scripts/build_shared_horses.mjs \
-  --myhorse data/horses.json \
+  --myhorse /Users/gue1971/MyWorks/競馬/出資馬アプリ/my-horse/data/horses.json \
   --import /path/to/ouma-horses.json \
-  --output shared-data/horses.json
+  --output /Users/gue1971/MyWorks/競馬/出資馬アプリ/shared-horses-data/horses.json
 ```
 
 `horse_id` は `club + clubPage` から生成します。  
 `clubPage` が空の場合は `netkeiba_horse_id`、それも空なら `slug` で補完します。
 
-### 3) 必要ならMy Horseデータを直接更新
+### 3) 正本からMyStableへ同期（通常運用）
 
 ```bash
-node scripts/build_shared_horses.mjs \
-  --myhorse data/horses.json \
-  --import /path/to/ouma-horses.json \
-  --write-myhorse
+scripts/sync_from_shared_repo.sh
 ```
 
-### 4) 共通データから My Horse へ反映
+上のコマンドで次の2ファイルを更新します。
+- `/Users/gue1971/MyWorks/競馬/出資馬アプリ/my-horse/shared-data/horses.json`
+- `/Users/gue1971/MyWorks/競馬/出資馬アプリ/my-horse/data/horses.json`
+
+### 4) 同期ズレ検証
 
 ```bash
-node scripts/sync_myhorse_from_shared.mjs \
-  --input shared-data/horses.json \
-  --output data/horses.json
+node scripts/verify_horses_sync.mjs \
+  --shared /Users/gue1971/MyWorks/競馬/出資馬アプリ/my-horse/shared-data/horses.json \
+  --app /Users/gue1971/MyWorks/競馬/出資馬アプリ/my-horse/data/horses.json
 ```
 
 UIは `shared-data/horses.json` のみを参照します。  
 `data/horses.json` は生成物として扱い、手編集しません。
 
-### 4.5) 同期ズレ検証
+### 5) 正本リポジトリをGitHubへ反映
 
 ```bash
-node scripts/verify_horses_sync.mjs
-```
-
-ズレがある場合は `scripts/sync_myhorse_from_shared.mjs` を再実行してください。
-
-### 5) `shared-data` を別リポジトリへ公開（subtree）
-
-作業ツリーをクリーンにした後に実行:
-
-```bash
-scripts/publish_shared_subtree.sh <shared-horses-dataのremote> main
-```
-
-### 6) 別リポジトリ側の更新を取り込む
-
-```bash
-scripts/pull_shared_subtree.sh <shared-horses-dataのremote> main
-node scripts/sync_myhorse_from_shared.mjs --input shared-data/horses.json --output data/horses.json
-```
-
-### 7) ローカル共通リポジトリへ同期（簡易運用）
-
-```bash
-scripts/sync_local_shared_repo.sh shared-data ../shared-horses-data
 git -C ../shared-horses-data add .
 git -C ../shared-horses-data commit -m "Update shared horses data"
+git -C ../shared-horses-data push origin main
 ```
