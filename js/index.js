@@ -207,10 +207,11 @@ function buildCard({ horse, hero, hasAlbum }) {
   if (!horse.jbis_id) { jbisLink.style.pointerEvents = 'none'; jbisLink.style.opacity = '0.5'; }
 
   const bbsLink = document.createElement('a');
-  bbsLink.href = horse.netkeiba_horse_id ? bbsUrl(horse.netkeiba_horse_id) : '#';
+  const studbookNum = String(horse.studbook_num || horse.netkeiba_horse_id || '').trim();
+  bbsLink.href = studbookNum ? bbsUrl(studbookNum) : '#';
   bbsLink.target = '_blank'; bbsLink.rel = 'noopener';
   bbsLink.innerHTML = '<img src="assets/icons/netkeiba.png" alt="BBS">BBS';
-  if (!horse.netkeiba_horse_id) { bbsLink.style.pointerEvents = 'none'; bbsLink.style.opacity = '0.5'; }
+  if (!studbookNum) { bbsLink.style.pointerEvents = 'none'; bbsLink.style.opacity = '0.5'; }
 
   bottom.appendChild(jraLink);
   bottom.appendChild(jbisLink);

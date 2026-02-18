@@ -46,8 +46,8 @@ function extractLocalId(horse) {
     if (part) return part;
   }
 
-  const netkeiba = String(horse.netkeiba_horse_id || '').trim();
-  if (netkeiba) return netkeiba;
+  const studbook = String(horse.studbook_num || horse.netkeiba_horse_id || '').trim();
+  if (studbook) return studbook;
 
   return String(horse.slug || '').trim().toLowerCase() || 'unknown';
 }
@@ -63,6 +63,8 @@ if (!Array.isArray(horses)) {
 
 for (const horse of horses) {
   const club = normalizeClub(horse.club);
+  horse.studbook_num = String(horse.studbook_num || horse.netkeiba_horse_id || '').trim();
+  delete horse.source;
   const localId = extractLocalId(horse);
   horse.local_id = localId;
   horse.horse_id = `${club}_${localId}`;

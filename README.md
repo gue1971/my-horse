@@ -76,6 +76,7 @@ my-horse/
     "cannon_cm": 20.0,
     "weight_kg": 482,
     "clubPage": "1867",
+    "studbook_num": "2017105563",
     "netkeiba_horse_id": "2017105563",
     "jra_id": "pw01dud002017105563/80",
     "jbis_id": "0001237289",
@@ -191,7 +192,8 @@ ID規約:
 - `local_id`: クラブ内ローカルID（数字部分。文字列で保持）
 
 `local_id` は `clubPage` の末尾数字から生成します。  
-`clubPage` が空の場合は `netkeiba_horse_id`、それも空なら `slug` で補完します。
+`clubPage` が空の場合は `studbook_num`（互換で `netkeiba_horse_id`）、
+それも空なら `slug` で補完します。
 
 ### 2.5) `stable` を分割（`training_center` / `trainer`）
 

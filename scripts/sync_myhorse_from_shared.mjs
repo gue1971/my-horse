@@ -35,7 +35,6 @@ if (!Array.isArray(horses)) {
 const normalized = horses.map((h) => {
   const clone = { ...h };
   delete clone.horse_id;
-  delete clone.source;
   delete clone.birth_year;
   return clone;
 });

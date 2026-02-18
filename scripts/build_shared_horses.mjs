@@ -55,8 +55,8 @@ function extractLocalId(horse) {
     if (m) return m[1];
   }
 
-  const netkeiba = String(horse.netkeiba_horse_id || '').trim();
-  if (netkeiba) return netkeiba;
+  const studbook = String(horse.studbook_num || horse.netkeiba_horse_id || '').trim();
+  if (studbook) return studbook;
 
   const slug = String(horse.slug || '').trim().toLowerCase();
   if (slug) return slug;
@@ -70,16 +70,17 @@ function deriveHorseId(horse) {
   return `${club}_${localId}`;
 }
 
-function normalizeHorse(rawHorse, source) {
+function normalizeHorse(rawHorse) {
   const horse = { ...rawHorse };
   delete horse.birth_year;
+  delete horse.source;
 
   const stableFields = splitStable(horse.stable);
   horse.training_center = String(horse.training_center || '').trim() || stableFields.training_center;
   horse.trainer = String(horse.trainer || '').trim() || stableFields.trainer;
+  horse.studbook_num = String(horse.studbook_num || horse.netkeiba_horse_id || '').trim();
   horse.local_id = extractLocalId(horse);
   horse.horse_id = deriveHorseId(horse);
-  horse.source = source;
   return horse;
 }
 
@@ -145,19 +146,18 @@ const reverseClubs = new Set(
 );
 
 const myHorseDoc = readJson(myHorsePath);
-const myHorse = normalizeHorsesDoc(myHorseDoc).map((h) => normalizeHorse(h, 'my-horse'));
+const myHorse = normalizeHorsesDoc(myHorseDoc).map((h) => normalizeHorse(h));
 
 let merged = myHorse;
 if (importPath) {
   const importDoc = readJson(importPath);
-  const imported = normalizeHorsesDoc(importDoc).map((h) => normalizeHorse(h, 'ouma-no-kayoi'));
+  const imported = normalizeHorsesDoc(importDoc).map((h) => normalizeHorse(h));
   merged = reverseMerge(myHorse, imported, reverseClubs);
 }
 
 const output = {
   meta: {
     generated_at: new Date().toISOString(),
-    source: 'build_shared_horses.mjs',
     reverse_import_clubs: [...reverseClubs],
   },
   horses: merged,
