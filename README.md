@@ -174,8 +174,6 @@ node scripts/import_ouma_status_to_canonical.mjs \
 
 移植先フィールド:
 - `career_status` (`active` / `retired`)
-- `status_source` (`ouma-no-kayoi`)
-- `status_updated_at` (`YYYY-MM-DD`)
 
 ### 2) 共通horsesを生成（reverse import: union/normandy）
 

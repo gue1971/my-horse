@@ -50,8 +50,6 @@ function parseOumaHorseId(horseId) {
 const args = parseArgs(process.argv);
 const oumaPath = path.resolve(args.ouma || '/tmp/ouma-horses-real.json');
 const canonicalPath = path.resolve(args.canonical || '../shared-horses-data/horses.json');
-const sourceLabel = String(args.source || 'ouma-no-kayoi');
-const stamp = String(args.stamp || new Date().toISOString().slice(0, 10));
 
 const oumaDoc = readJson(oumaPath);
 const oumaHorses = Array.isArray(oumaDoc) ? oumaDoc : oumaDoc.horses;
@@ -68,6 +66,9 @@ if (!Array.isArray(canonicalHorses)) {
 const byKey = new Map();
 const byName = new Map();
 for (const h of canonicalHorses) {
+  delete h.status_source;
+  delete h.status_updated_at;
+
   const club = canonicalClubToOuma(h.club);
   const localId = String(h.local_id || '').trim() || extractLocalId(h.clubPage);
   if (club && localId) {
@@ -102,8 +103,6 @@ for (const oh of oumaHorses) {
   }
 
   target.career_status = status;
-  target.status_source = sourceLabel;
-  target.status_updated_at = stamp;
   matched += 1;
 }
 

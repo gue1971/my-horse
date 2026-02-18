@@ -20,8 +20,6 @@
     "jbis_id": "0001395766",
     "tab": 1,
     "career_status": "active",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "24062"
   },
   {
@@ -45,8 +43,6 @@
     "jbis_id": "0001391917",
     "tab": 1,
     "career_status": "active",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "2024058"
   },
   {
@@ -70,8 +66,6 @@
     "jbis_id": "0001392131",
     "tab": 1,
     "career_status": "active",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "2919"
   },
   {
@@ -95,8 +89,6 @@
     "jbis_id": "0001392433",
     "tab": 1,
     "career_status": "active",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "2947"
   },
   {
@@ -120,8 +112,6 @@
     "jbis_id": "0001395807",
     "tab": 1,
     "career_status": "active",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "2946"
   },
   {
@@ -145,8 +135,6 @@
     "jbis_id": "0001396200",
     "tab": 1,
     "career_status": "active",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "24040"
   },
   {
@@ -170,8 +158,6 @@
     "jbis_id": "0001396509",
     "tab": 1,
     "career_status": "active",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "20240002"
   },
   {
@@ -195,8 +181,6 @@
     "jbis_id": "0001419621",
     "tab": 1,
     "career_status": "active",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "2024043"
   },
   {
@@ -220,8 +204,6 @@
     "jbis_id": "0001396423",
     "tab": 1,
     "career_status": "active",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "2936"
   },
   {
@@ -245,8 +227,6 @@
     "jbis_id": "0001390467",
     "tab": 1,
     "career_status": "active",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "24072"
   },
   {
@@ -270,8 +250,6 @@
     "jbis_id": "0001373109",
     "tab": 2,
     "career_status": "active",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "23039"
   },
   {
@@ -295,8 +273,6 @@
     "jbis_id": "0001369150",
     "tab": 2,
     "career_status": "active",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "2852"
   },
   {
@@ -320,8 +296,6 @@
     "jbis_id": "0001372811",
     "tab": 2,
     "career_status": "active",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "23065"
   },
   {
@@ -345,8 +319,6 @@
     "jbis_id": "0001375140",
     "tab": 2,
     "career_status": "active",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "2803"
   },
   {
@@ -370,8 +342,6 @@
     "jbis_id": "0001370107",
     "tab": 2,
     "career_status": "active",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "2835"
   },
   {
@@ -395,8 +365,6 @@
     "jbis_id": "0001370550",
     "tab": 2,
     "career_status": "active",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "2828"
   },
   {
@@ -420,8 +388,6 @@
     "jbis_id": "0001375182",
     "tab": 2,
     "career_status": "active",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "2837"
   },
   {
@@ -445,8 +411,6 @@
     "jbis_id": "0001369045",
     "tab": 2,
     "career_status": "active",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "20230033"
   },
   {
@@ -470,8 +434,6 @@
     "jbis_id": "0001370177",
     "tab": 2,
     "career_status": "active",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "20230037"
   },
   {
@@ -495,8 +457,6 @@
     "jbis_id": "0001360268",
     "tab": 3,
     "career_status": "active",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "2710"
   },
   {
@@ -520,8 +480,6 @@
     "jbis_id": "0001352577",
     "tab": 3,
     "career_status": "active",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "2022016"
   },
   {
@@ -545,8 +503,6 @@
     "jbis_id": "0001361920",
     "tab": 3,
     "career_status": "active",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "2740"
   },
   {
@@ -570,8 +526,6 @@
     "jbis_id": "0001335433",
     "tab": 3,
     "career_status": "active",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "2021086"
   },
   {
@@ -595,8 +549,6 @@
     "jbis_id": "0001331771",
     "tab": 3,
     "career_status": "active",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "2220"
   },
   {
@@ -620,8 +572,6 @@
     "jbis_id": "0001332993",
     "tab": 3,
     "career_status": "active",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "2021003"
   },
   {
@@ -645,8 +595,6 @@
     "jbis_id": "0001318737",
     "tab": 5,
     "career_status": "retired",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "20200020"
   },
   {
@@ -670,8 +618,6 @@
     "jbis_id": "0001365962",
     "tab": 4,
     "career_status": "retired",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "2725"
   },
   {
@@ -695,8 +641,6 @@
     "jbis_id": "0001356550",
     "tab": 4,
     "career_status": "retired",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "22058"
   },
   {
@@ -720,8 +664,6 @@
     "jbis_id": "0001360019",
     "tab": 4,
     "career_status": "retired",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "2022105136"
   },
   {
@@ -745,8 +687,6 @@
     "jbis_id": "0001358811",
     "tab": 4,
     "career_status": "retired",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "22012"
   },
   {
@@ -770,8 +710,6 @@
     "jbis_id": "0001359603",
     "tab": 4,
     "career_status": "retired",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "2022105872"
   },
   {
@@ -795,8 +733,6 @@
     "jbis_id": "0001340212",
     "tab": 4,
     "career_status": "retired",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "2021105308"
   },
   {
@@ -820,8 +756,6 @@
     "jbis_id": "0001336951",
     "tab": 4,
     "career_status": "retired",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "20210024"
   },
   {
@@ -845,8 +779,6 @@
     "jbis_id": "0001332392",
     "tab": 4,
     "career_status": "retired",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "2225"
   },
   {
@@ -870,8 +802,6 @@
     "jbis_id": "0001323010",
     "tab": 4,
     "career_status": "retired",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "2157"
   },
   {
@@ -895,8 +825,6 @@
     "jbis_id": "0001321649",
     "tab": 4,
     "career_status": "retired",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "20200028"
   },
   {
@@ -920,8 +848,6 @@
     "jbis_id": "0001312088",
     "tab": 4,
     "career_status": "retired",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "2019106737"
   },
   {
@@ -945,8 +871,6 @@
     "jbis_id": "0001307615",
     "tab": 4,
     "career_status": "retired",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "20190017"
   },
   {
@@ -970,8 +894,6 @@
     "jbis_id": "0001304139",
     "tab": 4,
     "career_status": "retired",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "2018067"
   },
   {
@@ -995,8 +917,6 @@
     "jbis_id": "0001305229",
     "tab": 4,
     "career_status": "retired",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "2030"
   },
   {
@@ -1020,8 +940,6 @@
     "jbis_id": "0001264919",
     "tab": 4,
     "career_status": "retired",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "2018067"
   },
   {
@@ -1045,8 +963,6 @@
     "jbis_id": "0001261609",
     "tab": 4,
     "career_status": "retired",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "2018103511"
   },
   {
@@ -1070,8 +986,6 @@
     "jbis_id": "0001266040",
     "tab": 4,
     "career_status": "retired",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "2018103753"
   },
   {
@@ -1095,8 +1009,6 @@
     "jbis_id": "0001268258",
     "tab": 4,
     "career_status": "retired",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "2018104264"
   },
   {
@@ -1120,8 +1032,6 @@
     "jbis_id": "0001264787",
     "tab": 4,
     "career_status": "retired",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "1952"
   },
   {
@@ -1145,8 +1055,6 @@
     "jbis_id": "0001237289",
     "tab": 5,
     "career_status": "retired",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "1867"
   },
   {
@@ -1170,8 +1078,6 @@
     "jbis_id": "0001235600",
     "tab": 5,
     "career_status": "retired",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "2017062"
   },
   {
@@ -1195,8 +1101,6 @@
     "jbis_id": "0001221432",
     "tab": 4,
     "career_status": "retired",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "1774"
   },
   {
@@ -1220,8 +1124,6 @@
     "jbis_id": "0001218073",
     "tab": 4,
     "career_status": "retired",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "1773"
   },
   {
@@ -1245,8 +1147,6 @@
     "jbis_id": "0001202765",
     "tab": 5,
     "career_status": "retired",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "1619"
   },
   {
@@ -1270,8 +1170,6 @@
     "jbis_id": "0001129792",
     "tab": 4,
     "career_status": "retired",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "1611"
   },
   {
@@ -1295,8 +1193,6 @@
     "jbis_id": "0001166999",
     "tab": 4,
     "career_status": "retired",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "1473"
   },
   {
@@ -1320,8 +1216,6 @@
     "jbis_id": "0001168188",
     "tab": 4,
     "career_status": "retired",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "1477"
   },
   {
@@ -1345,8 +1239,6 @@
     "jbis_id": "0001156553",
     "tab": 5,
     "career_status": "retired",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "1334"
   },
   {
@@ -1370,8 +1262,6 @@
     "jbis_id": "0000230393",
     "tab": 4,
     "career_status": "retired",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "1118"
   },
   {
@@ -1395,8 +1285,6 @@
     "jbis_id": "0001124020",
     "tab": 4,
     "career_status": "retired",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "1120"
   },
   {
@@ -1420,8 +1308,6 @@
     "jbis_id": "0001120538",
     "tab": 4,
     "career_status": "retired",
-    "status_source": "ouma-no-kayoi",
-    "status_updated_at": "2026-02-18",
     "local_id": "1125"
   }
 ]
