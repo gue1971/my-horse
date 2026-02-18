@@ -27,7 +27,6 @@ my-horse/
 │  ├─ horses.json              # 共通馬マスタ（正本）
 │
 ├─ data/
-│  ├─ horses.json              # My Horse表示用（shared-dataから生成）
 │  ├─ albums/<slug>.json       # アルバム情報（isHero:trueを含む）
 │  └─ comments/<slug>.json     # 引退後コメントなど
 │
@@ -154,9 +153,6 @@ my-horse/
 MyStableが読むファイル:
 `/Users/gue1971/MyWorks/競馬/出資馬アプリ/my-horse/shared-data/horses.json`
 
-互換用生成ファイル（手編集しない）:
-`/Users/gue1971/MyWorks/競馬/出資馬アプリ/my-horse/data/horses.json`
-
 ### 1) おウマのかよいJSONを分割
 
 ```bash
@@ -182,7 +178,7 @@ node scripts/import_ouma_status_to_canonical.mjs \
 
 ```bash
 node scripts/build_shared_horses.mjs \
-  --myhorse /Users/gue1971/MyWorks/競馬/出資馬アプリ/my-horse/data/horses.json \
+  --myhorse /Users/gue1971/MyWorks/競馬/出資馬アプリ/my-horse/shared-data/horses.json \
   --import /path/to/ouma-horses.json \
   --output /Users/gue1971/MyWorks/競馬/出資馬アプリ/shared-horses-data/horses.json
 ```
@@ -208,23 +204,19 @@ node scripts/split_stable_fields.mjs \
 scripts/sync_from_shared_repo.sh
 ```
 
-上のコマンドで次の2ファイルを更新します。
+上のコマンドで次のファイルを更新します。
 - `/Users/gue1971/MyWorks/競馬/出資馬アプリ/my-horse/shared-data/horses.json`
-- `/Users/gue1971/MyWorks/競馬/出資馬アプリ/my-horse/data/horses.json`
 
 ### 4) 同期ズレ検証
 
 ```bash
 node scripts/verify_horses_sync.mjs \
-  --shared /Users/gue1971/MyWorks/競馬/出資馬アプリ/my-horse/shared-data/horses.json \
-  --app /Users/gue1971/MyWorks/競馬/出資馬アプリ/my-horse/data/horses.json
+  --shared /Users/gue1971/MyWorks/競馬/出資馬アプリ/my-horse/shared-data/horses.json
 ```
 
 UIは起動時に以下を順に参照します。  
 1. `https://raw.githubusercontent.com/gue1971/shared-horses-data/main/horses.json`  
 2. `/Users/gue1971/MyWorks/競馬/出資馬アプリ/my-horse/shared-data/horses.json`（フォールバック）
-
-`/Users/gue1971/MyWorks/競馬/出資馬アプリ/my-horse/data/horses.json` は生成物として扱い、手編集しません。
 
 ### 5) 正本リポジトリをGitHubへ反映
 

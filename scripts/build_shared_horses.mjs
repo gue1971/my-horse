@@ -134,7 +134,7 @@ function reverseMerge(baseHorses, importedHorses, reverseClubs) {
 }
 
 const args = parseArgs(process.argv);
-const myHorsePath = path.resolve(args.myhorse || 'data/horses.json');
+const myHorsePath = path.resolve(args.myhorse || 'shared-data/horses.json');
 const importPath = args.import ? path.resolve(args.import) : null;
 const outputPath = path.resolve(args.output || 'shared-data/horses.json');
 const writeMyHorse = Boolean(args['write-myhorse']);

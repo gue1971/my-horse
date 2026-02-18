@@ -33,20 +33,25 @@ function canonicalFromShared(shared) {
 
 const args = parseArgs(process.argv);
 const sharedPath = path.resolve(args.shared || 'shared-data/horses.json');
-const appPath = path.resolve(args.app || 'data/horses.json');
+const appPath = args.app ? path.resolve(args.app) : null;
 
 const sharedDoc = readJson(sharedPath);
-const appDoc = readJson(appPath);
 const expected = canonicalFromShared(sharedDoc);
 
+if (!appPath) {
+  console.log(`ok: shared horses format is valid (${expected.length} horses)`);
+  process.exit(0);
+}
+
+const appDoc = readJson(appPath);
 if (!Array.isArray(appDoc)) {
-  throw new Error('app horses format error');
+  throw new Error('app horses format error (expected array)');
 }
 
 const a = JSON.stringify(expected);
 const b = JSON.stringify(appDoc);
 if (a !== b) {
-  console.error('horses sync mismatch: run scripts/sync_myhorse_from_shared.mjs');
+  console.error('horses sync mismatch between --shared and --app');
   process.exit(1);
 }
 
