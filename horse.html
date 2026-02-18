@@ -185,7 +185,11 @@ function dateSort(a, b) {
   const slug = (getParam('id') || getParam('slug') || '').trim().toLowerCase();
   try {
     // horses.json 読み込み
-    const horses = await (await fetch('data/horses.json', { cache: 'no-store' })).json();
+    const horsesDoc = await (await fetch('data/horses.json', { cache: 'no-store' })).json();
+    const horses = Array.isArray(horsesDoc) ? horsesDoc : horsesDoc.horses;
+    if (!Array.isArray(horses)) {
+      throw new Error('horses.json format error');
+    }
     const horse = horses.find(h => String(h.slug || '').toLowerCase() === slug);
     if (!horse) {
       document.querySelector('.main').innerHTML = '<div class="cap">データが見つかりません</div>';
@@ -247,11 +251,13 @@ setVal('dam',     horse.dam);
 setVal('damsire', horse.damsire);
 
 // 生年月日を "YYYY年M月D日生まれ" の形式に変換
-const birthDate = horse.birth;  // 例: "2017.3.15"
-const [year, month, day] = birthDate.split('.');  // 分割
-const formattedBirthDate = `${year}年${month}月${day}日生まれ`;  // 整形
+const birthDate = String(horse.birth || '').trim();  // 例: "2017.3.15"
+const parts = birthDate.split('.');
+const formattedBirthDate = parts.length === 3
+  ? `${parts[0]}年${parts[1]}月${parts[2]}日生まれ`
+  : birthDate;
 
-setVal('birth', formattedBirthDate);  // 整形した生年月日を挿入
+setVal('birth', formattedBirthDate);
 setVal('price', horse.price, '円募集');
 setVal('farm',    horse.farm);
 setVal('stable',  horse.stable, '厩舎');

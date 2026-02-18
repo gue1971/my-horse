@@ -135,3 +135,73 @@ my-horse/
 - horse.html / album.html のテンプレ整備  
 - 各馬ごとの albums.json / comments.json を順次作成  
 - デザイン微調整（色味・余白など）
+
+---
+
+## 🔄 共通データ運用（My Horse + おウマのかよい）
+
+`horses` は共通データ、`transactions` はアプリ固有データとして分離して運用します。
+
+共通リポジトリは以下を作成済みです。  
+`/Users/gue1971/MyWorks/競馬/出資馬アプリ/shared-horses-data`
+
+### 1) おウマのかよいJSONを分割
+
+```bash
+node scripts/split_ouma_json.mjs \
+  --input /path/to/ouma-combined.json \
+  --horses-out /path/to/ouma-horses.json \
+  --transactions-out /path/to/ouma-transactions.json
+```
+
+### 2) 共通horsesを生成（reverse import: union/normandy）
+
+```bash
+node scripts/build_shared_horses.mjs \
+  --myhorse data/horses.json \
+  --import /path/to/ouma-horses.json \
+  --output shared-data/horses.json
+```
+
+`horse_id` は `club + clubPage` から生成します。  
+`clubPage` が空の場合は `netkeiba_horse_id`、それも空なら `slug` で補完します。
+
+### 3) 必要ならMy Horseデータを直接更新
+
+```bash
+node scripts/build_shared_horses.mjs \
+  --myhorse data/horses.json \
+  --import /path/to/ouma-horses.json \
+  --write-myhorse
+```
+
+### 4) 共通データから My Horse へ反映
+
+```bash
+node scripts/sync_myhorse_from_shared.mjs \
+  --input shared-data/horses.json \
+  --output data/horses.json
+```
+
+### 5) `shared-data` を別リポジトリへ公開（subtree）
+
+作業ツリーをクリーンにした後に実行:
+
+```bash
+scripts/publish_shared_subtree.sh <shared-horses-dataのremote> main
+```
+
+### 6) 別リポジトリ側の更新を取り込む
+
+```bash
+scripts/pull_shared_subtree.sh <shared-horses-dataのremote> main
+node scripts/sync_myhorse_from_shared.mjs --input shared-data/horses.json --output data/horses.json
+```
+
+### 7) ローカル共通リポジトリへ同期（簡易運用）
+
+```bash
+scripts/sync_local_shared_repo.sh shared-data ../shared-horses-data
+git -C ../shared-horses-data add .
+git -C ../shared-horses-data commit -m "Update shared horses data"
+```
