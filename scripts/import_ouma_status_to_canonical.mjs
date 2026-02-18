@@ -23,7 +23,9 @@ function writeJson(filePath, data) {
 }
 
 function normalizeName(name) {
-  return String(name || '').trim();
+  const n = String(name || '').trim();
+  if (n === 'モンタンレーヴ') return 'モンタンヴェール';
+  return n;
 }
 
 function canonicalClubToOuma(club) {

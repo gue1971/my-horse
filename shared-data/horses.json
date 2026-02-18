@@ -887,7 +887,10 @@
       "jbis_id": "0001332392",
       "tab": 4,
       "horse_id": "carrot:2225",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "retired",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "diogene20",

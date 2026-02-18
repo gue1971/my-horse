@@ -810,7 +810,10 @@
     "netkeiba_horse_id": "2021105196",
     "jra_id": "pw01dud102021105196/4F",
     "jbis_id": "0001332392",
-    "tab": 4
+    "tab": 4,
+    "career_status": "retired",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "diogene20",
