@@ -98,12 +98,26 @@ function dateSort(a, b) {
   return new Date(b.date) - new Date(a.date);
 }
 
+async function loadHorses() {
+  const sources = ['shared-data/horses.json', 'data/horses.json'];
+  for (const src of sources) {
+    try {
+      const horsesDoc = await (await fetch(src, { cache: 'no-store' })).json();
+      const horses = Array.isArray(horsesDoc) ? horsesDoc : horsesDoc.horses;
+      if (Array.isArray(horses)) return horses;
+    } catch (_) {
+      // try next source
+    }
+  }
+  throw new Error('horses.json format error');
+}
+
 /* ==== メイン ==== */
 (async function(){
   const slug = (getParam('id') || getParam('slug') || '').trim().toLowerCase();
   try {
     // 1) horses.json から馬名を取得
-    const horses = await (await fetch('data/horses.json', {cache:'no-store'})).json();
+    const horses = await loadHorses();
     const horse = horses.find(h => String(h.slug || '').toLowerCase() === slug);
     if (!horse) {
       document.querySelector('.main').innerHTML = '<div class="cap">馬のデータが見つかりません</div>';

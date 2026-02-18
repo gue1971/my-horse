@@ -8,6 +8,21 @@ async function getJSON(url){
   return r.json();
 }
 
+const HORSES_SOURCES = ['shared-data/horses.json', 'data/horses.json'];
+
+async function loadHorses() {
+  for (const src of HORSES_SOURCES) {
+    try {
+      const doc = await getJSON(src);
+      const horses = Array.isArray(doc) ? doc : doc.horses;
+      if (Array.isArray(horses)) return horses;
+    } catch (_) {
+      // try next source
+    }
+  }
+  throw new Error('horses data not found');
+}
+
 const PANELS = ['tab1','tab2','tab3','tab4','tab5'];
 const albumJson = slug => `data/albums/${slug}.json`;
 
@@ -290,8 +305,7 @@ async function render(){
   // horses.json 読み込み
   let horses;
   try{
-    const doc = await getJSON('data/horses.json');
-    horses = Array.isArray(doc) ? doc : doc.horses;
+    horses = await loadHorses();
   }catch(e){
     console.error(e);
     $('#tab1')?.insertAdjacentText('afterbegin','horses.json の読み込みに失敗しました。');

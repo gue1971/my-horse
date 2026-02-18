@@ -23,8 +23,11 @@ my-horse/
 │  ├─ horse.js                 # 詳細ページ用スクリプト
 │  └─ album.js                 # アルバムページ用スクリプト
 │
+├─ shared-data/
+│  ├─ horses.json              # 共通馬マスタ（正本）
+│
 ├─ data/
-│  ├─ horses.json              # 出資馬の基本情報
+│  ├─ horses.json              # My Horse表示用（shared-dataから生成）
 │  ├─ albums/<slug>.json       # アルバム情報（isHero:trueを含む）
 │  └─ comments/<slug>.json     # 引退後コメントなど
 │
@@ -52,7 +55,7 @@ my-horse/
 
 ## 📑 データ形式
 
-### horses.json
+### shared-data/horses.json（正本）
 ```json
 [
   {
@@ -182,6 +185,8 @@ node scripts/sync_myhorse_from_shared.mjs \
   --input shared-data/horses.json \
   --output data/horses.json
 ```
+
+UIは `shared-data/horses.json` を優先参照し、存在しない場合のみ `data/horses.json` を参照します。
 
 ### 5) `shared-data` を別リポジトリへ公開（subtree）
 
