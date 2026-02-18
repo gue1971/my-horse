@@ -18,7 +18,10 @@
     "netkeiba_horse_id": "2024106723",
     "jra_id": "",
     "jbis_id": "0001395766",
-    "tab": 1
+    "tab": 1,
+    "career_status": "active",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "promisedleap24",
@@ -39,7 +42,10 @@
     "netkeiba_horse_id": "2024106579",
     "jra_id": "",
     "jbis_id": "0001391917",
-    "tab": 1
+    "tab": 1,
+    "career_status": "active",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "redregnant24",
@@ -60,7 +66,10 @@
     "netkeiba_horse_id": "2024106734",
     "jra_id": "",
     "jbis_id": "0001392131",
-    "tab": 1
+    "tab": 1,
+    "career_status": "active",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "desafiante24",
@@ -81,7 +90,10 @@
     "netkeiba_horse_id": "2024106473",
     "jra_id": "",
     "jbis_id": "0001392433",
-    "tab": 1
+    "tab": 1,
+    "career_status": "active",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "comparticion24",
@@ -102,7 +114,10 @@
     "netkeiba_horse_id": "2024106892",
     "jra_id": "",
     "jbis_id": "0001395807",
-    "tab": 1
+    "tab": 1,
+    "career_status": "active",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "fascinatez24",
@@ -123,7 +138,10 @@
     "netkeiba_horse_id": "2024106532",
     "jra_id": "",
     "jbis_id": "0001396200",
-    "tab": 1
+    "tab": 1,
+    "career_status": "active",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "winalkanna24",
@@ -144,7 +162,10 @@
     "netkeiba_horse_id": "2024103053",
     "jra_id": "",
     "jbis_id": "0001396509",
-    "tab": 1
+    "tab": 1,
+    "career_status": "active",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "zylpha24",
@@ -165,7 +186,10 @@
     "netkeiba_horse_id": "2024110014",
     "jra_id": "",
     "jbis_id": "0001419621",
-    "tab": 1
+    "tab": 1,
+    "career_status": "active",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "gluttonlassie24",
@@ -186,7 +210,10 @@
     "netkeiba_horse_id": "2024106891",
     "jra_id": "",
     "jbis_id": "0001396423",
-    "tab": 1
+    "tab": 1,
+    "career_status": "active",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "classiclydia24",
@@ -207,7 +234,10 @@
     "netkeiba_horse_id": "2024106283",
     "jra_id": "",
     "jbis_id": "0001390467",
-    "tab": 1
+    "tab": 1,
+    "career_status": "active",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "melito23",
@@ -228,7 +258,10 @@
     "netkeiba_horse_id": "2023107275",
     "jra_id": "pw01dud102023107275/E3",
     "jbis_id": "0001373109",
-    "tab": 2
+    "tab": 2,
+    "career_status": "active",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "redclaudia23",
@@ -249,7 +282,10 @@
     "netkeiba_horse_id": "2023107337",
     "jra_id": "pw01dud002023107337/D3",
     "jbis_id": "0001369150",
-    "tab": 2
+    "tab": 2,
+    "career_status": "active",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "heritiere23",
@@ -270,7 +306,10 @@
     "netkeiba_horse_id": "2023106926",
     "jra_id": "pw01dud002023106926/87",
     "jbis_id": "0001372811",
-    "tab": 2
+    "tab": 2,
+    "career_status": "active",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "sharlarae23",
@@ -291,7 +330,10 @@
     "netkeiba_horse_id": "2023103427",
     "jra_id": "pw01dud102023103427/1F",
     "jbis_id": "0001375140",
-    "tab": 2
+    "tab": 2,
+    "career_status": "active",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "redreveur23",
@@ -312,7 +354,10 @@
     "netkeiba_horse_id": "2023103605",
     "jra_id": "pw01dud002023103605/94",
     "jbis_id": "0001370107",
-    "tab": 2
+    "tab": 2,
+    "career_status": "active",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "redcherir23",
@@ -333,7 +378,10 @@
     "netkeiba_horse_id": "2023106617",
     "jra_id": "pw01dud002023106617/57",
     "jbis_id": "0001370550",
-    "tab": 2
+    "tab": 2,
+    "career_status": "active",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "venusetmars23",
@@ -354,7 +402,10 @@
     "netkeiba_horse_id": "2023106622",
     "jra_id": "",
     "jbis_id": "0001375182",
-    "tab": 2
+    "tab": 2,
+    "career_status": "active",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "daiwadesse23",
@@ -375,7 +426,10 @@
     "netkeiba_horse_id": "2023103164",
     "jra_id": "pw01dud002023103164/8C",
     "jbis_id": "0001369045",
-    "tab": 2
+    "tab": 2,
+    "career_status": "active",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "leversonverre23",
@@ -396,7 +450,10 @@
     "netkeiba_horse_id": "2023104451",
     "jra_id": "",
     "jbis_id": "0001370177",
-    "tab": 2
+    "tab": 2,
+    "career_status": "active",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "dancingrags22",
@@ -417,7 +474,10 @@
     "netkeiba_horse_id": "2022104897",
     "jra_id": "pw01dud102022104897/B6",
     "jbis_id": "0001360268",
-    "tab": 3
+    "tab": 3,
+    "career_status": "active",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "yukichan22",
@@ -438,7 +498,10 @@
     "netkeiba_horse_id": "2022105100",
     "jra_id": "pw01dud102022105100/99",
     "jbis_id": "0001352577",
-    "tab": 3
+    "tab": 3,
+    "career_status": "active",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "casadelcielo22",
@@ -459,7 +522,10 @@
     "netkeiba_horse_id": "2022101399",
     "jra_id": "pw01dud102022101399/DA",
     "jbis_id": "0001361920",
-    "tab": 3
+    "tab": 3,
+    "career_status": "active",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "lesetoile21",
@@ -480,7 +546,10 @@
     "netkeiba_horse_id": "2021106587",
     "jra_id": "pw01dud102021106587/65",
     "jbis_id": "0001335433",
-    "tab": 3
+    "tab": 3,
+    "career_status": "active",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "cheersmessage21",
@@ -501,7 +570,10 @@
     "netkeiba_horse_id": "2021105642",
     "jra_id": "pw01dud102021105642/28",
     "jbis_id": "0001331771",
-    "tab": 3
+    "tab": 3,
+    "career_status": "active",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "petitnoire21",
@@ -522,7 +594,10 @@
     "netkeiba_horse_id": "2021105747",
     "jra_id": "pw01dud102021105747/98",
     "jbis_id": "0001332993",
-    "tab": 3
+    "tab": 3,
+    "career_status": "active",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "cosmoplatina20",
@@ -543,7 +618,10 @@
     "netkeiba_horse_id": "2020107030",
     "jra_id": "pw01dud102020107030/5E",
     "jbis_id": "0001318737",
-    "tab": 5
+    "tab": 5,
+    "career_status": "retired",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "laylanor22",
@@ -564,7 +642,10 @@
     "netkeiba_horse_id": "2022105541",
     "jra_id": "pw01dud102022105541/10",
     "jbis_id": "0001365962",
-    "tab": 4
+    "tab": 4,
+    "career_status": "retired",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "daiwaproper22",
@@ -585,7 +666,10 @@
     "netkeiba_horse_id": "2022103928",
     "jra_id": "pw01dud102022103928/FB",
     "jbis_id": "0001356550",
-    "tab": 4
+    "tab": 4,
+    "career_status": "retired",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "ryzhkina22",
@@ -606,7 +690,10 @@
     "netkeiba_horse_id": "2022105136",
     "jra_id": "pw01dud102022105136/7B",
     "jbis_id": "0001360019",
-    "tab": 4
+    "tab": 4,
+    "career_status": "retired",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "melito22",
@@ -627,7 +714,10 @@
     "netkeiba_horse_id": "2022105088",
     "jra_id": "pw01dud102022105088/80",
     "jbis_id": "0001358811",
-    "tab": 4
+    "tab": 4,
+    "career_status": "retired",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "vivencial22",
@@ -648,7 +738,10 @@
     "netkeiba_horse_id": "2022105872",
     "jra_id": "",
     "jbis_id": "0001359603",
-    "tab": 4
+    "tab": 4,
+    "career_status": "retired",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "excellentdesign21",
@@ -669,7 +762,10 @@
     "netkeiba_horse_id": "2021105308",
     "jra_id": "pw01dud102021105308/07",
     "jbis_id": "0001340212",
-    "tab": 4
+    "tab": 4,
+    "career_status": "retired",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "frannyfreud21",
@@ -690,7 +786,10 @@
     "netkeiba_horse_id": "2021106221",
     "jra_id": "pw01dud102021106221/C0",
     "jbis_id": "0001336951",
-    "tab": 4
+    "tab": 4,
+    "career_status": "retired",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "flegere21",
@@ -732,7 +831,10 @@
     "netkeiba_horse_id": "2020103491",
     "jra_id": "pw01dud102020103491/39",
     "jbis_id": "0001323010",
-    "tab": 4
+    "tab": 4,
+    "career_status": "retired",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "bewitchus20",
@@ -753,7 +855,10 @@
     "netkeiba_horse_id": "2020101289",
     "jra_id": "pw01dud102020101289/81",
     "jbis_id": "0001321649",
-    "tab": 4
+    "tab": 4,
+    "career_status": "retired",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "sisterlylove19",
@@ -774,7 +879,10 @@
     "netkeiba_horse_id": "2019106737",
     "jra_id": "pw01dud102019106737/6C",
     "jbis_id": "0001312088",
-    "tab": 4
+    "tab": 4,
+    "career_status": "retired",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "shakeloveheart19",
@@ -795,7 +903,10 @@
     "netkeiba_horse_id": "2019100216",
     "jra_id": "pw01dud102019100216/4A",
     "jbis_id": "0001307615",
-    "tab": 4
+    "tab": 4,
+    "career_status": "retired",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "sweeptosho19",
@@ -816,7 +927,10 @@
     "netkeiba_horse_id": "2019105257",
     "jra_id": "pw01dud102019105257/A8",
     "jbis_id": "0001304139",
-    "tab": 4
+    "tab": 4,
+    "career_status": "retired",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "caravela1atina19",
@@ -837,7 +951,10 @@
     "netkeiba_horse_id": "2019105135",
     "jra_id": "",
     "jbis_id": "0001305229",
-    "tab": 4
+    "tab": 4,
+    "career_status": "retired",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "dateyourdream18",
@@ -858,7 +975,10 @@
     "netkeiba_horse_id": "2018105151",
     "jra_id": "pw01dud102018105151/39",
     "jbis_id": "0001264919",
-    "tab": 4
+    "tab": 4,
+    "career_status": "retired",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "taninojadore18",
@@ -879,7 +999,10 @@
     "netkeiba_horse_id": "2018103511",
     "jra_id": "pw01dud102018103511/DF",
     "jbis_id": "0001261609",
-    "tab": 4
+    "tab": 4,
+    "career_status": "retired",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "yumezammai18",
@@ -900,7 +1023,10 @@
     "netkeiba_horse_id": "2018103753",
     "jra_id": "pw01dud102018103753/67",
     "jbis_id": "0001266040",
-    "tab": 4
+    "tab": 4,
+    "career_status": "retired",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "mastereclair18",
@@ -921,7 +1047,10 @@
     "netkeiba_horse_id": "2018104264",
     "jra_id": "",
     "jbis_id": "0001268258",
-    "tab": 4
+    "tab": 4,
+    "career_status": "retired",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "fermion18",
@@ -942,7 +1071,10 @@
     "netkeiba_horse_id": "2018105222",
     "jra_id": "",
     "jbis_id": "0001264787",
-    "tab": 4
+    "tab": 4,
+    "career_status": "retired",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "malacostumbrada17",
@@ -963,7 +1095,10 @@
     "netkeiba_horse_id": "2017105563",
     "jra_id": "pw01dud002017105563/80",
     "jbis_id": "0001237289",
-    "tab": 5
+    "tab": 5,
+    "career_status": "retired",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "antiphona17",
@@ -984,7 +1119,10 @@
     "netkeiba_horse_id": "2017105072",
     "jra_id": "pw01dud102017105072/0F",
     "jbis_id": "0001235600",
-    "tab": 5
+    "tab": 5,
+    "career_status": "retired",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "cagnotte16",
@@ -1005,7 +1143,10 @@
     "netkeiba_horse_id": "2016104448",
     "jra_id": "pw01dud102016104448/DA",
     "jbis_id": "0001221432",
-    "tab": 4
+    "tab": 4,
+    "career_status": "retired",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "bailaora16",
@@ -1026,7 +1167,10 @@
     "netkeiba_horse_id": "",
     "jra_id": "pw01dud102016104568/2B",
     "jbis_id": "0001218073",
-    "tab": 4
+    "tab": 4,
+    "career_status": "retired",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "loftyaim15",
@@ -1047,7 +1191,10 @@
     "netkeiba_horse_id": "2015104161",
     "jra_id": "pw01dud102015104161/B6",
     "jbis_id": "0001202765",
-    "tab": 5
+    "tab": 5,
+    "career_status": "retired",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "cagnotte15",
@@ -1068,7 +1215,10 @@
     "netkeiba_horse_id": "2015104733",
     "jra_id": "pw01dud102015104733/92",
     "jbis_id": "0001129792",
-    "tab": 4
+    "tab": 4,
+    "career_status": "retired",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "juneanagalis13",
@@ -1089,7 +1239,10 @@
     "netkeiba_horse_id": "2013105931",
     "jra_id": "pw01dud102013105931/E5",
     "jbis_id": "0001166999",
-    "tab": 4
+    "tab": 4,
+    "career_status": "retired",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "isadora13",
@@ -1110,7 +1263,10 @@
     "netkeiba_horse_id": "2013105786",
     "jra_id": "pw01dud101984101083/90",
     "jbis_id": "0001168188",
-    "tab": 4
+    "tab": 4,
+    "career_status": "retired",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "fermion12",
@@ -1131,7 +1287,10 @@
     "netkeiba_horse_id": "2012104785",
     "jra_id": "pw01dud102012104785/24",
     "jbis_id": "0001156553",
-    "tab": 5
+    "tab": 5,
+    "career_status": "retired",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "hanaramman10",
@@ -1152,7 +1311,10 @@
     "netkeiba_horse_id": "2010104455",
     "jra_id": "pw01dud101990101898/A2",
     "jbis_id": "0000230393",
-    "tab": 4
+    "tab": 4,
+    "career_status": "retired",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "Prelate10",
@@ -1173,7 +1335,10 @@
     "netkeiba_horse_id": "2010104482",
     "jra_id": "pw01dud102010104482/20",
     "jbis_id": "0001124020",
-    "tab": 4
+    "tab": 4,
+    "career_status": "retired",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   },
   {
     "slug": "simplethebest10",
@@ -1194,6 +1359,9 @@
     "netkeiba_horse_id": "2010104153",
     "jra_id": "pw01dud102010104153/D0",
     "jbis_id": "0001120538",
-    "tab": 4
+    "tab": 4,
+    "career_status": "retired",
+    "status_source": "ouma-no-kayoi",
+    "status_updated_at": "2026-02-18"
   }
 ]

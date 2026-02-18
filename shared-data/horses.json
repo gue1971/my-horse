@@ -29,7 +29,10 @@
       "jbis_id": "0001395766",
       "tab": 1,
       "horse_id": "carrot:24062",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "active",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "promisedleap24",
@@ -52,7 +55,10 @@
       "jbis_id": "0001391917",
       "tab": 1,
       "horse_id": "silk:2024058",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "active",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "redregnant24",
@@ -75,7 +81,10 @@
       "jbis_id": "0001392131",
       "tab": 1,
       "horse_id": "tokyo:next/2919",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "active",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "desafiante24",
@@ -98,7 +107,10 @@
       "jbis_id": "0001392433",
       "tab": 1,
       "horse_id": "tokyo:next/2947",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "active",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "comparticion24",
@@ -121,7 +133,10 @@
       "jbis_id": "0001395807",
       "tab": 1,
       "horse_id": "tokyo:next/2946",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "active",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "fascinatez24",
@@ -144,7 +159,10 @@
       "jbis_id": "0001396200",
       "tab": 1,
       "horse_id": "carrot:24040",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "active",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "winalkanna24",
@@ -167,7 +185,10 @@
       "jbis_id": "0001396509",
       "tab": 1,
       "horse_id": "win:20240002",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "active",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "zylpha24",
@@ -190,7 +211,10 @@
       "jbis_id": "0001419621",
       "tab": 1,
       "horse_id": "silk:2024043",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "active",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "gluttonlassie24",
@@ -213,7 +237,10 @@
       "jbis_id": "0001396423",
       "tab": 1,
       "horse_id": "tokyo:next/2936",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "active",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "classiclydia24",
@@ -236,7 +263,10 @@
       "jbis_id": "0001390467",
       "tab": 1,
       "horse_id": "carrot:24072",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "active",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "melito23",
@@ -259,7 +289,10 @@
       "jbis_id": "0001373109",
       "tab": 2,
       "horse_id": "carrot:23039",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "active",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "redclaudia23",
@@ -282,7 +315,10 @@
       "jbis_id": "0001369150",
       "tab": 2,
       "horse_id": "tokyo:runners/2852",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "active",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "heritiere23",
@@ -305,7 +341,10 @@
       "jbis_id": "0001372811",
       "tab": 2,
       "horse_id": "carrot:23065",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "active",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "sharlarae23",
@@ -328,7 +367,10 @@
       "jbis_id": "0001375140",
       "tab": 2,
       "horse_id": "tokyo:runners/2803",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "active",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "redreveur23",
@@ -351,7 +393,10 @@
       "jbis_id": "0001370107",
       "tab": 2,
       "horse_id": "tokyo:runners/2835",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "active",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "redcherir23",
@@ -374,7 +419,10 @@
       "jbis_id": "0001370550",
       "tab": 2,
       "horse_id": "tokyo:runners/2828",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "active",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "venusetmars23",
@@ -397,7 +445,10 @@
       "jbis_id": "0001375182",
       "tab": 2,
       "horse_id": "tokyo:runners/2837",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "active",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "daiwadesse23",
@@ -420,7 +471,10 @@
       "jbis_id": "0001369045",
       "tab": 2,
       "horse_id": "win:20230033",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "active",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "leversonverre23",
@@ -443,7 +497,10 @@
       "jbis_id": "0001370177",
       "tab": 2,
       "horse_id": "win:20230037",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "active",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "dancingrags22",
@@ -466,7 +523,10 @@
       "jbis_id": "0001360268",
       "tab": 3,
       "horse_id": "tokyo:runners/2710",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "active",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "yukichan22",
@@ -489,7 +549,10 @@
       "jbis_id": "0001352577",
       "tab": 3,
       "horse_id": "silk:2022016",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "active",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "casadelcielo22",
@@ -512,7 +575,10 @@
       "jbis_id": "0001361920",
       "tab": 3,
       "horse_id": "tokyo:runners/2740",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "active",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "lesetoile21",
@@ -535,7 +601,10 @@
       "jbis_id": "0001335433",
       "tab": 3,
       "horse_id": "silk:2021086",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "active",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "cheersmessage21",
@@ -558,7 +627,10 @@
       "jbis_id": "0001331771",
       "tab": 3,
       "horse_id": "carrot:2220",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "active",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "petitnoire21",
@@ -581,7 +653,10 @@
       "jbis_id": "0001332993",
       "tab": 3,
       "horse_id": "silk:2021003",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "active",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "cosmoplatina20",
@@ -604,7 +679,10 @@
       "jbis_id": "0001318737",
       "tab": 5,
       "horse_id": "win:20200020",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "retired",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "laylanor22",
@@ -627,7 +705,10 @@
       "jbis_id": "0001365962",
       "tab": 4,
       "horse_id": "tokyo:runners/2725",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "retired",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "daiwaproper22",
@@ -650,7 +731,10 @@
       "jbis_id": "0001356550",
       "tab": 4,
       "horse_id": "carrot:22058",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "retired",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "ryzhkina22",
@@ -673,7 +757,10 @@
       "jbis_id": "0001360019",
       "tab": 4,
       "horse_id": "tokyo:netkeiba:2022105136",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "retired",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "melito22",
@@ -696,7 +783,10 @@
       "jbis_id": "0001358811",
       "tab": 4,
       "horse_id": "carrot:22012",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "retired",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "vivencial22",
@@ -719,7 +809,10 @@
       "jbis_id": "0001359603",
       "tab": 4,
       "horse_id": "tokyo:netkeiba:2022105872",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "retired",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "excellentdesign21",
@@ -742,7 +835,10 @@
       "jbis_id": "0001340212",
       "tab": 4,
       "horse_id": "tokyo:netkeiba:2021105308",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "retired",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "frannyfreud21",
@@ -765,7 +861,10 @@
       "jbis_id": "0001336951",
       "tab": 4,
       "horse_id": "win:20210024",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "retired",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "flegere21",
@@ -811,7 +910,10 @@
       "jbis_id": "0001323010",
       "tab": 4,
       "horse_id": "carrot:2157",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "retired",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "bewitchus20",
@@ -834,7 +936,10 @@
       "jbis_id": "0001321649",
       "tab": 4,
       "horse_id": "win:20200028",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "retired",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "sisterlylove19",
@@ -857,7 +962,10 @@
       "jbis_id": "0001312088",
       "tab": 4,
       "horse_id": "union:netkeiba:2019106737",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "retired",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "shakeloveheart19",
@@ -880,7 +988,10 @@
       "jbis_id": "0001307615",
       "tab": 4,
       "horse_id": "win:20190017",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "retired",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "sweeptosho19",
@@ -903,7 +1014,10 @@
       "jbis_id": "0001304139",
       "tab": 4,
       "horse_id": "silk:2018067:sweeptosho19",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "retired",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "caravela1atina19",
@@ -926,7 +1040,10 @@
       "jbis_id": "0001305229",
       "tab": 4,
       "horse_id": "carrot:2030",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "retired",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "dateyourdream18",
@@ -949,7 +1066,10 @@
       "jbis_id": "0001264919",
       "tab": 4,
       "horse_id": "silk:2018067:dateyourdream18",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "retired",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "taninojadore18",
@@ -972,7 +1092,10 @@
       "jbis_id": "0001261609",
       "tab": 4,
       "horse_id": "normandy:netkeiba:2018103511",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "retired",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "yumezammai18",
@@ -995,7 +1118,10 @@
       "jbis_id": "0001266040",
       "tab": 4,
       "horse_id": "normandy:netkeiba:2018103753",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "retired",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "mastereclair18",
@@ -1018,7 +1144,10 @@
       "jbis_id": "0001268258",
       "tab": 4,
       "horse_id": "union:netkeiba:2018104264",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "retired",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "fermion18",
@@ -1041,7 +1170,10 @@
       "jbis_id": "0001264787",
       "tab": 4,
       "horse_id": "carrot:1952",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "retired",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "malacostumbrada17",
@@ -1064,7 +1196,10 @@
       "jbis_id": "0001237289",
       "tab": 5,
       "horse_id": "carrot:1867",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "retired",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "antiphona17",
@@ -1087,7 +1222,10 @@
       "jbis_id": "0001235600",
       "tab": 5,
       "horse_id": "silk:2017062",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "retired",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "cagnotte16",
@@ -1110,7 +1248,10 @@
       "jbis_id": "0001221432",
       "tab": 4,
       "horse_id": "carrot:1774",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "retired",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "bailaora16",
@@ -1133,7 +1274,10 @@
       "jbis_id": "0001218073",
       "tab": 4,
       "horse_id": "carrot:1773",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "retired",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "loftyaim15",
@@ -1156,7 +1300,10 @@
       "jbis_id": "0001202765",
       "tab": 5,
       "horse_id": "carrot:1619",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "retired",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "cagnotte15",
@@ -1179,7 +1326,10 @@
       "jbis_id": "0001129792",
       "tab": 4,
       "horse_id": "carrot:1611",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "retired",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "juneanagalis13",
@@ -1202,7 +1352,10 @@
       "jbis_id": "0001166999",
       "tab": 4,
       "horse_id": "carrot:1473",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "retired",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "isadora13",
@@ -1225,7 +1378,10 @@
       "jbis_id": "0001168188",
       "tab": 4,
       "horse_id": "carrot:1477",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "retired",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "fermion12",
@@ -1248,7 +1404,10 @@
       "jbis_id": "0001156553",
       "tab": 5,
       "horse_id": "carrot:1334",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "retired",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "hanaramman10",
@@ -1271,7 +1430,10 @@
       "jbis_id": "0000230393",
       "tab": 4,
       "horse_id": "carrot:1118",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "retired",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "Prelate10",
@@ -1294,7 +1456,10 @@
       "jbis_id": "0001124020",
       "tab": 4,
       "horse_id": "carrot:1120",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "retired",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     },
     {
       "slug": "simplethebest10",
@@ -1317,7 +1482,10 @@
       "jbis_id": "0001120538",
       "tab": 4,
       "horse_id": "carrot:1125",
-      "source": "my-horse"
+      "source": "my-horse",
+      "career_status": "retired",
+      "status_source": "ouma-no-kayoi",
+      "status_updated_at": "2026-02-18"
     }
   ]
 }

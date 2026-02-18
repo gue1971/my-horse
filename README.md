@@ -163,6 +163,20 @@ node scripts/split_ouma_json.mjs \
   --transactions-out /path/to/ouma-transactions.json
 ```
 
+### 1.5) おウマのかよい status を正本へ移植
+
+```bash
+node scripts/import_ouma_status_to_canonical.mjs \
+  --ouma /tmp/ouma-horses-real.json \
+  --canonical /Users/gue1971/MyWorks/競馬/出資馬アプリ/shared-horses-data/horses.json \
+  --stamp 2026-02-18
+```
+
+移植先フィールド:
+- `career_status` (`active` / `retired`)
+- `status_source` (`ouma-no-kayoi`)
+- `status_updated_at` (`YYYY-MM-DD`)
+
 ### 2) 共通horsesを生成（reverse import: union/normandy）
 
 ```bash
