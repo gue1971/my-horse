@@ -181,16 +181,9 @@ function dateSort(a, b) {
 }
 
 async function loadHorses() {
-  const sources = ['shared-data/horses.json', 'data/horses.json'];
-  for (const src of sources) {
-    try {
-      const horsesDoc = await (await fetch(src, { cache: 'no-store' })).json();
-      const horses = Array.isArray(horsesDoc) ? horsesDoc : horsesDoc.horses;
-      if (Array.isArray(horses)) return horses;
-    } catch (_) {
-      // try next source
-    }
-  }
+  const horsesDoc = await (await fetch('shared-data/horses.json', { cache: 'no-store' })).json();
+  const horses = Array.isArray(horsesDoc) ? horsesDoc : horsesDoc.horses;
+  if (Array.isArray(horses)) return horses;
   throw new Error('horses.json format error');
 }
 

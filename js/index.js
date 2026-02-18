@@ -8,19 +8,11 @@ async function getJSON(url){
   return r.json();
 }
 
-const HORSES_SOURCES = ['shared-data/horses.json', 'data/horses.json'];
-
 async function loadHorses() {
-  for (const src of HORSES_SOURCES) {
-    try {
-      const doc = await getJSON(src);
-      const horses = Array.isArray(doc) ? doc : doc.horses;
-      if (Array.isArray(horses)) return horses;
-    } catch (_) {
-      // try next source
-    }
-  }
-  throw new Error('horses data not found');
+  const doc = await getJSON('shared-data/horses.json');
+  const horses = Array.isArray(doc) ? doc : doc.horses;
+  if (Array.isArray(horses)) return horses;
+  throw new Error('horses data format error');
 }
 
 const PANELS = ['tab1','tab2','tab3','tab4','tab5'];

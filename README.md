@@ -186,7 +186,16 @@ node scripts/sync_myhorse_from_shared.mjs \
   --output data/horses.json
 ```
 
-UIは `shared-data/horses.json` を優先参照し、存在しない場合のみ `data/horses.json` を参照します。
+UIは `shared-data/horses.json` のみを参照します。  
+`data/horses.json` は生成物として扱い、手編集しません。
+
+### 4.5) 同期ズレ検証
+
+```bash
+node scripts/verify_horses_sync.mjs
+```
+
+ズレがある場合は `scripts/sync_myhorse_from_shared.mjs` を再実行してください。
 
 ### 5) `shared-data` を別リポジトリへ公開（subtree）
 

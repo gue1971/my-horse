@@ -5,7 +5,6 @@ const RUNTIME_CACHE = 'mystable-runtime-v1';
 const STATIC_ASSETS = [
   './', './index.html',
   './shared-data/horses.json',
-  './data/horses.json',
 
   './assets/icons/app/icon-192.png',
   './assets/icons/app/icon-512.png',
@@ -34,7 +33,7 @@ self.addEventListener('fetch', e => {
   const url = new URL(e.request.url);
 
   // ✅ JSON は network-first
-  if (url.pathname.endsWith('/shared-data/horses.json') || url.pathname.endsWith('/data/horses.json')) {
+  if (url.pathname.endsWith('/shared-data/horses.json')) {
     e.respondWith(
       fetch(e.request).then(res => {
         const clone = res.clone();
