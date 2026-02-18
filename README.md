@@ -209,8 +209,11 @@ node scripts/verify_horses_sync.mjs \
   --app /Users/gue1971/MyWorks/競馬/出資馬アプリ/my-horse/data/horses.json
 ```
 
-UIは `shared-data/horses.json` のみを参照します。  
-`data/horses.json` は生成物として扱い、手編集しません。
+UIは起動時に以下を順に参照します。  
+1. `https://raw.githubusercontent.com/gue1971/shared-horses-data/main/horses.json`  
+2. `/Users/gue1971/MyWorks/競馬/出資馬アプリ/my-horse/shared-data/horses.json`（フォールバック）
+
+`/Users/gue1971/MyWorks/競馬/出資馬アプリ/my-horse/data/horses.json` は生成物として扱い、手編集しません。
 
 ### 5) 正本リポジトリをGitHubへ反映
 

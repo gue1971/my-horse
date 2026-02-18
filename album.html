@@ -99,9 +99,19 @@ function dateSort(a, b) {
 }
 
 async function loadHorses() {
-  const horsesDoc = await (await fetch('shared-data/horses.json', { cache: 'no-store' })).json();
-  const horses = Array.isArray(horsesDoc) ? horsesDoc : horsesDoc.horses;
-  if (Array.isArray(horses)) return horses;
+  const sources = [
+    'https://raw.githubusercontent.com/gue1971/shared-horses-data/main/horses.json',
+    'shared-data/horses.json',
+  ];
+  for (const src of sources) {
+    try {
+      const horsesDoc = await (await fetch(src, { cache: 'no-store' })).json();
+      const horses = Array.isArray(horsesDoc) ? horsesDoc : horsesDoc.horses;
+      if (Array.isArray(horses)) return horses;
+    } catch (_) {
+      // try next source
+    }
+  }
   throw new Error('horses.json format error');
 }
 

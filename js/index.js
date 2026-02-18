@@ -8,10 +8,21 @@ async function getJSON(url){
   return r.json();
 }
 
+const HORSES_SOURCES = [
+  'https://raw.githubusercontent.com/gue1971/shared-horses-data/main/horses.json',
+  'shared-data/horses.json',
+];
+
 async function loadHorses() {
-  const doc = await getJSON('shared-data/horses.json');
-  const horses = Array.isArray(doc) ? doc : doc.horses;
-  if (Array.isArray(horses)) return horses;
+  for (const src of HORSES_SOURCES) {
+    try {
+      const doc = await getJSON(src);
+      const horses = Array.isArray(doc) ? doc : doc.horses;
+      if (Array.isArray(horses)) return horses;
+    } catch (_) {
+      // try next source
+    }
+  }
   throw new Error('horses data format error');
 }
 
