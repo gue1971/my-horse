@@ -1,9 +1,14 @@
 {
   "album": [
     {
+      "file": "20260220.jpeg",
+      "caption": "コスモヴューF　---kg　2026年02月20日（2歳）",
+      "isHero": true
+    },
+    {
       "file": "20260116.jpeg",
       "caption": "コスモヴューF　446kg　2026年01月16日（2歳）",
-      "isHero": true
+      "isHero": false
     },
     {
       "file": "20251219.jpg",
