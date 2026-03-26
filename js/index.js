@@ -29,10 +29,14 @@ async function loadHorses() {
 const PANELS = ['tab1','tab2','tab3','tab4','tab5'];
 const albumJson = slug => `data/albums/${slug}.json`;
 
+const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
 function clubUrl(club, id){
   if (!id) return '#';
   switch (club) {
-    case 'carrot': return `https://carrotclub.net/horse/horse.asp?id=${id}`;
+    case 'carrot': return isMobile
+      ? `https://carrotclub.net/sp/horse/horse.asp?id=${id}`
+      : `https://carrotclub.net/horse/horse.asp?id=${id}`;
     case 'silk':   return `https://www.silkhorseclub.jp/horse_info/shozoku/detail/${id}/view`;
     case 'tokyo':  return `https://www.tokyo-tc.com/${id}`;
     case 'win':    return `https://www.win-rc.co.jp/site/belonging/list/belong_list_detail.php?hcd=${id}`;
