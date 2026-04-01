@@ -2,42 +2,47 @@
   "album": [
     {
       "file": "20260331.jpeg",
-      "caption": "追分Fリリーバレー　522kg　2026年3月31日",
+      "caption": "追分Fリリーバレー　522kg　2026年3月31日（2歳）",
       "isHero": true
     },
     {
+      "file": "20260228.jpeg",
+      "caption": "追分Fリリーバレー　508kg　2026年2月28日（2歳）",
+      "isHero": false
+    },
+    {
       "file": "20260131.jpeg",
-      "caption": "追分Fリリーバレー　510kg　2026年1月31日",
+      "caption": "追分Fリリーバレー　510kg　2026年1月31日（2歳）",
       "isHero": false
     },
     {
       "file": "20251226.jp",
-      "caption": "追分Fリリーバレー　503kg　2025年12月26日",
+      "caption": "追分Fリリーバレー　503kg　2025年12月26日（1歳）",
       "isHero": false
     },
     {
       "file": "20251130.jpg",
-      "caption": "追分Fリリーバレー　503kg　2025年11月30日",
+      "caption": "追分Fリリーバレー　503kg　2025年11月30日（1歳）",
       "isHero": false
     },
     {
       "file": "20251031.jpg",
-      "caption": "追分Fリリーバレー　497kg　2025年10月31日",
+      "caption": "追分Fリリーバレー　497kg　2025年10月31日（1歳）",
       "isHero": false
     },
     {
       "file": "20250930.jpg",
-      "caption": "追分Fリリーバレー　497kg　2025年9月30日",
+      "caption": "追分Fリリーバレー　497kg　2025年9月30日（1歳）",
       "isHero": false
     },
     {
       "file": "20250831.webp",
-      "caption": "追分Fリリーバレー　480kg　2025年8月31日",
+      "caption": "追分Fリリーバレー　480kg　2025年8月31日（1歳）",
       "isHero": false
     },
     {
       "file": "20250731.webp",
-      "caption": "追分Fリリーバレー　490kg　2025年7月31日",
+      "caption": "追分Fリリーバレー　490kg　2025年7月31日（1歳）",
       "isHero": false
     },
     {
