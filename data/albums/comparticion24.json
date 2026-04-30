@@ -1,9 +1,14 @@
 {
   "album": [
     {
+      "file": "20260430.jpeg",
+      "caption": "追分Fリリーバレー　519kg　2026年4月30日（2歳）",
+      "isHero": true
+    },
+    {
       "file": "20260331.jpeg",
       "caption": "追分Fリリーバレー　516kg　2026年3月31日（2歳）",
-      "isHero": true
+      "isHero": false
     },
     {
       "file": "20260228.jpeg",
