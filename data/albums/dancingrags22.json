@@ -1,9 +1,14 @@
 {
   "album": [
     {
+      "file": "20260503.jpeg",
+      "caption": "4歳上1勝クラス　優勝　480kg　2026年5月3日（4歳）",
+      "isHero": true
+    },
+    {
       "file": "20241102.webp",
       "caption": "2歳未勝利　優勝　464kg　2024年11月2日（2歳）",
-      "isHero": true
+      "isHero": false
     },
     {
       "file": "20240329.webp",
