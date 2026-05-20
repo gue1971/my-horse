@@ -1,0 +1,66 @@
+{
+  "album": [
+    {
+      "file": "20260410.jpeg",
+      "caption": "社台F鈴鹿　472kg　2026年4月10日（2歳）",
+      "isHero": true
+    },
+    {
+      "file": "20260326.jpeg",
+      "caption": "社台F　481kg　2026年3月26日（2歳）",
+      "isHero": false
+    },
+    {
+      "file": "20260228.jpeg",
+      "caption": "社台F　478kg　2026年2月28日（2歳）",
+      "isHero": false
+    },
+    {
+      "file": "20260131.jpeg",
+      "caption": "社台F　478kg　2026年1月31日（2歳）",
+      "isHero": false
+    },
+    {
+      "file": "20251226.jpeg",
+      "caption": "社台F　454kg　2025年12月26日（1歳）",
+      "isHero": false
+    },
+    {
+      "file": "20251130.jpeg",
+      "caption": "社台F　433kg　2025年11月30日（1歳）",
+      "isHero": false
+    },
+    {
+      "file": "20251031.jpeg",
+      "caption": "社台F　429kg　2025年10月31日（1歳）",
+      "isHero": false
+    },
+    {
+      "file": "20250930.jpeg",
+      "caption": "社台F　402kg　2025年9月30日（1歳）",
+      "isHero": false
+    },
+    {
+      "file": "20250831.jpeg",
+      "caption": "社台F　398kg　2025年8月31日（1歳）",
+      "isHero": false
+    },
+    {
+      "file": "20250731.jpeg",
+      "caption": "社台ブルーグラスF　406kg　2025年7月31日（1歳）",
+      "isHero": false
+    },
+    {
+      "file": "20250601.jpeg",
+      "caption": "募集カタログ　2025年6月（1歳）",
+      "isHero": false
+    }
+  ],
+  "archiveComment": [
+    {
+      "date": "YYYY-MM-DD",
+      "title": "",
+      "text": ""
+    }
+  ]
+}
