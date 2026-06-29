@@ -1,6 +1,11 @@
 {
   "album": [
     {
+      "file": "20260628.jpeg",
+      "caption": "2歳新馬　優勝　458kg　2026年06月28日（2歳）",
+      "isHero": true
+    },
+    {
       "file": "20260515.jpeg",
       "caption": "コスモヴューF　443kg　2026年05月15日（2歳）",
       "isHero": false
@@ -18,7 +23,7 @@
     {
       "file": "20260313.jpeg",
       "caption": "コスモヴューF　443kg　2026年03月13日（2歳）丸ごとPOG掲載",
-      "isHero": true
+      "isHero": false
     },
     {
       "file": "20260220.jpeg",
