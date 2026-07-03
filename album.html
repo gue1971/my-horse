@@ -28,15 +28,35 @@
   .header{
     position:sticky; top:0; z-index:5;
     background:var(--bg);
-    display:flex;
+    display:grid;
+    grid-template-columns:40px minmax(0, 1fr) 40px;
     align-items:center;
-    justify-content:center;
     padding:8px;
     font-size: 20px;
   }
-  .header .title{ display:flex; align-items:center; gap:8px; }
+  .header .title{ display:flex; align-items:center; justify-content:center; gap:8px; min-width:0; grid-column:2; }
   .header .title img{ width:18px; height:18px; object-fit:contain; }
-  .header .title b{ font-size:var(--fs-name); letter-spacing:.02em; }
+  .header .title b{ font-size:var(--fs-name); letter-spacing:.02em; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  .layout-toggle{
+    grid-column:3;
+    justify-self:end;
+    display:none;
+    width:36px;
+    height:36px;
+    padding:0;
+    border:0;
+    border-radius:6px;
+    background:transparent;
+    color:var(--fg);
+    cursor:pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .layout-toggle:focus-visible{ outline:2px solid #fff; outline-offset:2px; }
+  .layout-toggle svg{ display:block; width:22px; height:22px; margin:auto; }
+  .layout-toggle .icon-grid{ display:block; }
+  .layout-toggle .icon-list{ display:none; }
+  body.album-grid-mode .layout-toggle .icon-grid{ display:none; }
+  body.album-grid-mode .layout-toggle .icon-list{ display:block; }
 
   /* main: 中央寄せ & 最大幅640px */
   .main{
@@ -46,14 +66,20 @@
     justify-content:center;
     padding:0;
   }
-  .content{ width:100%; max-width:640px; margin:0 auto; }
+  .content{ width:100%; max-width:1920px; margin:0 auto; }
 
   /* アルバムリスト */
+  .album-list{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+    gap:8px;
+    padding:8px;
+  }
   .album-item{
-    margin-bottom: 8px;
     padding:8px;
     background: #fff;
     border:1px solid var(--line);
+    min-width:0;
   }
   .album-item img{
     width:100%;
@@ -64,7 +90,43 @@
   .album-item .caption{
     color:#000;
     font-size:var(--fs-meta);
-    margin-top:8px; }
+    margin-top:8px;
+    overflow-wrap:anywhere;
+  }
+  .album-item .caption-full{ display:none; }
+  .album-item .caption-simple{
+    display:grid;
+    gap:2px;
+    line-height:1.25;
+  }
+  .caption-date{ font-weight:700; }
+  .caption-title{ color:#222; }
+  @media (min-width:1720px){
+    .album-list{ grid-template-columns:repeat(6, minmax(0, 1fr)); }
+  }
+  @media (max-width:640px){
+    .content{ max-width:640px; }
+    .layout-toggle{ display:block; }
+    .album-list{
+      display:block;
+      padding:0;
+    }
+    .album-item{ margin-bottom:8px; }
+    .album-item .caption-full{ display:block; }
+    .album-item .caption-simple{ display:none; }
+    body.album-grid-mode .album-list{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0, 1fr));
+      gap:8px;
+      padding:8px;
+    }
+    body.album-grid-mode .album-item{
+      padding:6px;
+      margin-bottom:0;
+    }
+    body.album-grid-mode .album-item .caption-full{ display:none; }
+    body.album-grid-mode .album-item .caption-simple{ display:grid; }
+  }
 
 </style>
 </head>
@@ -73,6 +135,19 @@
   <!-- ヘッダー -->
   <header class="header">
     <div class="title" id="title"></div>
+    <button class="layout-toggle" id="layout-toggle" type="button" aria-label="2列表示に切り替え" title="表示切り替え">
+      <svg class="icon-grid" viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="4" y="4" width="6" height="6" rx="1" fill="currentColor"></rect>
+        <rect x="14" y="4" width="6" height="6" rx="1" fill="currentColor"></rect>
+        <rect x="4" y="14" width="6" height="6" rx="1" fill="currentColor"></rect>
+        <rect x="14" y="14" width="6" height="6" rx="1" fill="currentColor"></rect>
+      </svg>
+      <svg class="icon-list" viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="5" y="5" width="14" height="3" rx="1.5" fill="currentColor"></rect>
+        <rect x="5" y="11" width="14" height="3" rx="1.5" fill="currentColor"></rect>
+        <rect x="5" y="17" width="14" height="3" rx="1.5" fill="currentColor"></rect>
+      </svg>
+    </button>
   </header>
 
   <main class="main">
@@ -96,6 +171,57 @@ function getParam(name){ return new URLSearchParams(location.search).get(name) |
 function dateKeyFromSrc(src){ const m = src.match(/(\d{8})/); return m ? m[1] : '00000000'; }
 function dateSort(a, b) {
   return new Date(b.date) - new Date(a.date);
+}
+function escapeHTML(value) {
+  return String(value ?? '').replace(/[&<>"']/g, ch => ({
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;',
+  }[ch]));
+}
+function dateLabelFromItem(item) {
+  const caption = String(item.caption || '');
+  const match = caption.match(/\d{4}年\d{1,2}月\d{1,2}日/);
+  if (match) return match[0];
+
+  const key = dateKeyFromSrc(item.file || item.src || '');
+  if (key === '00000000') return '';
+  const year = key.slice(0, 4);
+  const month = String(Number(key.slice(4, 6)));
+  const day = String(Number(key.slice(6, 8)));
+  return `${year}年${month}月${day}日`;
+}
+function simpleCaptionTitle(item) {
+  const caption = String(item.caption || '').trim();
+  const title = caption
+    .replace(/\d{4}年\d{1,2}月\d{1,2}日/g, '')
+    .replace(/\d{3,4}kg/g, '')
+    .replace(/（[^）]*）/g, '')
+    .split(/[　\s]+/)
+    .filter(Boolean)
+    .join('　');
+  return title || '写真';
+}
+function setAlbumMode(mode) {
+  const isGrid = mode === 'grid';
+  document.body.classList.toggle('album-grid-mode', isGrid);
+  const button = document.getElementById('layout-toggle');
+  if (!button) return;
+  button.setAttribute('aria-label', isGrid ? '1列表示に切り替え' : '2列表示に切り替え');
+  button.setAttribute('aria-pressed', isGrid ? 'true' : 'false');
+}
+function initLayoutToggle() {
+  const button = document.getElementById('layout-toggle');
+  if (!button) return;
+  const saved = localStorage.getItem('albumLayoutMode') || 'single';
+  setAlbumMode(saved === 'grid' ? 'grid' : 'single');
+  button.addEventListener('click', () => {
+    const next = document.body.classList.contains('album-grid-mode') ? 'single' : 'grid';
+    localStorage.setItem('albumLayoutMode', next);
+    setAlbumMode(next);
+  });
 }
 
 async function loadHorses() {
@@ -148,15 +274,24 @@ async function loadHorses() {
     const albumList = document.getElementById('album-list');
     if (album.length > 0) {
       album.forEach(item => {
+        const src = `images/${slug}/${item.file}`;
+        const caption = item.caption || '';
+        const dateLabel = dateLabelFromItem(item);
+        const simpleTitle = simpleCaptionTitle(item);
         albumList.innerHTML += `
           <div class="album-item">
-            <img src="images/${slug}/${item.file}" alt="${item.caption || '画像'}">
-            <div class="caption">${item.caption || ''}</div>
+            <img src="${escapeHTML(src)}" alt="${escapeHTML(caption || '画像')}">
+            <div class="caption caption-full">${escapeHTML(caption)}</div>
+            <div class="caption caption-simple">
+              <span class="caption-date">${escapeHTML(dateLabel)}</span>
+              <span class="caption-title">${escapeHTML(simpleTitle)}</span>
+            </div>
           </div>`;
       });
     } else {
       albumList.innerHTML = '<div class="cap">アルバムがありません</div>';
     }
+    initLayoutToggle();
 
   } catch (e) {
     console.error(e);
