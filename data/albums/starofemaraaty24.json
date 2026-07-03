@@ -1,9 +1,14 @@
 {
   "album": [
     {
+      "file": "20260612.jpeg",
+      "caption": "社台F鈴鹿　478kg　2026年6月12日（2歳）",
+      "isHero": true
+    },
+    {
       "file": "20260410.jpeg",
       "caption": "社台F鈴鹿　472kg　2026年4月10日（2歳）",
-      "isHero": true
+      "isHero": false
     },
     {
       "file": "20260326.jpeg",
