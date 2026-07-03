@@ -1,6 +1,6 @@
 // sw.js
-const STATIC_CACHE = 'mystable-static-v5';
-const RUNTIME_CACHE = 'mystable-runtime-v2';
+const STATIC_CACHE = 'mystable-static-v6';
+const RUNTIME_CACHE = 'mystable-runtime-v3';
 
 const STATIC_ASSETS = [
   './', './index.html',
@@ -31,22 +31,23 @@ self.addEventListener('activate', e => {
 
 self.addEventListener('fetch', e => {
   const url = new URL(e.request.url);
+  if (e.request.method !== 'GET') return;
 
-  // ✅ JSON は network-first
-  if (url.pathname.endsWith('/shared-data/horses.json')) {
+  if (url.origin === location.origin) {
     e.respondWith(
       fetch(e.request).then(res => {
-        const clone = res.clone();
-        caches.open(RUNTIME_CACHE).then(c => c.put(e.request, clone));
+        if (res && res.status === 200) {
+          const clone = res.clone();
+          caches.open(RUNTIME_CACHE).then(c => c.put(e.request, clone));
+        }
         return res;
       }).catch(() => caches.match(e.request))
     );
     return;
   }
 
-  // それ以外は cache-first
   e.respondWith(
-    caches.match(e.request).then(res => res || fetch(e.request))
+    fetch(e.request).catch(() => caches.match(e.request))
   );
 });
 
