@@ -1,6 +1,6 @@
 // sw.js
-const STATIC_CACHE = 'mystable-static-v4';
-const RUNTIME_CACHE = 'mystable-runtime-v1';
+const STATIC_CACHE = 'mystable-static-v5';
+const RUNTIME_CACHE = 'mystable-runtime-v2';
 
 const STATIC_ASSETS = [
   './', './index.html',
