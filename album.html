@@ -167,6 +167,11 @@ const clubIcon = {
   union:'assets/icons/clubs/union.gif',
   normandy:'assets/icons/clubs/normandy.gif',
 };
+const assetVersion = '20260703-0672a96';
+const versionParam = `v=${encodeURIComponent(assetVersion)}`;
+function withVersion(url) {
+  return `${url}${url.includes('?') ? '&' : '?'}${versionParam}`;
+}
 function getParam(name){ return new URLSearchParams(location.search).get(name) || ''; }
 function dateKeyFromSrc(src){ const m = src.match(/(\d{8})/); return m ? m[1] : '00000000'; }
 function dateSort(a, b) {
@@ -231,7 +236,7 @@ async function loadHorses() {
   ];
   for (const src of sources) {
     try {
-      const horsesDoc = await (await fetch(src, { cache: 'no-store' })).json();
+      const horsesDoc = await (await fetch(withVersion(src), { cache: 'no-store' })).json();
       const horses = Array.isArray(horsesDoc) ? horsesDoc : horsesDoc.horses;
       if (Array.isArray(horses)) return horses;
     } catch (_) {
@@ -259,7 +264,7 @@ async function loadHorses() {
     title.innerHTML = `<img src="${iconSrc}" alt=""><b>${horse.name}</b>`; // 馬名を表示
 
     // 3) アルバムデータ取得
-    const detail = await (await fetch(`data/albums/${slug}.json`, {cache:'no-store'})).json();
+    const detail = await (await fetch(withVersion(`data/albums/${slug}.json`), {cache:'no-store'})).json();
     const album = Array.isArray(detail.album) ? [...detail.album] : [];
 
     /* アルバムリストのファイル名順で降順にソート */
@@ -280,7 +285,7 @@ async function loadHorses() {
         const simpleTitle = simpleCaptionTitle(item);
         albumList.innerHTML += `
           <div class="album-item">
-            <img src="${escapeHTML(src)}" alt="${escapeHTML(caption || '画像')}">
+            <img src="${escapeHTML(withVersion(src))}" alt="${escapeHTML(caption || '画像')}">
             <div class="caption caption-full">${escapeHTML(caption)}</div>
             <div class="caption caption-simple">
               <span class="caption-date">${escapeHTML(dateLabel)}</span>

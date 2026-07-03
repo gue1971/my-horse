@@ -1,9 +1,15 @@
 // ===== helpers =====
 const $ = (s, r=document)=>r.querySelector(s);
 const $$ = (s, r=document)=>[...r.querySelectorAll(s)];
+const ASSET_VERSION = '20260703-0672a96';
+const VERSION_PARAM = `v=${encodeURIComponent(ASSET_VERSION)}`;
+function withVersion(url) {
+  if (!url || url.startsWith('data:')) return url;
+  return `${url}${url.includes('?') ? '&' : '?'}${VERSION_PARAM}`;
+}
 
 async function getJSON(url){
-  const r = await fetch(url, {cache:'no-store'});
+  const r = await fetch(withVersion(url), {cache:'no-store'});
   if(!r.ok) throw new Error(`${url}: ${r.status}`);
   return r.json();
 }
@@ -108,7 +114,7 @@ function buildCard({ horse, hero, hasAlbum }) {
   if (hero) {
     const src = `images/${horse.slug}/${hero.file || hero.src}`;
     const img = document.createElement('img');
-    img.src = src;
+    img.src = withVersion(src);
     img.alt = hero.caption || nameLabel;
     img.loading = 'lazy';
     left.appendChild(img);
