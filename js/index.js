@@ -1,7 +1,7 @@
 // ===== helpers =====
 const $ = (s, r=document)=>r.querySelector(s);
 const $$ = (s, r=document)=>[...r.querySelectorAll(s)];
-const ASSET_VERSION = '20260703-0672a96';
+const ASSET_VERSION = '20260704-carrot-retired-1';
 const VERSION_PARAM = `v=${encodeURIComponent(ASSET_VERSION)}`;
 function withVersion(url) {
   if (!url || url.startsWith('data:')) return url;

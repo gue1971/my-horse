@@ -167,7 +167,7 @@ const clubIcon = {
   union:'assets/icons/clubs/union.gif',
   normandy:'assets/icons/clubs/normandy.gif',
 };
-const assetVersion = '20260703-0672a96';
+const assetVersion = '20260704-carrot-retired-1';
 const versionParam = `v=${encodeURIComponent(assetVersion)}`;
 function withVersion(url) {
   return `${url}${url.includes('?') ? '&' : '?'}${versionParam}`;
@@ -188,8 +188,10 @@ function escapeHTML(value) {
 }
 function dateLabelFromItem(item) {
   const caption = String(item.caption || '');
-  const match = caption.match(/\d{4}年\d{1,2}月\d{1,2}日/);
-  if (match) return match[0];
+  const dateMatch = caption.match(/\d{4}年\d{1,2}月\d{1,2}日/);
+  const ageMatch = caption.match(/（\d+歳）/);
+  const weightMatch = caption.match(/(?:---|[0-9０-９]{3,4})kg/);
+  if (dateMatch) return `${dateMatch[0]}${ageMatch ? ageMatch[0] : ''}${weightMatch ? `　${weightMatch[0]}` : ''}`;
 
   const key = dateKeyFromSrc(item.file || item.src || '');
   if (key === '00000000') return '';
@@ -202,8 +204,8 @@ function simpleCaptionTitle(item) {
   const caption = String(item.caption || '').trim();
   const title = caption
     .replace(/\d{4}年\d{1,2}月\d{1,2}日/g, '')
-    .replace(/\d{3,4}kg/g, '')
-    .replace(/（[^）]*）/g, '')
+    .replace(/(?:---|[0-9０-９]{3,4})kg/g, '')
+    .replace(/（\d+歳）/g, '')
     .split(/[　\s]+/)
     .filter(Boolean)
     .join('　');
