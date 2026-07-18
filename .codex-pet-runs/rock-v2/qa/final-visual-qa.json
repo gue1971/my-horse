@@ -1,0 +1,6 @@
+{
+  "visual_qa": "pass",
+  "qa_note": "All standard rows preserve identity and state-appropriate stable motion; the cleaned v2 sheet is unclipped and artifact-free; the labeled clockwise gaze loop has unmistakable cardinals with only accepted intermediate-axis subtleties.",
+  "repair_rows": [],
+  "repair_notes": []
+}
