@@ -1,9 +1,14 @@
 {
   "album": [
     {
+      "file": "20260731.jpeg",
+      "caption": "坂東牧場　450kg　2026年7月31日（1歳）",
+      "isHero": true
+    },
+    {
       "file": "20260601.jpeg",
       "caption": "募集カタログ　2026年6月（1歳）",
-      "isHero": true
+      "isHero": false
     }
   ],
   "archiveComment": [
