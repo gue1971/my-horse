@@ -1,7 +1,7 @@
 // ===== helpers =====
 const $ = (s, r=document)=>r.querySelector(s);
 const $$ = (s, r=document)=>[...r.querySelectorAll(s)];
-const ASSET_VERSION = '20260707-red-guerrero-1';
+const ASSET_VERSION = '20260814-shared-horse-fallback-1';
 const VERSION_PARAM = `v=${encodeURIComponent(ASSET_VERSION)}`;
 function withVersion(url) {
   if (!url || url.startsWith('data:')) return url;
@@ -20,14 +20,25 @@ const HORSES_SOURCES = [
 ];
 
 async function loadHorses() {
+  const loaded = [];
   for (const src of HORSES_SOURCES) {
     try {
       const doc = await getJSON(src);
       const horses = Array.isArray(doc) ? doc : doc.horses;
-      if (Array.isArray(horses)) return horses;
+      if (Array.isArray(horses)) loaded.push(horses);
     } catch (_) {
-      // try next source
+      // use the sources that loaded successfully
     }
+  }
+  if (loaded.length === 1) return loaded[0];
+  if (loaded.length >= 2) {
+    const [remote, local] = loaded;
+    const remoteBySlug = new Map(remote.map(h => [String(h.slug || '').toLowerCase(), h]));
+    const localSlugs = new Set(local.map(h => String(h.slug || '').toLowerCase()));
+    return [
+      ...local.map(h => remoteBySlug.get(String(h.slug || '').toLowerCase()) || h),
+      ...remote.filter(h => !localSlugs.has(String(h.slug || '').toLowerCase())),
+    ];
   }
   throw new Error('horses data format error');
 }
