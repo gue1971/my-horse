@@ -1,12 +1,39 @@
 {
   "meta": {
-    "generated_at": "2026-02-18T04:39:32.108Z",
+    "generated_at": "2026-08-14T01:42:01.795Z",
     "reverse_import_clubs": [
       "union",
       "normandy"
     ]
   },
   "horses": [
+    {
+      "slug": "balladist25",
+      "name": "バラーディストの25",
+      "club": "silk",
+      "sire": "リオンディーズ",
+      "dam": "バラーディスト",
+      "damsire": "ハーツクライ",
+      "birth": "2025.3.9",
+      "price": "6000万",
+      "stable": "栗東　吉岡辰弥",
+      "farm": "ノーザンファーム",
+      "height_cm": 153,
+      "girth_cm": 174.5,
+      "cannon_cm": 19.4,
+      "weight_kg": 437,
+      "clubPage": "2025049",
+      "netkeiba_horse_id": "2025107205",
+      "jra_id": "",
+      "jbis_id": "0001412984",
+      "tab": 1,
+      "horse_id": "silk_2025049",
+      "career_status": "active",
+      "local_id": "2025049",
+      "training_center": "栗東",
+      "trainer": "吉岡辰弥",
+      "studbook_num": "2025107205"
+    },
     {
       "slug": "resistencia24",
       "name": "レシステンシア2024",
