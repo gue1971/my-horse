@@ -236,14 +236,25 @@ async function loadHorses() {
     'https://raw.githubusercontent.com/gue1971/shared-horses-data/main/horses.json',
     'shared-data/horses.json',
   ];
+  const loaded = [];
   for (const src of sources) {
     try {
       const horsesDoc = await (await fetch(withVersion(src), { cache: 'no-store' })).json();
       const horses = Array.isArray(horsesDoc) ? horsesDoc : horsesDoc.horses;
-      if (Array.isArray(horses)) return horses;
+      if (Array.isArray(horses)) loaded.push(horses);
     } catch (_) {
-      // try next source
+      // use the sources that loaded successfully
     }
+  }
+  if (loaded.length === 1) return loaded[0];
+  if (loaded.length >= 2) {
+    const [remote, local] = loaded;
+    const remoteBySlug = new Map(remote.map(h => [String(h.slug || '').toLowerCase(), h]));
+    const localSlugs = new Set(local.map(h => String(h.slug || '').toLowerCase()));
+    return [
+      ...local.map(h => remoteBySlug.get(String(h.slug || '').toLowerCase()) || h),
+      ...remote.filter(h => !localSlugs.has(String(h.slug || '').toLowerCase())),
+    ];
   }
   throw new Error('horses.json format error');
 }
