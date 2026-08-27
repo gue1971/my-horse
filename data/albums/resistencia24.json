@@ -1,28 +1,33 @@
 {
   "album": [
     {
+      "file": "20260721.jpeg",
+      "caption": "NFしがらき　---kg　2026年7月21日（2歳）",
+      "isHero": false
+    },
+    {
       "file": "20260430.jpeg",
-      "caption": "NF早来　440kg　2026年4月30（2歳）",
+      "caption": "NF早来　440kg　2026年4月30日（2歳）",
       "isHero": true
     },
     {
       "file": "20260331.jpeg",
-      "caption": "NF早来　442kg　2026年3月31（2歳）",
+      "caption": "NF早来　442kg　2026年3月31日（2歳）",
       "isHero": false
     },
     {
       "file": "20260130.jpeg",
-      "caption": "NF早来　447kg　2026年1月30（2歳）",
+      "caption": "NF早来　447kg　2026年1月30日（2歳）",
       "isHero": false
     },
     {
       "file": "20251128.jpg",
-      "caption": "NF早来　459kg　2025年11月28（１歳）",
+      "caption": "NF早来　459kg　2025年11月28日（１歳）",
       "isHero": false
     },
     {
       "file": "20250930.jpg",
-      "caption": "NF早来　434kg　2025年9月30（１歳）",
+      "caption": "NF早来　434kg　2025年9月30日（１歳）",
       "isHero": false
     },
     {
