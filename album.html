@@ -188,24 +188,30 @@ function escapeHTML(value) {
 }
 function dateLabelFromItem(item) {
   const caption = String(item.caption || '');
-  const dateMatch = caption.match(/\d{4}年\d{1,2}月\d{1,2}日/);
-  const ageMatch = caption.match(/（\d+歳）/);
-  const weightMatch = caption.match(/(?:---|[0-9０-９]{3,4})kg/);
-  if (dateMatch) return `${dateMatch[0]}${ageMatch ? ageMatch[0] : ''}${weightMatch ? `　${weightMatch[0]}` : ''}`;
+  const dateMatch = caption.match(/[0-9０-９]{4}年[0-9０-９]{1,2}月(?:[0-9０-９]{1,2}日|上旬|中旬|下旬|末)?/);
+  const ageMatch = caption.match(/[（(][0-9０-９]+歳[）)]/);
+  const weightMatch = caption.match(/(?:---|[0-9０-９]{3,4})\s*[kＫｋ][gＧｇ]/);
 
-  const key = dateKeyFromSrc(item.file || item.src || '');
-  if (key === '00000000') return '';
-  const year = key.slice(0, 4);
-  const month = String(Number(key.slice(4, 6)));
-  const day = String(Number(key.slice(6, 8)));
-  return `${year}年${month}月${day}日`;
+  let dateLabel = dateMatch ? dateMatch[0] : '';
+  if (!dateLabel) {
+    const key = dateKeyFromSrc(item.file || item.src || '');
+    if (key !== '00000000') {
+      const year = key.slice(0, 4);
+      const month = String(Number(key.slice(4, 6)));
+      const day = String(Number(key.slice(6, 8)));
+      dateLabel = `${year}年${month}月${day}日`;
+    }
+  }
+
+  const dateAndAge = `${dateLabel}${ageMatch ? ageMatch[0] : ''}`;
+  return [dateAndAge, weightMatch ? weightMatch[0] : ''].filter(Boolean).join('　');
 }
 function simpleCaptionTitle(item) {
   const caption = String(item.caption || '').trim();
   const title = caption
-    .replace(/\d{4}年\d{1,2}月\d{1,2}日/g, '')
-    .replace(/(?:---|[0-9０-９]{3,4})kg/g, '')
-    .replace(/（\d+歳）/g, '')
+    .replace(/[0-9０-９]{4}年[0-9０-９]{1,2}月(?:[0-9０-９]{1,2}日|上旬|中旬|下旬|末)?/g, '')
+    .replace(/(?:---|[0-9０-９]{3,4})\s*[kＫｋ][gＧｇ]/g, '')
+    .replace(/[（(][0-9０-９]+歳[）)]/g, '')
     .split(/[　\s]+/)
     .filter(Boolean)
     .join('　');
