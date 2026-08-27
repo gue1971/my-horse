@@ -1,9 +1,14 @@
 {
   "album": [
     {
+      "file": "20260818.jpeg",
+      "caption": "NF空港　438kg　2026年8月18日（1歳）",
+      "isHero": true
+    },
+    {
       "file": "20260522.jpeg",
       "caption": "募集時　433kg　2026年5月22日（1歳）",
-      "isHero": true
+      "isHero": false
     }
   ],
   "archiveComment": [

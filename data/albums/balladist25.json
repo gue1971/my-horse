@@ -1,9 +1,14 @@
 {
   "album": [
     {
+      "file": "20260817.jpeg",
+      "caption": "NFイヤリング　443kg　2026年8月17日（1歳）",
+      "isHero": true
+    },
+    {
       "file": "20260522.jpeg",
       "caption": "募集時　437kg　2026年5月22日（1歳）",
-      "isHero": true
+      "isHero": false
     }
   ],
   "archiveComment": [
