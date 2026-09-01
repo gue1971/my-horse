@@ -1,7 +1,7 @@
 // ===== helpers =====
 const $ = (s, r=document)=>r.querySelector(s);
 const $$ = (s, r=document)=>[...r.querySelectorAll(s)];
-const ASSET_VERSION = '20260814-shared-horse-fallback-1';
+const ASSET_VERSION = '20260901-horse-order-bbs-1';
 const VERSION_PARAM = `v=${encodeURIComponent(ASSET_VERSION)}`;
 function withVersion(url) {
   if (!url || url.startsWith('data:')) return url;
@@ -33,11 +33,14 @@ async function loadHorses() {
   if (loaded.length === 1) return loaded[0];
   if (loaded.length >= 2) {
     const [remote, local] = loaded;
-    const remoteBySlug = new Map(remote.map(h => [String(h.slug || '').toLowerCase(), h]));
-    const localSlugs = new Set(local.map(h => String(h.slug || '').toLowerCase()));
+    const localBySlug = new Map(local.map(h => [String(h.slug || '').toLowerCase(), h]));
+    const remoteSlugs = new Set(remote.map(h => String(h.slug || '').toLowerCase()));
     return [
-      ...local.map(h => remoteBySlug.get(String(h.slug || '').toLowerCase()) || h),
-      ...remote.filter(h => !localSlugs.has(String(h.slug || '').toLowerCase())),
+      ...remote.map(h => ({
+        ...(localBySlug.get(String(h.slug || '').toLowerCase()) || {}),
+        ...h,
+      })),
+      ...local.filter(h => !remoteSlugs.has(String(h.slug || '').toLowerCase())),
     ];
   }
   throw new Error('horses data format error');
@@ -69,7 +72,7 @@ function bbsUrl(id) {
   const isMobile = window.innerWidth <= 768;
   return isMobile
     ? `https://db.sp.netkeiba.com/horse/horse_bbs.html?id=${encodeURIComponent(id)}`
-    : `https://db.netkeiba.com/?pid=horse_board&id=${encodeURIComponent(id)}`;
+    : `https://db.netkeiba.com/horse/bbs/${encodeURIComponent(id)}/`;
 }
 
 function stableLabel(horse) {
@@ -342,8 +345,8 @@ async function render(){
   // パネル要素
   const areas = Object.fromEntries(PANELS.map(id=>[id, document.getElementById(id)]));
 
-  // 各馬カード
-  for (const h of horses){
+  // アルバム情報は一括で読み始め、カードは共有データの順番で描画する
+  const albumLoads = horses.map(async h => {
     let hero=null, hasAlbum=false;
     try{
       const a = await getJSON(albumJson(h.slug));
@@ -352,6 +355,13 @@ async function render(){
     }catch(e){
       // 未整備OK
     }
+    return {hero, hasAlbum};
+  });
+
+  // 各馬カード
+  for (let i = 0; i < horses.length; i++){
+    const h = horses[i];
+    const {hero, hasAlbum} = await albumLoads[i];
     const card = buildCard({horse:h, hero, hasAlbum});
     const key = 'tab' + String(h.tab || 1);
     (areas[key] || areas['tab1']).appendChild(card);
