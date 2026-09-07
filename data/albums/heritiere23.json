@@ -1,9 +1,14 @@
 {
   "album": [
     {
+      "file": "20260906.jpeg",
+      "caption": "3歳未勝利　優勝　478kg　2026年9月6日（3歳）",
+      "isHero": true
+    },
+    {
       "file": "20250320.jpg",
       "caption": "NF天栄　451kg　2025年3月20日（2歳）",
-      "isHero": true
+      "isHero": false
     },
     {
       "file": "20250131.webp",
