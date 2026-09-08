@@ -300,11 +300,14 @@ setVal('cannon_cm', horse.cannon_cm, 'cm');
 setVal('weight_kg', horse.weight_kg, 'kg');
 
 
-    /* 4) コメント（安全化：配列チェック→ソート） */
+    /* 4) コメント（クラブ近況と保存記事を結合して日付順に表示） */
     const comments = document.getElementById('comments');
-    const sortedComments = Array.isArray(detail.archiveComment)
-      ? [...detail.archiveComment].sort(dateSort)
-      : [];
+    const archivedComments = Array.isArray(detail.archiveComment) ? detail.archiveComment : [];
+    const archivedArticles = Array.isArray(detail.archiveArticles) ? detail.archiveArticles : [];
+    const sortedComments = [...archivedComments, ...archivedArticles]
+      .filter(comment => comment && comment.date && comment.date !== 'YYYY-MM-DD'
+        && (comment.title || comment.text))
+      .sort(dateSort);
     const commentsHTML = sortedComments.map(comment => `
       <div class="comment">
         <div class="date">${comment.date || ''}</div>
