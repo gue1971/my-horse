@@ -1,6 +1,7 @@
 {
   "album": [
-    { "file": "20260906.jpeg", "caption": "3歳未勝利　優勝　458kg　2026年9月6日（3歳）", "isHero": true },
+    { "file": "20260906b.jpeg", "caption": "3歳未勝利　優勝　458kg　2026年9月6日（3歳）", "isHero": true },
+    { "file": "20260906a.jpg", "caption": "3歳未勝利　優勝　458kg　2026年9月6日（3歳）", "isHero": false },
     { "file": "20260731.jpeg", "caption": "ファンタストクラブ　---kg　2026年7月31日（3歳）", "isHero": false },
     { "file": "20260626.jpeg", "caption": "ファンタストクラブ　---kg　2026年6月26日（3歳）", "isHero": false },
     { "file": "20260529.jpeg", "caption": "ファンタストクラブ　---kg　2026年5月29日（3歳）", "isHero": false },
