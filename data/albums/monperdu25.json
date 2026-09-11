@@ -1,0 +1,21 @@
+{
+  "album": [
+    {
+      "file": "20260818a.jpeg",
+      "caption": "NFイヤリング　421kg　2026年8月18日（1歳）",
+      "isHero": true
+    },
+    {
+      "file": "20260818b.jpeg",
+      "caption": "NFイヤリング　2026年8月18日（1歳）",
+      "isHero": false
+    }
+  ],
+  "archiveComment": [
+    {
+      "date": "YYYY-MM-DD",
+      "title": "",
+      "text": ""
+    }
+  ]
+}
